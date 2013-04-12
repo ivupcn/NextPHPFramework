@@ -1,0 +1,1465 @@
+--- STARTUP TIME --- 1364260484.2864
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@index
+    ACL：拒绝访问index::init@index
+--- SHUTDOWN TIME --- 1364260484.4975 (0.2111291885376)sec
+--- STARTUP TIME --- 1364260500.7474
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    8 | Undefined index:  userid       | D:\ESSamp\wwwroot\NextPHP\module\admin\controller\index.php | 6
+--- SHUTDOWN TIME --- 1364260500.8722 (0.12476181983948)sec
+--- STARTUP TIME --- 1364260500.8765
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1364260500.9447 (0.068224906921387)sec
+--- STARTUP TIME --- 1364260515.9515
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivup@ivup.cn' LIMIT 1
+    REQUEST SQL：INSERT INTO `x`.`x_times`(`email`,`ip`,`isadmin`,`logintime`,`times`) VALUES ('ivup@ivup.cn','127.0.0.1','1','1364260515','1')
+--- SHUTDOWN TIME --- 1364260516.2482 (0.29666900634766)sec
+--- STARTUP TIME --- 1364260524.8955
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivup@ivup.cn' LIMIT 1
+    REQUEST SQL：DELETE FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'
+    REQUEST SQL：UPDATE `x`.`x_user` SET `lastloginip`='127.0.0.1',`lastlogintime`='1364260524' WHERE  `userid` = '1'
+--- SHUTDOWN TIME --- 1364260524.9218 (0.02625584602356)sec
+--- STARTUP TIME --- 1364260524.9355
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364260525.1878 (0.25228309631348)sec
+--- STARTUP TIME --- 1364260531.0716
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364260531.1177 (0.04605507850647)sec
+--- STARTUP TIME --- 1364260532.2114
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364260532.2946 (0.083217859268188)sec
+--- STARTUP TIME --- 1364260533.4262
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364260533.4801 (0.053886890411377)sec
+--- STARTUP TIME --- 1364260533.8555
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364260542.202
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  isimage      | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 23
+--- SHUTDOWN TIME --- 1364260542.3059 (0.10384798049927)sec
+--- STARTUP TIME --- 1364260861.9103
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined variable: uploadedfile | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 87
+--- SHUTDOWN TIME --- 1364260861.9373 (0.026996850967407)sec
+--- STARTUP TIME --- 1364261229.2544
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364261229.277 (0.022596120834351)sec
+--- STARTUP TIME --- 1364261229.6867
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364261232.7757
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364261232.8444 (0.068704843521118)sec
+--- STARTUP TIME --- 1364261293.9986
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364261294.0423 (0.043691158294678)sec
+--- STARTUP TIME --- 1364261461.9646
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364261461.9998 (0.035145044326782)sec
+--- STARTUP TIME --- 1364261466.4296
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364261466.4534 (0.023791790008545)sec
+--- STARTUP TIME --- 1364261467.8486
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364261467.8708 (0.02226996421814)sec
+--- STARTUP TIME --- 1364261469.3285
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364261469.3483 (0.019782066345215)sec
+--- STARTUP TIME --- 1364261470.3252
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364261470.3466 (0.021408081054688)sec
+--- STARTUP TIME --- 1364261470.7235
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364261473.2572
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364261473.2963 (0.039129972457886)sec
+--- STARTUP TIME --- 1364261480.7271
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364261480.759 (0.031805038452148)sec
+--- STARTUP TIME --- 1364261746.8587
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364261746.9006 (0.041932106018066)sec
+--- STARTUP TIME --- 1364262111.2858
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364262111.3291 (0.043298006057739)sec
+--- STARTUP TIME --- 1364263100.1275
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364263100.1687 (0.041278839111328)sec
+--- STARTUP TIME --- 1364263105.0918
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364263105.1142 (0.022457122802734)sec
+--- STARTUP TIME --- 1364263106.5337
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364263106.5531 (0.019330978393555)sec
+--- STARTUP TIME --- 1364263106.7759
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364263106.7973 (0.021397113800049)sec
+--- STARTUP TIME --- 1364263107.6685
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364263107.6902 (0.021676063537598)sec
+--- STARTUP TIME --- 1364263108.7152
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364263108.7362 (0.021050930023193)sec
+--- STARTUP TIME --- 1364263109.0924
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364263112.2586
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364263112.3113 (0.052716970443726)sec
+--- STARTUP TIME --- 1364263155.3993
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364263155.4233 (0.023955821990967)sec
+--- STARTUP TIME --- 1364263155.8707
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364263511.3458
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364263511.3684 (0.022552967071533)sec
+--- STARTUP TIME --- 1364263513.9655
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364263513.9842 (0.018696069717407)sec
+--- STARTUP TIME --- 1364263516.3852
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364263516.4037 (0.01851487159729)sec
+--- STARTUP TIME --- 1364263519.5303
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364263519.5491 (0.018835067749023)sec
+--- STARTUP TIME --- 1364263519.9145
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364264161.2163
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264161.2411 (0.024742841720581)sec
+--- STARTUP TIME --- 1364264179.5526
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264179.578 (0.025441884994507)sec
+--- STARTUP TIME --- 1364264182.0913
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364264182.1287 (0.037471055984497)sec
+--- STARTUP TIME --- 1364264183.6623
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：module::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_module`
+--- SHUTDOWN TIME --- 1364264183.7884 (0.12608003616333)sec
+--- STARTUP TIME --- 1364264191.5145
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364264191.5331 (0.018519163131714)sec
+--- STARTUP TIME --- 1364264192.7294
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264192.7489 (0.01957106590271)sec
+--- STARTUP TIME --- 1364264409.1257
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264409.169 (0.04328989982605)sec
+--- STARTUP TIME --- 1364264429.1691
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264429.1892 (0.02015495300293)sec
+--- STARTUP TIME --- 1364264435.4653
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264435.5057 (0.040425777435303)sec
+--- STARTUP TIME --- 1364264436.518
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264436.5344 (0.016434907913208)sec
+--- STARTUP TIME --- 1364264437.0043
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264437.0222 (0.017902851104736)sec
+--- STARTUP TIME --- 1364264437.2095
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264437.2263 (0.016838788986206)sec
+--- STARTUP TIME --- 1364264437.4416
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264437.4607 (0.019062042236328)sec
+--- STARTUP TIME --- 1364264437.5997
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264437.6174 (0.0177161693573)sec
+--- STARTUP TIME --- 1364264437.8069
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264437.8241 (0.017220973968506)sec
+--- STARTUP TIME --- 1364264438.011
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264438.0271 (0.016103029251099)sec
+--- STARTUP TIME --- 1364264478.9623
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264478.9787 (0.016359090805054)sec
+--- STARTUP TIME --- 1364264610.7782
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364264610.8032 (0.024929046630859)sec
+--- STARTUP TIME --- 1364264612.0421
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364264612.0633 (0.021173000335693)sec
+--- STARTUP TIME --- 1364264613.8563
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364264613.8746 (0.018253087997437)sec
+--- STARTUP TIME --- 1364264614.6008
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264614.6231 (0.02234411239624)sec
+--- STARTUP TIME --- 1364264626.976
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364264626.9991 (0.023086071014404)sec
+--- STARTUP TIME --- 1364264627.7516
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364264627.7717 (0.020102977752686)sec
+--- STARTUP TIME --- 1364264629.7939
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364264629.813 (0.019108057022095)sec
+--- STARTUP TIME --- 1364264630.8807
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364264630.9017 (0.021045207977295)sec
+--- STARTUP TIME --- 1364264633.0061
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264633.0277 (0.021663904190063)sec
+--- STARTUP TIME --- 1364264656.3026
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364264656.3231 (0.020498037338257)sec
+--- STARTUP TIME --- 1364264657.9817
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364264658.0067 (0.024916887283325)sec
+--- STARTUP TIME --- 1364264658.8673
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364264658.8886 (0.021294116973877)sec
+--- STARTUP TIME --- 1364264659.6909
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264659.71 (0.019119024276733)sec
+--- STARTUP TIME --- 1364264673.8633
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364264673.8806 (0.017291069030762)sec
+--- STARTUP TIME --- 1364264674.4467
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264674.465 (0.01823902130127)sec
+--- STARTUP TIME --- 1364264702.9597
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364264702.9842 (0.024415969848633)sec
+--- STARTUP TIME --- 1364264704.925
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364264704.9427 (0.017671823501587)sec
+--- STARTUP TIME --- 1364264705.8757
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364264705.8924 (0.016713857650757)sec
+--- STARTUP TIME --- 1364264707.0395
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264707.0583 (0.018877983093262)sec
+--- STARTUP TIME --- 1364264725.4678
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364264725.4865 (0.018712997436523)sec
+--- STARTUP TIME --- 1364264735.5165
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364264735.5387 (0.022286891937256)sec
+--- STARTUP TIME --- 1364264736.6822
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364264736.7007 (0.018430948257446)sec
+--- STARTUP TIME --- 1364264737.8
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264737.8246 (0.024597883224487)sec
+--- STARTUP TIME --- 1364264809.2256
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364264809.248 (0.02240514755249)sec
+--- STARTUP TIME --- 1364264838.5652
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364264838.5811 (0.015876054763794)sec
+--- STARTUP TIME --- 1364264851.8711
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364264851.8981 (0.026990175247192)sec
+--- STARTUP TIME --- 1364264853.4121
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364264853.4343 (0.022217988967896)sec
+--- STARTUP TIME --- 1364264854.729
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364264854.7488 (0.01979398727417)sec
+--- STARTUP TIME --- 1364264865.9985
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364264866.0211 (0.022583961486816)sec
+--- STARTUP TIME --- 1364264956.1737
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::main@admin
+--- SHUTDOWN TIME --- 1364264956.1816 (0.0079240798950195)sec
+--- STARTUP TIME --- 1364264956.1857
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::main@admin
+--- SHUTDOWN TIME --- 1364264956.1966 (0.010900974273682)sec
+--- STARTUP TIME --- 1364264956.2037
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::setsiteid@admin
+--- SHUTDOWN TIME --- 1364264956.2138 (0.010077953338623)sec
+--- STARTUP TIME --- 1364264956.2527
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364264956.2761 (0.023371934890747)sec
+--- STARTUP TIME --- 1364264960.3565
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364264960.3817 (0.025209903717041)sec
+--- STARTUP TIME --- 1364264962.1516
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364264962.1771 (0.025421857833862)sec
+--- STARTUP TIME --- 1364265080.8969
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::main@admin
+--- SHUTDOWN TIME --- 1364265080.9064 (0.009552001953125)sec
+--- STARTUP TIME --- 1364265080.9469
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::main@admin
+--- SHUTDOWN TIME --- 1364265080.9574 (0.010540962219238)sec
+--- STARTUP TIME --- 1364265080.9659
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::setsiteid@admin
+--- SHUTDOWN TIME --- 1364265080.9756 (0.0096890926361084)sec
+--- STARTUP TIME --- 1364265080.9969
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364265081.021 (0.024110078811646)sec
+--- STARTUP TIME --- 1364265084.4602
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364265084.4801 (0.019865989685059)sec
+--- STARTUP TIME --- 1364265085.2838
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364265085.3028 (0.018978834152222)sec
+--- STARTUP TIME --- 1364265316.5241
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364265316.5475 (0.023494005203247)sec
+--- STARTUP TIME --- 1364265317.0904
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364265317.1142 (0.02376914024353)sec
+--- STARTUP TIME --- 1364265318.5724
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364265318.5979 (0.025511026382446)sec
+--- STARTUP TIME --- 1364265320.4036
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364265320.4237 (0.020039796829224)sec
+--- STARTUP TIME --- 1364265321.6415
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364265321.6618 (0.020318031311035)sec
+--- STARTUP TIME --- 1364265329.953
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+    [附件]DSCF8023.JPG,/uploadfile/2013/0326/20130326103529790.jpg,7201218,jpg,jpg
+--- SHUTDOWN TIME --- 1364265329.9972 (0.044149160385132)sec
+--- STARTUP TIME --- 1364265386.3256
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+    [attachment]DSCF8023.JPG,/uploadfile/2013/0326/20130326103626599.jpg,7201218,jpg,jpg
+--- SHUTDOWN TIME --- 1364265386.353 (0.027344226837158)sec
+--- STARTUP TIME --- 1364265399.4734
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::main@admin
+--- SHUTDOWN TIME --- 1364265399.4853 (0.011870861053467)sec
+--- STARTUP TIME --- 1364265399.5244
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::main@admin
+--- SHUTDOWN TIME --- 1364265399.5336 (0.009213924407959)sec
+--- STARTUP TIME --- 1364265399.5474
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::setsiteid@admin
+--- SHUTDOWN TIME --- 1364265399.5572 (0.0097389221191406)sec
+--- STARTUP TIME --- 1364265399.5775
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364265399.6008 (0.023359060287476)sec
+--- STARTUP TIME --- 1364265402.2172
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364265402.2377 (0.020524978637695)sec
+--- STARTUP TIME --- 1364265403.401
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364265403.4209 (0.019860029220581)sec
+--- STARTUP TIME --- 1364265406.9063
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  19           | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 14
+--- SHUTDOWN TIME --- 1364265406.9452 (0.03882908821106)sec
+--- STARTUP TIME --- 1364265474.7866
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  19           | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 14
+--- SHUTDOWN TIME --- 1364265474.796 (0.0093529224395752)sec
+--- STARTUP TIME --- 1364265523.9905
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  19           | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 15
+--- SHUTDOWN TIME --- 1364265524.0026 (0.012151956558228)sec
+--- STARTUP TIME --- 1364265547.4491
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  19           | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 15
+--- SHUTDOWN TIME --- 1364265547.4621 (0.01301908493042)sec
+--- STARTUP TIME --- 1364265573.1633
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  19           | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 14
+--- SHUTDOWN TIME --- 1364265573.1741 (0.01079797744751)sec
+--- STARTUP TIME --- 1364265599.0005
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  19           | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 14
+--- SHUTDOWN TIME --- 1364265599.01 (0.0095357894897461)sec
+--- STARTUP TIME --- 1364265664.7594
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  19           | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 15
+--- SHUTDOWN TIME --- 1364265664.7729 (0.013572931289673)sec
+--- STARTUP TIME --- 1364265820.7404
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+    [attachment]DSCF8026.JPG,/uploadfile/2013/0326/20130326104340315.jpg,6641082,jpg,jpg
+--- SHUTDOWN TIME --- 1364265820.7948 (0.054381847381592)sec
+--- STARTUP TIME --- 1364266200.786
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364266200.8009 (0.014914989471436)sec
+--- STARTUP TIME --- 1364266202.416
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364266202.4367 (0.020642042160034)sec
+--- STARTUP TIME --- 1364266203.5768
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364266203.592 (0.015205144882202)sec
+--- STARTUP TIME --- 1364266230.3036
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364266230.3189 (0.015259027481079)sec
+--- STARTUP TIME --- 1364266231.9678
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364266231.979 (0.011269092559814)sec
+--- STARTUP TIME --- 1364266242.7039
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+--- STARTUP TIME --- 1364266242.7069
+    REQUEST MCA：index::main@admin
+--- SHUTDOWN TIME --- 1364266242.7149 (0.01099705696106)sec
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::main@admin
+--- SHUTDOWN TIME --- 1364266242.7204 (0.013449907302856)sec
+--- STARTUP TIME --- 1364266242.7259
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::setsiteid@admin
+--- SHUTDOWN TIME --- 1364266242.7352 (0.0093131065368652)sec
+--- STARTUP TIME --- 1364266242.75
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364266242.7727 (0.02274489402771)sec
+--- STARTUP TIME --- 1364266244.7663
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364266244.7813 (0.015048980712891)sec
+--- STARTUP TIME --- 1364266246.6946
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364266246.7108 (0.016226053237915)sec
+--- STARTUP TIME --- 1364266249.1452
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364266249.1634 (0.018208980560303)sec
+--- STARTUP TIME --- 1364266306.4705
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364266306.4834 (0.012985944747925)sec
+--- STARTUP TIME --- 1364266307.9264
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364266307.9663 (0.039829015731812)sec
+--- STARTUP TIME --- 1364266344.8781
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364266344.8874 (0.0093660354614258)sec
+--- STARTUP TIME --- 1364266345.6576
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364266345.6726 (0.015042066574097)sec
+--- STARTUP TIME --- 1364266346.3361
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364266346.3523 (0.016281843185425)sec
+--- STARTUP TIME --- 1364266480.4515
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364266480.4663 (0.014777898788452)sec
+--- STARTUP TIME --- 1364266485.668
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364266485.6898 (0.021758079528809)sec
+--- STARTUP TIME --- 1364267115.312
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::main@admin
+--- STARTUP TIME --- 1364267115.3161
+--- SHUTDOWN TIME --- 1364267115.3244 (0.012372016906738)sec
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::main@admin
+--- SHUTDOWN TIME --- 1364267115.3304 (0.014389991760254)sec
+--- STARTUP TIME --- 1364267115.3361
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::setsiteid@admin
+--- SHUTDOWN TIME --- 1364267115.3447 (0.0086119174957275)sec
+--- STARTUP TIME --- 1364267115.3531
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364267115.372 (0.01889705657959)sec
+--- STARTUP TIME --- 1364267118.6763
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1364267118.794 (0.11769509315491)sec
+--- STARTUP TIME --- 1364267123.1723
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：menu::add@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu`
+--- SHUTDOWN TIME --- 1364267123.2264 (0.054062128067017)sec
+--- STARTUP TIME --- 1364267154.286
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：menu::add@admin
+    REQUEST SQL：INSERT INTO `x`.`x_menu`(`parentid`,`name`,`m`,`c`,`a`,`data`,`display`,`sys`,`acl_type`) VALUES ('1','信息流','flow','c','a','','1','0','0')
+--- SHUTDOWN TIME --- 1364267154.3406 (0.054519176483154)sec
+--- STARTUP TIME --- 1364267154.3581
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1364267154.388 (0.029944896697998)sec
+--- STARTUP TIME --- 1364267157.7974
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364267157.8176 (0.020246028900146)sec
+--- STARTUP TIME --- 1364267159.0602
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364267159.0817 (0.021425008773804)sec
+--- STARTUP TIME --- 1364267159.9238
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364267159.9419 (0.018127918243408)sec
+--- STARTUP TIME --- 1364267160.8314
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '91'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364267160.848 (0.01655101776123)sec
+--- STARTUP TIME --- 1364267161.5999
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364267161.6393 (0.039325952529907)sec
+--- STARTUP TIME --- 1364267162.5436
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364267162.5643 (0.020737886428833)sec
+--- STARTUP TIME --- 1364267164.663
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1364267164.6874 (0.024399042129517)sec
+--- STARTUP TIME --- 1364267201.8208
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：menu::listorder@admin
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='1' WHERE  `id` = '1'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='6' WHERE  `id` = '91'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='4' WHERE  `id` = '4'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '20'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '37'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '90'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '89'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '88'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '87'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '39'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '38'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '22'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '21'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='5' WHERE  `id` = '5'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='1' WHERE  `id` = '6'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '65'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '73'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '72'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '40'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '44'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '43'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '42'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '7'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '11'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '10'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '9'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '8'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='2' WHERE  `id` = '13'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '69'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '66'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '41'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='3' WHERE  `id` = '12'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '86'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '35'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '16'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '34'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '33'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '32'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '15'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '26'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '25'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '24'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '23'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '14'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '31'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '30'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '27'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '19'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '18'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '17'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='2' WHERE  `id` = '2'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='3' WHERE  `id` = '3'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '85'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '36'
+--- SHUTDOWN TIME --- 1364267201.8808 (0.059992074966431)sec
+--- STARTUP TIME --- 1364267201.8978
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1364267201.9211 (0.023246049880981)sec
+--- STARTUP TIME --- 1364267203.0846
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364267203.1063 (0.02173900604248)sec
+--- STARTUP TIME --- 1364267204.4875
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364267204.5081 (0.020586967468262)sec
+--- STARTUP TIME --- 1364267205.8314
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '91'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364267205.8474 (0.015985012054443)sec
+--- STARTUP TIME --- 1364267207.1233
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364267207.1469 (0.023566961288452)sec
+--- STARTUP TIME --- 1364267209.8331
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1364267209.8586 (0.025460958480835)sec
+--- STARTUP TIME --- 1364267225.6827
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：menu::listorder@admin
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='1' WHERE  `id` = '1'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='4' WHERE  `id` = '4'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '20'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '37'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '90'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '89'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '88'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '87'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '39'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '38'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '22'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '21'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='5' WHERE  `id` = '5'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='51' WHERE  `id` = '6'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '65'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '73'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '72'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '40'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '44'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '43'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '42'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '7'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '11'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '10'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '9'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '8'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='52' WHERE  `id` = '13'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '69'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '66'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '41'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='53' WHERE  `id` = '12'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '86'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '35'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '16'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '34'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '33'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '32'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '15'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '26'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '25'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '24'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '23'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '14'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '31'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '30'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '27'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '19'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '18'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '17'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='6' WHERE  `id` = '91'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='2' WHERE  `id` = '2'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='3' WHERE  `id` = '3'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '85'
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `listorder`='0' WHERE  `id` = '36'
+--- SHUTDOWN TIME --- 1364267225.7329 (0.050205945968628)sec
+--- STARTUP TIME --- 1364267225.7537
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1364267225.7813 (0.027538061141968)sec
+--- STARTUP TIME --- 1364267230.1286
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364267230.1484 (0.019719123840332)sec
+--- STARTUP TIME --- 1364267233.9292
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364267233.9497 (0.020531177520752)sec
+--- STARTUP TIME --- 1364267236.3738
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '91'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364267236.3907 (0.016902923583984)sec
+--- STARTUP TIME --- 1364267237.2924
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364267237.3126 (0.020155191421509)sec
+--- STARTUP TIME --- 1364267297.5006
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1364267297.5225 (0.021894931793213)sec
+--- STARTUP TIME --- 1364267299.6921
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：menu::add@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu`
+--- SHUTDOWN TIME --- 1364267299.719 (0.026998996734619)sec
+--- STARTUP TIME --- 1364267320.3428
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '91'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364267320.3558 (0.012938976287842)sec
+--- STARTUP TIME --- 1364270917.2847
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364270917.3045 (0.019780874252319)sec
+--- STARTUP TIME --- 1364270918.9418
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364270918.9648 (0.02300500869751)sec
+--- STARTUP TIME --- 1364270920.636
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364270920.6584 (0.022420167922974)sec
+--- STARTUP TIME --- 1364270926.0266
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+    [attachment]DSCF8026.JPG,/uploadfile/2013/0326/20130326120846213.jpg,6641082,jpg,jpg
+--- SHUTDOWN TIME --- 1364270926.084 (0.057383060455322)sec
+--- STARTUP TIME --- 1364271232.5881
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364271232.6128 (0.024692058563232)sec
+--- STARTUP TIME --- 1364271263.6058
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364271263.6225 (0.016693115234375)sec
+--- STARTUP TIME --- 1364271298.7382
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364271298.7539 (0.015690088272095)sec
+--- STARTUP TIME --- 1364271302.0544
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364271302.0739 (0.019464015960693)sec
+--- STARTUP TIME --- 1364271361.1769
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364271361.1986 (0.021759033203125)sec
+--- STARTUP TIME --- 1364271468.4524
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364271468.4732 (0.020814895629883)sec
+--- STARTUP TIME --- 1364271469.365
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364271469.3853 (0.020227193832397)sec
+--- STARTUP TIME --- 1364271472.1909
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+    [attachment]DSCF8026.JPG,/uploadfile/2013/0326/20130326121752770.jpg,6641082,jpg,jpg
+--- SHUTDOWN TIME --- 1364271472.2151 (0.024189949035645)sec
+--- STARTUP TIME --- 1364271483.0121
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+    [attachment]DSCF8026.JPG,/uploadfile/2013/0326/20130326121803452.jpg,6641082,jpg,jpg
+--- SHUTDOWN TIME --- 1364271483.0596 (0.047456979751587)sec
+--- STARTUP TIME --- 1364271493.1619
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+    [attachment]DSCF8026.JPG,/uploadfile/2013/0326/20130326121813693.jpg,6641082,jpg,jpg
+--- SHUTDOWN TIME --- 1364271493.2087 (0.046766042709351)sec
+--- STARTUP TIME --- 1364271501.9178
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+    [attachment]DSCF8026.JPG,/uploadfile/2013/0326/20130326121821970.jpg,6641082,jpg,jpg
+--- SHUTDOWN TIME --- 1364271501.9443 (0.026581048965454)sec
+--- STARTUP TIME --- 1364279978.8036
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364279978.8325 (0.02891206741333)sec
+--- STARTUP TIME --- 1364279981.2993
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364279981.3282 (0.028876066207886)sec
+--- STARTUP TIME --- 1364279982.6002
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '91'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364279982.6173 (0.017161130905151)sec
+--- STARTUP TIME --- 1364279983.4497
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364279983.4926 (0.042852878570557)sec
+--- STARTUP TIME --- 1364279986.0725
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364279986.0959 (0.023401021957397)sec
+--- STARTUP TIME --- 1364281610.5171
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364281610.5428 (0.025683879852295)sec
+--- STARTUP TIME --- 1364281612.1732
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364281612.1969 (0.023742914199829)sec
+--- STARTUP TIME --- 1364284645.1109
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364284645.1288 (0.01781702041626)sec
+--- STARTUP TIME --- 1364284646.4859
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364284646.5102 (0.024331092834473)sec
+--- STARTUP TIME --- 1364284657.4121
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::upload@attachment
+    [action_upload]Action does not exist.
+--- SHUTDOWN TIME --- 1364284657.4239 (0.011767864227295)sec
+--- STARTUP TIME --- 1364284706.3598
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364284706.3807 (0.020909070968628)sec
+--- STARTUP TIME --- 1364284707.4986
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364284707.5223 (0.023735046386719)sec
+--- STARTUP TIME --- 1364284710.1033
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364284710.1245 (0.021175861358643)sec
+--- STARTUP TIME --- 1364284711.094
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364284711.116 (0.022014856338501)sec
+--- STARTUP TIME --- 1364284713.6146
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::swfupload@attachment
+    [attachment]DSCF8023.JPG,/uploadfile/2013/0326/20130326035833944.jpg,7201218,jpg,jpg
+--- SHUTDOWN TIME --- 1364284713.6368 (0.022152900695801)sec
+--- STARTUP TIME --- 1364284738.6924
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::swfupload@attachment
+    [attachment]DSCF8026.JPG,/uploadfile/2013/0326/20130326035858228.jpg,6641082,jpg,jpg
+--- SHUTDOWN TIME --- 1364284738.7147 (0.022292137145996)sec
+--- STARTUP TIME --- 1364284781.7111
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::swfupload@attachment
+    [attachment]DSCF8023.JPG,/uploadfile/2013/0326/20130326035941239.jpg,7201218,jpg,jpg
+--- SHUTDOWN TIME --- 1364284781.7413 (0.030239105224609)sec
+--- STARTUP TIME --- 1364285040.954
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364285040.9815 (0.027450084686279)sec
+--- STARTUP TIME --- 1364285042.2068
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364285042.226 (0.019147872924805)sec
+--- STARTUP TIME --- 1364285043.3336
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364285043.3529 (0.019259214401245)sec
+--- STARTUP TIME --- 1364285043.984
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364285044.0024 (0.018342018127441)sec
+--- STARTUP TIME --- 1364285121.3036
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::swfupload@attachment
+    [attachment]DSCF8023.JPG,/uploadfile/2013/0326/20130326040521457.jpg,7201218,jpg,jpg
+--- SHUTDOWN TIME --- 1364285121.3336 (0.030004978179932)sec
+--- STARTUP TIME --- 1364285505.2714
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::swfupload@attachment
+    [attachment]folder.gif,/uploadfile/2013/0326/20130326041145430.gif,106,gif,gif
+--- SHUTDOWN TIME --- 1364285505.3112 (0.039734840393066)sec
+--- STARTUP TIME --- 1364285651.0046
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::swfupload@attachment
+    [attachment]folder.gif,/uploadfile/2013/0326/20130326041411717.gif,106,gif,gif
+--- SHUTDOWN TIME --- 1364285651.021 (0.016327142715454)sec
+--- STARTUP TIME --- 1364285789.3712
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364285789.3953 (0.024177074432373)sec
+--- STARTUP TIME --- 1364285790.7181
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364285790.7395 (0.021412134170532)sec
+--- STARTUP TIME --- 1364285791.8658
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1364285791.8946 (0.028766870498657)sec
+--- STARTUP TIME --- 1364285792.9315
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364285792.9533 (0.021715879440308)sec
+--- STARTUP TIME --- 1364285793.8101
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364285793.8291 (0.018928050994873)sec
+--- STARTUP TIME --- 1364285797.1233
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::swfupload@attachment
+    [attachment]folder.gif,/uploadfile/2013/0326/20130326041637923.gif,106,gif,gif
+--- SHUTDOWN TIME --- 1364285797.1361 (0.012756109237671)sec
+--- STARTUP TIME --- 1364286061.8403
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::swfupload@attachment
+    [attachment]DSCF8023.JPG,/uploadfile/2013/0326/20130326042101628.jpg,7201218,jpg,jpg
+--- SHUTDOWN TIME --- 1364286061.8677 (0.027358055114746)sec
+--- STARTUP TIME --- 1364286072.1342
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::swfupload@attachment
+    [attachment]DSCF8420.JPG,/uploadfile/2013/0326/20130326042112707.jpg,6513660,jpg,jpg
+--- SHUTDOWN TIME --- 1364286072.1849 (0.050729036331177)sec
+--- STARTUP TIME --- 1364286077.1335
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364286077.1588 (0.025328159332275)sec
+--- STARTUP TIME --- 1364286078.9917
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364286079.0119 (0.020180940628052)sec
+--- STARTUP TIME --- 1364286080.4717
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1364286080.4997 (0.028023958206177)sec
+--- STARTUP TIME --- 1364286081.3183
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364286081.3386 (0.020287036895752)sec
+--- STARTUP TIME --- 1364286228.7897
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364286228.8098 (0.020102977752686)sec
+--- STARTUP TIME --- 1364286238.319
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::swfupload@attachment
+    [attachment]IMG_2809.JPG,/uploadfile/2013/0326/20130326042358136.jpg,5412913,jpg,jpg
+--- SHUTDOWN TIME --- 1364286238.3492 (0.030202150344849)sec
+--- STARTUP TIME --- 1364286251.4148
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::swfupload@attachment
+    [attachment]DSCF8023.JPG,/uploadfile/2013/0326/20130326042411456.jpg,7201218,jpg,jpg
+--- SHUTDOWN TIME --- 1364286251.4438 (0.028992891311646)sec
+--- STARTUP TIME --- 1364286260.1116
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::swfupload@attachment
+    [attachment]DSCF7984.JPG,/uploadfile/2013/0326/20130326042420596.jpg,6632685,jpg,jpg
+--- SHUTDOWN TIME --- 1364286260.1328 (0.021271944046021)sec
+--- STARTUP TIME --- 1364286270.8177
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::swfupload@attachment
+    [attachment]DSCF8026.JPG,/uploadfile/2013/0326/20130326042430985.jpg,6641082,jpg,jpg
+--- SHUTDOWN TIME --- 1364286270.8513 (0.033608913421631)sec
+--- STARTUP TIME --- 1364286279.6866
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::swfupload@attachment
+    [attachment]DSCF8007.JPG,/uploadfile/2013/0326/20130326042439691.jpg,6404835,jpg,jpg
+--- SHUTDOWN TIME --- 1364286279.7385 (0.051851987838745)sec
+--- STARTUP TIME --- 1364286323.6509
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::swfupload@attachment
+    [attachment]DSCF7975.JPG,/uploadfile/2013/0326/20130326042523854.jpg,5812624,jpg,jpg
+--- SHUTDOWN TIME --- 1364286323.6863 (0.035336017608643)sec
+--- STARTUP TIME --- 1364286365.0596
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364286365.0841 (0.024560213088989)sec
+--- STARTUP TIME --- 1364286366.1263
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364286366.1481 (0.021787881851196)sec
+--- STARTUP TIME --- 1364286367.0959
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364286367.1149 (0.018927097320557)sec
+--- STARTUP TIME --- 1364286367.8094
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364286367.8294 (0.019973993301392)sec
+--- STARTUP TIME --- 1364286369.9959
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::swfupload@attachment
+    [attachment]DSCF8023.JPG,/uploadfile/2013/0326/20130326042610924.jpg,7201218,jpg,jpg
+--- SHUTDOWN TIME --- 1364286370.022 (0.026149988174438)sec
+--- STARTUP TIME --- 1364286381.5356
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364286381.5614 (0.025861024856567)sec
+--- STARTUP TIME --- 1364286383.2827
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364286383.3079 (0.025193929672241)sec
+--- STARTUP TIME --- 1364286383.9672
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364286383.9862 (0.019006013870239)sec
+--- STARTUP TIME --- 1364286384.6136
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364286384.6372 (0.023535966873169)sec
+--- STARTUP TIME --- 1364286386.736
+    SESSION_ID：0vl7ra2tdtbh4bvg5gf9cm0e51
+    REQUEST MCA：attachment::swfupload@attachment
+    [attachment]DSCF8026.JPG,/uploadfile/2013/0326/20130326042626501.jpg,6641082,jpg,jpg
+--- SHUTDOWN TIME --- 1364286386.7878 (0.051746129989624)sec

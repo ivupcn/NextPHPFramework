@@ -1,0 +1,2663 @@
+--- STARTUP TIME --- 1364173187.6644
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::logout@admin
+--- SHUTDOWN TIME --- 1364173187.6938 (0.029397010803223)sec
+--- STARTUP TIME --- 1364173187.6985
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1364173187.7081 (0.0095970630645752)sec
+--- STARTUP TIME --- 1364173199.3962
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivup@ivup.cn' LIMIT 1
+    REQUEST SQL：INSERT INTO `x`.`x_times`(`email`,`ip`,`isadmin`,`logintime`,`times`) VALUES ('ivup@ivup.cn','127.0.0.1','1','1364173199','1')
+--- SHUTDOWN TIME --- 1364173199.4543 (0.058125019073486)sec
+--- STARTUP TIME --- 1364173208.0019
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivup@ivup.cn' LIMIT 1
+    REQUEST SQL：DELETE FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'
+    REQUEST SQL：UPDATE `x`.`x_user` SET `lastloginip`='127.0.0.1',`lastlogintime`='1364173208' WHERE  `userid` = '1'
+--- SHUTDOWN TIME --- 1364173208.0192 (0.01731014251709)sec
+--- STARTUP TIME --- 1364173208.0319
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364173208.0833 (0.051337003707886)sec
+--- STARTUP TIME --- 1364173209.8721
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364173209.8924 (0.020258903503418)sec
+--- STARTUP TIME --- 1364173213.0062
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::main@admin
+--- STARTUP TIME --- 1364173213.0102
+--- SHUTDOWN TIME --- 1364173213.0174 (0.011143922805786)sec
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::main@admin
+--- SHUTDOWN TIME --- 1364173213.024 (0.013799905776978)sec
+--- STARTUP TIME --- 1364173213.0292
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::setsiteid@admin
+--- SHUTDOWN TIME --- 1364173213.0406 (0.011389970779419)sec
+--- STARTUP TIME --- 1364173213.0493
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364173213.0699 (0.020657062530518)sec
+--- STARTUP TIME --- 1364173215.7771
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+--- STARTUP TIME --- 1364173215.7801
+    REQUEST MCA：index::main@admin
+--- SHUTDOWN TIME --- 1364173215.7884 (0.011346101760864)sec
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::main@admin
+--- SHUTDOWN TIME --- 1364173215.7948 (0.014745950698853)sec
+--- STARTUP TIME --- 1364173215.8001
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::setsiteid@admin
+--- SHUTDOWN TIME --- 1364173215.8088 (0.0086719989776611)sec
+--- STARTUP TIME --- 1364173215.8201
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364173215.838 (0.017929077148438)sec
+--- STARTUP TIME --- 1364173221.775
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173221.8089 (0.033879995346069)sec
+--- STARTUP TIME --- 1364173249.2663
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173249.2797 (0.013401985168457)sec
+--- STARTUP TIME --- 1364173250.6091
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::config@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364173250.6349 (0.025789022445679)sec
+--- STARTUP TIME --- 1364173251.4607
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173251.47 (0.0092880725860596)sec
+--- STARTUP TIME --- 1364173252.9527
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173252.967 (0.014281988143921)sec
+--- STARTUP TIME --- 1364173366.52
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173366.5352 (0.015290021896362)sec
+--- STARTUP TIME --- 1364173415.0831
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173415.0963 (0.013213157653809)sec
+--- STARTUP TIME --- 1364173435.5547
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173435.5642 (0.0095090866088867)sec
+--- STARTUP TIME --- 1364173452.0616
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173452.0745 (0.012894868850708)sec
+--- STARTUP TIME --- 1364173513.3663
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173513.3825 (0.016266107559204)sec
+--- STARTUP TIME --- 1364173561.5722
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173561.5898 (0.017547845840454)sec
+--- STARTUP TIME --- 1364173578.5374
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173578.5569 (0.019438028335571)sec
+--- STARTUP TIME --- 1364173642.9371
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173642.9477 (0.010548830032349)sec
+--- STARTUP TIME --- 1364173659.8093
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173659.8186 (0.0092790126800537)sec
+--- STARTUP TIME --- 1364173673.2982
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173673.3126 (0.014325141906738)sec
+--- STARTUP TIME --- 1364173676.4313
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173676.4455 (0.014132022857666)sec
+--- STARTUP TIME --- 1364173678.1835
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173678.1995 (0.016010999679565)sec
+--- STARTUP TIME --- 1364173874.6176
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173874.6317 (0.0140221118927)sec
+--- STARTUP TIME --- 1364173924.0334
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173924.0521 (0.01866602897644)sec
+--- STARTUP TIME --- 1364173926.6992
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173926.7097 (0.010576009750366)sec
+--- STARTUP TIME --- 1364173928.0601
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173928.0752 (0.015142917633057)sec
+--- STARTUP TIME --- 1364173932.0547
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173932.0643 (0.0096249580383301)sec
+--- STARTUP TIME --- 1364173935.0657
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364173935.0811 (0.01537299156189)sec
+--- STARTUP TIME --- 1364174009.405
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364174009.4183 (0.01338005065918)sec
+--- STARTUP TIME --- 1364174019.3395
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364174019.3537 (0.014187097549438)sec
+--- STARTUP TIME --- 1364174027.7792
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364174027.7906 (0.011477947235107)sec
+--- STARTUP TIME --- 1364174033.4649
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364174033.4792 (0.014296054840088)sec
+--- STARTUP TIME --- 1364174036.7911
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364174036.8055 (0.014378070831299)sec
+--- STARTUP TIME --- 1364174058.2844
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：user::init@user
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `siteid` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '1'  ORDER BY userid ASC LIMIT 0, 20
+--- SHUTDOWN TIME --- 1364174058.3069 (0.022591114044189)sec
+--- STARTUP TIME --- 1364174349.5335
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364174349.5508 (0.017285108566284)sec
+--- STARTUP TIME --- 1364174422.2447
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：module::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_module`
+--- SHUTDOWN TIME --- 1364174422.3297 (0.085070848464966)sec
+--- STARTUP TIME --- 1364174501.5032
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：config::init@user
+--- SHUTDOWN TIME --- 1364174501.5167 (0.013550043106079)sec
+--- STARTUP TIME --- 1364174505.719
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：role::init@user
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role` WHERE  `siteid` = '1' ORDER BY roleid DESC
+    REQUEST SQL：SELECT `siteid`,`roleid`,`rolename` FROM `x`.`x_user_role` WHERE  `disabled` = '0' ORDER BY roleid ASC,siteid ASC
+--- SHUTDOWN TIME --- 1364174505.7623 (0.043377876281738)sec
+--- STARTUP TIME --- 1364174507.5102
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：user::roleuser@user
+    REQUEST SQL：select * from x_user where find_in_set('31',roleid)
+--- SHUTDOWN TIME --- 1364174507.5581 (0.047924041748047)sec
+--- STARTUP TIME --- 1364174511.786
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1364174511.8329 (0.046874046325684)sec
+--- STARTUP TIME --- 1364174559.7067
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364174559.7181 (0.011364936828613)sec
+--- STARTUP TIME --- 1364174563.2781
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::config@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174563.3003 (0.022150039672852)sec
+--- STARTUP TIME --- 1364174567.689
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364174567.7019 (0.012859106063843)sec
+--- STARTUP TIME --- 1364174568.2334
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：view::init@admin
+--- SHUTDOWN TIME --- 1364174568.245 (0.011564016342163)sec
+--- STARTUP TIME --- 1364174568.9248
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::config@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174568.9467 (0.021826982498169)sec
+--- STARTUP TIME --- 1364174576.4508
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364174576.4797 (0.028822898864746)sec
+--- STARTUP TIME --- 1364174577.3925
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174577.4253 (0.032792806625366)sec
+--- STARTUP TIME --- 1364174577.8117
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364174578.8875
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364174578.9072 (0.019736051559448)sec
+--- STARTUP TIME --- 1364174579.4238
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364174581.9845
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174582.006 (0.021522045135498)sec
+--- STARTUP TIME --- 1364174582.5269
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364174584.6393
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+    REQUEST SQL：UPDATE `x`.`x_site` SET `name`='XMP',`domain`='xms.iyn.cc',`view`='classic',`site_title`='XMP',`keywords`='',`description`='',`setting`='array (
+  \'upload_maxsize\' => \'2000\',
+  \'upload_allowext\' => \'jpg|jpeg|gif|bmp|png|doc|docx|xls|xlsx|ppt|pptx|pdf|txt|rar|zip|swf\',
+  \'watermark_enable\' => \'0\',
+  \'watermark_minwidth\' => \'300\',
+  \'watermark_minheight\' => \'300\',
+  \'watermark_img\' => \'xms.iyn.ccimages/water/iyn.ccimages/water/xms.images/water/mark.gif\',
+  \'watermark_pct\' => \'100\',
+  \'watermark_quality\' => \'80\',
+  \'watermark_pos\' => \'9\',
+)',`route`='array (
+  \'m\' => \'admin\',
+  \'c\' => \'index\',
+  \'a\' => \'init\',
+)' WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+--- SHUTDOWN TIME --- 1364174584.6658 (0.026565074920654)sec
+--- STARTUP TIME --- 1364174584.6893
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174584.7059 (0.016618967056274)sec
+--- STARTUP TIME --- 1364174589.4474
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::config@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174589.4628 (0.015338897705078)sec
+--- STARTUP TIME --- 1364174593.7213
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::config@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+    REQUEST SQL：UPDATE `x`.`x_site` SET `view`='xview',`site_title`='XMP',`keywords`='',`description`='',`setting`='array (
+  \'upload_maxsize\' => \'2000\',
+  \'upload_allowext\' => \'jpg|jpeg|gif|bmp|png|doc|docx|xls|xlsx|ppt|pptx|pdf|txt|rar|zip|swf\',
+  \'watermark_enable\' => \'0\',
+  \'watermark_minwidth\' => \'300\',
+  \'watermark_minheight\' => \'300\',
+  \'watermark_img\' => \'xms.iyn.ccimages/water/iyn.ccimages/water/xms.images/water/mark.gif\',
+  \'watermark_pct\' => \'100\',
+  \'watermark_quality\' => \'80\',
+  \'watermark_pos\' => \'9\',
+)' WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+--- SHUTDOWN TIME --- 1364174593.7415 (0.020236968994141)sec
+--- STARTUP TIME --- 1364174593.7513
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::config@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174593.7712 (0.019914865493774)sec
+--- STARTUP TIME --- 1364174595.6165
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364174595.6315 (0.015002965927124)sec
+--- STARTUP TIME --- 1364174596.3921
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::config@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174596.4091 (0.017045021057129)sec
+--- STARTUP TIME --- 1364174640.025
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364174640.035 (0.010050058364868)sec
+--- STARTUP TIME --- 1364174787.8849
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364174787.9029 (0.017945051193237)sec
+--- STARTUP TIME --- 1364174787.91
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364174805.5887
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364174805.6118 (0.023169994354248)sec
+--- STARTUP TIME --- 1364174806.01
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364174808.9579
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174808.9774 (0.019489049911499)sec
+--- STARTUP TIME --- 1364174809.5203
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364174811.0243
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::config@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174811.0419 (0.017627000808716)sec
+--- STARTUP TIME --- 1364174812.6033
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::config@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174812.6231 (0.019762992858887)sec
+--- STARTUP TIME --- 1364174813.2908
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::config@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174813.3122 (0.021388053894043)sec
+--- STARTUP TIME --- 1364174815.9195
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364174815.9382 (0.018651962280273)sec
+--- STARTUP TIME --- 1364174817.1533
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364174817.1726 (0.019215106964111)sec
+--- STARTUP TIME --- 1364174817.5666
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364174818.2341
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174818.2551 (0.021046161651611)sec
+--- STARTUP TIME --- 1364174818.7874
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364174827.5142
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174827.5312 (0.017010927200317)sec
+--- STARTUP TIME --- 1364174828.3718
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174828.393 (0.021183013916016)sec
+--- STARTUP TIME --- 1364174829.0983
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174829.1193 (0.021056890487671)sec
+--- STARTUP TIME --- 1364174887.6541
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174887.6793 (0.025199890136719)sec
+--- STARTUP TIME --- 1364174888.0633
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364174909.3754
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174909.392 (0.016518115997314)sec
+--- STARTUP TIME --- 1364174910.261
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174910.2798 (0.018783807754517)sec
+--- STARTUP TIME --- 1364174926.3507
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174926.3694 (0.018721103668213)sec
+--- STARTUP TIME --- 1364174926.746
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364174960.6454
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364174960.6631 (0.01772403717041)sec
+--- STARTUP TIME --- 1364174961.1638
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364174963.6004
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：attachment::upload@attachment
+    [X]Class does not exist
+--- STARTUP TIME --- 1364174978.6894
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：attachment::upload@attachment
+    [X]Class does not exist
+--- STARTUP TIME --- 1364175133.8932
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364175133.9155 (0.022234916687012)sec
+--- STARTUP TIME --- 1364175134.2004
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364175246.2097
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364175246.2316 (0.021919012069702)sec
+--- STARTUP TIME --- 1364175247.7527
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364175247.7729 (0.020179986953735)sec
+--- STARTUP TIME --- 1364175251.0849
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364175251.1046 (0.019667148590088)sec
+--- STARTUP TIME --- 1364175252.3777
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364175252.3972 (0.019408941268921)sec
+--- STARTUP TIME --- 1364175252.5979
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364175281.496
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364175281.523 (0.027008056640625)sec
+--- STARTUP TIME --- 1364175282.961
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364175282.9858 (0.024828910827637)sec
+--- STARTUP TIME --- 1364175284.5871
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364175284.6044 (0.017323017120361)sec
+--- STARTUP TIME --- 1364175288.6328
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364175288.6535 (0.020768880844116)sec
+--- STARTUP TIME --- 1364175288.8499
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364175311.9892
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364175312.0053 (0.016053915023804)sec
+--- STARTUP TIME --- 1364175312.2884
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364175332.736
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364175332.7523 (0.016309022903442)sec
+--- STARTUP TIME --- 1364175334.8544
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::config@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364175334.8804 (0.025999069213867)sec
+--- STARTUP TIME --- 1364175336.2423
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::config@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364175336.2637 (0.021417856216431)sec
+--- STARTUP TIME --- 1364175346.0978
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364175346.118 (0.020174026489258)sec
+--- STARTUP TIME --- 1364175349.9514
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364175349.9714 (0.019953012466431)sec
+--- STARTUP TIME --- 1364175350.1765
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364175382.0797
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+    REQUEST SQL：UPDATE `x`.`x_site` SET `name`='XMP',`domain`='xms.iyn.cc',`view`='xview',`site_title`='XMP',`keywords`='',`description`='',`setting`='array (
+  \'upload_maxsize\' => \'2000\',
+  \'upload_allowext\' => \'jpg|jpeg|gif|bmp|png|doc|docx|xls|xlsx|ppt|pptx|pdf|txt|rar|zip|swf\',
+  \'watermark_enable\' => \'0\',
+  \'watermark_minwidth\' => \'300\',
+  \'watermark_minheight\' => \'300\',
+  \'watermark_img\' => \'images/water/mark.gif\',
+  \'watermark_pct\' => \'100\',
+  \'watermark_quality\' => \'80\',
+  \'watermark_pos\' => \'9\',
+)',`route`='array (
+  \'m\' => \'admin\',
+  \'c\' => \'index\',
+  \'a\' => \'init\',
+)' WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+--- SHUTDOWN TIME --- 1364175382.0983 (0.018567800521851)sec
+--- STARTUP TIME --- 1364175382.1107
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364175382.1335 (0.022758960723877)sec
+--- STARTUP TIME --- 1364175388.3358
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364175388.3597 (0.023848056793213)sec
+--- STARTUP TIME --- 1364175388.627
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364175733.8208
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364175733.8461 (0.025365114212036)sec
+--- STARTUP TIME --- 1364175734.124
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364175907.7891
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：config::init@user
+--- SHUTDOWN TIME --- 1364175907.8032 (0.014055967330933)sec
+--- STARTUP TIME --- 1364175909.8255
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：config::init@user
+--- SHUTDOWN TIME --- 1364175909.8395 (0.01401686668396)sec
+--- STARTUP TIME --- 1364175912.0079
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364175912.031 (0.023031949996948)sec
+--- STARTUP TIME --- 1364175913.1767
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364175913.1956 (0.018919944763184)sec
+--- STARTUP TIME --- 1364175913.4269
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364175968.3593
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364175968.3777 (0.018457889556885)sec
+--- STARTUP TIME --- 1364175969.0438
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364175969.0695 (0.025721073150635)sec
+--- STARTUP TIME --- 1364175969.8763
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364175969.8957 (0.01941704750061)sec
+--- STARTUP TIME --- 1364175971.9066
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：module::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_module`
+--- SHUTDOWN TIME --- 1364175971.9282 (0.021566152572632)sec
+--- STARTUP TIME --- 1364175974.7355
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364175974.7562 (0.020742893218994)sec
+--- STARTUP TIME --- 1364175976.949
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364175976.9641 (0.015136003494263)sec
+--- STARTUP TIME --- 1364175992.3322
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364175992.3556 (0.023450136184692)sec
+--- STARTUP TIME --- 1364175992.5633
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364175993.6801
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364175993.7004 (0.020395040512085)sec
+--- STARTUP TIME --- 1364175993.9612
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364175994.5656
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364175994.5884 (0.022766828536987)sec
+--- STARTUP TIME --- 1364175994.8468
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364176042.5214
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：attachment::upload@attachment
+    [X]Class does not exist
+--- STARTUP TIME --- 1364176064.0567
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：attachment::upload@attachment
+    [X]Class does not exist
+--- STARTUP TIME --- 1364176107.0432
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  swf_auth_key | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 13
+--- SHUTDOWN TIME --- 1364176107.0549 (0.011739015579224)sec
+--- STARTUP TIME --- 1364176211.9927
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined variable: app        | D:\ESSamp\wwwroot\NextPHP\module\attachment\class\controller.php | 16
+--- SHUTDOWN TIME --- 1364176212.0021 (0.0093820095062256)sec
+--- STARTUP TIME --- 1364176235.1561
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  swf_auth_key | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 13
+--- SHUTDOWN TIME --- 1364176235.1697 (0.013671875)sec
+--- STARTUP TIME --- 1364181814.1541
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364181814.1752 (0.021106958389282)sec
+--- STARTUP TIME --- 1364181814.8946
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364181814.9161 (0.021502017974854)sec
+--- STARTUP TIME --- 1364181815.1168
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364181861.3254
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  swf_auth_key | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 13
+--- SHUTDOWN TIME --- 1364181861.3363 (0.010939836502075)sec
+--- STARTUP TIME --- 1364181881.889
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364181881.9089 (0.019858121871948)sec
+--- STARTUP TIME --- 1364181882.1692
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364181884.0675
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  UPLOADSESSID | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 13
+--- SHUTDOWN TIME --- 1364181884.0766 (0.0091440677642822)sec
+--- STARTUP TIME --- 1364181925.0226
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364181925.0425 (0.019920110702515)sec
+--- STARTUP TIME --- 1364181925.2988
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364181926.8288
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  swf_auth_key | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 13
+--- SHUTDOWN TIME --- 1364181926.8421 (0.013341903686523)sec
+--- STARTUP TIME --- 1364181950.4344
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364181950.4553 (0.020812034606934)sec
+--- STARTUP TIME --- 1364181950.7226
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364181953.0822
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364181953.0913 (0.0091030597686768)sec
+--- STARTUP TIME --- 1364182191.7108
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364182191.7224 (0.01160192489624)sec
+--- STARTUP TIME --- 1364182311.4581
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：attachment::upload@attachment
+    [UPLOADSESSID]266989bb58ec6312b69c051117410399
+--- SHUTDOWN TIME --- 1364182311.4711 (0.012943029403687)sec
+--- STARTUP TIME --- 1364182337.1071
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364182337.1154 (0.0082778930664062)sec
+--- STARTUP TIME --- 1364182357.985
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：attachment::upload@attachment
+0216bf9efc2e4b7c793f2619319219b2
+--- SHUTDOWN TIME --- 1364182357.9939 (0.0089080333709717)sec
+--- STARTUP TIME --- 1364182822.88
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364182822.9034 (0.023401021957397)sec
+--- STARTUP TIME --- 1364182823.1662
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364182828.4698
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：attachment::upload@attachment
+f3b689db987092784725f4aea2b38ced
+    8 | Undefined index:  swf_auth_key | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 14
+--- SHUTDOWN TIME --- 1364182828.4816 (0.01179313659668)sec
+--- STARTUP TIME --- 1364182868.0745
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364182868.0973 (0.022757053375244)sec
+--- STARTUP TIME --- 1364182868.3707
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364182870.333
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  UPLOADSESSID | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 13
+--- SHUTDOWN TIME --- 1364182870.3431 (0.010071992874146)sec
+--- STARTUP TIME --- 1364182914.1331
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364182914.1512 (0.018106937408447)sec
+--- STARTUP TIME --- 1364182914.4132
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364182916.1964
+    SESSION_ID：ofbfpao6aq9g7leuucpvjvgq32
+    REQUEST MCA：attachment::upload@attachment
+6487a69ae7d3c3066e768c3d549cf592
+    8 | Undefined index:  isadmin      | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 14
+--- SHUTDOWN TIME --- 1364182916.2074 (0.011003971099854)sec
+--- STARTUP TIME --- 1364191941.492
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::logout@admin
+--- SHUTDOWN TIME --- 1364191941.5027 (0.010755062103271)sec
+--- STARTUP TIME --- 1364191941.507
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1364191941.52 (0.013039112091064)sec
+--- STARTUP TIME --- 1364191960.4035
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'test@ivup.cn'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'test@ivup.cn' LIMIT 1
+    REQUEST SQL：UPDATE `x`.`x_user` SET `lastloginip`='127.0.0.1',`lastlogintime`='1364191960' WHERE  `userid` = '26'
+--- SHUTDOWN TIME --- 1364191960.4282 (0.024659872055054)sec
+--- STARTUP TIME --- 1364191960.4515
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE `siteid` in(22)
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'admin'  AND  `c` = 'panel'   AND  `a` = 'init'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'admin'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'user'   AND  `a` = 'editInfo'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'user'   AND  `a` = 'editPwd'   AND  `siteid` = '22'  LIMIT 1
+--- SHUTDOWN TIME --- 1364191960.4825 (0.030979871749878)sec
+--- STARTUP TIME --- 1364191962.5819
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'admin'  AND  `c` = 'system'   AND  `a` = 'config'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'admin'  AND  `c` = 'site'   AND  `a` = 'init'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'admin'  AND  `c` = 'site'   AND  `a` = 'config'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'attachment'  AND  `c` = 'manage'   AND  `a` = 'init'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'admin'  AND  `c` = 'view'   AND  `a` = 'init'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'role'   AND  `a` = 'init'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'group'   AND  `a` = 'init'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'user'   AND  `a` = 'init'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'acl'   AND  `a` = 'setting'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'config'   AND  `a` = 'init'   AND  `siteid` = '22'  LIMIT 1
+--- SHUTDOWN TIME --- 1364191962.6132 (0.031236171722412)sec
+--- STARTUP TIME --- 1364191985.1539
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：view::init@admin
+--- SHUTDOWN TIME --- 1364191985.1659 (0.012037038803101)sec
+--- STARTUP TIME --- 1364191985.9624
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364191985.9797 (0.017256021499634)sec
+--- STARTUP TIME --- 1364191987.9337
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：site::config@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364191987.9547 (0.020988941192627)sec
+--- STARTUP TIME --- 1364192937.7574
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364192937.7737 (0.016217947006226)sec
+--- STARTUP TIME --- 1364198814.9699
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE `siteid` in(22)
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'admin'  AND  `c` = 'panel'   AND  `a` = 'init'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'admin'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'user'   AND  `a` = 'editInfo'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'user'   AND  `a` = 'editPwd'   AND  `siteid` = '22'  LIMIT 1
+--- SHUTDOWN TIME --- 1364198815.0442 (0.074323177337646)sec
+--- STARTUP TIME --- 1364198816.8892
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'admin'  AND  `c` = 'system'   AND  `a` = 'config'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'admin'  AND  `c` = 'site'   AND  `a` = 'init'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'admin'  AND  `c` = 'site'   AND  `a` = 'config'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'attachment'  AND  `c` = 'manage'   AND  `a` = 'init'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'admin'  AND  `c` = 'view'   AND  `a` = 'init'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'role'   AND  `a` = 'init'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'group'   AND  `a` = 'init'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'user'   AND  `a` = 'init'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'acl'   AND  `a` = 'setting'   AND  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'config'   AND  `a` = 'init'   AND  `siteid` = '22'  LIMIT 1
+--- SHUTDOWN TIME --- 1364198816.9264 (0.03722095489502)sec
+--- STARTUP TIME --- 1364198817.7387
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：role::init@user
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role` WHERE  `siteid` = '22' ORDER BY roleid DESC
+    REQUEST SQL：SELECT `siteid`,`roleid`,`rolename` FROM `x`.`x_user_role` WHERE  `disabled` = '0' ORDER BY roleid ASC,siteid ASC
+--- SHUTDOWN TIME --- 1364198817.7856 (0.046875)sec
+--- STARTUP TIME --- 1364198843.5919
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：user::roleuser@user
+    REQUEST SQL：select * from x_user where find_in_set('39',roleid)
+--- SHUTDOWN TIME --- 1364198843.672 (0.080120086669922)sec
+--- STARTUP TIME --- 1364198885.7808
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：group::init@user
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user_group` WHERE  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_group` WHERE  `siteid` = '22'  ORDER BY sort ASC LIMIT 0, 20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '27' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user_group` WHERE  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_group` WHERE  `siteid` = '22'  LIMIT 0, 1000
+--- SHUTDOWN TIME --- 1364198885.8331 (0.052289962768555)sec
+--- STARTUP TIME --- 1364198887.9873
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：user::init@user
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `siteid` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '22'  ORDER BY userid ASC LIMIT 0, 20
+--- SHUTDOWN TIME --- 1364198888.0096 (0.022305965423584)sec
+--- STARTUP TIME --- 1364198888.9399
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '22'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1364198888.9767 (0.036770820617676)sec
+--- STARTUP TIME --- 1364198890.536
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：config::init@user
+--- SHUTDOWN TIME --- 1364198890.5524 (0.016480922698975)sec
+--- STARTUP TIME --- 1364198893.5399
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：role::init@user
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role` WHERE  `siteid` = '22' ORDER BY roleid DESC
+    REQUEST SQL：SELECT `siteid`,`roleid`,`rolename` FROM `x`.`x_user_role` WHERE  `disabled` = '0' ORDER BY roleid ASC,siteid ASC
+--- SHUTDOWN TIME --- 1364198893.5639 (0.023918151855469)sec
+--- STARTUP TIME --- 1364198896.4038
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::logout@admin
+--- SHUTDOWN TIME --- 1364198896.4143 (0.010419130325317)sec
+--- STARTUP TIME --- 1364198896.4179
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1364198896.427 (0.0091888904571533)sec
+--- STARTUP TIME --- 1364198908.8361
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivup@ivup.cn' LIMIT 1
+    REQUEST SQL：INSERT INTO `x`.`x_times`(`email`,`ip`,`isadmin`,`logintime`,`times`) VALUES ('ivup@ivup.cn','127.0.0.1','1','1364198908','1')
+--- SHUTDOWN TIME --- 1364198908.8589 (0.022797107696533)sec
+--- STARTUP TIME --- 1364198914.6219
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivup@ivup.cn' LIMIT 1
+    REQUEST SQL：DELETE FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'
+    REQUEST SQL：UPDATE `x`.`x_user` SET `lastloginip`='127.0.0.1',`lastlogintime`='1364198914' WHERE  `userid` = '1'
+--- SHUTDOWN TIME --- 1364198914.6462 (0.024298191070557)sec
+--- STARTUP TIME --- 1364198914.6629
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364198914.6903 (0.027362108230591)sec
+--- STARTUP TIME --- 1364198916.7353
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364198916.7602 (0.024916172027588)sec
+--- STARTUP TIME --- 1364198922.317
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1364198922.3343 (0.017235040664673)sec
+--- STARTUP TIME --- 1364198924.0292
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364198924.0542 (0.025046825408936)sec
+--- STARTUP TIME --- 1364198929.4838
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364198929.5112 (0.027477025985718)sec
+--- STARTUP TIME --- 1364198929.9251
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364198942.0811
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+1f30dca77a58590285f49c0bd282f782
+    8 | Undefined index:  isadmin      | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 14
+--- SHUTDOWN TIME --- 1364198942.0968 (0.015703916549683)sec
+--- STARTUP TIME --- 1364200023.8594
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- STARTUP TIME --- 1364200048.1925
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- STARTUP TIME --- 1364200092.728
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  groupid      | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 14
+--- SHUTDOWN TIME --- 1364200092.7371 (0.0090739727020264)sec
+--- STARTUP TIME --- 1364200110.1296
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::logout@admin
+--- SHUTDOWN TIME --- 1364200110.1391 (0.0095560550689697)sec
+--- STARTUP TIME --- 1364200110.1436
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1364200110.1534 (0.0097899436950684)sec
+--- STARTUP TIME --- 1364200121.6752
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivup@ivup.cn' LIMIT 1
+    REQUEST SQL：INSERT INTO `x`.`x_times`(`email`,`ip`,`isadmin`,`logintime`,`times`) VALUES ('ivup@ivup.cn','127.0.0.1','1','1364200121','1')
+--- SHUTDOWN TIME --- 1364200121.7144 (0.039211988449097)sec
+--- STARTUP TIME --- 1364200128.7069
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivup@ivup.cn' LIMIT 1
+    REQUEST SQL：DELETE FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'
+    REQUEST SQL：UPDATE `x`.`x_user` SET `lastloginip`='127.0.0.1',`lastlogintime`='1364200128' WHERE  `userid` = '1'
+--- SHUTDOWN TIME --- 1364200128.7275 (0.020678043365479)sec
+--- STARTUP TIME --- 1364200128.7429
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364200128.771 (0.028064012527466)sec
+--- STARTUP TIME --- 1364200130.9243
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364200130.9457 (0.021322011947632)sec
+--- STARTUP TIME --- 1364200131.893
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364200131.9155 (0.022506952285767)sec
+--- STARTUP TIME --- 1364200132.6725
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364200132.691 (0.018535137176514)sec
+--- STARTUP TIME --- 1364200133.0768
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364200140.4196
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  module       | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 15
+--- SHUTDOWN TIME --- 1364200140.4966 (0.077008962631226)sec
+--- STARTUP TIME --- 1364200243.3078
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364200243.3705 (0.062676906585693)sec
+--- STARTUP TIME --- 1364200243.9262
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364200252.5189
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+    [X]Class does not exist
+--- STARTUP TIME --- 1364200281.7863
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+    [X]Class does not exist
+--- STARTUP TIME --- 1364200940.1005
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined variable: catid      | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 17
+--- SHUTDOWN TIME --- 1364200940.1214 (0.020890951156616)sec
+--- STARTUP TIME --- 1364200959.0151
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  userid       | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 16
+--- SHUTDOWN TIME --- 1364200959.0339 (0.018823862075806)sec
+--- STARTUP TIME --- 1364200983.05
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  filetype_post | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 17
+--- SHUTDOWN TIME --- 1364200983.0663 (0.016275882720947)sec
+--- STARTUP TIME --- 1364201048.5634
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  Filedata     | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 17
+--- SHUTDOWN TIME --- 1364201048.5929 (0.029449939727783)sec
+--- STARTUP TIME --- 1364201149.8265
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364201149.8548 (0.028306007385254)sec
+--- STARTUP TIME --- 1364201163.3895
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364201163.4087 (0.019191980361938)sec
+--- STARTUP TIME --- 1364201168.2267
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364201168.2503 (0.023561954498291)sec
+--- STARTUP TIME --- 1364201171.5019
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364201171.5259 (0.024053812026978)sec
+--- STARTUP TIME --- 1364201171.745
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364201389.6034
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  Filedata     | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 17
+--- SHUTDOWN TIME --- 1364201389.6367 (0.033313035964966)sec
+--- STARTUP TIME --- 1364201575.9069
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  FileInput    | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 17
+--- SHUTDOWN TIME --- 1364201575.9239 (0.017025947570801)sec
+--- STARTUP TIME --- 1364201595.9001
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  Filedata     | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 18
+--- SHUTDOWN TIME --- 1364201595.9359 (0.035748958587646)sec
+--- STARTUP TIME --- 1364201651.1317
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  Filedata     | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 18
+--- SHUTDOWN TIME --- 1364201651.1479 (0.016232013702393)sec
+--- STARTUP TIME --- 1364201674.231
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  thumb_width  | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 18
+--- SHUTDOWN TIME --- 1364201674.2441 (0.013134956359863)sec
+--- STARTUP TIME --- 1364201803.7618
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+    8 | Use of undefined constant CHARSET - assumed 'CHARSET' | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 384
+--- SHUTDOWN TIME --- 1364201803.7759 (0.01401686668396)sec
+--- STARTUP TIME --- 1364201994.6225
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+    8 | Use of undefined constant CHARSET - assumed 'CHARSET' | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 384
+--- SHUTDOWN TIME --- 1364201994.6375 (0.015015125274658)sec
+--- STARTUP TIME --- 1364202107.015
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364202107.031 (0.015992879867554)sec
+--- STARTUP TIME --- 1364203311.4148
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- STARTUP TIME --- 1364203330.7236
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- STARTUP TIME --- 1364203436.4596
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364203436.4737 (0.014111995697021)sec
+--- STARTUP TIME --- 1364203441.1597
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364203441.194 (0.034294128417969)sec
+--- STARTUP TIME --- 1364203441.4699
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364203444.1657
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364203444.176 (0.01029109954834)sec
+--- STARTUP TIME --- 1364203480.9611
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364203480.9775 (0.016347169876099)sec
+--- STARTUP TIME --- 1364203515.2598
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  Filedata     | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 31
+--- SHUTDOWN TIME --- 1364203515.2733 (0.013447999954224)sec
+--- STARTUP TIME --- 1364203574.0998
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364203574.1441 (0.044245004653931)sec
+--- STARTUP TIME --- 1364203574.7192
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364203577.1238
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364203577.1367 (0.012820959091187)sec
+--- STARTUP TIME --- 1364203615.152
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364203615.1646 (0.012597799301147)sec
+--- STARTUP TIME --- 1364203642.7433
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364203642.7583 (0.014950037002563)sec
+--- STARTUP TIME --- 1364203654.377
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364203654.3901 (0.013031959533691)sec
+--- STARTUP TIME --- 1364203719.303
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364203719.3244 (0.021360158920288)sec
+--- STARTUP TIME --- 1364203719.5812
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364203723.4818
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364203723.4944 (0.012549877166748)sec
+--- STARTUP TIME --- 1364203735.879
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364203735.9187 (0.039680004119873)sec
+--- STARTUP TIME --- 1364203848.8069
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364203848.8466 (0.039757013320923)sec
+--- STARTUP TIME --- 1364203849.1351
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364203850.9853
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364203851.0007 (0.015403985977173)sec
+--- STARTUP TIME --- 1364206139.1561
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364206139.1796 (0.023480892181396)sec
+--- STARTUP TIME --- 1364206139.4323
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364206143.537
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364206143.5474 (0.010401964187622)sec
+--- STARTUP TIME --- 1364206178.0889
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364206178.1015 (0.012644052505493)sec
+--- STARTUP TIME --- 1364206992.3565
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364206992.3731 (0.016592025756836)sec
+--- STARTUP TIME --- 1364207228.1007
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364207228.1961 (0.095434904098511)sec
+--- STARTUP TIME --- 1364207228.4459
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364207233.072
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364207233.084 (0.012041091918945)sec
+--- STARTUP TIME --- 1364207290.9013
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364207290.9193 (0.018031120300293)sec
+--- STARTUP TIME --- 1364207313.111
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364207313.1299 (0.018853902816772)sec
+--- STARTUP TIME --- 1364207313.3862
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364207317.7381
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364207317.7488 (0.010706901550293)sec
+--- STARTUP TIME --- 1364207399.044
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  Filedata     | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 11
+--- SHUTDOWN TIME --- 1364207399.0542 (0.010241031646729)sec
+--- STARTUP TIME --- 1364207450.6963
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364207450.7158 (0.019508123397827)sec
+--- STARTUP TIME --- 1364207450.9825
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364207453.4752
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  Filedata     | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 11
+--- SHUTDOWN TIME --- 1364207453.4842 (0.0089981555938721)sec
+--- STARTUP TIME --- 1364207486.9034
+    SESSION_ID：ampb25jn2i2phorse5c9lb0881
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364207486.9213 (0.01788592338562)sec
+--- STARTUP TIME --- 1364208547.842
+    SESSION_ID：NONE
+    REQUEST MCA：attachment::upload@attachment
+    ACL：拒绝访问attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364208547.8903 (0.048291921615601)sec
+--- STARTUP TIME --- 1364208551.2903
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    8 | Undefined index:  userid       | D:\ESSamp\wwwroot\NextPHP\module\admin\controller\index.php | 6
+--- SHUTDOWN TIME --- 1364208551.2994 (0.009127140045166)sec
+--- STARTUP TIME --- 1364208551.3033
+    SESSION_ID：NONE
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1364208551.3145 (0.011200904846191)sec
+--- STARTUP TIME --- 1364208567.7382
+    SESSION_ID：NONE
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1364208567.7568 (0.018661975860596)sec
+--- STARTUP TIME --- 1364208580.7838
+    SESSION_ID：NONE
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1364208580.7967 (0.012861013412476)sec
+--- STARTUP TIME --- 1364208589.0013
+    SESSION_ID：NONE
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1364208589.0198 (0.01848292350769)sec
+--- STARTUP TIME --- 1364208597.2237
+    SESSION_ID：NONE
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivup@ivup.cn' LIMIT 1
+    REQUEST SQL：INSERT INTO `x`.`x_times`(`email`,`ip`,`isadmin`,`logintime`,`times`) VALUES ('ivup@ivup.cn','127.0.0.1','1','1364208597','1')
+--- SHUTDOWN TIME --- 1364208597.2401 (0.01639199256897)sec
+--- STARTUP TIME --- 1364208615.5569
+    SESSION_ID：NONE
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivup@ivup.cn' LIMIT 1
+    REQUEST SQL：UPDATE `x`.`x_times` SET `ip`='127.0.0.1',`isadmin`='1',`times`=`times`+1 WHERE  `email` = 'ivup@ivup.cn'
+--- SHUTDOWN TIME --- 1364208615.6083 (0.051385164260864)sec
+--- STARTUP TIME --- 1364208621.829
+    SESSION_ID：NONE
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivup@ivup.cn' LIMIT 1
+    REQUEST SQL：DELETE FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'
+    REQUEST SQL：UPDATE `x`.`x_user` SET `lastloginip`='127.0.0.1',`lastlogintime`='1364208621' WHERE  `userid` = '1'
+--- SHUTDOWN TIME --- 1364208621.8465 (0.017429113388062)sec
+--- STARTUP TIME --- 1364208621.862
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364208621.8866 (0.024544954299927)sec
+--- STARTUP TIME --- 1364208623.338
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364208623.357 (0.018975019454956)sec
+--- STARTUP TIME --- 1364208624.5238
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364208624.5471 (0.023319959640503)sec
+--- STARTUP TIME --- 1364208624.9261
+    SESSION_ID：NONE
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1364208624.9688 (0.042715072631836)sec
+--- STARTUP TIME --- 1364208626.4791
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364208626.4996 (0.020524024963379)sec
+--- STARTUP TIME --- 1364208627.1355
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364208627.1565 (0.020936012268066)sec
+--- STARTUP TIME --- 1364208852.2197
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364208852.245 (0.02534008026123)sec
+--- STARTUP TIME --- 1364208853.4575
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364208853.4806 (0.023131132125854)sec
+--- STARTUP TIME --- 1364208854.3771
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364208854.4004 (0.023258924484253)sec
+--- STARTUP TIME --- 1364208855.0896
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364208855.1098 (0.020225048065186)sec
+--- STARTUP TIME --- 1364208855.5089
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364208859.2263
+    SESSION_ID：NONE
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364208859.2395 (0.013153791427612)sec
+--- STARTUP TIME --- 1364208908.1708
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364208908.1956 (0.024813890457153)sec
+--- STARTUP TIME --- 1364208908.7241
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364208995.6639
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364208995.694 (0.030126094818115)sec
+--- STARTUP TIME --- 1364209005.2232
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209005.2512 (0.027924060821533)sec
+--- STARTUP TIME --- 1364209006.359
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364209006.4091 (0.050060033798218)sec
+--- STARTUP TIME --- 1364209007.2806
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364209007.3097 (0.029110908508301)sec
+--- STARTUP TIME --- 1364209007.7569
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364209192.9502
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364209192.973 (0.022727012634277)sec
+--- STARTUP TIME --- 1364209193.4586
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364209194.4782
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209194.5029 (0.024615049362183)sec
+--- STARTUP TIME --- 1364209195.9652
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209195.9862 (0.020959854125977)sec
+--- STARTUP TIME --- 1364209197.3371
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364209197.3555 (0.01839804649353)sec
+--- STARTUP TIME --- 1364209198.0646
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364209198.0833 (0.018733024597168)sec
+--- STARTUP TIME --- 1364209198.4659
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364209201.2157
+    SESSION_ID：NONE
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined property: attachment::$siteid | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 24
+--- SHUTDOWN TIME --- 1364209201.2269 (0.011204957962036)sec
+--- STARTUP TIME --- 1364209312.3564
+    SESSION_ID：NONE
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined property: attachment::$siteid | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 24
+--- SHUTDOWN TIME --- 1364209312.377 (0.020603895187378)sec
+--- STARTUP TIME --- 1364209329.1375
+    SESSION_ID：NONE
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined property: attachment::$siteid | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 24
+--- SHUTDOWN TIME --- 1364209329.1564 (0.018970012664795)sec
+--- STARTUP TIME --- 1364209378.266
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209378.2885 (0.022433996200562)sec
+--- STARTUP TIME --- 1364209379.3257
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209379.3476 (0.02187705039978)sec
+--- STARTUP TIME --- 1364209380.3584
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364209380.3777 (0.019294023513794)sec
+--- STARTUP TIME --- 1364209381.0429
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364209381.0634 (0.020508050918579)sec
+--- STARTUP TIME --- 1364209381.4481
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364209404.8937
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209404.9143 (0.020671129226685)sec
+--- STARTUP TIME --- 1364209406.1345
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209406.2179 (0.083413124084473)sec
+--- STARTUP TIME --- 1364209408.0698
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364209408.0902 (0.02040696144104)sec
+--- STARTUP TIME --- 1364209409.0424
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364209409.0794 (0.037024974822998)sec
+--- STARTUP TIME --- 1364209409.4877
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364209409.5398
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364209409.5626 (0.022848844528198)sec
+--- STARTUP TIME --- 1364209410.0771
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364209496.9759
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209497.0002 (0.024326086044312)sec
+--- STARTUP TIME --- 1364209497.9275
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209497.9518 (0.024328947067261)sec
+--- STARTUP TIME --- 1364209499.3724
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364209499.3919 (0.019438028335571)sec
+--- STARTUP TIME --- 1364209500.15
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364209500.1703 (0.020384073257446)sec
+--- STARTUP TIME --- 1364209500.5062
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364209508.2383
+    SESSION_ID：NONE
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined property: attachment::$siteid | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 24
+--- SHUTDOWN TIME --- 1364209508.2525 (0.014171123504639)sec
+--- STARTUP TIME --- 1364209586.8934
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209586.921 (0.027557134628296)sec
+--- STARTUP TIME --- 1364209588.3964
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209588.4162 (0.019800186157227)sec
+--- STARTUP TIME --- 1364209589.4111
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364209589.429 (0.017876863479614)sec
+--- STARTUP TIME --- 1364209590.0165
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364209590.0357 (0.019187927246094)sec
+--- STARTUP TIME --- 1364209590.4138
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364209607.9924
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209608.0146 (0.022155046463013)sec
+--- STARTUP TIME --- 1364209609.0581
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209609.0852 (0.027033090591431)sec
+--- STARTUP TIME --- 1364209610.0588
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364209610.0822 (0.023429870605469)sec
+--- STARTUP TIME --- 1364209610.6402
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364209610.6655 (0.02534818649292)sec
+--- STARTUP TIME --- 1364209611.0745
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364209639.6254
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209639.648 (0.02261209487915)sec
+--- STARTUP TIME --- 1364209641.4366
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209641.4584 (0.021785974502563)sec
+--- STARTUP TIME --- 1364209642.3442
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364209642.3672 (0.023025989532471)sec
+--- STARTUP TIME --- 1364209643.3128
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364209643.3365 (0.02366304397583)sec
+--- STARTUP TIME --- 1364209643.6891
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364209701.8926
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209701.9169 (0.024250984191895)sec
+--- STARTUP TIME --- 1364209702.9764
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209702.999 (0.022629022598267)sec
+--- STARTUP TIME --- 1364209703.7539
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364209703.7736 (0.019742965698242)sec
+--- STARTUP TIME --- 1364209705.0237
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364209705.042 (0.01826000213623)sec
+--- STARTUP TIME --- 1364209705.419
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364209724.2525
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209724.2713 (0.018829107284546)sec
+--- STARTUP TIME --- 1364209725.7264
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209725.747 (0.020563840866089)sec
+--- STARTUP TIME --- 1364209727.0893
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364209727.1095 (0.020195007324219)sec
+--- STARTUP TIME --- 1364209727.8789
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364209727.8953 (0.016396999359131)sec
+--- STARTUP TIME --- 1364209728.2691
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364209765.0995
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209765.1169 (0.017334222793579)sec
+--- STARTUP TIME --- 1364209766.5305
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209766.5527 (0.022192001342773)sec
+--- STARTUP TIME --- 1364209767.5321
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364209767.5489 (0.016772985458374)sec
+--- STARTUP TIME --- 1364209768.2746
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364209768.2931 (0.01849102973938)sec
+--- STARTUP TIME --- 1364209768.6929
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364209801.8175
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209801.8345 (0.016998052597046)sec
+--- STARTUP TIME --- 1364209900.8521
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209900.8715 (0.01938796043396)sec
+--- STARTUP TIME --- 1364209901.8207
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364209901.8423 (0.021581888198853)sec
+--- STARTUP TIME --- 1364209902.6843
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364209902.7073 (0.022989988327026)sec
+--- STARTUP TIME --- 1364209903.0896
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364209927.7459
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209927.7724 (0.026449918746948)sec
+--- STARTUP TIME --- 1364209928.9097
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209928.9317 (0.022009134292603)sec
+--- STARTUP TIME --- 1364209930.2556
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364209930.2766 (0.021034002304077)sec
+--- STARTUP TIME --- 1364209931.6565
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364209931.6768 (0.020247936248779)sec
+--- STARTUP TIME --- 1364209932.0738
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364209974.0976
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209974.1238 (0.026153087615967)sec
+--- STARTUP TIME --- 1364209975.2454
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209975.2669 (0.021493911743164)sec
+--- STARTUP TIME --- 1364209977.5279
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364209977.5476 (0.019683122634888)sec
+--- STARTUP TIME --- 1364209978.1913
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364209978.212 (0.020682096481323)sec
+--- STARTUP TIME --- 1364209978.5986
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364209991.5802
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209991.6004 (0.020195007324219)sec
+--- STARTUP TIME --- 1364209993.1033
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364209993.1228 (0.019580125808716)sec
+--- STARTUP TIME --- 1364209993.7837
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364209993.8033 (0.019667863845825)sec
+--- STARTUP TIME --- 1364209994.6082
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364209994.6263 (0.018126010894775)sec
+--- STARTUP TIME --- 1364209995.0115
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364210004.9981
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364210005.0158 (0.017725944519043)sec
+--- STARTUP TIME --- 1364210006.6272
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364210006.6517 (0.024538993835449)sec
+--- STARTUP TIME --- 1364210007.2736
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364210007.2946 (0.021022081375122)sec
+--- STARTUP TIME --- 1364210008.1672
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364210008.1906 (0.023364067077637)sec
+--- STARTUP TIME --- 1364210008.5635
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364210029.4713
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364210029.4931 (0.021793842315674)sec
+--- STARTUP TIME --- 1364210030.7912
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364210030.8108 (0.019637823104858)sec
+--- STARTUP TIME --- 1364210031.7248
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364210031.7431 (0.018285989761353)sec
+--- STARTUP TIME --- 1364210033.8352
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364210033.8548 (0.019570112228394)sec
+--- STARTUP TIME --- 1364210034.2265
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364210099.974
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364210100.0016 (0.027550935745239)sec
+--- STARTUP TIME --- 1364210101.4901
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364210101.5134 (0.02331280708313)sec
+--- STARTUP TIME --- 1364210102.2816
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364210102.3013 (0.019679069519043)sec
+--- STARTUP TIME --- 1364210103.2822
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364210103.3019 (0.019638061523438)sec
+--- STARTUP TIME --- 1364210103.6755
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364210139.7694
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364210139.792 (0.022605180740356)sec
+--- STARTUP TIME --- 1364210140.9342
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364210140.9542 (0.019966125488281)sec
+--- STARTUP TIME --- 1364210141.8728
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364210141.8907 (0.017904043197632)sec
+--- STARTUP TIME --- 1364210142.6823
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364210142.7033 (0.020992994308472)sec
+--- STARTUP TIME --- 1364210143.0456
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364210145.0699
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364210145.091 (0.021043062210083)sec
+--- STARTUP TIME --- 1364210145.5653
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364210325.2914
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364210325.323 (0.03162407875061)sec
+--- STARTUP TIME --- 1364210326.7373
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364210326.7657 (0.028373956680298)sec
+--- STARTUP TIME --- 1364210328.0722
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364210328.0942 (0.021996974945068)sec
+--- STARTUP TIME --- 1364210328.7526
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364210328.7781 (0.025412797927856)sec
+--- STARTUP TIME --- 1364210329.1469
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364210362.6051
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364210362.626 (0.020916938781738)sec
+--- STARTUP TIME --- 1364210364.024
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364210364.0438 (0.019813060760498)sec
+--- STARTUP TIME --- 1364210365.55
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364210365.5677 (0.017658948898315)sec
+--- STARTUP TIME --- 1364210366.1794
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364210366.1982 (0.018770933151245)sec
+--- STARTUP TIME --- 1364210366.5527
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364210407.1786
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364210407.1977 (0.019119024276733)sec
+--- STARTUP TIME --- 1364210408.7867
+    SESSION_ID：NONE
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364210408.8075 (0.020771026611328)sec
+--- STARTUP TIME --- 1364210409.6412
+    SESSION_ID：NONE
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1364210409.6764 (0.035131931304932)sec
+--- STARTUP TIME --- 1364210410.833
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364210410.8525 (0.019474983215332)sec
+--- STARTUP TIME --- 1364210411.5195
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364210411.5406 (0.021124124526978)sec
+--- STARTUP TIME --- 1364210411.8997
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364210425.4227
+    SESSION_ID：NONE
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364210425.4448 (0.022051095962524)sec
+--- STARTUP TIME --- 1364210427.2629
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364210427.2816 (0.018651008605957)sec
+--- STARTUP TIME --- 1364210427.6402
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364210430.7572
+    SESSION_ID：NONE
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined property: attachment::$siteid | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 24
+--- SHUTDOWN TIME --- 1364210430.768 (0.010766983032227)sec
+--- STARTUP TIME --- 1364210460.7101
+    SESSION_ID：NONE
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined property: attachment::$siteid | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 24
+--- SHUTDOWN TIME --- 1364210460.7216 (0.011529922485352)sec
+--- STARTUP TIME --- 1364210490.0866
+    SESSION_ID：NONE
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364210490.1078 (0.021269083023071)sec
+--- STARTUP TIME --- 1364210490.6099
+    SESSION_ID：NONE
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364210492.4361
+    SESSION_ID：NONE
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined property: attachment::$siteid | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 24
+--- SHUTDOWN TIME --- 1364210492.4473 (0.011204957962036)sec
+--- STARTUP TIME --- 1364210548.3962
+    SESSION_ID：NONE
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined property: attachment::$siteid | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 25
+--- SHUTDOWN TIME --- 1364210548.4107 (0.014555931091309)sec
+--- STARTUP TIME --- 1364210718.695
+    SESSION_ID：NONE
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined variable: fn         | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 43
+--- SHUTDOWN TIME --- 1364210718.7101 (0.01501989364624)sec
+--- STARTUP TIME --- 1364213937.7619
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：index::logout@admin
+--- SHUTDOWN TIME --- 1364213938.0709 (0.30898690223694)sec
+--- STARTUP TIME --- 1364213938.0751
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1364213938.127 (0.051861047744751)sec
+--- STARTUP TIME --- 1364213951.0108
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivup@ivup.cn' LIMIT 1
+    REQUEST SQL：INSERT INTO `x`.`x_times`(`email`,`ip`,`isadmin`,`logintime`,`times`) VALUES ('ivup@ivup.cn','127.0.0.1','1','1364213951','1')
+--- SHUTDOWN TIME --- 1364213951.2975 (0.28672504425049)sec
+--- STARTUP TIME --- 1364213959.1273
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivup@ivup.cn' LIMIT 1
+    REQUEST SQL：DELETE FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'
+    REQUEST SQL：UPDATE `x`.`x_user` SET `lastloginip`='127.0.0.1',`lastlogintime`='1364213959' WHERE  `userid` = '1'
+--- SHUTDOWN TIME --- 1364213959.1625 (0.035197973251343)sec
+--- STARTUP TIME --- 1364213959.1763
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364213959.6947 (0.51841497421265)sec
+--- STARTUP TIME --- 1364213962.5216
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364213962.5667 (0.045140981674194)sec
+--- STARTUP TIME --- 1364213965.0283
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364213965.1936 (0.16531300544739)sec
+--- STARTUP TIME --- 1364213966.6453
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364213966.695 (0.049663782119751)sec
+--- STARTUP TIME --- 1364213966.9746
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364213976.569
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined variable: fn         | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 43
+--- SHUTDOWN TIME --- 1364213976.9522 (0.38318800926208)sec
+--- STARTUP TIME --- 1364214099.4447
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364214099.4669 (0.022246122360229)sec
+--- STARTUP TIME --- 1364214099.7199
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364214134.5923
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364214134.6185 (0.026272058486938)sec
+--- STARTUP TIME --- 1364214136.2384
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364214136.2614 (0.023062944412231)sec
+--- STARTUP TIME --- 1364214137.4342
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364214137.4542 (0.02006983757019)sec
+--- STARTUP TIME --- 1364214138.674
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364214138.6934 (0.019419193267822)sec
+--- STARTUP TIME --- 1364214138.8892
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364214143.15
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：attachment::upload@attachment
+--- STARTUP TIME --- 1364214174.5522
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：attachment::upload@attachment
+--- STARTUP TIME --- 1364214350.7627
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined variable: uploadrootpath | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 18
+--- SHUTDOWN TIME --- 1364214350.7812 (0.018474102020264)sec
+--- STARTUP TIME --- 1364214580.6794
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined variable: uploadrootpath | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 18
+--- SHUTDOWN TIME --- 1364214580.6946 (0.015132904052734)sec
+--- STARTUP TIME --- 1364214827.0252
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：attachment::upload@attachment
+--- STARTUP TIME --- 1364214873.5235
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：attachment::upload@attachment
+--- STARTUP TIME --- 1364214943.0353
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined property: attachment::$maxsize | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 71
+--- SHUTDOWN TIME --- 1364214943.0485 (0.013216018676758)sec
+--- STARTUP TIME --- 1364215422.7501
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined property: attachment::$maxsize | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 69
+--- SHUTDOWN TIME --- 1364215422.7668 (0.016740798950195)sec
+--- STARTUP TIME --- 1364215911.6905
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364215911.7048 (0.014303922653198)sec
+--- STARTUP TIME --- 1364215925.2376
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+    REQUEST SQL：UPDATE `x`.`x_site` SET `name`='测试',`dirname`='test',`domain`='www.test.cn',`view`='xview',`site_title`='测试',`keywords`='',`description`='',`setting`='array (
+  \'upload_maxsize\' => \'10240\',
+  \'upload_allowext\' => \'jpg|jpeg|gif|bmp|png|doc|docx|xls|xlsx|ppt|pptx|pdf|txt|rar|zip|swf\',
+  \'watermark_enable\' => \'0\',
+  \'watermark_minwidth\' => \'300\',
+  \'watermark_minheight\' => \'300\',
+  \'watermark_img\' => \'images/water/mark.gif\',
+  \'watermark_pct\' => \'100\',
+  \'watermark_quality\' => \'100\',
+  \'watermark_pos\' => \'9\',
+)',`route`='array (
+  \'m\' => \'index\',
+  \'c\' => \'index\',
+  \'a\' => \'init\',
+)' WHERE  `siteid` = '22'
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+--- SHUTDOWN TIME --- 1364215925.2607 (0.023097991943359)sec
+--- STARTUP TIME --- 1364215925.2736
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1364215925.2922 (0.018585920333862)sec
+--- STARTUP TIME --- 1364215929.4124
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364215929.4288 (0.016427993774414)sec
+--- STARTUP TIME --- 1364215929.6576
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364215935.7276
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+    REQUEST SQL：UPDATE `x`.`x_site` SET `name`='XMP',`domain`='xms.iyn.cc',`view`='xview',`site_title`='XMP',`keywords`='',`description`='',`setting`='array (
+  \'upload_maxsize\' => \'10240\',
+  \'upload_allowext\' => \'jpg|jpeg|gif|bmp|png|doc|docx|xls|xlsx|ppt|pptx|pdf|txt|rar|zip|swf\',
+  \'watermark_enable\' => \'0\',
+  \'watermark_minwidth\' => \'300\',
+  \'watermark_minheight\' => \'300\',
+  \'watermark_img\' => \'images/water/mark.gif\',
+  \'watermark_pct\' => \'100\',
+  \'watermark_quality\' => \'80\',
+  \'watermark_pos\' => \'9\',
+)',`route`='array (
+  \'m\' => \'admin\',
+  \'c\' => \'index\',
+  \'a\' => \'init\',
+)' WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+--- SHUTDOWN TIME --- 1364215935.7454 (0.017743110656738)sec
+--- STARTUP TIME --- 1364215935.7567
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364215935.7776 (0.020982980728149)sec
+--- STARTUP TIME --- 1364215940.4748
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：attachment::upload@attachment
+--- SHUTDOWN TIME --- 1364215940.4865 (0.01171088218689)sec
+--- STARTUP TIME --- 1364216002.0833
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364216002.1006 (0.017277002334595)sec
+--- STARTUP TIME --- 1364216002.3385
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364216004.4599
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined property: attachment::$overwrite | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 81
+--- SHUTDOWN TIME --- 1364216004.4742 (0.014300107955933)sec
+--- STARTUP TIME --- 1364216361.7293
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：attachment::upload@attachment
+    8 | Use of undefined constant CHARSET - assumed 'CHARSET' | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 87
+--- SHUTDOWN TIME --- 1364216361.7561 (0.02684211730957)sec
+--- STARTUP TIME --- 1364216477.5823
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  fn           | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 87
+--- SHUTDOWN TIME --- 1364216477.686 (0.10373687744141)sec
+--- STARTUP TIME --- 1364216505.0788
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：attachment::upload@attachment
+    [D:\ESSamp\wwwroot\NextPHP\module\attachment\model\attachment.php]ClassFile does not exist
+--- STARTUP TIME --- 1364216612.3179
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined variable: aid        | D:\ESSamp\wwwroot\NextPHP\framework\class\attachment.php | 183
+--- SHUTDOWN TIME --- 1364216612.3451 (0.027138948440552)sec
+--- STARTUP TIME --- 1364216673.1709
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  isimage      | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 23
+--- SHUTDOWN TIME --- 1364216673.2849 (0.11399388313293)sec
+--- STARTUP TIME --- 1364220162.0207
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364220162.0404 (0.019651889801025)sec
+--- STARTUP TIME --- 1364220163.1315
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1364220163.1505 (0.019001007080078)sec
+--- STARTUP TIME --- 1364221805.5848
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1364221805.6098 (0.024984121322632)sec
+--- STARTUP TIME --- 1364221806.6275
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1364221806.6518 (0.024275779724121)sec
+--- STARTUP TIME --- 1364221808.0455
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364221808.0712 (0.025686025619507)sec
+--- STARTUP TIME --- 1364221808.3947
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：index::init@index
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\index\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364221811.9171
+    SESSION_ID：mp9u19hm75vgl50qrd751vn1a0
+    REQUEST MCA：attachment::upload@attachment
+    8 | Undefined index:  isimage      | D:\ESSamp\wwwroot\NextPHP\module\attachment\controller\attachment.php | 23
+--- SHUTDOWN TIME --- 1364221811.939 (0.02184796333313)sec

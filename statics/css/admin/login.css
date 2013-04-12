@@ -1,0 +1,127 @@
+* {
+ margin:0;
+ padding:0;
+}
+
+body {
+ background:#161616 url('../../images/admin/login_bg.png') 0 0 repeat-x;
+ font-family: Arial, Tahoma, sans-serif;
+
+}
+
+#container_box {
+ width:960px;
+ clear:both;
+ float:none;
+ margin:0 auto;
+ padding-top:250px;
+}
+
+#container_box h1 {
+ text-align:center;
+ color:#fff;
+ font-size:32px;
+}
+
+#container_box #box {
+ clear:both;
+ float:none;
+ width:680px;
+ margin:80px auto;
+ position:relative;
+}
+
+.main label {
+ padding:5px;
+ display:inline;
+ margin-left:10px;
+ font-size:13px;
+ color:#fff;
+}
+
+#box div {
+ clear:both;
+ float:none;
+}
+
+.main INPUT {
+ padding:5px;
+ background:#444;
+ color:#aaa;
+ border:1px solid #111;
+ width:110px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+margin-right: 10px;
+}
+
+
+input.code{
+width: 46px;
+margin-right: 16px;
+text-align: left;
+padding: 2px 0 2px 0px;
+font-size: 16px;
+font-weight: bold;
+}
+
+button.login {
+ float:right;
+ width:76px;
+ height:24px;
+ background:url('../../images/admin/login_sbt.png') 0 0 repeat-x;
+ color:#fff;
+ border:1px solid #7dbc00;
+ padding:0;
+
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+ display:inline;
+ margin-right:6px;
+}
+
+span {
+ font-size:13px;
+ color:#aaa;
+}
+
+.space {
+ padding-top:15px;
+}
+
+span input {
+ margin-left:125px;
+ margin-right:5px;
+ border:1px solid #111;
+ background:#444;
+ color:#fff;
+}
+.yzm{
+    position:absolute; 
+    background:url('../../images/admin/login_code_bg.gif') no-repeat; 
+    width:140px; 
+    height:89px;
+    left:463px;
+    top:-96px; 
+    text-align:center; 
+    font-size:12px; 
+    display:none;
+}
+.yzm img {
+cursor: pointer;
+margin: 4px auto;
+width: 130px;
+height: 50px;
+border: 1px solid white;
+}
+.yzm a:link,.yzm a:visited{
+    color:#036;
+    text-decoration:none;
+}
+.yzm a:hover{
+    color:#C30;
+}
+#splitBar {
+width: 0px;
+overflow: hidden;
+}

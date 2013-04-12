@@ -1,0 +1,67 @@
+--- STARTUP TIME --- 1363770345.564
+    REQUEST MCA：index::init@admin
+    8 | Undefined index:  userid       | D:\ESSamp\wwwroot\NextPHP\module\admin\controller\index.php | 6
+--- SHUTDOWN TIME --- 1363770345.5814 (0.017377853393555)sec
+--- STARTUP TIME --- 1363770345.585
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1363770345.6578 (0.072763919830322)sec
+--- STARTUP TIME --- 1363770449.3244
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivup@ivup.cn' LIMIT 1
+    REQUEST SQL：UPDATE `x`.`x_user` SET `lastloginip`='127.0.0.1',`lastlogintime`='1363770449' WHERE  `userid` = '1'
+--- SHUTDOWN TIME --- 1363770449.5731 (0.24871802330017)sec
+--- STARTUP TIME --- 1363770449.6396
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE `siteid` in(1)
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363770449.9977 (0.35805487632751)sec
+--- STARTUP TIME --- 1363770450.5602
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE `siteid` in(1)
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363770450.5881 (0.02793288230896)sec
+--- STARTUP TIME --- 1363770463.0205
+    REQUEST MCA：index::publicmenuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363770463.0856 (0.065107822418213)sec
+--- STARTUP TIME --- 1363770484.8588
+    REQUEST MCA：group::init@user
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user_group` WHERE  `siteid` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_group` WHERE  `siteid` = '1'  ORDER BY sort ASC LIMIT 0, 20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '1' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '2' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '3' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '4' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '5' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '6' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '19' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user_group` WHERE  `siteid` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_group` WHERE  `siteid` = '1'  LIMIT 0, 1000
+--- SHUTDOWN TIME --- 1363770485.051 (0.19220495223999)sec
+--- STARTUP TIME --- 1363770486.763
+    REQUEST MCA：user::init@user
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `siteid` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '1'  ORDER BY userid ASC LIMIT 0, 20
+--- SHUTDOWN TIME --- 1363770486.818 (0.055000066757202)sec
+--- STARTUP TIME --- 1363770487.5075
+    REQUEST MCA：group::init@user
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user_group` WHERE  `siteid` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_group` WHERE  `siteid` = '1'  ORDER BY sort ASC LIMIT 0, 20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '1' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '2' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '3' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '4' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '5' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '6' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '19' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user_group` WHERE  `siteid` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_group` WHERE  `siteid` = '1'  LIMIT 0, 1000
+--- SHUTDOWN TIME --- 1363770487.535 (0.027511119842529)sec

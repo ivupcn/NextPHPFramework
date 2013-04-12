@@ -1,0 +1,274 @@
+body {
+background-color: #ebebeb;
+color: #747474;
+line-height: 18px;
+font-family: helvetica,arial,sans-serif;
+font-size: 13px;
+font-style: normal;
+font-variant: normal;
+font-weight: normal;
+text-align: left;
+text-decoration: none;
+text-indent: 0;
+text-justify: auto;
+text-outline: none;
+text-overflow: clip;
+text-shadow: none;
+text-transform: none;
+text-wrap: normal;
+color: #3b3b3b;
+}
+#headWrap {
+direction: ltr;
+color: #ffffff;
+font: normal 13px/55px sans-serif;
+height: 55px;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+min-width: 600px;
+z-index: 99999;
+}
+#headWrap .bar {
+background-color: #f0f3f4;
+background-image: -moz-linear-gradient(top, #f5f7f8, #cccccc);
+background-image: -ms-linear-gradient(top, #f5f7f8, #cccccc);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f7f8), to(#cccccc));
+background-image: -webkit-linear-gradient(top, #f5f7f8, #cccccc);
+background-image: -o-linear-gradient(top, #f5f7f8, #cccccc);
+background-image: linear-gradient(top, #f5f7f8, #cccccc);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f7f8', endColorstr='#ffcccccc', GradientType=0);
+height: 30px;
+width: 100%;
+-webkit-box-shadow: 0px 1px 2px 0px #000;
+-moz-box-shadow: 0px 1px 2px 0px #000;
+box-shadow: 0px 1px 2px 0px #000;
+}
+#headWrap .bar .quicklinks {
+margin: 0px auto;
+width: 978px;
+}
+#headWrap .bar .quicklinks ul.leftInside {
+float: left;
+text-align: left;
+}
+#headWrap .bar .quicklinks ul.leftInside li {
+float: left;
+}
+#headWrap .bar .quicklinks a, #headWrap .bar .quicklinks .ab-empty-item {
+height: 30px;
+line-height: 30px;
+display: block;
+padding: 0 12px;
+margin: 0;
+color: #666
+}
+#headWrap .bar .quicklinks ul > li > a, #headWrap .bar .quicklinks ul > li#headSearch .ab-item {
+}
+#headWrap .bar .quicklinks ul li a.ab-item:hover {
+background-color: #f0f3f4;
+background-image: -moz-linear-gradient(top, #f5f7f8, #c3c3c3);
+background-image: -ms-linear-gradient(top, #f5f7f8, #c3c3c3);
+background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f5f7f8), to(#c3c3c3));
+background-image: -webkit-linear-gradient(top, #f5f7f8, #c3c3c3);
+background-image: -o-linear-gradient(top, #f5f7f8, #c3c3c3);
+background-image: linear-gradient(top, #f5f7f8, #c3c3c3);
+background-repeat: repeat-x;
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f7f8', endColorstr='#ffcccccc', GradientType=0);
+}
+#headWrap .bar .quicklinks ul.leftInside .menupop .logo .icon {
+width: 20px;
+height: 20px;
+margin-top: 4px;
+background-image: url(../../images/user/admin-bar-sprite.png);
+background-position: 0 -76px;
+background-repeat: no-repeat;
+position: relative;
+float: left;
+}
+#headWrap .bar .quicklinks ul.rightInside {
+float: right;
+text-align: right;
+}
+#headWrap .bar .quicklinks ul.rightInside li {
+float: left;
+}
+#headWrap .bar .quicklinks ul.rightInside .menupop .logo .icon {
+width: 20px;
+height: 20px;
+margin-top: 4px;
+background-image: url(../../images/user/admin-bar-sprite.png);
+background-position: 0 -76px;
+background-repeat: no-repeat;
+position: relative;
+float: left;
+}
+#wrapper {
+border: solid;
+border: none;
+clear: both;
+width: 978px;
+margin: 0 auto;
+position: relative;
+margin-top: 30px;
+overflow: hidden;
+}
+.cover_pic {
+height: 300px;
+position: relative;
+background-position: center bottom;
+background-repeat: no-repeat;
+}
+.cover_enter a {
+background: url("../../images/user/send_weibo.png") no-repeat -277px 0px;
+display: block;
+width: 23px;
+height: 24px;
+position: absolute;
+right: 0px;
+top: 0px;
+}
+.cover_enter a:hover {
+background: url("../../images/user/send_weibo.png") no-repeat -277px -24px;	
+}
+.profile_info {
+background-color: #fafafa;
+}
+.profile_top {
+position: relative;
+padding-bottom: 15px;
+background-color: #ffffff;
+}
+.clearfix {
+display: block;
+}
+.clearfix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+.profile_top .pf_info {
+margin-left: 225px;
+line-height: 22px;
+padding-top: 10px;
+position: relative;
+}
+.profile_top .pf_info_left {
+float: left;
+width: 550px;
+padding-right: 30px;
+}
+.profile_top .pf_name {
+margin-bottom: 8px;
+}
+.profile_top .pf_name .name {
+font: normal 20px/30px "Microsoft Yahei";
+margin-right: 3px;
+}
+.profile_top .pf_intro {
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+_width: 500px;
+height: 20px;
+font-size: 12px;
+line-height: 20px;
+margin-bottom: 8px;
+color:#0a8cd2;
+}
+.pf_head {
+background-color: #fafafa;
+border-color: #d9d9d9;
+position: absolute;
+top: -108px;
+left: 20px;
+box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+.profile_top .pf_head_pic {
+padding: 2px;
+width: 180px;
+height: 180px;
+position: relative;
+}
+.profile_top .pf_head_pic img {
+display: block;
+}
+.profile_tabbig {
+width: 980px;
+border-bottom-width: 1px;
+border-bottom-style: solid;
+border-color: #ffffff;
+font: normal 16px/40px "Microsoft Yahei";
+background: url("../../images/user/profile_tab.png") no-repeat top center;
+_background-image: none;
+font: normal 16px/40px "Microsoft Yahei";
+}
+.profile_tabbig .pftb_ul {
+border-bottom-width: 1px;
+border-bottom-style: solid;
+height: 49px;
+_overflow: hidden;
+border-color: #d9d9d9;
+}
+.profile_tabbig .pftb_itm {
+float: left;
+border-width: 1px;
+border-style: solid;
+border-left-width: 0;
+height: 48px;
+border-color: #d9d9d9;
+}
+.profile_tabbig .pftb_lk {
+border-color: #ffffff;
+background-color: #fafafa;
+display: block;
+width: auto;
+height: 38px;
+padding: 8px 17px 0 17px;
+border-width: 1px;
+border-style: solid;
+color: #333333;
+text-decoration: none;
+font: normal 16px/27px "Microsoft Yahei";
+}
+.profile_tabbig .current {
+position: relative;
+}
+.profile_tabbig .current.pftb_lk {
+border-bottom-width: 0;
+padding: 8px 17px 3px 18px;
+}
+.profile_tabbig .pftb_lk .icobg {
+display: inline-block;
+width: 30px;
+height: 35px;
+background: url("../../images/user/profile_tabbg.png") no-repeat 0 0;
+text-align: center;
+vertical-align: -7px;
+margin-right: 10px;
+}
+.profile_tabbig .current .icobg {
+background-position: -50px 0;
+}
+.profile_tabbig .pftb_lk .ico_pm {
+display: inline-block;
+width: 22px;
+height: 22px;
+background-image: url("../../images/user/profile_tabicon.png");
+_background-image: url("../../images/user/profile_tabicon.gif");
+background-repeat: no-repeat;
+margin-top: 5px;
+}
+.ico_pmhome {
+background-position: 0 0;
+}
+.ico_pmaccount {
+background-position: 0 -25px;
+}
+.profile_tabbig .pftb_itm.last {
+border-right-width: 1px;
+}

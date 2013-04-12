@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>测试</title>
+<link href="statics/css/reset.css" type="text/css" rel="stylesheet"/>
+<link href="statics/css/test/main.css" type="text/css" rel="stylesheet"/>
+<script src="statics/js/jquery-1.7.2.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+var test={
+	data:null,
+	intervalID:null,
+	init:function(n){
+		$.getJSON('index.php?m=test&c=test&a=init&n='+n,function(data){test.data = data;});
+		test.showInterval(0);
+	},
+	showInterval:function(i){
+		test.intervalID = setInterval(function(){
+			$('#title').html(i+test.data[i].title);
+			$('#content').html(test.data[i].intro);
+			$('#content').html('<img src="siteroot/zjw/uploadfile/2013/0408/'+i+'.jpg?i='+Math.random()+'" id="img" width="1000" / >');
+			$('#img').each(function(){
+		        var tmpImg = new Image();
+		        tmpImg.src = $(this).attr('src');
+		        tmpImg.onload = test.imageLoaded();
+		    });
+			if(i >= test.data.length-1){
+				i = 0;
+			}
+			i++;
+		},3000);
+	},
+	imageLoaded:function(){
+		$('#content').animate({top: '+500px'}, "slow").animate({top: '0px'}, "slow");;
+	},
+	reloaddata:function(n){
+		setInterval(function(){
+			clearInterval(test.intervalID);
+			n++;
+			test.init(n);
+		},15000);
+	}
+}
+$(function(){
+	test.init(0);
+	test.reloaddata(0);
+});
+</script>
+</head>
+<body>
+<div id="msgBox">
+	<div id="title"></div>
+	<div id="content"></div>
+	<div id="pic"></div>
+</div>
+</body>
+</html>

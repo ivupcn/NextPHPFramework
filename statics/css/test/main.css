@@ -1,0 +1,10 @@
+body{overflow: hidden;}
+#msgBox{
+	width:1000px;
+	margin: 0 auto;
+	border: 1px solid #cfcfcf;
+}
+#content {
+	position: absolute;
+	top: 0px;
+}

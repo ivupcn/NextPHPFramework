@@ -1,0 +1,2170 @@
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'admin'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'flow'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'content'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'user'   AND  `a` = 'editInfo'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'user'   AND  `a` = 'editPwd'   AND  `siteid` = '21'  LIMIT 1
+--- SHUTDOWN TIME --- 1365147598.5667 (0.083930969238281)sec
+--- STARTUP TIME --- 1365147599.8627
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '113'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'setting'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'init'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '114'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'tasktype'   AND  `a` = 'init'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '120'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'mycreate'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'my'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'group'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'all'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'assess'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'publish'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'checklist'   AND  `siteid` = '21'  LIMIT 1
+--- SHUTDOWN TIME --- 1365147599.925 (0.062319040298462)sec
+--- STARTUP TIME --- 1365147600.9734
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::my@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `assignedto` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `assignedto` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365147601.0305 (0.057083129882812)sec
+--- STARTUP TIME --- 1365147602.0521
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::complete@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `id` = '343' LIMIT 1
+--- SHUTDOWN TIME --- 1365147602.0856 (0.033504009246826)sec
+--- STARTUP TIME --- 1365147630.344
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365147630.4277 (0.083734035491943)sec
+--- STARTUP TIME --- 1365147634.891
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::my@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `assignedto` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `assignedto` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365147634.956 (0.064966917037964)sec
+--- STARTUP TIME --- 1365147635.4984
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365147635.5874 (0.088991165161133)sec
+--- STARTUP TIME --- 1365147636.2499
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::my@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `assignedto` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `assignedto` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365147636.3131 (0.063223123550415)sec
+--- STARTUP TIME --- 1365147639.1909
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365147639.2764 (0.085561037063599)sec
+--- STARTUP TIME --- 1365147639.9224
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::my@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `assignedto` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `assignedto` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365147639.9895 (0.067098140716553)sec
+--- STARTUP TIME --- 1365147641.3383
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::group@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `groupid` = '30'
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365147641.5047 (0.16642189025879)sec
+--- STARTUP TIME --- 1365147642.4871
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::assess@oa
+--- SHUTDOWN TIME --- 1365147642.5213 (0.034237861633301)sec
+--- STARTUP TIME --- 1365147643.839
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::publish@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '21'
+--- SHUTDOWN TIME --- 1365147643.8892 (0.05019998550415)sec
+--- STARTUP TIME --- 1365147645.2909
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::checklist@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `status` = '4'  LIMIT 1
+--- SHUTDOWN TIME --- 1365147645.3242 (0.033289909362793)sec
+--- STARTUP TIME --- 1365147646.3066
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::assess@oa
+--- SHUTDOWN TIME --- 1365147646.3397 (0.033121824264526)sec
+--- STARTUP TIME --- 1365147647.6905
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::publish@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '21'
+--- SHUTDOWN TIME --- 1365147647.7399 (0.049342155456543)sec
+--- STARTUP TIME --- 1365147649.0384
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::my@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `assignedto` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `assignedto` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365147649.0945 (0.056044101715088)sec
+--- STARTUP TIME --- 1365147650.5504
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365147650.6391 (0.088615894317627)sec
+--- STARTUP TIME --- 1365147658.4277
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::intro@oa
+    REQUEST SQL：SELECT `intro` FROM `x`.`x_task` WHERE  `id` = '302' LIMIT 1
+--- SHUTDOWN TIME --- 1365147658.4588 (0.031058073043823)sec
+--- STARTUP TIME --- 1365147745.828
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365147745.925 (0.097065925598145)sec
+--- STARTUP TIME --- 1365147774.407
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365147774.5019 (0.09485387802124)sec
+--- STARTUP TIME --- 1365147799.2055
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365147799.3019 (0.096366882324219)sec
+--- STARTUP TIME --- 1365147835.3026
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365147835.3866 (0.083981990814209)sec
+--- STARTUP TIME --- 1365148015.848
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::logout@admin
+--- SHUTDOWN TIME --- 1365148015.872 (0.024029016494751)sec
+--- STARTUP TIME --- 1365148015.878
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1365148015.8983 (0.02032995223999)sec
+--- STARTUP TIME --- 1365148024.2076
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivup@ivup.cn' LIMIT 1
+    REQUEST SQL：UPDATE `x`.`x_user` SET `lastloginip`='127.0.0.1',`lastlogintime`='1365148024' WHERE  `userid` = '1'
+--- SHUTDOWN TIME --- 1365148024.2508 (0.043228149414062)sec
+--- STARTUP TIME --- 1365148024.2736
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site`
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1365148024.3211 (0.047533988952637)sec
+--- STARTUP TIME --- 1365148025.9517
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '113'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '114'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '120'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1365148026.0282 (0.076462030410767)sec
+--- STARTUP TIME --- 1365148027.6629
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '103'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1365148027.7048 (0.041973114013672)sec
+--- STARTUP TIME --- 1365148028.7426
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：workflow::init@extend
+    REQUEST SQL：SELECT * FROM `x`.`x_workflow` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_workflow` WHERE  `siteid` = '1' LIMIT 1000
+--- SHUTDOWN TIME --- 1365148028.814 (0.071378946304321)sec
+--- STARTUP TIME --- 1365148031.4644
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：workflow::edit@extend
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_workflow` WHERE  `workflowid` = '1' LIMIT 1
+    8 | Undefined offset:  1           | D:\ESSamp\wwwroot\NextPHP\module\extend\controller\workflow.php | 78
+--- SHUTDOWN TIME --- 1365148031.5014 (0.037045001983643)sec
+--- STARTUP TIME --- 1365148035.9474
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+--- STARTUP TIME --- 1365148035.9514
+    REQUEST MCA：index::main@admin
+--- SHUTDOWN TIME --- 1365148035.9689 (0.021528959274292)sec
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::main@admin
+--- SHUTDOWN TIME --- 1365148035.9826 (0.031175851821899)sec
+--- STARTUP TIME --- 1365148035.9974
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::setsiteid@admin
+--- SHUTDOWN TIME --- 1365148036.0149 (0.017445802688599)sec
+--- STARTUP TIME --- 1365148036.0264
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '103'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1365148036.071 (0.044548034667969)sec
+--- STARTUP TIME --- 1365148037.5034
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：workflow::init@extend
+    REQUEST SQL：SELECT * FROM `x`.`x_workflow` WHERE  `siteid` = '21'
+    REQUEST SQL：SELECT * FROM `x`.`x_workflow` WHERE  `siteid` = '21' LIMIT 1000
+--- SHUTDOWN TIME --- 1365148037.5463 (0.042932033538818)sec
+--- STARTUP TIME --- 1365148038.9043
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：workflow::edit@extend
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '21'
+    REQUEST SQL：SELECT * FROM `x`.`x_workflow` WHERE  `workflowid` = '6' LIMIT 1
+--- SHUTDOWN TIME --- 1365148038.9495 (0.045132160186768)sec
+--- STARTUP TIME --- 1365148154.5755
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '113'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '114'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '120'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1365148154.6122 (0.036773204803467)sec
+--- STARTUP TIME --- 1365148155.8153
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '1'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    8 | Undefined variable: workflow   | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\system\oa\task\mycreate.php | 55
+--- SHUTDOWN TIME --- 1365148155.8722 (0.056887865066528)sec
+--- STARTUP TIME --- 1365148204.8049
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '1'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    8 | Undefined variable: workflow   | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\system\oa\task\mycreate.php | 55
+--- SHUTDOWN TIME --- 1365148204.8587 (0.053773880004883)sec
+--- STARTUP TIME --- 1365148224.5321
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '1'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148224.5824 (0.050266027450562)sec
+--- STARTUP TIME --- 1365148372.6649
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '1'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148372.7189 (0.054025888442993)sec
+--- STARTUP TIME --- 1365148380.369
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::logout@admin
+--- SHUTDOWN TIME --- 1365148380.3925 (0.023484945297241)sec
+--- STARTUP TIME --- 1365148380.398
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1365148380.4174 (0.019382953643799)sec
+--- STARTUP TIME --- 1365148388.9547
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1365148388.9762 (0.021512985229492)sec
+--- STARTUP TIME --- 1365148396.7919
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivupcn@gmail.com'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivupcn@gmail.com' LIMIT 1
+    REQUEST SQL：UPDATE `x`.`x_user` SET `lastloginip`='127.0.0.1',`lastlogintime`='1365148396' WHERE  `userid` = '22'
+--- SHUTDOWN TIME --- 1365148396.8307 (0.03874683380127)sec
+--- STARTUP TIME --- 1365148396.847
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE `siteid` in(21)
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'admin'  AND  `c` = 'panel'   AND  `a` = 'init'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'admin'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'flow'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'content'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'user'   AND  `a` = 'editInfo'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'user'   AND  `a` = 'editPwd'   AND  `siteid` = '21'  LIMIT 1
+--- SHUTDOWN TIME --- 1365148396.9176 (0.070636987686157)sec
+--- STARTUP TIME --- 1365148398.404
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '113'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'setting'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'init'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '114'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'tasktype'   AND  `a` = 'init'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '120'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'mycreate'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'my'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'group'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'all'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'assess'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'publish'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'checklist'   AND  `siteid` = '21'  LIMIT 1
+--- SHUTDOWN TIME --- 1365148398.4749 (0.070930957794189)sec
+--- STARTUP TIME --- 1365148399.895
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365148399.9941 (0.099111795425415)sec
+--- STARTUP TIME --- 1365148449.6862
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365148449.7758 (0.089575052261353)sec
+--- STARTUP TIME --- 1365148473.8013
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::my@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `assignedto` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `assignedto` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148473.8729 (0.071599006652832)sec
+--- STARTUP TIME --- 1365148475.3443
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365148475.4336 (0.089276075363159)sec
+--- STARTUP TIME --- 1365148476.8883
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::checklist@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `status` = '4'  LIMIT 1
+--- SHUTDOWN TIME --- 1365148476.9307 (0.042388200759888)sec
+--- STARTUP TIME --- 1365148477.869
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365148477.9585 (0.089517116546631)sec
+--- STARTUP TIME --- 1365148557.4601
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365148557.5456 (0.085543870925903)sec
+--- STARTUP TIME --- 1365148558.899
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::my@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `assignedto` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `assignedto` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148558.9627 (0.063737154006958)sec
+--- STARTUP TIME --- 1365148561.5108
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::complete@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `id` = '343' LIMIT 1
+--- SHUTDOWN TIME --- 1365148561.5472 (0.036496877670288)sec
+--- STARTUP TIME --- 1365148562.9557
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::complete@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `id` = '343' LIMIT 1
+    REQUEST SQL：UPDATE `x`.`x_task` SET `progress`='array (
+  0 => 
+  array (
+    \'title\' => \'\',
+    \'url\' => \'\',
+    \'description\' => \'\',
+  ),
+)',`selfrated`='2',`report`=' ',`reportatt`='',`status`='3' WHERE  `id` = '343'
+--- SHUTDOWN TIME --- 1365148562.9913 (0.035549163818359)sec
+--- STARTUP TIME --- 1365148563.0057
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::my@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `assignedto` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `assignedto` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148563.0592 (0.053431034088135)sec
+--- STARTUP TIME --- 1365148577.4484
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::my@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `assignedto` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `assignedto` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148577.5133 (0.064888954162598)sec
+--- STARTUP TIME --- 1365148579.2586
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::complete@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `id` = '343' LIMIT 1
+--- SHUTDOWN TIME --- 1365148579.2901 (0.031469106674194)sec
+--- STARTUP TIME --- 1365148581.2489
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::complete@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `id` = '343' LIMIT 1
+    REQUEST SQL：UPDATE `x`.`x_task` SET `progress`='array (
+  0 => 
+  array (
+    \'title\' => \'\',
+    \'url\' => \'\',
+    \'description\' => \'\',
+  ),
+)',`selfrated`='2',`report`=' ',`reportatt`='',`status`='4' WHERE  `id` = '343'
+--- SHUTDOWN TIME --- 1365148581.2865 (0.037543058395386)sec
+--- STARTUP TIME --- 1365148581.3009
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::my@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `assignedto` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `assignedto` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148581.3671 (0.06615686416626)sec
+--- STARTUP TIME --- 1365148585.3867
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365148585.4803 (0.093600034713745)sec
+--- STARTUP TIME --- 1365148594.2616
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::checklist@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `status` = '4'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `status` = '4'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148594.3038 (0.042251110076904)sec
+--- STARTUP TIME --- 1365148596.8363
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::check@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `id` = '343' LIMIT 1
+--- SHUTDOWN TIME --- 1365148596.8708 (0.034541845321655)sec
+--- STARTUP TIME --- 1365148624.894
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::checklist@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `status` = '4'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `status` = '4'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148624.9376 (0.043576002120972)sec
+--- STARTUP TIME --- 1365148674.0518
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::checklist@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `status` = '4'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `status` = '4'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148674.102 (0.050234079360962)sec
+--- STARTUP TIME --- 1365148674.7482
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::check@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `id` = '343' LIMIT 1
+--- SHUTDOWN TIME --- 1365148674.7926 (0.04436182975769)sec
+--- STARTUP TIME --- 1365148696.3216
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::my@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `assignedto` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `assignedto` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148696.383 (0.061386108398438)sec
+--- STARTUP TIME --- 1365148697.1692
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::complete@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `id` = '407' LIMIT 1
+--- SHUTDOWN TIME --- 1365148697.2039 (0.034706115722656)sec
+--- STARTUP TIME --- 1365148707.455
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::progress@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `id` = '407' LIMIT 1
+--- SHUTDOWN TIME --- 1365148707.4942 (0.039141893386841)sec
+--- STARTUP TIME --- 1365148711.3987
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::complete@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `id` = '407' LIMIT 1
+--- SHUTDOWN TIME --- 1365148711.4347 (0.036017179489136)sec
+--- STARTUP TIME --- 1365148723.2566
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::checklist@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `status` = '4'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `status` = '4'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148723.2989 (0.042295932769775)sec
+--- STARTUP TIME --- 1365148723.894
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::my@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `assignedto` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `assignedto` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148723.9549 (0.060912132263184)sec
+--- STARTUP TIME --- 1365148727.4294
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365148727.5131 (0.083704948425293)sec
+--- STARTUP TIME --- 1365148728.7733
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::logout@admin
+--- SHUTDOWN TIME --- 1365148728.7943 (0.021058797836304)sec
+--- STARTUP TIME --- 1365148728.8003
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1365148728.8191 (0.018867015838623)sec
+--- STARTUP TIME --- 1365148741.1135
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivupcn@gmail.com'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivupcn@gmail.com' LIMIT 1
+    REQUEST SQL：UPDATE `x`.`x_user` SET `lastloginip`='127.0.0.1',`lastlogintime`='1365148741' WHERE  `userid` = '22'
+--- SHUTDOWN TIME --- 1365148741.1497 (0.036251068115234)sec
+--- STARTUP TIME --- 1365148741.1895
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE `siteid` in(21)
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'admin'  AND  `c` = 'panel'   AND  `a` = 'init'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'admin'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'flow'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'content'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'user'   AND  `a` = 'editInfo'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'user'   AND  `a` = 'editPwd'   AND  `siteid` = '21'  LIMIT 1
+--- SHUTDOWN TIME --- 1365148741.2624 (0.072867155075073)sec
+--- STARTUP TIME --- 1365148742.7256
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '113'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'setting'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'init'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '114'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'tasktype'   AND  `a` = 'init'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '120'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'mycreate'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'my'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'group'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'all'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'assess'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'publish'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'checklist'   AND  `siteid` = '21'  LIMIT 1
+--- SHUTDOWN TIME --- 1365148742.8047 (0.079121828079224)sec
+--- STARTUP TIME --- 1365148743.6232
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365148743.7158 (0.092599153518677)sec
+--- STARTUP TIME --- 1365148759.85
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365148759.9385 (0.088482141494751)sec
+--- STARTUP TIME --- 1365148762.3617
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::edit@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `id` = '343' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '21'
+--- SHUTDOWN TIME --- 1365148762.4202 (0.058569192886353)sec
+--- STARTUP TIME --- 1365148769.7446
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365148769.8327 (0.088156938552856)sec
+--- STARTUP TIME --- 1365148778.4544
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::checklist@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `status` = '4'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `status` = '4'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148778.5025 (0.048114061355591)sec
+--- STARTUP TIME --- 1365148779.3019
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::assess@oa
+--- SHUTDOWN TIME --- 1365148779.3343 (0.032350063323975)sec
+--- STARTUP TIME --- 1365148779.7853
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::group@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `groupid` = '30'
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148779.9478 (0.16252779960632)sec
+--- STARTUP TIME --- 1365148780.4577
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365148780.5489 (0.091145038604736)sec
+--- STARTUP TIME --- 1365148780.841
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::my@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `assignedto` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `assignedto` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148780.9156 (0.074578046798706)sec
+--- STARTUP TIME --- 1365148781.2733
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::group@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `groupid` = '30'
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148781.4396 (0.1663019657135)sec
+--- STARTUP TIME --- 1365148781.6895
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::all@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `siteid` = '21'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '24' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '24' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '26' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '29' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148781.8527 (0.16320204734802)sec
+--- STARTUP TIME --- 1365148782.1538
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::assess@oa
+--- SHUTDOWN TIME --- 1365148782.1842 (0.030332088470459)sec
+--- STARTUP TIME --- 1365148782.7492
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::publish@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '21'
+--- SHUTDOWN TIME --- 1365148782.796 (0.046788930892944)sec
+--- STARTUP TIME --- 1365148783.1815
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::checklist@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `status` = '4'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `status` = '4'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148783.2209 (0.039350032806396)sec
+--- STARTUP TIME --- 1365148784.2532
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::publish@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '21'
+--- SHUTDOWN TIME --- 1365148784.3007 (0.047461986541748)sec
+--- STARTUP TIME --- 1365148786.4257
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365148786.5139 (0.088230133056641)sec
+--- STARTUP TIME --- 1365148787.0501
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：tasktype::init@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_tag` WHERE  `siteid` = '21'  AND  `module` = 'oa'   AND  `type` = 'task_category'  ORDER BY listorder ASC,id DESC
+    REQUEST SQL：SELECT * FROM `x`.`x_tag` WHERE  `siteid` = '21'  AND  `module` = 'oa'  ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT `id`,`siteid` FROM `x`.`x_tag` WHERE  `module` = 'oa' ORDER BY listorder ASC LIMIT 20000
+    REQUEST SQL：SELECT * FROM `x`.`x_tag` WHERE  `siteid` = '21'  AND  `module` = 'oa'  ORDER BY listorder ASC LIMIT 10000
+--- SHUTDOWN TIME --- 1365148787.2264 (0.17628908157349)sec
+--- STARTUP TIME --- 1365148788.1068
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365148788.2036 (0.096772909164429)sec
+--- STARTUP TIME --- 1365148799.8206
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::my@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `assignedto` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `assignedto` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148799.8837 (0.063087940216064)sec
+--- STARTUP TIME --- 1365148801.2216
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::group@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `groupid` = '30'
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148801.3832 (0.16167879104614)sec
+--- STARTUP TIME --- 1365148802.0051
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::all@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `siteid` = '21'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '24' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '24' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '26' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '29' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148802.1708 (0.16571021080017)sec
+--- STARTUP TIME --- 1365148802.5374
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::assess@oa
+--- SHUTDOWN TIME --- 1365148802.5764 (0.039000034332275)sec
+--- STARTUP TIME --- 1365148803.313
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::publish@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '21'
+--- SHUTDOWN TIME --- 1365148803.3547 (0.041789054870605)sec
+--- STARTUP TIME --- 1365148804.866
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365148804.9427 (0.076679944992065)sec
+--- STARTUP TIME --- 1365148807.8019
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::my@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `assignedto` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `assignedto` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148807.8664 (0.064475774765015)sec
+--- STARTUP TIME --- 1365148809.389
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::group@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `groupid` = '30'
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148809.5609 (0.17188096046448)sec
+--- STARTUP TIME --- 1365148810.2055
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::my@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `assignedto` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `assignedto` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148810.2678 (0.062275886535645)sec
+--- STARTUP TIME --- 1365148811.9977
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365148812.0848 (0.087049007415771)sec
+--- STARTUP TIME --- 1365148812.8493
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::group@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `groupid` = '30'
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148813.0547 (0.20536398887634)sec
+--- STARTUP TIME --- 1365148813.7219
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::all@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `siteid` = '21'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '24' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '24' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '26' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '29' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148813.8898 (0.16786694526672)sec
+--- STARTUP TIME --- 1365148814.3143
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::assess@oa
+--- SHUTDOWN TIME --- 1365148814.3595 (0.045228004455566)sec
+--- STARTUP TIME --- 1365148818.1458
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::checklist@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `status` = '4'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `status` = '4'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148818.1963 (0.050462961196899)sec
+--- STARTUP TIME --- 1365148837.945
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::group@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `groupid` = '30'
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148838.0986 (0.15358400344849)sec
+--- STARTUP TIME --- 1365148844.4013
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::checklist@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `status` = '4'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `status` = '4'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148844.4516 (0.050249099731445)sec
+--- STARTUP TIME --- 1365148850.4244
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365148850.5072 (0.082863092422485)sec
+--- STARTUP TIME --- 1365148851.1568
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::checklist@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `status` = '4'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `status` = '4'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148851.2047 (0.047860145568848)sec
+--- STARTUP TIME --- 1365148853.7926
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365148853.8842 (0.091604948043823)sec
+--- STARTUP TIME --- 1365148854.7362
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::checklist@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `status` = '4'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `status` = '4'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148854.7815 (0.045315980911255)sec
+--- STARTUP TIME --- 1365148862.6975
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：tasktype::init@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_tag` WHERE  `siteid` = '21'  AND  `module` = 'oa'   AND  `type` = 'task_category'  ORDER BY listorder ASC,id DESC
+    REQUEST SQL：SELECT * FROM `x`.`x_tag` WHERE  `siteid` = '21'  AND  `module` = 'oa'  ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT `id`,`siteid` FROM `x`.`x_tag` WHERE  `module` = 'oa' ORDER BY listorder ASC LIMIT 20000
+    REQUEST SQL：SELECT * FROM `x`.`x_tag` WHERE  `siteid` = '21'  AND  `module` = 'oa'  ORDER BY listorder ASC LIMIT 10000
+--- SHUTDOWN TIME --- 1365148862.8788 (0.18126106262207)sec
+--- STARTUP TIME --- 1365148863.6342
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::checklist@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `status` = '4'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `status` = '4'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148863.6812 (0.047038793563843)sec
+--- STARTUP TIME --- 1365148864.9651
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：tasktype::init@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_tag` WHERE  `siteid` = '21'  AND  `module` = 'oa'   AND  `type` = 'task_category'  ORDER BY listorder ASC,id DESC
+    REQUEST SQL：SELECT * FROM `x`.`x_tag` WHERE  `siteid` = '21'  AND  `module` = 'oa'  ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT `id`,`siteid` FROM `x`.`x_tag` WHERE  `module` = 'oa' ORDER BY listorder ASC LIMIT 20000
+    REQUEST SQL：SELECT * FROM `x`.`x_tag` WHERE  `siteid` = '21'  AND  `module` = 'oa'  ORDER BY listorder ASC LIMIT 10000
+--- SHUTDOWN TIME --- 1365148865.1302 (0.16515684127808)sec
+--- STARTUP TIME --- 1365148875.9384
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::checklist@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `status` = '4'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `status` = '4'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148875.9794 (0.041074991226196)sec
+--- STARTUP TIME --- 1365148885.6739
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::publish@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '21'
+--- SHUTDOWN TIME --- 1365148885.7142 (0.040301084518433)sec
+--- STARTUP TIME --- 1365148886.7886
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::checklist@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `status` = '4'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `status` = '4'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148886.8306 (0.042038917541504)sec
+--- STARTUP TIME --- 1365148887.7653
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::publish@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '21'
+--- SHUTDOWN TIME --- 1365148887.815 (0.049730062484741)sec
+--- STARTUP TIME --- 1365148888.4207
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::assess@oa
+--- SHUTDOWN TIME --- 1365148888.4437 (0.023010015487671)sec
+--- STARTUP TIME --- 1365148889.0241
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::all@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `siteid` = '21'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '24' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '24' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '26' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '29' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148889.2031 (0.17901086807251)sec
+--- STARTUP TIME --- 1365148889.5044
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::group@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `groupid` = '30'
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148889.6664 (0.16199684143066)sec
+--- STARTUP TIME --- 1365148890.2089
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::my@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `assignedto` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `assignedto` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148890.2768 (0.067895889282227)sec
+--- STARTUP TIME --- 1365148890.9214
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365148891.0122 (0.090839862823486)sec
+--- STARTUP TIME --- 1365148905.0128
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::group@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `groupid` = '30'
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365148905.218 (0.2052309513092)sec
+--- STARTUP TIME --- 1365148908.8053
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365148908.8898 (0.084497928619385)sec
+--- STARTUP TIME --- 1365151704.8263
+    SESSION_ID：ssuoa4nksolek8cbsfjf08crp0
+    REQUEST MCA：index::init@user
+--- SHUTDOWN TIME --- 1365151704.8604 (0.034078121185303)sec
+--- STARTUP TIME --- 1365154667.1392
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：tasktype::init@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_tag` WHERE  `siteid` = '21'  AND  `module` = 'oa'   AND  `type` = 'task_category'  ORDER BY listorder ASC,id DESC
+    REQUEST SQL：SELECT * FROM `x`.`x_tag` WHERE  `siteid` = '21'  AND  `module` = 'oa'  ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT `id`,`siteid` FROM `x`.`x_tag` WHERE  `module` = 'oa' ORDER BY listorder ASC LIMIT 20000
+    REQUEST SQL：SELECT * FROM `x`.`x_tag` WHERE  `siteid` = '21'  AND  `module` = 'oa'  ORDER BY listorder ASC LIMIT 10000
+--- SHUTDOWN TIME --- 1365154667.3211 (0.18195509910583)sec
+--- STARTUP TIME --- 1365154667.9437
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::all@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `siteid` = '21'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '24' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '24' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '26' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '29' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365154668.1339 (0.19023299217224)sec
+--- STARTUP TIME --- 1365154668.8313
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::assess@oa
+--- SHUTDOWN TIME --- 1365154668.8607 (0.029369831085205)sec
+--- STARTUP TIME --- 1365154669.5998
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::publish@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '21'
+--- SHUTDOWN TIME --- 1365154669.6715 (0.071701049804688)sec
+--- STARTUP TIME --- 1365154670.5905
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::checklist@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `status` = '4'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `status` = '4'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365154670.6313 (0.040817022323608)sec
+--- STARTUP TIME --- 1365154671.8583
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'user'   AND  `a` = 'editInfo'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'user'   AND  `a` = 'editPwd'   AND  `siteid` = '21'  LIMIT 1
+--- SHUTDOWN TIME --- 1365154671.9059 (0.047605037689209)sec
+--- STARTUP TIME --- 1365154672.7059
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '113'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'setting'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'init'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '114'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'tasktype'   AND  `a` = 'init'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '120'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'mycreate'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'my'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'group'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'all'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'assess'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'publish'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'checklist'   AND  `siteid` = '21'  LIMIT 1
+--- SHUTDOWN TIME --- 1365154672.7952 (0.089317798614502)sec
+--- STARTUP TIME --- 1365154675.6228
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：tasktype::init@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_tag` WHERE  `siteid` = '21'  AND  `module` = 'oa'   AND  `type` = 'task_category'  ORDER BY listorder ASC,id DESC
+    REQUEST SQL：SELECT * FROM `x`.`x_tag` WHERE  `siteid` = '21'  AND  `module` = 'oa'  ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT `id`,`siteid` FROM `x`.`x_tag` WHERE  `module` = 'oa' ORDER BY listorder ASC LIMIT 20000
+    REQUEST SQL：SELECT * FROM `x`.`x_tag` WHERE  `siteid` = '21'  AND  `module` = 'oa'  ORDER BY listorder ASC LIMIT 10000
+--- SHUTDOWN TIME --- 1365154675.7722 (0.14938688278198)sec
+--- STARTUP TIME --- 1365154676.3833
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::mycreate@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `sponsor` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `sponsor` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1365154676.4715 (0.088207006454468)sec
+--- STARTUP TIME --- 1365154677.0758
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::my@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `assignedto` = '22'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `assignedto` = '22'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365154677.1623 (0.086547136306763)sec
+--- STARTUP TIME --- 1365154677.8593
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::group@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `groupid` = '30'
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto in (44,22,30,36,37,41) ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '44' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365154678.0853 (0.22598385810852)sec
+--- STARTUP TIME --- 1365154678.5878
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::all@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `siteid` = '21'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '24' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '24' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '26' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '41' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '43' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '29' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '36' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365154678.7567 (0.16892719268799)sec
+--- STARTUP TIME --- 1365154679.2833
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::assess@oa
+--- SHUTDOWN TIME --- 1365154679.3353 (0.052027940750122)sec
+--- STARTUP TIME --- 1365154679.8957
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::publish@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '21'
+--- SHUTDOWN TIME --- 1365154679.9476 (0.051908016204834)sec
+--- STARTUP TIME --- 1365154680.5191
+    SESSION_ID：tcat58f20m4uhdnb0o6f244j57
+    REQUEST MCA：task::checklist@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `status` = '4'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `status` = '4'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365154680.5597 (0.040639162063599)sec
+--- STARTUP TIME --- 1365173988.5191
+    SESSION_ID：9iksr46vj014i382gd5if3sth1
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1365173989.2198 (0.70063996315002)sec
+--- STARTUP TIME --- 1365174009.9593
+    SESSION_ID：9iksr46vj014i382gd5if3sth1
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivupcn@gmail.com'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivupcn@gmail.com' LIMIT 1
+    REQUEST SQL：UPDATE `x`.`x_user` SET `lastloginip`='127.0.0.1',`lastlogintime`='1365174009' WHERE  `userid` = '22'
+--- SHUTDOWN TIME --- 1365174010.137 (0.17768096923828)sec
+--- STARTUP TIME --- 1365174010.1694
+    SESSION_ID：9iksr46vj014i382gd5if3sth1
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE `siteid` in(21)
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'admin'  AND  `c` = 'panel'   AND  `a` = 'init'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'admin'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'flow'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'content'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'c'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'user'   AND  `a` = 'editInfo'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'user'  AND  `c` = 'user'   AND  `a` = 'editPwd'   AND  `siteid` = '21'  LIMIT 1
+--- SHUTDOWN TIME --- 1365174010.7994 (0.63002300262451)sec
+--- STARTUP TIME --- 1365174015.2478
+    SESSION_ID：9iksr46vj014i382gd5if3sth1
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '113'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'setting'   AND  `a` = 'a'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'init'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '114'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'tasktype'   AND  `a` = 'init'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '120'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'mycreate'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'my'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'group'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'all'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'assess'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'publish'   AND  `siteid` = '21'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `m` = 'oa'  AND  `c` = 'task'   AND  `a` = 'checklist'   AND  `siteid` = '21'  LIMIT 1
+--- SHUTDOWN TIME --- 1365174015.3175 (0.069669961929321)sec
+--- STARTUP TIME --- 1365174017.3942
+    SESSION_ID：9iksr46vj014i382gd5if3sth1
+    REQUEST MCA：task::checklist@oa
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE  `status` = '4'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE  `status` = '4'  ORDER BY id DESC LIMIT 0, 20
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '22' LIMIT 1
+--- SHUTDOWN TIME --- 1365174017.5709 (0.17665219306946)sec
+--- STARTUP TIME --- 1365174018.6121
+    SESSION_ID：9iksr46vj014i382gd5if3sth1
+    REQUEST MCA：task::publish@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '21'
+--- SHUTDOWN TIME --- 1365174018.6942 (0.082175016403198)sec
+--- STARTUP TIME --- 1365176067.2995
+    SESSION_ID：9iksr46vj014i382gd5if3sth1
+    REQUEST MCA：task::publish@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '21'
+--- SHUTDOWN TIME --- 1365176067.3531 (0.053592920303345)sec
+--- STARTUP TIME --- 1365176086.2821
+    SESSION_ID：9iksr46vj014i382gd5if3sth1
+    REQUEST MCA：task::publish@oa
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '21'
+--- SHUTDOWN TIME --- 1365176086.3829 (0.10077095031738)sec

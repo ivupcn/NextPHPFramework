@@ -1,0 +1,16 @@
+.fshadow {
+clear: both;
+width: 800px;
+height: 13px;
+margin: 0 auto -3px;
+background: url(../../images/user/openShadow.png) no-repeat;
+_background: none;
+_filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop,src='../../images/public/openShadow.png');
+}
+#Copyright {
+width: 100%;
+padding: 8px 0 20px;
+color: #fff;
+text-align: center;
+background: none;
+}

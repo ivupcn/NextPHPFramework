@@ -1,0 +1,770 @@
+--- STARTUP TIME --- 1364572853.2485
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\index\taskall.php | 41
+--- SHUTDOWN TIME --- 1364572853.2717 (0.023271083831787)sec
+--- STARTUP TIME --- 1364572859.3855
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364572859.4144 (0.028882026672363)sec
+--- STARTUP TIME --- 1364572860.4402
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\index\taskall.php | 41
+--- SHUTDOWN TIME --- 1364572860.4622 (0.02202582359314)sec
+--- STARTUP TIME --- 1364572861.3358
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364572861.3594 (0.023579835891724)sec
+--- STARTUP TIME --- 1364573166.2409
+    SESSION_ID：3bgbi28o9gfg38gelm0v3d92l0
+    REQUEST MCA：index::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364573166.2672 (0.026319026947021)sec
+--- STARTUP TIME --- 1364573289.0299
+    SESSION_ID：3bgbi28o9gfg38gelm0v3d92l0
+    REQUEST MCA：index::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\index\taskall.php | 41
+--- SHUTDOWN TIME --- 1364573289.0492 (0.019374132156372)sec
+--- STARTUP TIME --- 1364573294.2573
+    SESSION_ID：3bgbi28o9gfg38gelm0v3d92l0
+    REQUEST MCA：index::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364573294.2762 (0.01888108253479)sec
+--- STARTUP TIME --- 1364573299.1976
+    SESSION_ID：3bgbi28o9gfg38gelm0v3d92l0
+    REQUEST MCA：index::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\index\taskall.php | 41
+--- SHUTDOWN TIME --- 1364573299.2128 (0.015228033065796)sec
+--- STARTUP TIME --- 1364573303.1302
+    SESSION_ID：3bgbi28o9gfg38gelm0v3d92l0
+    REQUEST MCA：index::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364573303.1416 (0.011368989944458)sec
+--- STARTUP TIME --- 1364573307.307
+    SESSION_ID：3bgbi28o9gfg38gelm0v3d92l0
+    REQUEST MCA：index::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364573307.3243 (0.017383098602295)sec
+--- STARTUP TIME --- 1364573349.1077
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\index\taskall.php | 41
+--- SHUTDOWN TIME --- 1364573349.1246 (0.016885995864868)sec
+--- STARTUP TIME --- 1364573376.693
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364573376.718 (0.025093078613281)sec
+--- STARTUP TIME --- 1364573381.6062
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\index\taskall.php | 41
+--- SHUTDOWN TIME --- 1364573381.6246 (0.018373012542725)sec
+--- STARTUP TIME --- 1364573421.8129
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364573421.8367 (0.023806810379028)sec
+--- STARTUP TIME --- 1364573445.1933
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\index\taskall.php | 41
+--- SHUTDOWN TIME --- 1364573445.2135 (0.020112037658691)sec
+--- STARTUP TIME --- 1364573447.9452
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364573447.966 (0.020846843719482)sec
+--- STARTUP TIME --- 1364573450.5649
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\index\taskall.php | 41
+--- SHUTDOWN TIME --- 1364573450.5843 (0.019427061080933)sec
+--- STARTUP TIME --- 1364573452.181
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364573452.2057 (0.024750947952271)sec
+--- STARTUP TIME --- 1364573454.9848
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\index\taskall.php | 41
+--- SHUTDOWN TIME --- 1364573455.0032 (0.018375873565674)sec
+--- STARTUP TIME --- 1364573466.9668
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364573466.9867 (0.019953966140747)sec
+--- STARTUP TIME --- 1364573467.8974
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\index\taskall.php | 41
+--- SHUTDOWN TIME --- 1364573467.9155 (0.018091917037964)sec
+--- STARTUP TIME --- 1364573503.3819
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364573503.3997 (0.017796993255615)sec
+--- STARTUP TIME --- 1364573504.9489
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\index\taskall.php | 41
+--- SHUTDOWN TIME --- 1364573504.9729 (0.023953914642334)sec
+--- STARTUP TIME --- 1364573506.1337
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364573506.1568 (0.023031949996948)sec
+--- STARTUP TIME --- 1364573568.7842
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\index\taskall.php | 41
+--- SHUTDOWN TIME --- 1364573568.8057 (0.021484851837158)sec
+--- STARTUP TIME --- 1364573580.9643
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364573580.9881 (0.023750066757202)sec
+--- STARTUP TIME --- 1364573587.7808
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\index\taskall.php | 41
+--- SHUTDOWN TIME --- 1364573587.8013 (0.020478963851929)sec
+--- STARTUP TIME --- 1364573884.2573
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364573884.2811 (0.023838996887207)sec
+--- STARTUP TIME --- 1364573989.0247
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\index\taskall.php | 41
+--- SHUTDOWN TIME --- 1364573989.0462 (0.021463871002197)sec
+--- STARTUP TIME --- 1364573990.4317
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364573990.4561 (0.024442911148071)sec
+--- STARTUP TIME --- 1364573991.3913
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\index\taskall.php | 41
+--- SHUTDOWN TIME --- 1364573991.4104 (0.019109010696411)sec
+--- STARTUP TIME --- 1364573992.507
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::init@user
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364573992.527 (0.019937038421631)sec
+--- STARTUP TIME --- 1364573993.7228
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364573993.7454 (0.0225989818573)sec
+--- STARTUP TIME --- 1364573995.0787
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\index\taskall.php | 41
+--- SHUTDOWN TIME --- 1364573995.0974 (0.018661975860596)sec
+--- STARTUP TIME --- 1364573996.1424
+    SESSION_ID：qc7r0t974kun5tq213g985emh3
+    REQUEST MCA：index::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364573996.1625 (0.02008581161499)sec
+--- STARTUP TIME --- 1364624586.5412
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：index::init@user
+--- SHUTDOWN TIME --- 1364624586.6717 (0.13053011894226)sec
+--- STARTUP TIME --- 1364624586.6753
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：index::login@user
+--- SHUTDOWN TIME --- 1364624586.7043 (0.028985977172852)sec
+--- STARTUP TIME --- 1364624594.0962
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：index::login@user
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivup@ivup.cn' LIMIT 1
+    REQUEST SQL：UPDATE `x`.`x_user` SET `lastloginip`='127.0.0.1',`lastlogintime`='1364624594',`vip`='0' WHERE  `userid` = '1'
+--- SHUTDOWN TIME --- 1364624594.3853 (0.28909301757812)sec
+--- STARTUP TIME --- 1364624594.3904
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：index::init@user
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364624594.4093 (0.018900156021118)sec
+--- STARTUP TIME --- 1364624596.3097
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：index::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364624596.3555 (0.045801162719727)sec
+--- STARTUP TIME --- 1364624753.4262
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：index::init@oa
+    [D:\ESSamp\wwwroot\NextPHP\module\oa\controller\index.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\oa\controller\index.php]ClassFile does not exist
+--- STARTUP TIME --- 1364624755.3195
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：index::init@user
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364624755.3418 (0.022292852401733)sec
+--- STARTUP TIME --- 1364624757.7241
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：index::init@user
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364624757.7401 (0.015968084335327)sec
+--- STARTUP TIME --- 1364624758.9079
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：index::init@user
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364624758.9267 (0.01882791519165)sec
+--- STARTUP TIME --- 1364624766.547
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：index::init@user
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364624766.568 (0.020993947982788)sec
+--- STARTUP TIME --- 1364624806.2374
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：index::init@user
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364624806.2522 (0.014873027801514)sec
+--- STARTUP TIME --- 1364624810.1199
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364624810.1536 (0.033639907836914)sec
+--- STARTUP TIME --- 1364624812.3955
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364624812.4132 (0.017786026000977)sec
+--- STARTUP TIME --- 1364624841.9051
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364624841.9314 (0.026257038116455)sec
+--- STARTUP TIME --- 1364624844.5639
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364624844.5863 (0.022396087646484)sec
+--- STARTUP TIME --- 1364624847.2957
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：index::init@user
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364624847.3197 (0.024027109146118)sec
+--- STARTUP TIME --- 1364624849.211
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：index::init@user
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364624849.2259 (0.014896154403687)sec
+--- STARTUP TIME --- 1364624851.1993
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：index::init@user
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364624851.2144 (0.015098810195923)sec
+--- STARTUP TIME --- 1364624852.4951
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364624852.5125 (0.017366886138916)sec
+--- STARTUP TIME --- 1364624853.4398
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364624853.4606 (0.020794868469238)sec
+--- STARTUP TIME --- 1364624864.351
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364624864.3694 (0.018376111984253)sec
+--- STARTUP TIME --- 1364624866.6015
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364624866.6232 (0.021697998046875)sec
+--- STARTUP TIME --- 1364624867.1779
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364624867.194 (0.016105175018311)sec
+--- STARTUP TIME --- 1364624879.4731
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364624879.4949 (0.021810054779053)sec
+--- STARTUP TIME --- 1364624883.1706
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    2 | file_get_contents(D:\ESSamp\wwwroot\NextPHP\module\oa\view\user\taskacceptance.php) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory | D:\ESSamp\wwwroot\NextPHP\framework\class\view.php | 16
+--- SHUTDOWN TIME --- 1364624883.1865 (0.015915870666504)sec
+--- STARTUP TIME --- 1364624886.0715
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364624886.0903 (0.018846988677979)sec
+--- STARTUP TIME --- 1364625014.8852
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364625014.9051 (0.019958019256592)sec
+--- STARTUP TIME --- 1364625016.7334
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364625016.7519 (0.018522977828979)sec
+--- STARTUP TIME --- 1364625019.4162
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    2 | file_get_contents(D:\ESSamp\wwwroot\NextPHP\module\oa\view\user\taskacceptance.php) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory | D:\ESSamp\wwwroot\NextPHP\framework\class\view.php | 16
+--- SHUTDOWN TIME --- 1364625019.4318 (0.015646934509277)sec
+--- STARTUP TIME --- 1364625021.1293
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364625021.1504 (0.021015882492065)sec
+--- STARTUP TIME --- 1364625844.8984
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364625844.927 (0.02854585647583)sec
+--- STARTUP TIME --- 1364625849.0532
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364625849.0736 (0.020462989807129)sec
+--- STARTUP TIME --- 1364625851.9291
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364625851.9509 (0.021814107894897)sec
+--- STARTUP TIME --- 1364625852.9328
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364625852.9506 (0.017804145812988)sec
+--- STARTUP TIME --- 1364625853.6843
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364625853.7042 (0.019929885864258)sec
+--- STARTUP TIME --- 1364625854.5008
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364625854.5203 (0.019464015960693)sec
+--- STARTUP TIME --- 1364625855.4134
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364625855.4331 (0.019713163375854)sec
+--- STARTUP TIME --- 1364627928.5605
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364627928.5812 (0.020652055740356)sec
+--- STARTUP TIME --- 1364627932.5702
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364627932.5827 (0.012507200241089)sec
+--- STARTUP TIME --- 1364627935.9344
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364627935.9498 (0.015424013137817)sec
+--- STARTUP TIME --- 1364627942.4597
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364627942.4784 (0.018651962280273)sec
+--- STARTUP TIME --- 1364627944.7583
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364627944.7772 (0.018882989883423)sec
+--- STARTUP TIME --- 1364628002.0064
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364628002.0195 (0.013183832168579)sec
+--- STARTUP TIME --- 1364628011.6388
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364628011.6589 (0.020117998123169)sec
+--- STARTUP TIME --- 1364628012.4063
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1364628012.4214 (0.015123128890991)sec
+--- STARTUP TIME --- 1364628128.8818
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364628128.9014 (0.019672870635986)sec
+--- STARTUP TIME --- 1364628130.9211
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1 LIMIT 0,20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE assignedto = 1 LIMIT 1
+--- SHUTDOWN TIME --- 1364628130.9459 (0.024778127670288)sec
+--- STARTUP TIME --- 1364628187.7449
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1 LIMIT 0,20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE assignedto = 1 LIMIT 1
+--- SHUTDOWN TIME --- 1364628187.7726 (0.02768087387085)sec
+--- STARTUP TIME --- 1364628188.4994
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1 LIMIT 0,20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE sponsor = 1 LIMIT 1
+--- SHUTDOWN TIME --- 1364628188.525 (0.025543928146362)sec
+--- STARTUP TIME --- 1364628191.4884
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364628191.5067 (0.018249988555908)sec
+--- STARTUP TIME --- 1364628238.6288
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1 LIMIT 0,20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE assignedto = 1 LIMIT 1
+--- SHUTDOWN TIME --- 1364628238.6529 (0.024088859558105)sec
+--- STARTUP TIME --- 1364628239.3543
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1 LIMIT 0,20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE sponsor = 1 LIMIT 1
+--- SHUTDOWN TIME --- 1364628239.3745 (0.020194053649902)sec
+--- STARTUP TIME --- 1364628252.9073
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1 LIMIT 0,20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE assignedto = 1 LIMIT 1
+--- SHUTDOWN TIME --- 1364628252.9339 (0.026611089706421)sec
+--- STARTUP TIME --- 1364628254.6545
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1 LIMIT 0,20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE sponsor = 1 LIMIT 1
+--- SHUTDOWN TIME --- 1364628254.6741 (0.019609928131104)sec
+--- STARTUP TIME --- 1364628255.8382
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1 LIMIT 0,20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE assignedto = 1 LIMIT 1
+--- SHUTDOWN TIME --- 1364628255.8579 (0.019646883010864)sec
+--- STARTUP TIME --- 1364628257.6825
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1 LIMIT 0,20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE sponsor = 1 LIMIT 1
+--- SHUTDOWN TIME --- 1364628257.7009 (0.018457174301147)sec
+--- STARTUP TIME --- 1364628259.1064
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1 LIMIT 0,20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE assignedto = 1 LIMIT 1
+--- SHUTDOWN TIME --- 1364628259.1244 (0.017985820770264)sec
+--- STARTUP TIME --- 1364628260.5524
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1 LIMIT 0,20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE sponsor = 1 LIMIT 1
+--- SHUTDOWN TIME --- 1364628260.5727 (0.020295143127441)sec
+--- STARTUP TIME --- 1364628262.0544
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364628262.0729 (0.018547058105469)sec
+--- STARTUP TIME --- 1364628264.3949
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364628264.4134 (0.018419981002808)sec
+--- STARTUP TIME --- 1364628265.7899
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1 LIMIT 0,20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE assignedto = 1 LIMIT 1
+--- SHUTDOWN TIME --- 1364628265.8077 (0.01783013343811)sec
+--- STARTUP TIME --- 1364628266.8946
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364628266.9185 (0.02391791343689)sec
+--- STARTUP TIME --- 1364628269.9536
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364628269.9706 (0.017012119293213)sec
+--- STARTUP TIME --- 1364628273.7462
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364628273.7661 (0.019963979721069)sec
+--- STARTUP TIME --- 1364628278.018
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364628278.0376 (0.019584894180298)sec
+--- STARTUP TIME --- 1364628280.6858
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364628280.704 (0.018265008926392)sec
+--- STARTUP TIME --- 1364628282.49
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364628282.5062 (0.01624584197998)sec
+--- STARTUP TIME --- 1364628284.4022
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364628284.4206 (0.018306970596313)sec
+--- STARTUP TIME --- 1364628286.8229
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364628286.8401 (0.017228126525879)sec
+--- STARTUP TIME --- 1364628288.4419
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364628288.4618 (0.019850015640259)sec
+--- STARTUP TIME --- 1364628291.8782
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364628291.8952 (0.016987800598145)sec
+--- STARTUP TIME --- 1364628293.1421
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364628293.1621 (0.020026922225952)sec
+--- STARTUP TIME --- 1364628295.5307
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364628295.5488 (0.018140077590942)sec
+--- STARTUP TIME --- 1364628296.8625
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364628296.8849 (0.022356033325195)sec
+--- STARTUP TIME --- 1364628298.8629
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364628298.8788 (0.015911102294922)sec
+--- STARTUP TIME --- 1364628300.3699
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::init@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1
+--- SHUTDOWN TIME --- 1364628300.3908 (0.020972013473511)sec
+--- STARTUP TIME --- 1364628337.4465
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    8 | Undefined variable: status     | D:\ESSamp\wwwroot\NextPHP\cache\cache_view\xms\xview\oa\user\taskall.php | 41
+--- SHUTDOWN TIME --- 1364628337.4648 (0.018234014511108)sec
+--- STARTUP TIME --- 1364628338.5223
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1 LIMIT 0,20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE sponsor = 1 LIMIT 1
+--- SHUTDOWN TIME --- 1364628338.5446 (0.022382974624634)sec
+--- STARTUP TIME --- 1364628339.3058
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1 LIMIT 0,20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE assignedto = 1 LIMIT 1
+--- SHUTDOWN TIME --- 1364628339.3242 (0.018438100814819)sec
+--- STARTUP TIME --- 1364628340.3175
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1 LIMIT 0,20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE sponsor = 1 LIMIT 1
+--- SHUTDOWN TIME --- 1364628340.3365 (0.0190589427948)sec
+--- STARTUP TIME --- 1364628369.0906
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE assignedto = 1 LIMIT 0,20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE assignedto = 1 LIMIT 1
+--- SHUTDOWN TIME --- 1364628369.1129 (0.022264957427979)sec
+--- STARTUP TIME --- 1364628372.2937
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` WHERE sponsor = 1 LIMIT 0,20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` WHERE sponsor = 1 LIMIT 1
+--- SHUTDOWN TIME --- 1364628372.3139 (0.02021598815918)sec
+--- STARTUP TIME --- 1364628391.7026
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` LIMIT 0,20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` LIMIT 1
+--- SHUTDOWN TIME --- 1364628391.7267 (0.024075031280518)sec
+--- STARTUP TIME --- 1364628510.5257
+    SESSION_ID：5std3hf0icvfoq31i55e29jaj4
+    REQUEST MCA：user::task@oa
+    REQUEST SQL：SELECT `password`,`siteid`,`groupid` FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_task` LIMIT 0,20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_task` LIMIT 1
+--- SHUTDOWN TIME --- 1364628510.5597 (0.033987045288086)sec
+--- STARTUP TIME --- 1364630859.6811
+    SESSION_ID：389mhctvohq3vfpp7411i0ccn7
+    REQUEST MCA：index::init@oa
+    ACL：拒绝访问index::init@oa
+--- SHUTDOWN TIME --- 1364630859.6904 (0.0092861652374268)sec
+--- STARTUP TIME --- 1364630871.7852
+    SESSION_ID：389mhctvohq3vfpp7411i0ccn7
+    REQUEST MCA：user::init@oa
+    ACL：拒绝访问user::init@oa
+--- SHUTDOWN TIME --- 1364630871.7938 (0.0086469650268555)sec
+--- STARTUP TIME --- 1364630873.5984
+    SESSION_ID：389mhctvohq3vfpp7411i0ccn7
+    REQUEST MCA：user::init@oa
+    ACL：拒绝访问user::init@oa
+--- SHUTDOWN TIME --- 1364630873.6049 (0.0064778327941895)sec
+--- STARTUP TIME --- 1364630874.3949
+    SESSION_ID：389mhctvohq3vfpp7411i0ccn7
+    REQUEST MCA：user::init@oa
+    ACL：拒绝访问user::init@oa
+--- SHUTDOWN TIME --- 1364630874.4014 (0.0064709186553955)sec

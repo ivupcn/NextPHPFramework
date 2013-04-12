@@ -1,0 +1,859 @@
+--- STARTUP TIME --- 1363622665.2153
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- STARTUP TIME --- 1363622692.6187
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+    2 | file_get_contents(D:\ESSamp\wwwroot\NextPHP\module\user\view\acl\setting.php) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: No such file or directory | D:\ESSamp\wwwroot\NextPHP\framework\class\view.php | 16
+--- SHUTDOWN TIME --- 1363622692.6469 (0.028240203857422)sec
+--- STARTUP TIME --- 1363622775.01
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363622775.0411 (0.031150102615356)sec
+--- STARTUP TIME --- 1363622785.9413
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363622785.9723 (0.030991077423096)sec
+--- STARTUP TIME --- 1363622878.4184
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363622878.4489 (0.030557870864868)sec
+--- STARTUP TIME --- 1363622897.6173
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363622897.6553 (0.038033008575439)sec
+--- STARTUP TIME --- 1363622910.0406
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363622910.0703 (0.029713869094849)sec
+--- STARTUP TIME --- 1363622970.9845
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363622971.0117 (0.027168035507202)sec
+--- STARTUP TIME --- 1363623329.268
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363623329.3026 (0.034692049026489)sec
+--- STARTUP TIME --- 1363623409.9191
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363623409.9604 (0.041340112686157)sec
+--- STARTUP TIME --- 1363623446.4056
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363623446.4342 (0.028666019439697)sec
+--- STARTUP TIME --- 1363623466.9714
+    REQUEST MCA：role::init@user
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role` WHERE  `siteid` = '1' ORDER BY roleid DESC
+    REQUEST SQL：SELECT `siteid`,`roleid`,`rolename` FROM `x`.`x_user_role` WHERE  `disabled` = '0'  AND  `siteid` = '1'  ORDER BY roleid ASC,siteid ASC
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+--- SHUTDOWN TIME --- 1363623466.9923 (0.020957946777344)sec
+--- STARTUP TIME --- 1363623468.5784
+    REQUEST MCA：user::init@user
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `siteid` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '1'  ORDER BY userid ASC LIMIT 0, 20
+--- SHUTDOWN TIME --- 1363623468.6024 (0.023953914642334)sec
+--- STARTUP TIME --- 1363623469.401
+    REQUEST MCA：user::add@user
+--- SHUTDOWN TIME --- 1363623469.416 (0.014955997467041)sec
+--- STARTUP TIME --- 1363623511.8125
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363623511.8449 (0.032480955123901)sec
+--- STARTUP TIME --- 1363623790.0202
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363623790.0495 (0.029309034347534)sec
+--- STARTUP TIME --- 1363623801.9872
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363623802.0257 (0.038453102111816)sec
+--- STARTUP TIME --- 1363623823.8159
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363623823.8416 (0.025764942169189)sec
+--- STARTUP TIME --- 1363623888.3792
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363623888.4049 (0.025681972503662)sec
+--- STARTUP TIME --- 1363624138.6151
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363624138.6491 (0.033974885940552)sec
+--- STARTUP TIME --- 1363624154.5368
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：DELETE FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT `id`,`m`,`c`,`a`,`data` FROM `x`.`x_menu`
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('admin','panel','init','','ACL_HAS_ROLE','1','4')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('user','person','setting','','ACL_HAS_ROLE','1','20')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('user','user','publicEditInfo','','ACL_HAS_ROLE','1','21')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('user','user','publicEditPwd','','ACL_HAS_ROLE','1','22')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('user','person','init','','ACL_HAS_ROLE','1','37')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('admin','index','login','','ACL_NO_ROLE','1','38')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('admin','index','logout','','ACL_HAS_ROLE','1','39')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('index','index','init','','ACL_EVERYONE','1','36')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('feed','index','init','','ACL_EVERYONE','1','48')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('feed','data','postFeed','','ACL_HAS_ROLE','1','52')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('user','index','init','','ACL_EVERYONE','1','85')
+--- SHUTDOWN TIME --- 1363624154.5686 (0.031831979751587)sec
+--- STARTUP TIME --- 1363624154.5908
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363624154.6214 (0.030591011047363)sec
+--- STARTUP TIME --- 1363624158.5915
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：DELETE FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT `id`,`m`,`c`,`a`,`data` FROM `x`.`x_menu`
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('admin','panel','init','','ACL_HAS_ROLE','1','4')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('user','person','setting','','ACL_HAS_ROLE','1','20')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('user','user','publicEditInfo','','ACL_HAS_ROLE','1','21')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('user','user','publicEditPwd','','ACL_HAS_ROLE','1','22')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('user','person','init','','ACL_HAS_ROLE','1','37')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('admin','index','login','','ACL_NO_ROLE','1','38')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('admin','index','logout','','ACL_HAS_ROLE','1','39')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('index','index','init','','ACL_EVERYONE','1','36')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('feed','index','init','','ACL_EVERYONE','1','48')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('feed','data','postFeed','','ACL_HAS_ROLE','1','52')
+    REQUEST SQL：INSERT INTO `x`.`x_user_role_priv`(`m`,`c`,`a`,`data`,`roleid`,`siteid`,`menuid`) VALUES ('user','index','init','','ACL_EVERYONE','1','85')
+--- SHUTDOWN TIME --- 1363624158.6182 (0.026673078536987)sec
+--- STARTUP TIME --- 1363624158.6376
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363624158.6696 (0.03205418586731)sec
+--- STARTUP TIME --- 1363652133.558
+    REQUEST MCA：index::init@admin
+    8 | Undefined index:  userid       | D:\ESSamp\wwwroot\NextPHP\module\admin\controller\index.php | 6
+--- SHUTDOWN TIME --- 1363652133.6435 (0.085504055023193)sec
+--- STARTUP TIME --- 1363652133.6471
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1363652133.8007 (0.15362977981567)sec
+--- STARTUP TIME --- 1363655044.2856
+    REQUEST MCA：index::init@admin
+    8 | Undefined index:  userid       | D:\ESSamp\wwwroot\NextPHP\module\admin\controller\index.php | 6
+--- SHUTDOWN TIME --- 1363655044.3519 (0.066332817077637)sec
+--- STARTUP TIME --- 1363655044.3606
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1363655044.3744 (0.013718128204346)sec
+--- STARTUP TIME --- 1363655759.5137
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivupcn@gmail.com'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivupcn@gmail.com' LIMIT 1
+--- SHUTDOWN TIME --- 1363655759.6055 (0.091758966445923)sec
+--- STARTUP TIME --- 1363658605.1352
+    REQUEST MCA：index::init@admin
+    8 | Undefined index:  userid       | D:\ESSamp\wwwroot\NextPHP\module\admin\controller\index.php | 6
+--- SHUTDOWN TIME --- 1363658605.145 (0.0097830295562744)sec
+--- STARTUP TIME --- 1363658605.1482
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1363658605.1566 (0.0084571838378906)sec
+--- STARTUP TIME --- 1363658617.3723
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_times` WHERE  `email` = 'ivup@ivup.cn'  AND  `isadmin` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `email` = 'ivup@ivup.cn' LIMIT 1
+    REQUEST SQL：UPDATE `x`.`x_user` SET `lastloginip`='127.0.0.1',`lastlogintime`='1363658617' WHERE  `userid` = '1'
+--- SHUTDOWN TIME --- 1363658617.3991 (0.026774883270264)sec
+--- STARTUP TIME --- 1363658617.4193
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE `siteid` in(1)
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363658617.4862 (0.066874980926514)sec
+--- STARTUP TIME --- 1363658617.7506
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE `siteid` in(1)
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363658617.7788 (0.028234958648682)sec
+--- STARTUP TIME --- 1363658619.7559
+    REQUEST MCA：index::publicmenuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363658619.7763 (0.020416021347046)sec
+--- STARTUP TIME --- 1363658637.994
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363658638.0933 (0.099256038665771)sec
+--- STARTUP TIME --- 1363660167.8738
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363660167.9169 (0.04303503036499)sec
+--- STARTUP TIME --- 1363660172.4178
+    REQUEST MCA：menu::delete@admin
+    REQUEST SQL：DELETE FROM `x`.`x_menu` WHERE  `id` = '77'
+--- SHUTDOWN TIME --- 1363660172.4757 (0.057849884033203)sec
+--- STARTUP TIME --- 1363660172.4999
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363660172.5301 (0.030235052108765)sec
+--- STARTUP TIME --- 1363660175.1146
+    REQUEST MCA：menu::delete@admin
+    REQUEST SQL：DELETE FROM `x`.`x_menu` WHERE  `id` = '78'
+--- SHUTDOWN TIME --- 1363660175.1297 (0.015049934387207)sec
+--- STARTUP TIME --- 1363660175.1497
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363660175.1728 (0.023115873336792)sec
+--- STARTUP TIME --- 1363660178.8061
+    REQUEST MCA：menu::delete@admin
+    REQUEST SQL：DELETE FROM `x`.`x_menu` WHERE  `id` = '79'
+--- SHUTDOWN TIME --- 1363660178.8198 (0.013700008392334)sec
+--- STARTUP TIME --- 1363660178.8441
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363660178.8696 (0.025463104248047)sec
+--- STARTUP TIME --- 1363660181.5479
+    REQUEST MCA：menu::delete@admin
+    REQUEST SQL：DELETE FROM `x`.`x_menu` WHERE  `id` = '76'
+--- SHUTDOWN TIME --- 1363660181.563 (0.015115022659302)sec
+--- STARTUP TIME --- 1363660181.5889
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363660181.6148 (0.025867938995361)sec
+--- STARTUP TIME --- 1363660184.2237
+    REQUEST MCA：menu::delete@admin
+    REQUEST SQL：DELETE FROM `x`.`x_menu` WHERE  `id` = '81'
+--- SHUTDOWN TIME --- 1363660184.2357 (0.012053966522217)sec
+--- STARTUP TIME --- 1363660184.2637
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363660184.2866 (0.022867918014526)sec
+--- STARTUP TIME --- 1363660187.3778
+    REQUEST MCA：menu::delete@admin
+    REQUEST SQL：DELETE FROM `x`.`x_menu` WHERE  `id` = '82'
+--- SHUTDOWN TIME --- 1363660187.3926 (0.014829874038696)sec
+--- STARTUP TIME --- 1363660187.4208
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363660187.4435 (0.022699117660522)sec
+--- STARTUP TIME --- 1363660190.3668
+    REQUEST MCA：menu::delete@admin
+    REQUEST SQL：DELETE FROM `x`.`x_menu` WHERE  `id` = '83'
+--- SHUTDOWN TIME --- 1363660190.3831 (0.016318082809448)sec
+--- STARTUP TIME --- 1363660190.4018
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363660190.4263 (0.024525165557861)sec
+--- STARTUP TIME --- 1363660193.4418
+    REQUEST MCA：menu::delete@admin
+    REQUEST SQL：DELETE FROM `x`.`x_menu` WHERE  `id` = '80'
+--- SHUTDOWN TIME --- 1363660193.4541 (0.012249946594238)sec
+--- STARTUP TIME --- 1363660193.4798
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363660193.5031 (0.023274183273315)sec
+--- STARTUP TIME --- 1363660196.2056
+    REQUEST MCA：menu::delete@admin
+    REQUEST SQL：DELETE FROM `x`.`x_menu` WHERE  `id` = '75'
+--- SHUTDOWN TIME --- 1363660196.2197 (0.014097213745117)sec
+--- STARTUP TIME --- 1363660196.2477
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363660196.2695 (0.021806955337524)sec
+--- STARTUP TIME --- 1363660199.1216
+    REQUEST MCA：menu::delete@admin
+    REQUEST SQL：DELETE FROM `x`.`x_menu` WHERE  `id` = '74'
+--- SHUTDOWN TIME --- 1363660199.1379 (0.016303777694702)sec
+--- STARTUP TIME --- 1363660199.1646
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363660199.19 (0.025426864624023)sec
+--- STARTUP TIME --- 1363660206.4644
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE `siteid` in(1)
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363660206.4869 (0.022494077682495)sec
+--- STARTUP TIME --- 1363660206.7106
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE `siteid` in(1)
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363660206.7383 (0.027732849121094)sec
+--- STARTUP TIME --- 1363660207.8113
+    REQUEST MCA：index::publicmenuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363660207.8315 (0.020121097564697)sec
+--- STARTUP TIME --- 1363660518.987
+    REQUEST MCA：index::publicmenuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '47'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '49'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363660519.004 (0.01702880859375)sec
+--- STARTUP TIME --- 1363660519.7955
+    REQUEST MCA：index::publicmenuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363660519.8168 (0.021327018737793)sec
+--- STARTUP TIME --- 1363660661.2644
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363660661.2869 (0.022439956665039)sec
+--- STARTUP TIME --- 1363660662.0089
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1363660662.0279 (0.018949031829834)sec
+--- STARTUP TIME --- 1363660662.5193
+    REQUEST MCA：module::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_module`
+--- SHUTDOWN TIME --- 1363660662.5778 (0.058547973632812)sec
+--- STARTUP TIME --- 1363661310.4205
+    REQUEST MCA：index::publicmenuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '47'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '49'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363661310.4374 (0.016906023025513)sec
+--- STARTUP TIME --- 1363661311.8995
+    REQUEST MCA：index::publicmenuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363661311.9179 (0.018448114395142)sec
+--- STARTUP TIME --- 1363661719.1449
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1363661719.1614 (0.016549110412598)sec
+--- STARTUP TIME --- 1363661723.5468
+    REQUEST MCA：index::publicmenuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '47'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '49'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363661723.5667 (0.019925117492676)sec
+--- STARTUP TIME --- 1363661724.5314
+    REQUEST MCA：index::publicmenuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363661724.5522 (0.020789861679077)sec
+--- STARTUP TIME --- 1363661725.7883
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363661725.8195 (0.031242847442627)sec
+--- STARTUP TIME --- 1363661750.3466
+    REQUEST MCA：menu::delete@admin
+    REQUEST SQL：DELETE FROM `x`.`x_menu` WHERE  `id` = '46'
+--- SHUTDOWN TIME --- 1363661750.3579 (0.011345863342285)sec
+--- STARTUP TIME --- 1363661750.3806
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363661750.4057 (0.025121927261353)sec
+--- STARTUP TIME --- 1363661777.1554
+    REQUEST MCA：index::publicmenuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363661777.1741 (0.01877498626709)sec
+--- STARTUP TIME --- 1363661778.5433
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1363661778.5638 (0.020484924316406)sec
+--- STARTUP TIME --- 1363661781.6033
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363661781.6315 (0.028137922286987)sec
+--- STARTUP TIME --- 1363661789.9098
+    REQUEST MCA：menu::delete@admin
+    REQUEST SQL：DELETE FROM `x`.`x_menu` WHERE  `id` = '45'
+--- SHUTDOWN TIME --- 1363661789.9234 (0.013598918914795)sec
+--- STARTUP TIME --- 1363661789.9399
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363661789.9646 (0.024708032608032)sec
+--- STARTUP TIME --- 1363661799.156
+    REQUEST MCA：role::init@user
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role` WHERE  `siteid` = '1' ORDER BY roleid DESC
+    REQUEST SQL：SELECT `siteid`,`roleid`,`rolename` FROM `x`.`x_user_role` WHERE  `disabled` = '0'  AND  `siteid` = '1'  ORDER BY roleid ASC,siteid ASC
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+--- SHUTDOWN TIME --- 1363661799.219 (0.063043117523193)sec
+--- STARTUP TIME --- 1363661802.3071
+    REQUEST MCA：user::roleuser@user
+    REQUEST SQL：select * from x_user where find_in_set('31',roleid)
+--- SHUTDOWN TIME --- 1363661802.3567 (0.049574136734009)sec
+--- STARTUP TIME --- 1363661804.0833
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363661804.1062 (0.022933959960938)sec
+--- STARTUP TIME --- 1363661814.4051
+    REQUEST MCA：role::init@user
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role` WHERE  `siteid` = '1' ORDER BY roleid DESC
+    REQUEST SQL：SELECT `siteid`,`roleid`,`rolename` FROM `x`.`x_user_role` WHERE  `disabled` = '0'  AND  `siteid` = '1'  ORDER BY roleid ASC,siteid ASC
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+--- SHUTDOWN TIME --- 1363661814.4299 (0.024777173995972)sec
+--- STARTUP TIME --- 1363661818.819
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363661818.8429 (0.023880958557129)sec
+--- STARTUP TIME --- 1363661823.4551
+    REQUEST MCA：menu::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `id` = '31' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu`
+--- SHUTDOWN TIME --- 1363661823.5007 (0.045612096786499)sec
+--- STARTUP TIME --- 1363661843.8777
+    REQUEST MCA：menu::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `id` = '31' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu`
+--- SHUTDOWN TIME --- 1363661843.8982 (0.020555019378662)sec
+--- STARTUP TIME --- 1363661853.1248
+    REQUEST MCA：menu::edit@admin
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `parentid`='14',`name`='成员管理',`m`='user',`c`='role',`a`='roleUser',`data`='',`display`='1',`sys`='0',`acl_type`='0' WHERE  `id` = '31'
+--- SHUTDOWN TIME --- 1363661853.146 (0.021138906478882)sec
+--- STARTUP TIME --- 1363661853.1688
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363661853.1954 (0.026523113250732)sec
+--- STARTUP TIME --- 1363661996.7454
+    REQUEST MCA：role::init@user
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role` WHERE  `siteid` = '1' ORDER BY roleid DESC
+    REQUEST SQL：SELECT `siteid`,`roleid`,`rolename` FROM `x`.`x_user_role` WHERE  `disabled` = '0'  AND  `siteid` = '1'  ORDER BY roleid ASC,siteid ASC
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+--- SHUTDOWN TIME --- 1363661996.7694 (0.023994922637939)sec
+--- STARTUP TIME --- 1363662031.6255
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363662031.6478 (0.022279977798462)sec
+--- STARTUP TIME --- 1363662043.6165
+    REQUEST MCA：menu::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `id` = '30' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu`
+--- SHUTDOWN TIME --- 1363662043.6415 (0.024990797042847)sec
+--- STARTUP TIME --- 1363662050.2669
+    REQUEST MCA：menu::edit@admin
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `parentid`='14',`name`='更新角色状态',`m`='user',`c`='role',`a`='changeStatus',`data`='',`display`='0',`sys`='0',`acl_type`='0' WHERE  `id` = '30'
+--- SHUTDOWN TIME --- 1363662050.2813 (0.014412879943848)sec
+--- STARTUP TIME --- 1363662050.2989
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363662050.3228 (0.023891925811768)sec
+--- STARTUP TIME --- 1363662074.6931
+    REQUEST MCA：role::init@user
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role` WHERE  `siteid` = '1' ORDER BY roleid DESC
+    REQUEST SQL：SELECT `siteid`,`roleid`,`rolename` FROM `x`.`x_user_role` WHERE  `disabled` = '0'  AND  `siteid` = '1'  ORDER BY roleid ASC,siteid ASC
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+--- SHUTDOWN TIME --- 1363662074.7218 (0.02865195274353)sec
+--- STARTUP TIME --- 1363662076.3082
+    REQUEST MCA：role::changestatus@user
+    REQUEST SQL：UPDATE `x`.`x_user_role` SET `disabled`='1' WHERE  `roleid` = '31'
+    REQUEST SQL：SELECT `siteid`,`roleid`,`rolename` FROM `x`.`x_user_role` WHERE  `disabled` = '0'  AND  `siteid` = '1'  ORDER BY roleid ASC,siteid ASC
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+--- STARTUP TIME --- 1363662094.134
+    REQUEST MCA：role::init@user
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role` WHERE  `siteid` = '1' ORDER BY roleid DESC
+    REQUEST SQL：SELECT `siteid`,`roleid`,`rolename` FROM `x`.`x_user_role` WHERE  `disabled` = '0'  AND  `siteid` = '1'  ORDER BY roleid ASC,siteid ASC
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+--- SHUTDOWN TIME --- 1363662094.1583 (0.024272203445435)sec
+--- STARTUP TIME --- 1363662095.8352
+    REQUEST MCA：role::changestatus@user
+    REQUEST SQL：UPDATE `x`.`x_user_role` SET `disabled`='0' WHERE  `roleid` = '31'
+    REQUEST SQL：SELECT `siteid`,`roleid`,`rolename` FROM `x`.`x_user_role` WHERE  `disabled` = '0'  AND  `siteid` = '1'  ORDER BY roleid ASC,siteid ASC
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+--- SHUTDOWN TIME --- 1363662095.8586 (0.023453950881958)sec
+--- STARTUP TIME --- 1363662095.8702
+    REQUEST MCA：role::init@user
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role` WHERE  `siteid` = '1' ORDER BY roleid DESC
+    REQUEST SQL：SELECT `siteid`,`roleid`,`rolename` FROM `x`.`x_user_role` WHERE  `disabled` = '0'  AND  `siteid` = '1'  ORDER BY roleid ASC,siteid ASC
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+--- SHUTDOWN TIME --- 1363662095.8914 (0.02116584777832)sec
+--- STARTUP TIME --- 1363662098.504
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363662098.531 (0.027096033096313)sec
+--- STARTUP TIME --- 1363662106.7895
+    REQUEST MCA：role::init@user
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role` WHERE  `siteid` = '1' ORDER BY roleid DESC
+    REQUEST SQL：SELECT `siteid`,`roleid`,`rolename` FROM `x`.`x_user_role` WHERE  `disabled` = '0'  AND  `siteid` = '1'  ORDER BY roleid ASC,siteid ASC
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+--- SHUTDOWN TIME --- 1363662106.8099 (0.020431995391846)sec
+--- STARTUP TIME --- 1363662110.7081
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363662110.7319 (0.023825883865356)sec
+--- STARTUP TIME --- 1363662116.1026
+    REQUEST MCA：menu::delete@admin
+    REQUEST SQL：DELETE FROM `x`.`x_menu` WHERE  `id` = '28'
+--- SHUTDOWN TIME --- 1363662116.1189 (0.016248941421509)sec
+--- STARTUP TIME --- 1363662116.1437
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363662116.1659 (0.022262096405029)sec
+--- STARTUP TIME --- 1363662128.9322
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363662128.9546 (0.022441148757935)sec
+--- STARTUP TIME --- 1363662156.0201
+    REQUEST MCA：module::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_module`
+--- SHUTDOWN TIME --- 1363662156.0378 (0.017637014389038)sec
+--- STARTUP TIME --- 1363662156.8517
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363662156.8772 (0.025482177734375)sec
+--- STARTUP TIME --- 1363662158.2526
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1363662158.2738 (0.021126985549927)sec
+--- STARTUP TIME --- 1363662159.1232
+    REQUEST MCA：module::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_module`
+--- SHUTDOWN TIME --- 1363662159.1396 (0.016361951828003)sec
+--- STARTUP TIME --- 1363662163.299
+    REQUEST MCA：role::init@user
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role` WHERE  `siteid` = '1' ORDER BY roleid DESC
+    REQUEST SQL：SELECT `siteid`,`roleid`,`rolename` FROM `x`.`x_user_role` WHERE  `disabled` = '0'  AND  `siteid` = '1'  ORDER BY roleid ASC,siteid ASC
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+--- SHUTDOWN TIME --- 1363662163.3258 (0.026871919631958)sec
+--- STARTUP TIME --- 1363662164.2316
+    REQUEST MCA：group::init@user
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user_group` WHERE  `siteid` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_group` WHERE  `siteid` = '1'  ORDER BY sort ASC LIMIT 0, 20
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '1' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '2' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '3' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '4' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '5' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '6' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `groupid` = '19' LIMIT 1
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user_group` WHERE  `siteid` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user_group` WHERE  `siteid` = '1'  LIMIT 0, 1000
+--- SHUTDOWN TIME --- 1363662164.2889 (0.057271957397461)sec
+--- STARTUP TIME --- 1363662165.0231
+    REQUEST MCA：user::init@user
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_user` WHERE  `siteid` = '1'  LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `siteid` = '1'  ORDER BY userid ASC LIMIT 0, 20
+--- SHUTDOWN TIME --- 1363662165.0462 (0.023036956787109)sec
+--- STARTUP TIME --- 1363662166.0008
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363662166.0361 (0.035351991653442)sec
+--- STARTUP TIME --- 1363662166.9164
+    REQUEST MCA：config::init@user
+    [D:\ESSamp\wwwroot\NextPHP\module\user\controller\config.php]ClassFile does not exist
+    [D:\ESSamp\wwwroot\NextPHP\module\user\controller\config.php]ClassFile does not exist
+--- STARTUP TIME --- 1363662168.6365
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363662168.6677 (0.03122091293335)sec
+--- STARTUP TIME --- 1363662185.0094
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363662185.0368 (0.027369022369385)sec
+--- STARTUP TIME --- 1363662268.9751
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363662268.9942 (0.019056081771851)sec
+--- STARTUP TIME --- 1363662270.5322
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363662270.5614 (0.029185056686401)sec
+--- STARTUP TIME --- 1363662271.831
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363662271.8533 (0.022212982177734)sec
+--- STARTUP TIME --- 1363662275.2183
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363662275.2456 (0.027345895767212)sec
+--- STARTUP TIME --- 1363662458.0737
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE `siteid` in(1)
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363662458.099 (0.025288820266724)sec
+--- STARTUP TIME --- 1363662458.454
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE `siteid` in(1)
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363662458.4899 (0.035978078842163)sec
+--- STARTUP TIME --- 1363662461.1728
+    REQUEST MCA：index::publicmenuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363662461.1957 (0.022953033447266)sec
+--- STARTUP TIME --- 1363662464.2978
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363662464.3308 (0.032964944839478)sec
+--- STARTUP TIME --- 1363662484.131
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE `siteid` in(1)
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363662484.1522 (0.021149158477783)sec
+--- STARTUP TIME --- 1363662484.3552
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE `siteid` in(1)
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363662484.3806 (0.02540111541748)sec
+--- STARTUP TIME --- 1363662485.2988
+    REQUEST MCA：index::publicmenuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363662485.319 (0.020212888717651)sec
+--- STARTUP TIME --- 1363662486.4686
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363662486.4955 (0.026959180831909)sec
+--- STARTUP TIME --- 1363662550.434
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE `siteid` in(1)
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363662550.4521 (0.018062114715576)sec
+--- STARTUP TIME --- 1363662550.7202
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE `siteid` in(1)
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363662550.7451 (0.02485203742981)sec
+--- STARTUP TIME --- 1363662551.2516
+    REQUEST MCA：index::publicmenuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363662551.27 (0.018424987792969)sec
+--- STARTUP TIME --- 1363662554.6889
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363662554.7171 (0.028268098831177)sec
+--- STARTUP TIME --- 1363662581.0834
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE `siteid` in(1)
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363662581.1009 (0.017506122589111)sec
+--- STARTUP TIME --- 1363662581.3506
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE `siteid` in(1)
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '1'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363662581.3816 (0.031028985977173)sec
+--- STARTUP TIME --- 1363662581.8309
+    REQUEST MCA：index::publicmenuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363662581.8504 (0.019535779953003)sec
+--- STARTUP TIME --- 1363662584.0123
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363662584.0404 (0.028050899505615)sec
+--- STARTUP TIME --- 1363662599.3265
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363662599.3495 (0.023022890090942)sec
+--- STARTUP TIME --- 1363663211.3669
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363663211.3914 (0.024470806121826)sec
+--- STARTUP TIME --- 1363663228.9095
+    REQUEST MCA：menu::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `id` = '20' LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_menu`
+--- SHUTDOWN TIME --- 1363663228.9419 (0.032409191131592)sec
+--- STARTUP TIME --- 1363663232.7151
+    REQUEST MCA：menu::edit@admin
+    REQUEST SQL：UPDATE `x`.`x_menu` SET `parentid`='4',`name`='个人设置',`m`='user',`c`='c',`a`='a',`data`='',`display`='1',`sys`='0',`acl_type`='0' WHERE  `id` = '20'
+--- SHUTDOWN TIME --- 1363663232.7335 (0.018458127975464)sec
+--- STARTUP TIME --- 1363663232.7551
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363663232.7809 (0.02579402923584)sec
+--- STARTUP TIME --- 1363663254.3294
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363663254.3555 (0.026138067245483)sec
+--- STARTUP TIME --- 1363663290.1902
+    REQUEST MCA：index::publicmenuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363663290.2086 (0.018354177474976)sec
+--- STARTUP TIME --- 1363663292.4077
+    REQUEST MCA：user::publiceditinfo@user
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1363663292.4702 (0.06252908706665)sec
+--- STARTUP TIME --- 1363663294.0558
+    REQUEST MCA：user::publiceditpwd@user
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1363663294.0823 (0.026479959487915)sec
+--- STARTUP TIME --- 1363663300.7082
+    REQUEST MCA：user::publiceditinfo@user
+    REQUEST SQL：SELECT * FROM `x`.`x_user` WHERE  `userid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1363663300.7203 (0.012083053588867)sec
+--- STARTUP TIME --- 1363663307.0584
+    REQUEST MCA：index::publicmenuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363663307.079 (0.020598888397217)sec
+--- STARTUP TIME --- 1363663308.2112
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363663308.2406 (0.029399156570435)sec
+--- STARTUP TIME --- 1363663310.0164
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT COUNT(*) AS num FROM `x`.`x_site` LIMIT 1
+    REQUEST SQL：SELECT * FROM `x`.`x_site` LIMIT 0,20
+--- SHUTDOWN TIME --- 1363663310.0397 (0.023319005966187)sec
+--- STARTUP TIME --- 1363663312.8823
+    REQUEST MCA：site::edit@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_site` WHERE  `siteid` = '1' LIMIT 1
+--- SHUTDOWN TIME --- 1363663312.904 (0.021738052368164)sec
+--- STARTUP TIME --- 1363663313.2986
+    REQUEST MCA：index::init@index
+    ACL-localhost-index-index item does not in configuration file
+    4096 | Argument 1 passed to NACL::normalize() must be an array, null given, called in D:\ESSamp\wwwroot\NextPHP\framework\class\acl.php on line 71 and defined | D:\ESSamp\wwwroot\NextPHP\framework\class\acl.php | 127
+--- SHUTDOWN TIME --- 1363663313.3048 (0.0062210559844971)sec
+--- STARTUP TIME --- 1363663316.0794
+    REQUEST MCA：role::init@user
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role` WHERE  `siteid` = '1' ORDER BY roleid DESC
+    REQUEST SQL：SELECT `siteid`,`roleid`,`rolename` FROM `x`.`x_user_role` WHERE  `disabled` = '0'  AND  `siteid` = '1'  ORDER BY roleid ASC,siteid ASC
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+    REQUEST SQL：SELECT `siteid` FROM `x`.`x_user_role_priv` ORDER BY siteid
+--- SHUTDOWN TIME --- 1363663316.1003 (0.020887851715088)sec
+--- STARTUP TIME --- 1363663317.9396
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `sys` = '0' ORDER BY listorder ASC,id ASC
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv` WHERE  `siteid` = '1'
+    REQUEST SQL：SELECT * FROM `x`.`x_user_role_priv`
+--- SHUTDOWN TIME --- 1363663317.9688 (0.029106140136719)sec
+--- STARTUP TIME --- 1363663356.0479
+    REQUEST MCA：index::publicmenuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '4'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '20'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363663356.0638 (0.015884160995483)sec
+--- STARTUP TIME --- 1363663356.7614
+    REQUEST MCA：index::publicmenuleft@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '5'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '6'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '12'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` WHERE  `parentid` = '13'  AND  `display` = '1'  ORDER BY listorder ASC LIMIT 1000
+--- SHUTDOWN TIME --- 1363663356.781 (0.019546985626221)sec
+--- STARTUP TIME --- 1363664719.5928
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM `x`.`x_menu` ORDER BY listorder ASC,id DESC
+--- SHUTDOWN TIME --- 1363664719.6165 (0.023728132247925)sec
