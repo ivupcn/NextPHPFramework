@@ -2010,8 +2010,7 @@ if(op.selector){
 $selector=$item.find(op.selector).css({cursor:op.cursor});}
 $selector.mousedown(function(event){
 sortDrag.start($sortBox,$item,event,op);
-event.preventDefault();});});});}})(jQuery);
-(function($){
+event.preventDefault();});});});}})(jQuery);(function($){
 $.fn.extend({
 fnTreeTable:function(options){
 return this.each(function(){
@@ -2035,11 +2034,7 @@ targetType:$this.attr("targetType"),
 rel:$this.attr("rel"),
 asc:$this.attr("asc")||"asc",
 desc:$this.attr("desc")||"desc"});
-$this.treetable({ expandable: true });
-});
-}
-});
-})(jQuery);(function($){
+$this.treetable({ expandable: true });});}});})(jQuery);(function($){
 $.fn.extend({
 cssTable:function(options){
 return this.each(function(){
