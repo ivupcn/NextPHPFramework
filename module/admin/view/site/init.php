@@ -9,7 +9,7 @@
 			<li><a href="javascript">X Management Platform</a>
 				<ul>
 					{loop $list $v}
-					<li><a href="{url 'site::edit@admin','siteid/'.$v['siteid']}" target="ajax" rel="siteBox">{$v['name']}</a></li>
+					<li><a href="{url 'site::edit#'.$v['siteid'].'@admin'}" target="ajax" rel="siteBox">{$v['name']}</a></li>
 					{/loop}
 				</ul>
 			</li>

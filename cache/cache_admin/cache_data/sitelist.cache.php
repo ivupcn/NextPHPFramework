@@ -58,34 +58,5 @@ return array (
     'logo' => 'rw',
     'url' => 'http://rw.zjw.cn/',
   ),
-  22 => 
-  array (
-    'siteid' => '22',
-    'name' => '测试',
-    'dirname' => 'test',
-    'domain' => 'www.test.cn',
-    'site_title' => '测试',
-    'keywords' => '',
-    'description' => '',
-    'view' => 'xview',
-    'setting' => 'array (
-  \'upload_maxsize\' => \'10240\',
-  \'upload_allowext\' => \'jpg|jpeg|gif|bmp|png|doc|docx|xls|xlsx|ppt|pptx|pdf|txt|rar|zip|swf\',
-  \'watermark_enable\' => \'0\',
-  \'watermark_minwidth\' => \'300\',
-  \'watermark_minheight\' => \'300\',
-  \'watermark_img\' => \'images/water/mark.gif\',
-  \'watermark_pct\' => \'100\',
-  \'watermark_quality\' => \'100\',
-  \'watermark_pos\' => \'9\',
-)',
-    'route' => 'array (
-  \'m\' => \'index\',
-  \'c\' => \'index\',
-  \'a\' => \'init\',
-)',
-    'logo' => 'statics/images/admin/logo.png',
-    'url' => 'http://www.test.cn/',
-  ),
 );
 ?>

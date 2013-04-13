@@ -5,7 +5,7 @@ class admin_controller_index extends admin_class_controller
 	{
 		$userid = $_SESSION['userid'];
         $email = $_SESSION['email'];
-        $roles = getcache('role_'.$this->get_siteid(),'user');
+        $roles = getcache('role_'.ROUTE_S,'user');
 		$roleid = explode(',',$_SESSION['roleid']);
 		$rolename = array();
 		foreach($roleid as $roleid)
@@ -22,7 +22,7 @@ class admin_controller_index extends admin_class_controller
 		$rolename = implode(',', $rolename);
         $site = new admin_class_sites();
         $sitelist = $site->get_list($_SESSION['roleid']);
-        $currentsite = $this->get_siteinfo($_SESSION['siteid']);
+        $currentsite = $site->get_siteinfo(ROUTE_S);
         $menu_arr = $this->admin_menu(1);
         $init_left_menu = $this->admin_menu(4);
 		include $this->view('admin','index','init');

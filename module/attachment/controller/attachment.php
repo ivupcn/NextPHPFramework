@@ -16,11 +16,11 @@ class attachment_controller_attachment extends attachment_class_controller
 			}
 			else
 			{
-				$grouplist = getcache('grouplist_'.$this->get_siteid(),'user');
+				$grouplist = getcache('grouplist_'.ROUTE_S,'user');
 				$groupallowattachment = $grouplist[$_SESSION['groupid']]['allowattachment'];
 			}
 			if($_POST['swf_auth_key'] != md5(Next::config('system','auth_key','29HTvKg84Veg8VtDdKbs').$_POST['SWFUPLOADSESSID']) || !$groupallowattachment) exit('该用户组禁止上传附件');
-			$site_setting = $this->get_site_setting($this->siteid);
+			$site_setting = $this->get_site_setting();
 			$alowexts = $site_setting['upload_allowext'];
 			$maxsize = $site_setting['upload_maxsize'] * 1024;
 			$attachment = new attachment();

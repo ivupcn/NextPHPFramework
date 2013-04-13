@@ -1,4 +1,4 @@
-{view 'user','index','header',$this->get_siteid()}
+{view 'user','index','header',ROUTE_S}
 <div id="main" class="main">
 	<div id="sidebar">
 		<fieldset>
@@ -10,7 +10,7 @@
 		</fieldset>
 	</div>
 	<div class="sleeve_main">
-		{view 'user','index','menu',$this->get_siteid()}
+		{view 'user','index','menu',ROUTE_S}
 		<div id="post">
 			<fieldset>
 				<legend>指派给我的任务</legend>
@@ -53,4 +53,4 @@
 		</div>
 	</div>
 </div>
-{view 'user','index','footer',$this->get_siteid()}
+{view 'user','index','footer',ROUTE_S}

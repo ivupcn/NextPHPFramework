@@ -1,6 +1,6 @@
 <div class="pageContent">
 	<h2 class="contentTitle">修改密码</h2>
-<form action="?m=user&c=user&a=editPwd" method="post"  class="pageForm required-validate" onsubmit="return validateCallback(this, navTabAjaxDone);">
+<form action="{url 'user::editPwd@user'}" method="post"  class="pageForm required-validate" onsubmit="return validateCallback(this, navTabAjaxDone);">
 	<div class="pageFormContent" layoutH="95">
 <input type="hidden" name="info[userid]" value="<?php echo $userid?>">
 <input type="hidden" name="info[email]" value="<?php echo $email?>">

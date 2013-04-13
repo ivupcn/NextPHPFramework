@@ -3,7 +3,7 @@
 .radio-label td{ border-right:1px solid #e4e2e2; border-bottom:1px solid #e4e2e2;background:#f6f9fd}
 </style>
 <div class="pageContent">
-<form action="{url 'site::edit@admin','siteid/'.$siteid}" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, divAjaxDone);">
+<form action="{url 'site::edit#'.$siteid.'@admin'}" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, divAjaxDone);">
   <div class="pageFormContent" layoutH="82">
 <fieldset>
 	<legend>基本配置</legend>
@@ -143,7 +143,7 @@
       <ul>
         <li><div class="buttonActive"><div class="buttonContent"><button type="submit">保存</button></div></div></li>
         {if $siteid != 1}
-        <li><div class="buttonActive"><div class="buttonContent"><button><a href="{url 'site::delete@admin','siteid/'.$siteid}" target="ajaxTodo" title="确定要删除吗?">删除</a></button></div></div></li>
+        <li><div class="buttonActive"><div class="buttonContent"><button><a href="{url 'site::delete#'.$siteid.'@admin'}" target="ajaxTodo" title="确定要删除吗?">删除</a></button></div></div></li>
         {/if}
       </ul>
     </div>

@@ -1,7 +1,7 @@
-{view 'user','index','header',$this->get_siteid()}
+{view 'user','index','header',ROUTE_S}
 <div id="main" class="main">
 	<div class="sleeve_main" style="margin-right: 0">
-		{view 'user','index','menu',$this->get_siteid()}
+		{view 'user','index','menu',ROUTE_S}
 		<div id="post">
 			{model:oa_model_task action="listinfo" order="id DESC" page="$page"}
 			<table class="table-list" width="100%">
@@ -33,4 +33,4 @@
 		</div>
 	</div>
 </div>
-{view 'user','index','footer',$this->get_siteid()}
+{view 'user','index','footer',ROUTE_S}

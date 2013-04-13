@@ -55,7 +55,7 @@ class admin_controller_site extends admin_class_controller
 
 	function action_edit()
 	{
-		$siteid = isset($_GET['siteid']) && intval($_GET['siteid']) ? intval($_GET['siteid']) : $this->_app->showmessage('300','非法参数！');
+		$siteid = isset($_GET['s']) && intval($_GET['s']) ? intval($_GET['s']) : $this->_app->showmessage('300','非法参数！');
 		if($data = admin_model_site::model()->get_one(array('siteid'=>$siteid)))
 		{
 			if($this->_context->isPOST() &&  admin_model_site::model()->validate($_POST['info']))
@@ -116,7 +116,7 @@ class admin_controller_site extends admin_class_controller
 
 	function action_config()
 	{
-		if($data = admin_model_site::model()->get_one(array('siteid'=>$this->get_siteid())))
+		if($data = admin_model_site::model()->get_one(array('siteid'=>ROUTE_S)))
 		{
 			if($this->_context->isPOST())
 			{
@@ -145,7 +145,7 @@ class admin_controller_site extends admin_class_controller
 			}
 			else
 			{
-				$view_list = $this->viewlist($this->get_siteid());
+				$view_list = $this->viewlist(ROUTE_S);
 				$setting = string2array($data['setting']);
 				include $this->view('admin','site','config');
 			}
@@ -156,14 +156,14 @@ class admin_controller_site extends admin_class_controller
 		}
 	}
 
-	function action_del()
+	function action_delete()
 	{
-		$siteid = isset($_GET['siteid']) && intval($_GET['siteid']) ? intval($_GET['siteid']) : $this->_app->showmessage('300','非法参数！');
+		$siteid = isset($_GET['s']) && intval($_GET['s']) ? intval($_GET['s']) : $this->_app->showmessage('300','非法参数！');
 		if (admin_model_site::model()->get_one(array('siteid'=>$siteid)))
 		{
 			if (admin_model_site::model()->delete(array('siteid'=>$siteid)))
 			{
-				$class_site = X::load_app_class('sites');
+				$class_site = new admin_class_sites();
 				$class_site->set_cache();
 				$this->_app->showmessage('200','操作成功！',$this->_context->url('site::init@admin'),'','admin_site_init');
 			}
@@ -199,7 +199,8 @@ class admin_controller_site extends admin_class_controller
     private function viewlist($siteid, $disable = 0)
     {
         if($siteid == '') $this->_app->showmessage('300','参数错误');
-        $siteinfo = $this->get_siteinfo($siteid);
+        $site = new admin_class_sites();
+        $siteinfo = $site->get_siteinfo($siteid);
         $site_root = Next::config('system','site_root',APP_PATH.'siteroot');
         $list = glob($site_root.DIRECTORY_SEPARATOR.$siteinfo['dirname'].DIRECTORY_SEPARATOR.'view'.DIRECTORY_SEPARATOR.'*', GLOB_ONLYDIR);
         $arr = $template = array();

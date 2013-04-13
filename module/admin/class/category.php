@@ -3,11 +3,11 @@ class admin_class_category
 {
 	public $categorys,$sethtml;
 
-	public function repair($siteid, $module)
+	public function repair($module)
 	{
-		if(!$module || !$siteid) return false;
+		if(!$module) return false;
 		$this->categorys = $categorys = array();
-		$this->categorys = $categorys = admin_model_tag::model()->select(array('siteid'=>$siteid,'module'=>$module), '*', '', 'listorder ASC,id ASC', '', 'id');
+		$this->categorys = $categorys = admin_model_tag::model()->select(array('siteid'=>ROUTE_S,'module'=>$module), '*', '', 'listorder ASC,id ASC', '', 'id');
 		if(is_array($this->categorys))
 		{
 			foreach($this->categorys as $id => $cat)
@@ -63,11 +63,11 @@ class admin_class_category
 	/**
 	 * 更新缓存
 	 */
-	public function cache($siteid,$module)
+	public function cache($module)
 	{
-		if(!$siteid || !$module) return false;
+		if(!$module) return false;
 		$categorys = array();
-		$models = getcache('model_'.$siteid,'admin');
+		$models = getcache('model_'.ROUTE_S,'admin');
 		foreach ($models as $modelid=>$model)
 		{
 			$datas = admin_model_tag::model()->select(array('modelid'=>$modelid),'id,type,items',10000);
@@ -85,7 +85,7 @@ class admin_class_category
 		}
 		setcache('category_'.$module,$array,'admin');
 		$categorys = $this->categorys = array();
-		$this->categorys = admin_model_tag::model()->select(array('siteid'=>$siteid, 'module'=>$module),'*',10000,'listorder ASC');
+		$this->categorys = admin_model_tag::model()->select(array('siteid'=>ROUTE_S, 'module'=>$module),'*',10000,'listorder ASC');
 		foreach($this->categorys as $r)
 		{
 			unset($r['module']);
@@ -107,7 +107,7 @@ class admin_class_category
 			}
 			$categorys[$r['id']] = $r;
 		}
-		setcache('category_'.$module.'_'.$siteid,$categorys,'admin');
+		setcache('category_'.$module.'_'.ROUTE_S,$categorys,'admin');
 		return true;
 	}
 
@@ -254,10 +254,9 @@ class admin_class_category
 	 * 获取站点域名
 	 * @param $siteid   站点id
 	 */
-	private function siteurl($siteid)
+	private function siteurl($siteid = ROUTE_S)
 	{
 		static $sitelist;
-		if(!$siteid) return false;
 		if(empty($sitelist)) $sitelist = getcache('sitelist','admin');
 		return substr($sitelist[$siteid]['url'],0,-1);
 	}

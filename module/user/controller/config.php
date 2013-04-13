@@ -6,13 +6,13 @@ class user_controller_config extends admin_class_controller
 		if($this->_context->isPOST())
 		{
 			$info = new_addslashes($_POST['info']);
-			setcache('user_config_'.$this->get_siteid(),$info,'user');
+			setcache('user_config_'.ROUTE_S,$info,'user');
 			$this->_app->showmessage('200','操作成功！',$this->_context->url('config::init@user'),'','user_config_init');
 		}
 		else
 		{
-			$user_config = getcache('user_config_'.$this->get_siteid(),'user');
-			$grouplist = getcache('grouplist_'.$this->get_siteid(),'user');
+			$user_config = getcache('user_config_'.ROUTE_S,'user');
+			$grouplist = getcache('grouplist_'.ROUTE_S,'user');
 			include $this->view('user','config','init');
 		}
 	}

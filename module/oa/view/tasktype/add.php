@@ -14,7 +14,7 @@
 			<tr>
 		        <th width="100">上级类型：</th>
 		        <td>
-				<?php echo form::select_category('category_oa_'.$this->get_siteid(),$parentid,'name="info[parentid]" id="parentid"','≡ 作为一级类型 ≡',0,-1);?>
+				<?php echo form::select_category('category_oa_'.ROUTE_S,$parentid,'name="info[parentid]" id="parentid"','≡ 作为一级类型 ≡',0,-1);?>
 				</td>
 		    </tr>
 		    <tr>
@@ -43,7 +43,7 @@
 		        <th width="100">工作流：</th>
 		        <td>
 		        	<?php
-						$workflows = getcache('workflow_'.$this->get_siteid(),'extend');
+						$workflows = getcache('workflow_'.ROUTE_S,'extend');
 						if($workflows)
 						{
 							$workflows_datas = array();

@@ -1,3 +1,3 @@
-{view 'user','index','header',$this->get_siteid()}
+{view 'user','index','header',ROUTE_S}
 
-{view 'user','index','footer',$this->get_siteid()}
+{view 'user','index','footer',ROUTE_S}

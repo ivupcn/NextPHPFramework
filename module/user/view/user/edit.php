@@ -1,5 +1,5 @@
 <div class="pageContent">
-<form action="?m=user&c=user&a=edit" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone);">
+<form action="{user::edit@user}" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone);">
 <div class="pageFormContent" layoutH="52">
 <input type="hidden" name="info[userid]" value="<?php echo $userid?>" />
 <input type="hidden" name="info[email]" value="<?php echo $email?>" />

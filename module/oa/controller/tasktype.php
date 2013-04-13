@@ -3,12 +3,12 @@ class oa_controller_tasktype extends admin_class_controller
 {
 	public function action_init()
 	{
-		$workflow = getcache('workflow_'.$this->get_siteid(),'extend');
+		$workflow = getcache('workflow_'.ROUTE_S,'extend');
 		$tree = new tree();
 		$tree->icon = array('　│ ','　├─ ','　└─ ');
 		$tree->nbsp = '　';
 	
-		$result = admin_model_tag::model()->select(array('siteid'=>$this->get_siteid(),'module'=>'oa','type'=>'task_category'),'*','','listorder ASC,id DESC');
+		$result = admin_model_tag::model()->select(array('siteid'=>ROUTE_S,'module'=>'oa','type'=>'task_category'),'*','','listorder ASC,id DESC');
 		$array = array();
 		foreach($result as $r)
 		{
@@ -30,8 +30,8 @@ class oa_controller_tasktype extends admin_class_controller
 		$tree->init($array);
 		$tags = $tree->get_tree(0, $str);
 		$category = new admin_class_category();
-		$category->repair($this->get_siteid(),'oa');
-		$category->cache($this->get_siteid(),'oa');
+		$category->repair(ROUTE_S,'oa');
+		$category->cache(ROUTE_S,'oa');
 		include $this->view('oa','tasktype','init');
 	}
 
@@ -41,7 +41,7 @@ class oa_controller_tasktype extends admin_class_controller
 		{
 			$info = $_POST['info'];
 			$info['type'] = 'task_category';
-			$info['siteid'] = $this->get_siteid();
+			$info['siteid'] = ROUTE_S;
 			$info['module'] = 'oa';
 			$info['description'] = addslashes($info['description']);
 			$info['parentid'] = intval($info['parentid']);
@@ -113,7 +113,7 @@ class oa_controller_tasktype extends admin_class_controller
 	public function action_delete()
 	{
 		$id = isset($_GET['id']) && intval($_GET['id']) ? intval($_GET['id']) : $this->_app->showmessage('300','操作失败！');
-		$categorys = getcache('category_oa_'.$this->get_siteid(),'admin');
+		$categorys = getcache('category_oa_'.ROUTE_S,'admin');
 		$category = new admin_class_category();
 		$category->delete_child($id);
 		admin_model_tag::model()->delete(array('id'=>$id));

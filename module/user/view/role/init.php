@@ -1,7 +1,7 @@
 <div class="pageContent">
 	<div class="panelBar">
 		<ul class="toolBar">
-		<li><a class="add" href="?m=user&c=role&a=add" target="dialog" mask="true" maxable="false" rel="user_role_add" width="500" height="300"><span>添加角色</span></a></li>
+		<li><a class="add" href="{url 'role::add@user'}" target="dialog" mask="true" maxable="false" rel="user_role_add" width="500" height="300"><span>添加角色</span></a></li>
 		</ul>
 	</div>
     <table class="table" width="100%" layoutH="375">
@@ -22,14 +22,14 @@
 			<td>{$info['rolename']}</td>
 			<td>{$info['description']}</td>
 			<td align="center">
-				<a href="?m=user&c=role&a=changeStatus&roleid={$info['roleid']}&disabled={if $info['disabled']==1}0{else}1{/if}" target="ajaxTodo">
+				<a href="{url 'role::changeStatus@user','roleid/'.$info['roleid']}&disabled={if $info['disabled']==1}0{else}1{/if}" target="ajaxTodo">
 				{if $info['disabled']}<font color="blue">×</font>{else}<font color="red">√</font>{/if}
 				</a>
 			</td>
 			<td align="center">
-			<a href="?m=user&c=user&a=roleUser&roleid={$info['roleid']}" target="ajax" rel="userBox">成员管理</a> | 
-			<a href="?m=user&c=role&a=edit&roleid={$info['roleid']}" target="dialog" mask="true" maxable="false" rel="user_role_edit" width="500" height="300">修改</a> | 
-			<a href="?m=user&c=role&a=delete&roleid={$info['roleid']}" target="ajaxTodo" title="确定要删除吗?">删除</a>
+			<a href="{url 'user::roleUser@user','roleid/'.$info['roleid']}" target="ajax" rel="userBox">成员管理</a> | 
+			<a href="{url 'role::edit@user','roleid/'.$info['roleid']}" target="dialog" mask="true" maxable="false" rel="user_role_edit" width="500" height="300">修改</a> | 
+			<a href="{url 'role::delete@user','roleid/'.$info['roleid']}" target="ajaxTodo" title="确定要删除吗?">删除</a>
 			</td>
 			</tr>
 			{/if}

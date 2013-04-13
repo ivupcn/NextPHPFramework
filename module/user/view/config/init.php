@@ -1,5 +1,5 @@
 <div class="pageContent">
-	<form action="?m=user&c=config&a=init" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, navTabAjaxDone);">
+	<form action="{url 'config::init@user'}" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, navTabAjaxDone);">
 		<div class="pageFormContent" layoutH="55">
 			<table width="100%" class="table_form">
 				<tr>

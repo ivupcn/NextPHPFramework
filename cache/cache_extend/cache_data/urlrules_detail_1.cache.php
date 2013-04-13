@@ -63,7 +63,7 @@ return array (
   18 => 
   array (
     'urlruleid' => '18',
-    'module' => 'content',
+    'module' => 'admin',
     'file' => 'show',
     'ishtml' => '0',
     'urlrule' => 'content-{$catid}-{$id}-{$page}.html',

@@ -57,7 +57,7 @@ class admin_class_sites
 	 * 获取站点的信息
 	 * @param $siteid   站点ID
 	 */
-	public function get_siteinfo($siteid)
+	public function get_siteinfo($siteid = ROUTE_S)
 	{
 	    static $sitelist;
 	    if (empty($sitelist)) $sitelist  = getcache('sitelist','admin');

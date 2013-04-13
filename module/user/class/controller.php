@@ -43,11 +43,6 @@ class user_class_controller extends controller
                 $r = user_model_user::model()->get_one(array('userid'=>$userid),'password,siteid,groupid');
                 if($r['password'] == $password)
                 {
-                    if (!defined('SITEID'))
-                    {
-                       define('SITEID', $r['siteid']);
-                    }
-
                     /**
                     * 此处可以添加与用户组相关的代码
                     */
@@ -67,33 +62,14 @@ class user_class_controller extends controller
     }
 
     /**
-     * 获取当前的站点ID
-     */
-    final public static function get_siteid()
-    {
-        static $siteid;
-        if (!empty($siteid)) return $siteid;
-        if (isset($_SESSION['siteid']))
-        {
-            $siteid = $_SESSION['siteid'];
-        } else
-        {
-            $siteid = 1;
-        }
-        return $siteid;
-    }
-
-    /**
     * 获取当前站点信息
     * @param integer $siteid 站点ID号，为空时取当前站点的信息
     * @return array
     */
-    final public static function get_siteinfo($siteid = '')
+    final public static function get_siteinfo($siteid = ROUTE_S)
     {
-        if ($siteid == '') $siteid = self::get_siteid();
-        if (empty($siteid)) return false;
         $sites = new admin_class_sites();
-        return $sites->get_siteinfo($siteid);
+        return $sites->get_siteinfo();
     }
 
     /**
@@ -113,7 +89,6 @@ class user_class_controller extends controller
         //权限检查
         if($_SESSION['roleid'] == 1) return $result;
         $array = array();
-        $siteid = $_SESSION['siteid'];
         foreach($result as $v)
         {
             $action = $v['a'];
@@ -124,7 +99,7 @@ class user_class_controller extends controller
             else
             {
                 if(preg_match('/^ajax([a-z]+)_/',$action,$_match)) $action = $_match[1];
-                $r = user_model_rolepriv::model()->get_one(array('m'=>$v['m'],'c'=>$v['c'],'a'=>$action,'siteid'=>$siteid));
+                $r = user_model_rolepriv::model()->get_one(array('m'=>$v['m'],'c'=>$v['c'],'a'=>$action,'siteid'=>ROUTE_S));
                 if($r)
                 {
                     $roleid = explode(',', $_SESSION['roleid']);

@@ -27,7 +27,7 @@ abstract class controller
 	/**
      * 调用相应的视图方法
      */
-	protected function view($module = context::UDI_DEFAULT_MODULE, $controller = context::UDI_DEFAULT_CONTROLLER, $view = context::UDI_DEFAULT_ACTION, $siteid = null)
+	protected function view($module = context::UDI_DEFAULT_MODULE, $controller = context::UDI_DEFAULT_CONTROLLER, $view = context::UDI_DEFAULT_ACTION, $siteid = context::UDI_DEFAULT_SITEID)
 	{
 		$module = str_replace('/', DIRECTORY_SEPARATOR, $module);
         if($siteid)

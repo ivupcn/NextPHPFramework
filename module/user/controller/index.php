@@ -3,7 +3,7 @@ class user_controller_index extends user_class_controller
 {
 	public function action_init()
 	{
-		include $this->view('user','index','init',$this->get_siteid());
+		include $this->view('user','index','init',ROUTE_S);
 	}
 
 	public function action_login()
@@ -97,7 +97,7 @@ class user_controller_index extends user_class_controller
 		{
 			$siteInfo = $this->get_siteinfo();
 			$title = '会员登录入口-'.$siteInfo['name'];
-			include $this->view('user','index','login',$this->get_siteid());
+			include $this->view('user','index','login',ROUTE_S);
 		}
 	}
 }

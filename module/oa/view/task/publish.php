@@ -41,7 +41,7 @@
 				<tr>
 					<th>任务类型：</th>
 					<td>
-						<?php echo form::select_category('category_oa_'.$this->get_siteid(),0,'name="info[tagid]" id="tagid" class="required"','',0,-1);?>
+						<?php echo form::select_category('category_oa_'.ROUTE_S,0,'name="info[tagid]" id="tagid" class="required"','',0,-1);?>
 					</td>
 				</tr>
 				<tr>

@@ -1,5 +1,5 @@
 <div class="pageContent">
-<form action="?m=user&c=group&a=add" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone);">
+<form action="{url 'group::add@user'}" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone);">
 	<div class="pageFormContent" layoutH="52">
 <fieldset>
 	<legend>基本信息</legend>

@@ -1,5 +1,5 @@
 <div class="pageContent">
-<form action="?m=user&c=user&a=add" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone);">
+<form action="{url 'user::add@user'}" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone);">
 <div class="pageFormContent" layoutH="52">
 <table width="100%" class="table_form contentWrap">
 <tr>

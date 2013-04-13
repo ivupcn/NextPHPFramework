@@ -14,7 +14,7 @@
 <body>
 	<div id="headWrap">
 		<h1 id="logo">
-			<a href="http://iyn.cc" title="｛X｝Management Platform"></a>
+			<a href="#" title="｛X｝Management Platform"></a>
 		</h1>
 	</div>
 	<div id="mainWrapper">
@@ -44,7 +44,7 @@
 								<input class="submit" type="submit" class="blu-btn" value="登　录"/>
 							</div>
 							<div class="orther">
-								<label for="info"><a href="index.php?m=user&c=index&a=register">立即注册会员</a>　|　<a href="#">忘记密码？</a></label>
+								<label for="info"><a href="{url 'index::register@user'}">立即注册会员</a>　|　<a href="#">忘记密码？</a></label>
 							</div>
 						</form>
 					</div>
