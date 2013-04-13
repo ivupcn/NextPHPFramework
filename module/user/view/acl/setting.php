@@ -1,6 +1,6 @@
-<div class="pageContent">
+<div class="pageContent" id="tabletree">
 <form action="?m=user&c=acl&a=setting" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, navTabAjaxDone);">
-<table class="table" width="100%" layoutH="65">
+<table class="treetable" width="100%" layoutH="35">
     <thead>
         <tr>
             <th>菜单名称</th>

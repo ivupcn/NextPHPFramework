@@ -121,11 +121,12 @@ class user_controller_acl extends admin_class_controller
 					if($r['m'] == 'm') $r['m'] = '';
 					if($r['c'] == 'c') $r['c'] = '';
 					if($r['a'] == 'a') $r['a'] = '';
+					$r['parentid_node'] = $r['parentid'] ? ' data-tt-parent-id="'.$r['parentid'].'"' : '';
 					$array[] = $r;
 				}
 
-				$str  = "<tr>
-							<td>\$spacer\$name\$sys</td>
+				$str  = "<tr data-tt-id='\$id' \$parentid_node>
+							<td>\$name\$sys</td>
 							<td>\$m</td>
 							<td>\$c</td>
 							<td>\$a</td>
