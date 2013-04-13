@@ -1,7 +1,7 @@
 <?php defined('IN_Next') or exit('No permission resources.'); ?><div class="pageContent">
   <div class="panelBar">
     <ul class="toolBar">
-      <li><a class="add" href="<?php echo $this->_context->url('model::add@content'); ?>" target="dialog" mask="true" maxable="false" rel="content_model_add" width="800" height="400"><span>添加模型</span></a></li>
+      <li><a class="add" href="<?php echo $this->_context->url('model::add@content'); ?>" target="dialog" mask="true" maxable="false" rel="content_model_add" width="800" height="260"><span>添加模型</span></a></li>
     </ul>
   </div>
   <table class="table" width="100%" layoutH="82">
