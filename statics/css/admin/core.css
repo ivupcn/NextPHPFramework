@@ -347,31 +347,12 @@ table.treetable .hover {background-color:#e4f5ff;}
 table.treetable .selected {background-color:#7cc5e5;border-color:#b8d0d6; }
 table.treetable a {color:#3C7FB1; font-size:11px; line-height:20px;}
 table.treetable a:hover {text-decoration:underline; line-height:20px;}
-table.treetable tr.collapsed span.indenter a, table.treetable tr.expanded span.indenter a {
-  background-position: center left;
-  background-repeat: no-repeat;
-  padding: .2em 0 .2em 1.5em;
-}
-table.treetable tr.collapsed span.indenter a {
-  background-image: url(../../images/admin/expand.png);
-}
-
-table.treetable tr.expanded span.indenter a {
-  background-image: url(../../images/admin/collapse.png);
-}
-
-table.treetable tr.selected {
-  background-color: #3875d7;
-  color: #fff;
-}
-
-table.treetable tr.collapsed.selected span.indenter a {
-  background-image: url(../../images/admin/expand-light.png);
-}
-
-table.treetable tr.expanded.selected span.indenter a {
-  background-image: url(../../images/admin/collapse-light.png);
-}
+table.treetable tr.collapsed span.indenter a, table.treetable tr.expanded span.indenter a {background-position: center left;background-repeat: no-repeat;padding: .2em 0 .2em 1.5em;}
+table.treetable tr.collapsed span.indenter a {background-image: url(../../images/admin/expand.png);}
+table.treetable tr.expanded span.indenter a {background-image: url(../../images/admin/collapse.png);}
+table.treetable tr.selected {background-color: #3875d7;color: #fff;}
+table.treetable tr.collapsed.selected span.indenter a {background-image: url(../../images/admin/expand-light.png);}
+table.treetable tr.expanded.selected span.indenter a {background-image: url(../../images/admin/collapse-light.png);}
 table.treetable td span.error {z-index:-1}
 table.nowrap tbody tr {border-bottom:solid 1px #ededed;}
 
