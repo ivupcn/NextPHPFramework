@@ -4,6 +4,22 @@ return array (
   array (
     'task' => 
     array (
+      'timelinedata' => 
+      array (
+        'role' => '40,41,42',
+      ),
+      'timeline' => 
+      array (
+        'role' => '40,41,42',
+      ),
+      'check' => 
+      array (
+        'role' => '41,42',
+      ),
+      'checklist' => 
+      array (
+        'role' => '41,42',
+      ),
       'publish' => 
       array (
         'role' => '40,41,42',
@@ -60,22 +76,6 @@ return array (
       array (
         'role' => '40,41,42',
       ),
-      'checklist' => 
-      array (
-        'role' => '41,42',
-      ),
-      'check' => 
-      array (
-        'role' => '41,42',
-      ),
-      'timeline' => 
-      array (
-        'role' => '40,41,42',
-      ),
-      'timelinedata' => 
-      array (
-        'role' => '40,41,42',
-      ),
     ),
     'tasktype' => 
     array (
@@ -83,11 +83,11 @@ return array (
       array (
         'role' => '41,42',
       ),
-      'delete' => 
+      'edit' => 
       array (
         'role' => '41,42',
       ),
-      'edit' => 
+      'delete' => 
       array (
         'role' => '41,42',
       ),

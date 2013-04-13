@@ -110,8 +110,9 @@ class admin_controller_index extends admin_class_controller
     */
     public function action_setSiteid()
     {
-        $siteid = isset($_GET['siteid']) && intval($_GET['siteid']) ? intval($_GET['siteid']) : exit('0'); 
-        $_SESSION['siteid'] = $siteid;
+        $s = isset($_GET['s']) && intval($_GET['s']) ? intval($_GET['s']) : exit('0'); 
+        $_SESSION['siteid'] = $s;
+        $this->_context->set_cookie('siteid',$s,0);
         exit('1');
     }
 }

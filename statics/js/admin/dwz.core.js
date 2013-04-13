@@ -1119,16 +1119,9 @@ _show($this);}
 return false;});
 $this.find(op.sites$).click(function(){
 var $li=$(this);
-$.post($li.find(">a").attr("href"),{},function(html){
-_hide($this);
-$.get("?m=admin&c=index&a=setSiteid&siteid="+$li.find(">a").attr("siteid"),function(data){if(data==1){
-$this.find(op.boxTitle$).html($li.find(">a").html());
-$("#logo").css("background-image","url("+$li.find(">a").attr("icon")+")").html($li.find(">a").html());
-navTab.closeAllTab();
-$.post($("#navMenu").find("li.selected > a").attr("href"),{},function(html){
-$("#sidebar").find(".treeMenu").remove().end().append(html).initUI();});
-alertMsg.correct('站点切换成功！');
-}});});
+$.get($li.find(">a").attr("href"),function(data){if(data==1){
+location.reload();
+}});
 return false;});});}
 function _show($box){
 $box.addClass("selected");

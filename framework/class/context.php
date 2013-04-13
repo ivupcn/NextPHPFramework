@@ -28,6 +28,8 @@ class context implements ArrayAccess
     const UDI_CONTROLLER = 'c';
     // UDI 中的动作
     const UDI_ACTION     = 'a';
+    // UDI 中的站点ID
+    const UDI_SITEID     = 's';
 	
 	/**
      * 指示 UDI 的默认值
@@ -38,6 +40,8 @@ class context implements ArrayAccess
     const UDI_DEFAULT_CONTROLLER = 'index';
     // 默认动作
     const UDI_DEFAULT_ACTION     = 'init';
+    // 默认站点ID
+    const UDI_DEFAULT_SITEID     = 1;
 	
 	/**
      * UDI 的默认值
@@ -45,7 +49,8 @@ class context implements ArrayAccess
     private static $_udi_defaults = array(
         self::UDI_MODULE => self::UDI_DEFAULT_MODULE,
         self::UDI_CONTROLLER => self::UDI_DEFAULT_CONTROLLER,
-        self::UDI_ACTION     => self::UDI_DEFAULT_ACTION,
+        self::UDI_ACTION => self::UDI_DEFAULT_ACTION,
+        self::UDI_SITEID => self::UDI_DEFAULT_SITEID
     );
 	
 	/**
@@ -71,6 +76,13 @@ class context implements ArrayAccess
      * @var string
      */
     public $action_name;
+
+    /**
+     * 请求包含的站点名
+     *
+     * @var string
+     */
+    public $siteid_name;
     
 	 /**
      * 附加的参数
@@ -78,13 +90,6 @@ class context implements ArrayAccess
      * @var array
      */
     private $_params = array();
-	
-	/**
-     * 路由对象
-     *
-     * @var QRouter
-     */
-    private $_router;
 	
 	/**
      * 构造函数
@@ -103,26 +108,8 @@ class context implements ArrayAccess
 		$udi[self::UDI_MODULE]     = (isset($keys[self::UDI_MODULE])) ? $_GET[$keys[self::UDI_MODULE]] : null;
         $udi[self::UDI_CONTROLLER] = (isset($keys[self::UDI_CONTROLLER])) ? $_GET[$keys[self::UDI_CONTROLLER]] : null;
         $udi[self::UDI_ACTION]     = (isset($keys[self::UDI_ACTION])) ? $_GET[$keys[self::UDI_ACTION]] : null;
-		
-		$this->_router = NEXT::config('route',$_SERVER['HTTP_HOST'],$udi);
-		if(isset($this->_router['data']['POST']) && is_array($this->_router['data']['POST']))
-		{
-			foreach($this->_router['data']['POST'] as $_key => $_value)
-			{
-				if(!isset($_POST[$_key])) $_POST[$_key] = $_value;
-                $this->changeParam($_key, $_value);
-			}
-		}
-		if(isset($this->_router['data']['GET']) && is_array($this->_router['data']['GET']))
-		{
-			foreach($this->_router['data']['GET'] as $_key => $_value)
-			{
-				if(!isset($_GET[$_key])) $_GET[$_key] = $_value;
-                $this->changeParam($_key, $_value);
-			}
-		}
-		isset($_GET['page']) ? $_GET['page'] = max(intval($_GET['page']),1) : $_GET['page'] = 1;
-		
+		$udi[self::UDI_SITEID]     = (isset($keys[self::UDI_SITEID])) ? $_GET[$keys[self::UDI_SITEID]] : self::get_cookie('siteid',1);
+
         $this->changeRequestUDI($udi);
     }
 	
@@ -682,7 +669,7 @@ class context implements ArrayAccess
     function url($udi, $params = null)
     {
         $udi = $this->normalizeUDI($udi);
-        if (! is_array($params))
+        if(!is_array($params))
         {
             $arr = normalize($params, '/');
             $params = array();
@@ -691,13 +678,6 @@ class context implements ArrayAccess
                 $value = array_shift($arr);
                 $params[$key] = $value;
             }
-        }
-
-        $params = array_filter($params, 'strlen');
-
-        foreach ($this->_router as $key => $value)
-        {
-            unset($params[$key]);
         }
 
         $params = array_filter(array_merge($udi, $params), 'strlen');
@@ -714,9 +694,10 @@ class context implements ArrayAccess
      *
      * @code php
      * $udi = array(
-     *     QContext::UDI_MODULE     => '',
-     *     QContext::UDI_CONTROLLER => '',
-     *     QContext::UDI_ACTION     => '',
+     *     context::UDI_MODULE     => '',
+     *     context::UDI_CONTROLLER => '',
+     *     context::UDI_ACTION     => '',
+     *     context::UDI_SITEID     => ''
      * );
      *
      * // 输出
@@ -724,15 +705,17 @@ class context implements ArrayAccess
      * //     module:     default
      * //     controller: default
      * //     action:     index
+     * //     siteid:     1
      * // )
      * dump($context->normalizeUDI($udi));
      *
-     * $udi = 'posts::edit@admin';
+     * $udi = 'posts::edit#1@admin';
      * // 输出
      * // array(
      * //     module:     admin
      * //     controller: posts
      * //     action:     edit
+     * //     siteid:     1
      * // )
      * dump($context->normalizeUDI($udi));
      * @endcode
@@ -746,19 +729,37 @@ class context implements ArrayAccess
      */
     function normalizeUDI($udi, $return_array = true)
     {
-        if (! is_array($udi))
+        if (!is_array($udi))
         {
             // 特殊处理 ""UDI解析
             // ""返回当前动作
-            if(! is_string($udi) || $udi == '')
+            if(!is_string($udi) || $udi == '')
             {
                 $module_name = $this->module_name;
-                $controller = $this->controller;
-                $action = $this->action;
+                $controller_name = $this->controller_name;
+                $action_name = $this->action_name;
+                $siteid_name = $this->siteid_name;
+            }
+            elseif($udi == '::')
+            {
+                $module_name = $this->module_name;
+                $controller_name = $this->controller_name;
+                $action_name = self::$_udi_defaults[self::UDI_ACTION];
+                $siteid_name = $this->siteid_name;
             }
             else
             {
-                if (strpos($udi, '@') !== false)
+                if (strpos($udi, '::') !== false)
+                {
+                    $arr = explode('::', $udi);
+                    $controller_name = array_shift($arr);
+                    $udi = array_shift($arr);
+                }
+                else
+                {
+                    $controller_name = $this->controller_name;
+                }
+                if(strpos($udi, '@') !== false)
                 {
                     $arr = explode('@', $udi);
                     $module_name = array_pop($arr);
@@ -769,15 +770,16 @@ class context implements ArrayAccess
                     $module_name = $this->module_name;
                 }
 
-                $arr = explode('::', $udi);
-                $controller = array_shift($arr);
-                $action = array_shift($arr);
+                $arr = explode('#', $udi);
+                $action_name = array_shift($arr);
+                $siteid_name = array_shift($arr);
             }
 
             $udi = array(
                 self::UDI_MODULE     => $module_name,
-                self::UDI_CONTROLLER => $controller,
-                self::UDI_ACTION     => $action,
+                self::UDI_CONTROLLER => $controller_name,
+                self::UDI_ACTION     => $action_name,
+                self::UDI_SITEID     => $siteid_name
             );
         }
 
@@ -793,6 +795,10 @@ class context implements ArrayAccess
         {
             $udi[self::UDI_ACTION] = self::UDI_DEFAULT_ACTION;
         }
+        if (empty($udi[self::UDI_SITEID]))
+        {
+            $udi[self::UDI_SITEID] = $this->siteid_name;
+        }
         foreach (self::$_udi_defaults as $key => $value)
         {
             if (empty($udi[$key]))
@@ -807,7 +813,7 @@ class context implements ArrayAccess
 
         if (!$return_array)
         {
-            return $udi[self::UDI_CONTROLLER].'::'.$udi[self::UDI_ACTION].'@'.$udi[self::UDI_MODULE];
+            return $udi[self::UDI_CONTROLLER].'::'.$udi[self::UDI_ACTION].'#'.$udi[self::UDI_SITEID].'@'.$udi[self::UDI_MODULE];
         }
         else
         {
@@ -837,7 +843,7 @@ class context implements ArrayAccess
      * 将 context 对象保存的请求参数设置为 UDI 指定的值
      *
      * @code php
-     * $context->changeRequestUDI('posts/edit');
+     * $context->changeRequestUDI('posts::edit');
      * // 将输出 posts
      * echo $context->controller_name;
      * @endcode
@@ -853,7 +859,7 @@ class context implements ArrayAccess
 		$this->module_name     = $udi[self::UDI_MODULE];
         $this->controller_name = $udi[self::UDI_CONTROLLER];
         $this->action_name     = $udi[self::UDI_ACTION];
-        $this->_router         = $udi;
+        $this->siteid_name     = $udi[self::UDI_SITEID];
         return $this;
     }
 }

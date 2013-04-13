@@ -35,11 +35,11 @@ class application
 			$_REQUEST = new_addslashes($_REQUEST);
 			$_COOKIE = new_addslashes($_COOKIE);
 		}
-
         define('ROUTE_M',context::instance()->module_name);
         define('ROUTE_C',context::instance()->controller_name);
         define('ROUTE_A',context::instance()->action_name);
-
+        define('ROUTE_S',context::instance()->siteid_name);
+        
         NLOG::log('    REQUEST MCA：' .ROUTE_C.'::'.ROUTE_A.'@'.ROUTE_M);
 	}
 	
@@ -59,12 +59,12 @@ class application
      *
      * @return application
      */
-    static function instance(array $app_config = null)
+    static function instance()
     {
         static $instance;
         if (is_null($instance))
         {
-            $instance = new application($app_config);
+            $instance = new application();
         }
         return $instance;
     }

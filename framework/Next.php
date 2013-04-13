@@ -8,7 +8,6 @@
  */
 
 define('IN_Next', true);
-
 // APP路径
 defined('APP_PATH') or exit('Undefined application path');
 // NextPHP框架路径

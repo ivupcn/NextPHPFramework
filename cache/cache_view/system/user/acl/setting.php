@@ -1,4 +1,4 @@
-<?php defined('IN_Next') or exit('No permission resources.'); ?><div class="pageContent" id="tabletree">
+<?php defined('IN_Next') or exit('No permission resources.'); ?><div class="pageContent">
 <form action="?m=user&c=acl&a=setting" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, navTabAjaxDone);">
 <table class="treetable" width="100%" layoutH="35">
     <thead>

@@ -48,7 +48,7 @@ $(function(){
 				<li id="switchEnvBox"><a href="javascript:">（<span><?php echo $currentsite['name'];?></span>）切换站点</a>
 					<ul>
 						<?php if(is_array($sitelist)) foreach($sitelist AS $key => $v) { ?>
-						<li><a href="<?php echo $this->_context->url('index::main@admin','siteid/'.$v['siteid']); ?>" target="navTab" rel="main" siteid="<?php echo $v['siteid'];?>" icon="<?php echo $v['logo'];?>"><?php echo $v['name'];?></a></li>
+						<li><a href="<?php echo $this->_context->url('index::setSiteid#'.$v['siteid'].'@admin'); ?>"><?php echo $v['name'];?></a></li>
 						<?php } ?>
 					</ul>
 				</li>
