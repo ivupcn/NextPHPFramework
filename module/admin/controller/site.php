@@ -55,7 +55,7 @@ class admin_controller_site extends admin_class_controller
 
 	function action_edit()
 	{
-		$siteid = isset($_GET['s']) && intval($_GET['s']) ? intval($_GET['s']) : $this->_app->showmessage('300','非法参数！');
+		$siteid = isset($_GET['siteid']) && intval($_GET['siteid']) ? intval($_GET['siteid']) : $this->_app->showmessage('300','非法参数！');
 		if($data = admin_model_site::model()->get_one(array('siteid'=>$siteid)))
 		{
 			if($this->_context->isPOST() &&  admin_model_site::model()->validate($_POST['info']))

@@ -104,7 +104,7 @@ $(function(){
 					<div class="page unitBox">
 						<div class="accountInfo">
 							<p><span>NextPHP</span></p>
-							<p>NextPHP 官方主页：<a href="http://ivup.cn" target="_blank">http://ivup.cn</a></p>
+							<p>NextPHP GitHub 主页：<a href="http://ivupcn.github.io/NextPHPFramework/" target="_blank">http://ivupcn.github.io/NextPHPFramework/</a></p>
 						</div>
 						<div class="pageFormContent" layoutH="80">
 							<h2></h2>
