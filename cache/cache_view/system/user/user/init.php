@@ -1,10 +1,10 @@
 <?php defined('IN_Next') or exit('No permission resources.'); ?><div class="pageContent">
 <div class="panelBar">
 	<ul class="toolBar">
-		<li><a class="add" href="?m=user&c=user&a=add" target="dialog" mask="true" maxable="false" rel="user_user_add" width="500" height="300"><span>添加会员</span></a></li>
+		<li><a class="add" href="<?php echo $this->_context->url('user::add@user'); ?>" target="dialog" mask="true" maxable="false" rel="user_user_add" width="500" height="300"><span>添加会员</span></a></li>
 	</ul>
 </div>
-<form id="pagerForm" action="?m=user&c=user&a=init" method="post">
+<form id="pagerForm" action="<?php echo $this->_context->url('user::init@user'); ?>" method="post">
 	<input type="hidden" name="pageNum" value="<?php echo $page;?>" />
     <table class="table" width="100%" layoutH="82" rel="jbsxBox">
         <thead>
@@ -45,8 +45,8 @@
 <td><?php echo $info['lastloginip'];?></td>
 <td><?php echo $info['lastlogintime'] ? date('Y-m-d H:i:s',$info['lastlogintime']) : ''?></td>
 <td align="center">
-<a  href="?m=user&c=user&a=edit&userid=<?php echo $info['userid'];?>" target="dialog" mask="true" maxable="false" rel="user_user_edit" width="500" height="300">修改</a> | 
-<a href="?m=user&c=user&a=delete&userid=<?php echo $info['userid'];?>" target="ajaxTodo" title="确定要删除吗?">删除</a>
+<a href="<?php echo $this->_context->url('user::edit@user','userid/'.$info['userid']); ?>" target="dialog" mask="true" maxable="false" rel="user_user_edit" width="500" height="300">修改</a> | 
+<a href="<?php echo $this->_context->url('user::delete@user','user/'.$info['userid']); ?>" target="ajaxTodo" title="确定要删除吗?">删除</a>
 </td>
 </tr>
 <?php } ?>

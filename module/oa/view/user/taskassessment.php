@@ -1,9 +1,9 @@
-{view 'user','index','header',ROUTE_S}
+{view 'user','index','header',SITEID}
 <div id="main" class="main">
 	<div class="sleeve_main" style="margin-right: 0">
-		{view 'user','index','menu',ROUTE_S}
+		{view 'user','index','menu',SITEID}
 		<div id="post">
-			{model:user_model_user action="select" where="siteid = ROUTE_S"}
+			{model:user_model_user action="select" where="siteid = SITEID"}
 			<table class="table-list" width="100%">
 				<thead>
 					<tr>
@@ -40,4 +40,4 @@
 		</div>
 	</div>
 </div>
-{view 'user','index','footer',ROUTE_S}
+{view 'user','index','footer',SITEID}

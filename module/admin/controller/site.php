@@ -116,7 +116,7 @@ class admin_controller_site extends admin_class_controller
 
 	function action_config()
 	{
-		if($data = admin_model_site::model()->get_one(array('siteid'=>ROUTE_S)))
+		if($data = admin_model_site::model()->get_one(array('siteid'=>SITEID)))
 		{
 			if($this->_context->isPOST())
 			{
@@ -145,7 +145,7 @@ class admin_controller_site extends admin_class_controller
 			}
 			else
 			{
-				$view_list = $this->viewlist(ROUTE_S);
+				$view_list = $this->viewlist(SITEID);
 				$setting = string2array($data['setting']);
 				include $this->view('admin','site','config');
 			}

@@ -1119,8 +1119,15 @@ _show($this);}
 return false;});
 $this.find(op.sites$).click(function(){
 var $li=$(this);
-$.get($li.find(">a").attr("href"),function(data){if(data==1){
-location.reload();
+$.get($li.find(">a").attr("href"),{},function(data){
+_hide($this);
+if(data==1){
+$this.find(op.boxTitle$).html($li.find(">a").html());
+$("#logo").css("background-image","url("+$li.find(">a").attr("icon")+")").html($li.find(">a").html());
+navTab.closeAllTab();
+$.post($("#navMenu").find("li.selected > a").attr("href"),{},function(html){
+$("#sidebar").find(".treeMenu").remove().end().append(html).initUI();});
+alertMsg.correct('站点切换成功！');
 }});
 return false;});});}
 function _show($box){

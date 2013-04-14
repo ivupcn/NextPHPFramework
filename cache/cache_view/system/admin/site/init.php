@@ -9,7 +9,7 @@
 			<li><a href="javascript">X Management Platform</a>
 				<ul>
 					<?php if(is_array($list)) foreach($list AS $v) { ?>
-					<li><a href="<?php echo $this->_context->url('site::edit@admin','siteid/'.$v['siteid']); ?>" target="ajax" rel="siteBox"><?php echo $v['name'];?></a></li>
+					<li><a href="<?php echo $this->_context->url('site::edit#'.$v['siteid'].'@admin'); ?>" target="ajax" rel="siteBox"><?php echo $v['name'];?></a></li>
 					<?php } ?>
 				</ul>
 			</li>

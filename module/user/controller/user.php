@@ -4,10 +4,10 @@ class user_controller_user extends admin_class_controller
 	function action_init()
 	{
 		$page = isset($_POST['pageNum']) ? intval($_POST['pageNum']) : '1';
-		$infos = user_model_user::model()->listinfo(array('siteid'=>ROUTE_S), 'userid ASC', $page, 20,'','','',1);
+		$infos = user_model_user::model()->listinfo(array('siteid'=>SITEID), 'userid ASC', $page, 20,'','','',1);
 		$pages = user_model_user::model()->pages;
-		$roles = getcache('role_'.ROUTE_S,'user');
-		$groups = getcache('grouplist_'.ROUTE_S,'user');
+		$roles = getcache('role_'.SITEID,'user');
+		$groups = getcache('grouplist_'.SITEID,'user');
 		include $this->view('user','user','init');
 	}
 
@@ -25,7 +25,7 @@ class user_controller_user extends admin_class_controller
 			$passwordinfo = password($info['password']);
 			$info['password'] = $passwordinfo['password'];
 			$info['encrypt'] = $passwordinfo['encrypt'];
-			$info['siteid'] = ROUTE_S;
+			$info['siteid'] = SITEID;
 			$info['roleid'] = implode(',',$info['roleid']);
 			$admin_fields = array('email', 'password', 'encrypt','roleid', 'groupid','realname','siteid');
 			foreach ($info as $k=>$value)
@@ -43,8 +43,8 @@ class user_controller_user extends admin_class_controller
 		}
 		else
 		{
-			$roles = getcache('role_'.ROUTE_S,'user');
-			$groups = getcache('grouplist_'.ROUTE_S,'user');
+			$roles = getcache('role_'.SITEID,'user');
+			$groups = getcache('grouplist_'.SITEID,'user');
 			include $this->view('user','user','add');
 		}
 	}
@@ -77,8 +77,8 @@ class user_controller_user extends admin_class_controller
 		{					
 			$info = user_model_user::model()->get_one(array('userid'=>$_GET['userid']));
 			extract($info);	
-			$roles = getcache('role_'.ROUTE_S,'user');
-			$groups = getcache('grouplist_'.ROUTE_S,'user');	
+			$roles = getcache('role_'.SITEID,'user');
+			$groups = getcache('grouplist_'.SITEID,'user');	
 			include $this->view('user','user','edit');
 		}
 	}
@@ -99,8 +99,8 @@ class user_controller_user extends admin_class_controller
 	function action_roleUser()
 	{
 		$roleid = intval($_GET['roleid']);
-		$roles = getcache('role_'.ROUTE_S,'user');
-		$groups = getcache('grouplist_'.ROUTE_S,'user');
+		$roles = getcache('role_'.SITEID,'user');
+		$groups = getcache('grouplist_'.SITEID,'user');
 		$page = isset($_GET['page']) && intval($_GET['page']) ? intval($_GET['page']) : '1';
 		$infos = user_model_user::model()->query("select * from x_user where find_in_set('?',roleid)",array('roleid'=>$roleid))->queryall();
 		include $this->view('user','user','roleuser');

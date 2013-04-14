@@ -38,7 +38,7 @@ class application
         define('ROUTE_M',context::instance()->module_name);
         define('ROUTE_C',context::instance()->controller_name);
         define('ROUTE_A',context::instance()->action_name);
-        define('ROUTE_S',context::instance()->siteid_name);
+        define('SITEID',context::instance()->get_cookie('siteid') ? context::instance()->get_cookie('siteid') : Next::config('systm','siteid',1));
         
         NLOG::log('    REQUEST MCA：' .ROUTE_C.'::'.ROUTE_A.'@'.ROUTE_M);
 	}
@@ -164,10 +164,9 @@ class application
      */
 	public function controllerACL()
     {
-        $siteid = isset($_SESSION['siteid']) ? $_SESSION['siteid'] : null;
-        if($siteid)
+        if(SITEID)
         {
-            $acl = getcache('acl_'.$siteid,'user');   
+            $acl = getcache('acl_'.SITEID,'user');   
         }
         else
         {
@@ -188,7 +187,7 @@ class application
         }
         else
         {
-            NLOG::warn('    ACL-'.$siteid.'-'.ROUTE_M.'-'.ROUTE_C.' item does not in configuration file');
+            NLOG::warn('    ACL-'.SITEID.'-'.ROUTE_M.'-'.ROUTE_C.' item does not in configuration file');
         }
     }
 

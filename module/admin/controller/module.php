@@ -17,7 +17,7 @@ class admin_controller_module extends admin_class_controller
 		$modules =admin_model_module::model()->select('', '*', '', '', '', 'module');
 		$total = count($dirs_arr);
 		$dirs_arr = array_chunk($dirs_arr, 20, true);
-		$page = max(intval($_GET['page']), 1);
+		$page = isset($_GET['page']) ? max(intval($_GET['page']), 1) : 1;
 		$pages = pages($total, $page, 20);
 		$directory = $dirs_arr[intval($page-1)];
 		include $this->view('admin','module','init');

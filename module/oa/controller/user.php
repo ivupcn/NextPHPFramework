@@ -5,7 +5,7 @@ class oa_controller_user extends user_class_controller
 	{
 		$callback = null;
 		$userid = $_SESSION['userid'];
-		include $this->view('oa','user','init',ROUTE_S);
+		include $this->view('oa','user','init',SITEID);
 	}
 
 	public function action_task()
@@ -17,19 +17,19 @@ class oa_controller_user extends user_class_controller
 		switch ($callback)
 		{
 			case 'all':
-				include $this->view('oa','user','taskall',ROUTE_S);
+				include $this->view('oa','user','taskall',SITEID);
 				break;
 			case 'assignedto':
-				include $this->view('oa','user','taskassignedto',ROUTE_S);
+				include $this->view('oa','user','taskassignedto',SITEID);
 				break;
 			case 'sponsor':
-				include $this->view('oa','user','tasksponsor',ROUTE_S);
+				include $this->view('oa','user','tasksponsor',SITEID);
 				break;
 			case 'acceptance':
-				include $this->view('oa','user','taskacceptance',ROUTE_S);
+				include $this->view('oa','user','taskacceptance',SITEID);
 				break;
 			case 'assessment':
-				include $this->view('oa','user','taskassessment',ROUTE_S);
+				include $this->view('oa','user','taskassessment',SITEID);
 				break;
 			case 'publish':
 				if($this->_context->isPOST() && oa_model_task::model()->validate($_POST['info']))
@@ -38,16 +38,16 @@ class oa_controller_user extends user_class_controller
 				}
 				else
 				{
-					include $this->view('oa','user','taskpublish',ROUTE_S);
+					include $this->view('oa','user','taskpublish',SITEID);
 				}
 				break;
 			case 'show':
 				$id = isset($_GET['id']) && intval($_GET['id']) ? intval($_GET['id']) : $this->_app->showmessage('300','参数错误');
 				$taskinfo = oa_model_task::model()->get_one(array('id'=>$id));
-				include $this->view('oa','user','taskshow',ROUTE_S);
+				include $this->view('oa','user','taskshow',SITEID);
 				break;
 			default:
-				include $this->view('oa','user','taskall',ROUTE_S);
+				include $this->view('oa','user','taskall',SITEID);
 				break;
 		}
 	}

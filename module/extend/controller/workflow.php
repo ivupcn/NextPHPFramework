@@ -3,7 +3,7 @@ class extend_controller_workflow extends admin_class_controller
 {
 	public function action_init()
 	{
-		$data = extend_model_workflow::model()->select(array('siteid'=>ROUTE_S));
+		$data = extend_model_workflow::model()->select(array('siteid'=>SITEID));
 		$this->_cache();
 		include $this->view('extend','workflow','init');
 	}
@@ -12,7 +12,7 @@ class extend_controller_workflow extends admin_class_controller
 	{
 		if($this->_context->isPOST() && extend_model_workflow::model()->validate($_POST['info']))
 		{
-			$_POST['info']['siteid'] = ROUTE_S;
+			$_POST['info']['siteid'] = SITEID;
 			$_POST['info']['workname'] = safe_replace($_POST['info']['workname']);
 			$setting[1] = isset($_POST['checkadmin1']) ? $_POST['checkadmin1'] : null;
 			$setting[2] = isset($_POST['checkadmin2']) ? $_POST['checkadmin2'] : null;
@@ -35,7 +35,7 @@ class extend_controller_workflow extends admin_class_controller
 		else
 		{
 			$admin_data = array();
-			$result = user_model_user::model()->select(array('siteid'=>ROUTE_S));
+			$result = user_model_user::model()->select(array('siteid'=>SITEID));
 			foreach($result as $_value)
 			{
 				if($_value['roleid']==1) continue;
@@ -66,7 +66,7 @@ class extend_controller_workflow extends admin_class_controller
 		{
 			$workflowid = isset($_GET['workflowid']) && intval($_GET['workflowid']) ? intval($_GET['workflowid']) : $this->_app->showmessage('300','操作失败！');
 			$admin_data = array();
-			$result = user_model_user::model()->select(array('siteid'=>ROUTE_S));
+			$result = user_model_user::model()->select(array('siteid'=>SITEID));
 			foreach($result as $_value)
 			{
 				if($_value['roleid']==1) continue;
@@ -117,12 +117,12 @@ class extend_controller_workflow extends admin_class_controller
 	private function _cache()
 	{
 		$datas = array();
-		$workflow_datas =  extend_model_workflow::model()->select(array('siteid'=>ROUTE_S),'*',1000);
+		$workflow_datas =  extend_model_workflow::model()->select(array('siteid'=>SITEID),'*',1000);
 		foreach($workflow_datas as $_k=>$_v)
 		{
 			$datas[$_v['workflowid']] = $_v;
 		}
-		setcache('workflow_'.ROUTE_S,$datas,'extend');
+		setcache('workflow_'.SITEID,$datas,'extend');
 		return true;
 	}
 

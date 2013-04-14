@@ -1,7 +1,7 @@
-{view 'user','index','header',ROUTE_S}
+{view 'user','index','header',SITEID}
 <div id="main" class="main">
 	<div class="sleeve_main" style="margin-right: 0">
-		{view 'user','index','menu',ROUTE_S}
+		{view 'user','index','menu',SITEID}
 		<div id="post">
 			{model:oa_model_task action="listinfo" where="$callback = $userid" order="id DESC" page="$page"}
 			<table class="table-list" width="100%">
@@ -31,4 +31,4 @@
 		</div>
 	</div>
 </div>
-{view 'user','index','footer',ROUTE_S}
+{view 'user','index','footer',SITEID}

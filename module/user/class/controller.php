@@ -66,7 +66,7 @@ class user_class_controller extends controller
     * @param integer $siteid 站点ID号，为空时取当前站点的信息
     * @return array
     */
-    final public static function get_siteinfo($siteid = ROUTE_S)
+    final public static function get_siteinfo($siteid = SITEID)
     {
         $sites = new admin_class_sites();
         return $sites->get_siteinfo();
@@ -99,7 +99,7 @@ class user_class_controller extends controller
             else
             {
                 if(preg_match('/^ajax([a-z]+)_/',$action,$_match)) $action = $_match[1];
-                $r = user_model_rolepriv::model()->get_one(array('m'=>$v['m'],'c'=>$v['c'],'a'=>$action,'siteid'=>ROUTE_S));
+                $r = user_model_rolepriv::model()->get_one(array('m'=>$v['m'],'c'=>$v['c'],'a'=>$action,'siteid'=>SITEID));
                 if($r)
                 {
                     $roleid = explode(',', $_SESSION['roleid']);

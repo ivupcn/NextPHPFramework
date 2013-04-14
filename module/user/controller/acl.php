@@ -9,7 +9,7 @@ class user_controller_acl extends admin_class_controller
 			if(!isset($_POST['menuid'])) $_POST['menuid'] = array();
 			if (is_array($_POST['menuid']) && count($_POST['menuid']) > 0)
 			{
-				user_model_rolepriv::model()->delete(array('siteid'=>ROUTE_S));
+				user_model_rolepriv::model()->delete(array('siteid'=>SITEID));
 				$menuinfo = admin_model_menu::model()->select('','id,m,c,a,data,sys');
 				foreach ($menuinfo as $_v) $menu_info[$_v['id']] = $_v;
 				foreach($_POST['menuid'] as $menuid => $roles)
@@ -29,14 +29,14 @@ class user_controller_acl extends admin_class_controller
 					{
 						continue;
 					}
-					$info['siteid'] = ROUTE_S; 
+					$info['siteid'] = SITEID; 
 					$info['menuid'] = $menuid;
 					user_model_rolepriv::model()->insert($info);
 				}
 			}
 			else
 			{
-				user_model_rolepriv::model()->delete(array('siteid'=>ROUTE_S));
+				user_model_rolepriv::model()->delete(array('siteid'=>SITEID));
 			}
 			$this->_app->showmessage('200','操作成功！',$this->_context->url('acl::setting@user'),'','user_acl_setting');
 		}
@@ -47,9 +47,9 @@ class user_controller_acl extends admin_class_controller
 			$tree->nbsp = '&nbsp;&nbsp;&nbsp;';
 			$userid = $_SESSION['userid'];
 			$email = $_SESSION['email'];
-			$roles = getcache('role_'.ROUTE_S,'user');
+			$roles = getcache('role_'.SITEID,'user');
 			$result = admin_model_menu::model()->select(array('sys'=>0),'*','','listorder ASC,id ASC');
-			$priv_data = user_model_rolepriv::model()->select(array('siteid'=>ROUTE_S)); //获取权限表数据
+			$priv_data = user_model_rolepriv::model()->select(array('siteid'=>SITEID)); //获取权限表数据
 			$array = array();
 			$global_acl = array('ACL_EVERYONE','ACL_HAS_ROLE','ACL_NO_ROLE');
 			foreach($result as $r)
@@ -139,7 +139,7 @@ class user_controller_acl extends admin_class_controller
 	private function config_acl()
 	{
 		$acl = $roles = array();
-		$rolepriv = user_model_rolepriv::model()->select(array('siteid'=>ROUTE_S));
+		$rolepriv = user_model_rolepriv::model()->select(array('siteid'=>SITEID));
 		foreach($rolepriv as $priv)
 		{
 			if($priv['c'] =='c' || $priv['a'] =='a')
@@ -148,7 +148,7 @@ class user_controller_acl extends admin_class_controller
 			}
 			$acl[$priv['m']][$priv['c']][$priv['a']] = array('role'=>$priv['roleid']);
 		}
-		setcache('acl_'.ROUTE_S,$acl,'user');
+		setcache('acl_'.SITEID,$acl,'user');
 	}
 }
 ?>

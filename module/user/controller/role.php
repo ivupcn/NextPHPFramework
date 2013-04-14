@@ -3,7 +3,7 @@ class user_controller_role extends admin_class_controller
 {
 	function action_init()
 	{
-		$infos = user_model_role::model()->select(array('siteid'=>ROUTE_S), $data = '*', $limit = '', $order = 'roleid DESC', $group = '');
+		$infos = user_model_role::model()->select(array('siteid'=>SITEID), $data = '*', $limit = '', $order = 'roleid DESC', $group = '');
 		$this->_cache();
 		include $this->view('user','role','init');
 	}
@@ -13,11 +13,11 @@ class user_controller_role extends admin_class_controller
 		if($this->_context->isPOST() && user_model_role::model()->validate($_POST['info']))
 		{
 			$role_op = new user_class_roleop();
-			if($role_op->checkname('',$_POST['info']['rolename'],ROUTE_S,'add'))
+			if($role_op->checkname('',$_POST['info']['rolename'],SITEID,'add'))
 			{
 				$this->_app->showmessage('300','角色名称重复啦?');
 			}
-			$_POST['info']['siteid'] = ROUTE_S;
+			$_POST['info']['siteid'] = SITEID;
 			$insert_id = user_model_role::model()->insert($_POST['info'],true);
 			if($insert_id)
 			{
@@ -27,7 +27,7 @@ class user_controller_role extends admin_class_controller
 		else
 		{
 			$sitelist = getcache('sitelist','admin');
-			$siteinfo = $sitelist[ROUTE_S];
+			$siteinfo = $sitelist[SITEID];
 			include $this->view('user','role','add');
 		}
 	}
@@ -38,7 +38,7 @@ class user_controller_role extends admin_class_controller
 		{
 			$_POST['roleid'] = intval($_POST['roleid']);
 			$role_op = new user_class_roleop();
-			if($role_op->checkname($_POST['roleid'],$_POST['info']['rolename'],ROUTE_S,'edit'))
+			if($role_op->checkname($_POST['roleid'],$_POST['info']['rolename'],SITEID,'edit'))
 			{
 				$this->_app->showmessage('300','角色名称重复啦?');
 			}
@@ -83,13 +83,13 @@ class user_controller_role extends admin_class_controller
 		$siteid_role = $role = array();
 		foreach ($infos as $info)
 		{
-			if($info['siteid'] == ROUTE_S)
+			if($info['siteid'] == SITEID)
 			{
 				$role[$info['roleid']] = $info['rolename'];
 			}
 			$siteid_role[$info['roleid']] = array('rolename' => $info['rolename'], 'siteid' => $info['siteid']);
 		}
-		setcache('role_'.ROUTE_S,$role,'user');
+		setcache('role_'.SITEID,$role,'user');
 		setcache('role_site',$siteid_role,'user');
 		return $infos;
 	}

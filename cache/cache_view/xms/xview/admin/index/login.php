@@ -43,7 +43,7 @@ function loginAjaxDone(json)
 	<div id="container_box">
 		<h1>｛X｝Management Platform</h1>
 		<div id="box">
-			<form action="<?php echo $this->_context->url('index::login#0@admin'); ?>" method="post" name="myform" onsubmit="return validateCallback(this,loginAjaxDone);">
+			<form action="<?php echo $this->_context->url('index::login@admin'); ?>" method="post" name="myform" onsubmit="return validateCallback(this,loginAjaxDone);">
 				<div class="main">
 					<button type="submit" class="login" />登录</button>
 					<label>EMail：</label>

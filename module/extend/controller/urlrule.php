@@ -4,7 +4,7 @@ class extend_controller_urlrule extends admin_class_controller
 	public function action_init()
 	{
 		$page = isset($_POST['pageNum']) ? intval($_POST['pageNum']) : '1';
-		$data = extend_model_urlrule::model()->listinfo(array('siteid'=>ROUTE_S), '', $page, 20,'','','',1);
+		$data = extend_model_urlrule::model()->listinfo(array('siteid'=>SITEID), '', $page, 20,'','','',1);
 		$pages = extend_model_urlrule::model()->pages;
 		$this->_cache();
 		include $this->view('extend','urlrule','init');
@@ -75,8 +75,8 @@ class extend_controller_urlrule extends admin_class_controller
 		{
 			$basic_data[$roleid] = $r['urlrule'];;
 		}
-		setcache('urlrules_detail_'.ROUTE_S,$datas,'extend');
-		setcache('urlrules_'.ROUTE_S,$basic_data,'extend');
+		setcache('urlrules_detail_'.SITEID,$datas,'extend');
+		setcache('urlrules_'.SITEID,$basic_data,'extend');
 	}
 }
 ?>

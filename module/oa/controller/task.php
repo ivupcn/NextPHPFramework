@@ -4,10 +4,10 @@ class oa_controller_task extends admin_class_controller
 	public function action_all()
 	{
 		$page = isset($_POST['pageNum']) && intval($_POST['pageNum']) ? intval($_POST['pageNum']) :1;
-		$data = oa_model_task::model()->listinfo(array('siteid'=>ROUTE_S), 'id DESC', $page, 20,'','','',1);
+		$data = oa_model_task::model()->listinfo(array('siteid'=>SITEID), 'id DESC', $page, 20,'','','',1);
 		$pages = oa_model_task::model()->pages;
 		$userop = new user_class_userop();
-		$category = getcache('category_oa_'.ROUTE_S,'admin');
+		$category = getcache('category_oa_'.SITEID,'admin');
 		include $this->view('oa','task','all');
 	}
 
@@ -25,8 +25,8 @@ class oa_controller_task extends admin_class_controller
 		$data = oa_model_task::model()->listinfo(array('sponsor'=>$_SESSION['userid']), 'id DESC', $page, 20,'','','',1);
 		$pages = oa_model_task::model()->pages;
 		$userop = new user_class_userop();
-		$category = getcache('category_oa_'.ROUTE_S,'admin');
-		$workflow = getcache('workflow_'.ROUTE_S,'extend');
+		$category = getcache('category_oa_'.SITEID,'admin');
+		$workflow = getcache('workflow_'.SITEID,'extend');
 		include $this->view('oa','task','mycreate');
 	}
 
@@ -36,7 +36,7 @@ class oa_controller_task extends admin_class_controller
 		$data = oa_model_task::model()->listinfo(array('assignedto'=>$_SESSION['userid']), 'status ASC, id DESC', $page, 20,'','','',1);
 		$pages = oa_model_task::model()->pages;
 		$userop = new user_class_userop();
-		$category = getcache('category_oa_'.ROUTE_S,'admin');
+		$category = getcache('category_oa_'.SITEID,'admin');
 		$this->looptask();
 		include $this->view('oa','task','my');
 	}
@@ -56,7 +56,7 @@ class oa_controller_task extends admin_class_controller
 		$data = oa_model_task::model()->listinfo($sql, 'id DESC', $page, 20,'','','',1);
 		$pages = oa_model_task::model()->pages;
 		$userop = new user_class_userop();
-		$category = getcache('category_oa_'.ROUTE_S,'admin');
+		$category = getcache('category_oa_'.SITEID,'admin');
 		include $this->view('oa','task','group');
 	}
 
@@ -65,15 +65,15 @@ class oa_controller_task extends admin_class_controller
 		$page = isset($_POST['pageNum']) && intval($_POST['pageNum']) ? intval($_POST['pageNum']) :1;
 		$data = extend_model_workcheck::model()->listinfo('', 'fromid ASC', $page, 20,'','','',1);
 		$pages = extend_model_workcheck::model()->pages;
-		$workflows = getcache('workflow_'.ROUTE_S,'extend');
-		$category = getcache('category_oa_'.ROUTE_S,'admin');
+		$workflows = getcache('workflow_'.SITEID,'extend');
+		$category = getcache('category_oa_'.SITEID,'admin');
 		$userop = new user_class_userop();
 		include $this->view('oa','task','checklist');
 	}
 
 	public function action_assess()
 	{
-		$user = user_model_user::model()->select(array('siteid'=>ROUTE_S),'userid,realname');
+		$user = user_model_user::model()->select(array('siteid'=>SITEID),'userid,realname');
 		include $this->view('oa','task','assess');
 	}
 
@@ -83,7 +83,7 @@ class oa_controller_task extends admin_class_controller
 		$tree->icon = array('　│ ','　├─ ','　└─ ');
 		$tree->nbsp = '　';
 	
-		$result = admin_model_tag::model()->select(array('siteid'=>ROUTE_S,'module'=>'oa','type'=>'task_category'),'*','','listorder ASC,id DESC');
+		$result = admin_model_tag::model()->select(array('siteid'=>SITEID,'module'=>'oa','type'=>'task_category'),'*','','listorder ASC,id DESC');
 		$array = array();
 		foreach($result as $r)
 		{
@@ -105,7 +105,7 @@ class oa_controller_task extends admin_class_controller
 		if($this->_context->isPOST() && oa_model_task::model()->validate($_POST['info']))
 		{
 			$info = new_addslashes($_POST['info']);
-			$info['siteid'] = ROUTE_S;
+			$info['siteid'] = SITEID;
 			$info['sponsor'] = $_SESSION['userid'];
 			$info['planstarttime'] = strtotime($info['planstarttime']);
 			$info['planendtime'] = strtotime($info['planendtime']);
@@ -151,7 +151,7 @@ class oa_controller_task extends admin_class_controller
 		}
 		else
 		{
-			$user = user_model_user::model()->select(array('siteid'=>ROUTE_S));
+			$user = user_model_user::model()->select(array('siteid'=>SITEID));
 			include $this->view('oa','task','publish');
 		}
 	}
@@ -171,7 +171,7 @@ class oa_controller_task extends admin_class_controller
 		{
 			$id = isset($_GET['id']) && intval($_GET['id']) ? intval($_GET['id']) : $this->_app->showmessage('300','操作失败！');
 			$info = oa_model_task::model()->get_one(array('id'=>$id));
-			$user = user_model_user::model()->select(array('siteid'=>ROUTE_S));
+			$user = user_model_user::model()->select(array('siteid'=>SITEID));
 			include $this->view('oa','task','edit');
 		}
 	}
@@ -211,7 +211,7 @@ class oa_controller_task extends admin_class_controller
 
 	public function action_complete()
 	{
-		$category = getcache('category_oa_'.ROUTE_S,'admin');
+		$category = getcache('category_oa_'.SITEID,'admin');
 		if($this->_context->isPOST())
 		{
 			$id = isset($_POST['id']) && intval($_POST['id']) ? intval($_POST['id']) : $this->_app->showmessage('300','操作失败！');
@@ -227,7 +227,7 @@ class oa_controller_task extends admin_class_controller
 			$setting = string2array($category[$info['tagid']]['setting']);
 			if(isset($setting['workflowid']) && !empty($setting['workflowid']))
 			{
-				$workflows = getcache('workflow_'.ROUTE_S,'extend');
+				$workflows = getcache('workflow_'.SITEID,'extend');
 				$workflow = $workflows[$setting['workflowid']];
 				$workflow['setting'] = string2array($workflow['setting']);
 				$nocheck_users = $workflow['setting']['nocheck_users'];
@@ -292,7 +292,7 @@ class oa_controller_task extends admin_class_controller
 		}
 		else
 		{
-			$category = getcache('category_oa_'.ROUTE_S,'admin');
+			$category = getcache('category_oa_'.SITEID,'admin');
 			$id = isset($_GET['id']) && intval($_GET['id']) ? intval($_GET['id']) : $this->_app->showmessage('300','操作失败！');
 			$info = oa_model_task::model()->get_one(array('id'=>$id));
 			$progress = string2array($info['progress']);
@@ -335,7 +335,7 @@ class oa_controller_task extends admin_class_controller
 		$looptype1 = array('everyday','weekly','permonth');
 		$looptype2 = array('Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday');
 		$looptype3 = array('1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31');
-		$sql = "loopstatus = 0 AND looptask != 'once' AND siteid = ".ROUTE_S;
+		$sql = "loopstatus = 0 AND looptask != 'once' AND siteid = ".SITEID;
 		$result = oa_model_task::model()->select($sql);
 		$loop_arr = array();
 		foreach($result as $r)
@@ -399,7 +399,7 @@ class oa_controller_task extends admin_class_controller
 					$to['attachment'] = $loop_arr['attachment'];
 					$to['intro'] = $loop_arr['intro'];
 					$to['status'] = 1;
-					$to['siteid'] = ROUTE_S;
+					$to['siteid'] = SITEID;
 					oa_model_task::model()->insert($to);
 				}
 			}

@@ -5,7 +5,7 @@ class admin_controller_index extends admin_class_controller
 	{
 		$userid = $_SESSION['userid'];
         $email = $_SESSION['email'];
-        $roles = getcache('role_'.ROUTE_S,'user');
+        $roles = getcache('role_'.SITEID,'user');
 		$roleid = explode(',',$_SESSION['roleid']);
 		$rolename = array();
 		foreach($roleid as $roleid)
@@ -22,7 +22,7 @@ class admin_controller_index extends admin_class_controller
 		$rolename = implode(',', $rolename);
         $site = new admin_class_sites();
         $sitelist = $site->get_list($_SESSION['roleid']);
-        $currentsite = $site->get_siteinfo(ROUTE_S);
+        $currentsite = $site->get_siteinfo(SITEID);
         $menu_arr = $this->admin_menu(1);
         $init_left_menu = $this->admin_menu(4);
 		include $this->view('admin','index','init');
@@ -77,8 +77,8 @@ class admin_controller_index extends admin_class_controller
 	            $_SESSION['roleid'] = implode(',', normalize($r['roleid']));
 	            $_SESSION['siteid'] = $r['siteid'];
                 $_SESSION['groupid'] = $r['groupid'];
-                $this->_context->set_cookie('siteid',ROUTE_S,0);
-                $this->_app->showmessage('200','登录成功！', $this->_context->url('index::init#'.$r['siteid'].'@admin'));
+                $this->_context->set_cookie('siteid',$r['siteid'],0);
+                $this->_app->showmessage('200','登录成功！', $this->_context->url('index::init@admin'));
             }
 		}
 		else
@@ -109,10 +109,11 @@ class admin_controller_index extends admin_class_controller
     /**
     * 设置站点ID SESSION
     */
-    public function action_setSiteid()
+    public function action_setsiteid()
     {
-        $_SESSION['siteid'] = ROUTE_S;
-        $this->_context->set_cookie('siteid',ROUTE_S,0);
+        $siteid = isset($_GET['siteid']) && intval($_GET['siteid']) ? intval($_GET['siteid']) : $this->_app->showmessage('300','参数错误!');
+        $_SESSION['siteid'] = $siteid;
+        $this->_context->set_cookie('siteid',$siteid,0);
         exit('1');
     }
 }

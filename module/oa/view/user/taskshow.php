@@ -1,8 +1,8 @@
-{view 'user','index','header',ROUTE_S}
+{view 'user','index','header',SITEID}
 <div id="main" class="main">
 
 	<div class="sleeve_main" style="margin-right: 0">
-		{view 'user','index','menu',ROUTE_S}
+		{view 'user','index','menu',SITEID}
 		<div id="post">
 			<h1>TASK #{$taskinfo['id']}　{$taskinfo['title']}</h1>
 			<div id="content-sidebar">
@@ -86,4 +86,4 @@
 		</div>
 	</div>
 </div>
-{view 'user','index','footer',ROUTE_S}
+{view 'user','index','footer',SITEID}

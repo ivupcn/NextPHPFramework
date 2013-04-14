@@ -1,7 +1,7 @@
-{view 'user','index','header',ROUTE_S}
+{view 'user','index','header',SITEID}
 <div id="main" class="main">
 	<div class="sleeve_main" style="margin-right: 0">
-		{view 'user','index','menu',ROUTE_S}
+		{view 'user','index','menu',SITEID}
 		<div id="post">
 			<div class="method clear">
 				<div class="inner">
@@ -34,7 +34,7 @@
 							<div class="formwrap">
 								<label for="assignedto">指 派 给：</label>
 								<select name="info[assignedto]" id="assignedto" class="shadowfield">
-									{model:user_model_user action="select" where="siteid = ROUTE_S"}
+									{model:user_model_user action="select" where="siteid = SITEID"}
 									{loop $data $r}
 									<option value="{$r['userid']}">{$r['realname']}</option>
 									{/loop}
@@ -55,7 +55,7 @@
 							</div>
 							<div class="formwrap">
 								<label for="assignedto">任务类型：</label>
-								<?php echo form::select_category('category_oa_'.ROUTE_S,0,'name="info[tagid]" id="tagid" class="shadowfield required"','',0,-1);?>
+								<?php echo form::select_category('category_oa_'.SITEID,0,'name="info[tagid]" id="tagid" class="shadowfield required"','',0,-1);?>
 							</div>
 							<div class="formwrap">
 								<label for="attachment">附　　件：</label>
@@ -75,4 +75,4 @@
 		</div>
 	</div>
 </div>
-{view 'user','index','footer',ROUTE_S}
+{view 'user','index','footer',SITEID}

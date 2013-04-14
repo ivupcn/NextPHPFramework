@@ -3,7 +3,7 @@ class user_controller_index extends user_class_controller
 {
 	public function action_init()
 	{
-		include $this->view('user','index','init',ROUTE_S);
+		include $this->view('user','index','init',SITEID);
 	}
 
 	public function action_login()
@@ -90,15 +90,15 @@ class user_controller_index extends user_class_controller
 				$_SESSION['siteid'] = $r['siteid'];
 				$_SESSION['realname'] = $r['realname'];
 				$_SESSION['auth'] = $x_auth;
-				$this->_context->set_cookie('siteid',ROUTE_S,0);
-                header('location:'.$this->_context->url('index::init#'.$r['siteid'].'@user'));
+				$this->_context->set_cookie('siteid',SITEID,0);
+                header('location:'.$this->_context->url('index::init@user'));
             }
 		}
 		else
 		{
 			$siteInfo = $this->get_siteinfo();
 			$title = '会员登录入口-'.$siteInfo['name'];
-			include $this->view('user','index','login',ROUTE_S);
+			include $this->view('user','index','login',SITEID);
 		}
 	}
 

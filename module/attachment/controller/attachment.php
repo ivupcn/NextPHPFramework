@@ -16,7 +16,7 @@ class attachment_controller_attachment extends attachment_class_controller
 			}
 			else
 			{
-				$grouplist = getcache('grouplist_'.ROUTE_S,'user');
+				$grouplist = getcache('grouplist_'.SITEID,'user');
 				$groupallowattachment = $grouplist[$_SESSION['groupid']]['allowattachment'];
 			}
 			if($_POST['swf_auth_key'] != md5(Next::config('system','auth_key','29HTvKg84Veg8VtDdKbs').$_POST['SWFUPLOADSESSID']) || !$groupallowattachment) exit('该用户组禁止上传附件');

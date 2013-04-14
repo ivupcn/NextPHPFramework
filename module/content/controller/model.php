@@ -4,7 +4,7 @@ class content_controller_model extends admin_class_controller
 	public function action_init()
 	{
 		$page = isset($_POST['pageNum']) ? intval($_POST['pageNum']) : '1';
-		$data = content_model_model::model()->listinfo(array('siteid'=>ROUTE_S,'type'=>0),'',$page,30);
+		$data = content_model_model::model()->listinfo(array('siteid'=>SITEID,'type'=>0),'',$page,30);
 		$pages = content_model_model::model()->pages;
 		include $this->view('content','model','init');
 	}
@@ -14,7 +14,7 @@ class content_controller_model extends admin_class_controller
 		if($this->_context->isPOST() &&  content_model_model::model()->validate($_POST['info']))
 		{
 			$info = $_POST['info'];
-			$info['siteid'] = ROUTE_S;
+			$info['siteid'] = SITEID;
 			$modelid = content_model_model::model()->insert($info,true);
 			$model_sql = file_get_contents(Next::config('system','module_path',APP_PATH.'module'.DIRECTORY_SEPARATOR).'content'.DIRECTORY_SEPARATOR.'field'.DIRECTORY_SEPARATOR.'model.sql');
 			$tablepre = content_model_model::model()->db_tablepre;
@@ -23,7 +23,7 @@ class content_controller_model extends admin_class_controller
 			$model_sql = str_replace('$table_data',$tablepre.$tablename.'_data', $model_sql);
 			$model_sql = str_replace('$table_model_field',$tablepre.'model_field', $model_sql);
 			$model_sql = str_replace('$modelid',$modelid,$model_sql);
-			$model_sql = str_replace('$siteid',ROUTE_S,$model_sql);
+			$model_sql = str_replace('$siteid',SITEID,$model_sql);
 
 			content_model_model::model()->sql_execute($model_sql);
 			$this->_cache_field($modelid);
@@ -53,10 +53,10 @@ class content_controller_model extends admin_class_controller
 		$modelid = intval($_GET['modelid']);
 		$model_cache = getcache('model','commons');
 		$model_table = $model_cache[$modelid]['tablename'];
-		content_model_field::model()->delete(array('modelid'=>$modelid,'siteid'=>ROUTE_S));
+		content_model_field::model()->delete(array('modelid'=>$modelid,'siteid'=>SITEID));
 		content_model_model::model()->drop_table($model_table);
 		content_model_model::model()->drop_table($model_table.'_data');
-		content_model_model::model()->delete(array('modelid'=>$modelid,'siteid'=>ROUTE_S));
+		content_model_model::model()->delete(array('modelid'=>$modelid,'siteid'=>SITEID));
 
 		$this->_app->showmessage('200','操作成功！',$this->_context->url('model::init@content'),'','content_model_init');
 	}

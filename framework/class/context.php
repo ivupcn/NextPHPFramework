@@ -28,8 +28,6 @@ class context implements ArrayAccess
     const UDI_CONTROLLER = 'c';
     // UDI 中的动作
     const UDI_ACTION     = 'a';
-    // UDI 中的站点ID
-    const UDI_SITEID     = 's';
 	
 	/**
      * 指示 UDI 的默认值
@@ -40,8 +38,6 @@ class context implements ArrayAccess
     const UDI_DEFAULT_CONTROLLER = 'index';
     // 默认动作
     const UDI_DEFAULT_ACTION     = 'init';
-    // 默认站点ID
-    const UDI_DEFAULT_SITEID     = 1;
 	
 	/**
      * UDI 的默认值
@@ -49,8 +45,7 @@ class context implements ArrayAccess
     private static $_udi_defaults = array(
         self::UDI_MODULE => self::UDI_DEFAULT_MODULE,
         self::UDI_CONTROLLER => self::UDI_DEFAULT_CONTROLLER,
-        self::UDI_ACTION => self::UDI_DEFAULT_ACTION,
-        self::UDI_SITEID => self::UDI_DEFAULT_SITEID
+        self::UDI_ACTION => self::UDI_DEFAULT_ACTION
     );
 	
 	/**
@@ -76,13 +71,6 @@ class context implements ArrayAccess
      * @var string
      */
     public $action_name;
-
-    /**
-     * 请求包含的站点名
-     *
-     * @var string
-     */
-    public $siteid_name;
     
 	 /**
      * 附加的参数
@@ -108,7 +96,6 @@ class context implements ArrayAccess
 		$udi[self::UDI_MODULE]     = (isset($keys[self::UDI_MODULE])) ? $_GET[$keys[self::UDI_MODULE]] : null;
         $udi[self::UDI_CONTROLLER] = (isset($keys[self::UDI_CONTROLLER])) ? $_GET[$keys[self::UDI_CONTROLLER]] : null;
         $udi[self::UDI_ACTION]     = (isset($keys[self::UDI_ACTION])) ? $_GET[$keys[self::UDI_ACTION]] : null;
-		$udi[self::UDI_SITEID]     = (isset($keys[self::UDI_SITEID])) ? $_GET[$keys[self::UDI_SITEID]] : self::get_cookie('siteid',1);
 
         $this->changeRequestUDI($udi);
     }
@@ -697,7 +684,6 @@ class context implements ArrayAccess
      *     context::UDI_MODULE     => '',
      *     context::UDI_CONTROLLER => '',
      *     context::UDI_ACTION     => '',
-     *     context::UDI_SITEID     => ''
      * );
      *
      * // 输出
@@ -705,7 +691,6 @@ class context implements ArrayAccess
      * //     module:     default
      * //     controller: default
      * //     action:     index
-     * //     siteid:     1
      * // )
      * dump($context->normalizeUDI($udi));
      *
@@ -715,7 +700,6 @@ class context implements ArrayAccess
      * //     module:     admin
      * //     controller: posts
      * //     action:     edit
-     * //     siteid:     1
      * // )
      * dump($context->normalizeUDI($udi));
      * @endcode
@@ -738,27 +722,15 @@ class context implements ArrayAccess
                 $module_name = $this->module_name;
                 $controller_name = $this->controller_name;
                 $action_name = $this->action_name;
-                $siteid_name = $this->siteid_name;
             }
             elseif($udi == '::')
             {
                 $module_name = $this->module_name;
                 $controller_name = $this->controller_name;
                 $action_name = self::$_udi_defaults[self::UDI_ACTION];
-                $siteid_name = $this->siteid_name;
             }
             else
             {
-                if (strpos($udi, '::') !== false)
-                {
-                    $arr = explode('::', $udi);
-                    $controller_name = array_shift($arr);
-                    $udi = array_shift($arr);
-                }
-                else
-                {
-                    $controller_name = $this->controller_name;
-                }
                 if(strpos($udi, '@') !== false)
                 {
                     $arr = explode('@', $udi);
@@ -769,17 +741,24 @@ class context implements ArrayAccess
                 {
                     $module_name = $this->module_name;
                 }
-
-                $arr = explode('#', $udi);
-                $action_name = array_shift($arr);
-                $siteid_name = array_shift($arr);
+                if (strpos($udi, '::') !== false)
+                {
+                    $arr = explode('::', $udi);
+                    $controller_name = array_shift($arr);
+                    $action_name = array_shift($arr);
+                    $udi = array_shift($arr);
+                }
+                else
+                {
+                    $controller_name = $this->controller_name;
+                    $action_name = $this->action_name;
+                }
             }
 
             $udi = array(
                 self::UDI_MODULE     => $module_name,
                 self::UDI_CONTROLLER => $controller_name,
-                self::UDI_ACTION     => $action_name,
-                self::UDI_SITEID     => $siteid_name
+                self::UDI_ACTION     => $action_name
             );
         }
 
@@ -795,10 +774,6 @@ class context implements ArrayAccess
         {
             $udi[self::UDI_ACTION] = self::UDI_DEFAULT_ACTION;
         }
-        if (empty($udi[self::UDI_SITEID]))
-        {
-            $udi[self::UDI_SITEID] = $this->siteid_name;
-        }
         foreach (self::$_udi_defaults as $key => $value)
         {
             if (empty($udi[$key]))
@@ -813,7 +788,7 @@ class context implements ArrayAccess
 
         if (!$return_array)
         {
-            return $udi[self::UDI_CONTROLLER].'::'.$udi[self::UDI_ACTION].'#'.$udi[self::UDI_SITEID].'@'.$udi[self::UDI_MODULE];
+            return $udi[self::UDI_CONTROLLER].'::'.$udi[self::UDI_ACTION].'@'.$udi[self::UDI_MODULE];
         }
         else
         {
@@ -859,7 +834,6 @@ class context implements ArrayAccess
 		$this->module_name     = $udi[self::UDI_MODULE];
         $this->controller_name = $udi[self::UDI_CONTROLLER];
         $this->action_name     = $udi[self::UDI_ACTION];
-        $this->siteid_name     = $udi[self::UDI_SITEID];
         return $this;
     }
 }

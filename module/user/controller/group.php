@@ -4,7 +4,7 @@ class user_controller_group extends admin_class_controller
 	function action_init()
 	{
 		$page = isset($_GET['page']) ? intval($_GET['page']) : 1;
-		$user_group_list = user_model_group::model()->listinfo(array('siteid'=>ROUTE_S), 'sort ASC', $page, 20);
+		$user_group_list = user_model_group::model()->listinfo(array('siteid'=>SITEID), 'sort ASC', $page, 20);
 		//TODO 此处循环中执行sql，会严重影响效率，稍后考虑在memebr_group表中加入会员数字段和统计会员总数功能解决。
 		foreach ($user_group_list as $k=>$v)
 		{
@@ -33,7 +33,7 @@ class user_controller_group extends admin_class_controller
 			$info['allowsearch'] = isset($info['allowsearch']) ? 1 : 0;
 			$info['allowvisit'] = isset($info['allowvisit']) ? 1 : 0;
 			$info['spamcertification'] = isset($info['spamcertification']) ? 1 : 0;
-			$info['siteid'] = ROUTE_S;
+			$info['siteid'] = SITEID;
 			
 			$insert_id = user_model_group::model()->insert($info,true);
 			if($insert_id)
@@ -105,7 +105,7 @@ class user_controller_group extends admin_class_controller
 	private function _checkname($name = NULL)
 	{
 		if(empty($name)) return false;
-		if (user_model_group::model()->get_one(array('name'=>$name,'siteid'=>ROUTE_S),'groupid'))
+		if (user_model_group::model()->get_one(array('name'=>$name,'siteid'=>SITEID),'groupid'))
 		{
 			return false;
 		}
@@ -113,8 +113,8 @@ class user_controller_group extends admin_class_controller
 	}
 
 	private function _updatecache() {
-		$grouplist = user_model_group::model()->listinfo(array('siteid'=>ROUTE_S), '', 1, 1000, 'groupid');
-		setcache('grouplist_'.ROUTE_S, $grouplist,'user');
+		$grouplist = user_model_group::model()->listinfo(array('siteid'=>SITEID), '', 1, 1000, 'groupid');
+		setcache('grouplist_'.SITEID, $grouplist,'user');
 	}
 }
 ?>

@@ -69,7 +69,7 @@ class admin_class_controller extends controller
             else
             {
                 if(preg_match('/^ajax([a-z]+)_/',$action,$_match)) $action = $_match[1];
-                $r = user_model_rolepriv::model()->get_one(array('m'=>$v['m'],'c'=>$v['c'],'a'=>$action,'siteid'=>ROUTE_S));
+                $r = user_model_rolepriv::model()->get_one(array('m'=>$v['m'],'c'=>$v['c'],'a'=>$action,'siteid'=>SITEID));
                 if($r)
                 {
                     $roleid = explode(',', $_SESSION['roleid']);
