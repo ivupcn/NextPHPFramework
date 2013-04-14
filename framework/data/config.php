@@ -16,9 +16,6 @@ return array(
 		),
 	'acl' => array(
 		'acl_localhost' => array('role' => '1'),
-		'admin' => array('index' => array('login' => array('role' => 'ACL_NO_ROLE'))),
-		'user' => array('index' => array('login' => array('role' => 'ACL_NO_ROLE'))),
-		'test' => array('test' => array('init' => array('role' => 'ACL_EVERYONE'))),
 	)
 );
 ?>

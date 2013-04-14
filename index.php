@@ -9,7 +9,6 @@
 
  //应用入口文件
 define('APP_PATH', dirname(__FILE__).DIRECTORY_SEPARATOR);
-$config = require APP_PATH.'config.php';
 require APP_PATH.'framework'.DIRECTORY_SEPARATOR.'Next.php';
-Next::runApp($config);
+Next::runApp(1);
 ?>

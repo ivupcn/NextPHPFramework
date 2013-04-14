@@ -2,7 +2,7 @@
 
 <div class="pad_10">
 	<h2 class="contentTitle">修改个人信息</h2>
-<form action="?m=user&c=user&a=editInfo" method="post"  class="pageForm required-validate" onsubmit="return validateCallback(this, navTabAjaxDone);">
+<form action="<?php echo $this->_context->url('user::editInfo@user'); ?>" method="post"  class="pageForm required-validate" onsubmit="return validateCallback(this, navTabAjaxDone);">
 	<div class="pageFormContent" layoutH="95">
 
 <input type="hidden" name="info[userid]" value="<?php echo $userid?>">

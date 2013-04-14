@@ -20,7 +20,7 @@ class application
      *
      * 构造应用程序对象
      */
-	protected function __construct()
+	protected function __construct($siteid)
 	{
 		NLOG::log('--- STARTUP TIME --- ' . SYS_START_TIME);
 
@@ -38,7 +38,7 @@ class application
         define('ROUTE_M',context::instance()->module_name);
         define('ROUTE_C',context::instance()->controller_name);
         define('ROUTE_A',context::instance()->action_name);
-        define('SITEID',context::instance()->get_cookie('siteid') ? context::instance()->get_cookie('siteid') : Next::config('systm','siteid',1));
+        define('SITEID',context::instance()->get_cookie('siteid') ? context::instance()->get_cookie('siteid') : $siteid);
         
         NLOG::log('    REQUEST MCA：' .ROUTE_C.'::'.ROUTE_A.'@'.ROUTE_M);
 	}
@@ -59,12 +59,16 @@ class application
      *
      * @return application
      */
-    static function instance()
+    static function instance($siteid = 1)
     {
         static $instance;
         if (is_null($instance))
         {
-            $instance = new application();
+            if(!is_int($siteid) || empty($siteid))
+            {
+                die('INVALID SITEID');
+            }
+            $instance = new application($siteid);
         }
         return $instance;
     }

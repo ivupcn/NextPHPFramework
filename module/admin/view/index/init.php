@@ -48,7 +48,7 @@ $(function(){
 				<li id="switchEnvBox"><a href="javascript:">（<span>{$currentsite['name']}</span>）切换站点</a>
 					<ul>
 						{loop $sitelist $key $v}
-						<li><a href="{url 'index::setSiteid@admin','siteid/'.$v['siteid']}">{$v['name']}</a></li>
+						<li><a href="{url 'index::setSiteid@admin','siteid/'.$v['siteid']}" icon="">{$v['name']}</a></li>
 						{/loop}
 					</ul>
 				</li>

@@ -17,7 +17,7 @@ define('SYS_START_TIME', microtime(true));
 // 定义系统时间
 define('SYS_TIME', time());
 // 设置默认的时区
-date_default_timezone_set(Next::config('system', 'timezone', 'Etc/GMT-8'));
+date_default_timezone_set('Etc/GMT-8');
 // 设置自定义的错误处理函数
 set_error_handler(array('Next','my_error_handler'));
 // gzip输出
@@ -32,12 +32,10 @@ header('Content-type: text/html; charset=utf-8');
 class Next
 {
 	//初始化应用程序
-	static function runApp(array $app_config = array())
+	static function runApp($siteid)
 	{
-		// 初始化应用程序设置
-		self::$_app_config = $app_config;
 		// 调用相应模块的控制器动作
-		application::instance()->dispatching();
+		application::instance($siteid)->dispatching();
 	}
 	
 	//初始化 API 接口
@@ -171,15 +169,22 @@ class Next
      */
     static function config($item = null, $key = '', $default = '')
     {
-		if(isset(self::$_app_config[$item]))
+    	static $_app_config = array();
+    	if(empty($_app_config))
+    	{
+    		// 初始化应用程序设置
+			$_app_config = include Next_PATH.'data'.DIRECTORY_SEPARATOR.'config.php';
+    	}
+
+		if(isset($_app_config[$item]))
 		{	
 			if(empty($key))
 			{
-				return self::$_app_config[$item];
+				return $_app_config[$item];
 			}
-			elseif(isset(self::$_app_config[$item][$key]))
+			elseif(isset($_app_config[$item][$key]))
 			{
-				return self::$_app_config[$item][$key];
+				return $_app_config[$item][$key];
 			}
 			else
 			{
@@ -199,7 +204,7 @@ class Next
 		}
 		else
 		{
-			return self::$_app_config;
+			return $_app_config;
 		}
     }
 
@@ -217,15 +222,6 @@ class Next
         NLOG::error('    '.$error_level.' | '.str_pad($errstr,30).' | '.$errfile.' | '.$errline);
         die();
     }
-	
-
-	/**
-     * 应用程序的基本设置
-     *
-     * @var array
-     */
-    private static $_app_config = array();
-	
 	
 	/**
 	 * @var array 注册 NextPHP 核心类
