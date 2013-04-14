@@ -192,6 +192,7 @@ class application
         else
         {
             NLOG::warn('    ACL-'.SITEID.'-'.ROUTE_M.'-'.ROUTE_C.' item does not in configuration file');
+            $this->showmessage('300','No permission resources.');
         }
     }
 
