@@ -77,7 +77,8 @@ class admin_controller_index extends admin_class_controller
 	            $_SESSION['roleid'] = implode(',', normalize($r['roleid']));
 	            $_SESSION['siteid'] = $r['siteid'];
                 $_SESSION['groupid'] = $r['groupid'];
-                $this->_app->showmessage('200','登录成功！', $this->_context->url('index::init@admin'));
+                $this->_context->set_cookie('siteid',ROUTE_S,0);
+                $this->_app->showmessage('200','登录成功！', $this->_context->url('index::init#'.$r['siteid'].'@admin'));
             }
 		}
 		else
@@ -110,9 +111,8 @@ class admin_controller_index extends admin_class_controller
     */
     public function action_setSiteid()
     {
-        $s = isset($_GET['s']) && intval($_GET['s']) ? intval($_GET['s']) : exit('0'); 
-        $_SESSION['siteid'] = $s;
-        $this->_context->set_cookie('siteid',$s,0);
+        $_SESSION['siteid'] = ROUTE_S;
+        $this->_context->set_cookie('siteid',ROUTE_S,0);
         exit('1');
     }
 }

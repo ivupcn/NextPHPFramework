@@ -90,7 +90,8 @@ class user_controller_index extends user_class_controller
 				$_SESSION['siteid'] = $r['siteid'];
 				$_SESSION['realname'] = $r['realname'];
 				$_SESSION['auth'] = $x_auth;
-                header('location:'.$this->_context->url('index::init@user'));
+				$this->_context->set_cookie('siteid',ROUTE_S,0);
+                header('location:'.$this->_context->url('index::init#'.$r['siteid'].'@user'));
             }
 		}
 		else
@@ -99,6 +100,13 @@ class user_controller_index extends user_class_controller
 			$title = '会员登录入口-'.$siteInfo['name'];
 			include $this->view('user','index','login',ROUTE_S);
 		}
+	}
+
+	public function action_logout()
+	{
+		session_unset();
+		session_destroy();
+        Header('Location:'.$this->_context->url('index::login@user'));
 	}
 }
 ?>

@@ -1,4 +1,4 @@
-<?php defined('IN_Next') or exit('No permission resources.'); ?><?php include $this->view('user','index','header',$this->get_siteid()); ?>
+<?php defined('IN_Next') or exit('No permission resources.'); ?><?php include $this->view('user','index','header',ROUTE_S); ?>
 <div id="main" class="main">
 	<div id="sidebar">
 		<fieldset>
@@ -10,7 +10,7 @@
 		</fieldset>
 	</div>
 	<div class="sleeve_main">
-		<?php include $this->view('user','index','menu',$this->get_siteid()); ?>
+		<?php include $this->view('user','index','menu',ROUTE_S); ?>
 		<div id="post">
 			<fieldset>
 				<legend>指派给我的任务</legend>
@@ -53,4 +53,4 @@
 		</div>
 	</div>
 </div>
-<?php include $this->view('user','index','footer',$this->get_siteid()); ?>
+<?php include $this->view('user','index','footer',ROUTE_S); ?>
