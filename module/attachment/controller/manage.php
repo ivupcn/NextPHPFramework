@@ -4,7 +4,7 @@ class attachment_controller_manage extends admin_class_controller
 	function action_init()
 	{
 		if(!$_SESSION['email']) return false;
-		$dir = isset($_GET['dir']) && trim($_GET['dir']) ? str_replace(array(DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR), DIRECTORY_SEPARATOR, trim($_GET['dir'])) : '';
+		$dir = isset($_GET['dir']) && trim($_GET['dir']) ? str_replace(array('..\\', '.\\', '../', './'), '', trim($_GET['dir'])) : '';
 		$sitelist = getcache('sitelist','admin');
 		$filepath = Next::config('system','site_root',APP_PATH.'siteroot'.DIRECTORY_SEPARATOR).$sitelist[SITEID]['dirname'].DIRECTORY_SEPARATOR.'uploadfile'.DIRECTORY_SEPARATOR.$dir;
 		$list = glob($filepath.DIRECTORY_SEPARATOR.'*');
