@@ -241,6 +241,7 @@ class Next
 		'model' => 'model.php',
 		'dbFactory' => 'dbFactory.php',
 		'dbMysql' => 'dbMysql.php',
+		'dbMssql' => 'dbMssql.php',
 		'validator' => 'validator.php',
 		'ChromePhp' => 'ChromePhp.php',
 		'cacheFactory' => 'cacheFactory.php',

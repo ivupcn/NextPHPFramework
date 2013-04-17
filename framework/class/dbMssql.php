@@ -1,13 +1,5 @@
 <?php
-/**
- *  dbMysql.php 数据库实现类
- *
- * @copyright			(C) 2005-2010 PHPCMS
- * @license				http://www.phpcms.cn/license/
- * @lastmodify			2010-6-1
- */
-
-final class dbMysql
+final class dbMssql
 {
 	
 	/**
@@ -54,22 +46,13 @@ final class dbMysql
 	 */
 	public function connect()
 	{
-		$func = $this->config['pconnect'] == 1 ? 'mysql_pconnect' : 'mysql_connect';
-		if(!$this->link = $func($this->config['hostname'], $this->config['username'], $this->config['password'], 1))
+		$func = $this->config['pconnect'] == 1 ? 'mssql_pconnect' : 'mssql_connect';
+		if(!$this->link = $func($this->config['hostname'], $this->config['username'], $this->config['password']))
 		{
-			$this->halt('Can not connect to MySQL server');
+			$this->halt('Can not connect to MsSQL server');
 			return false;
 		}
-
-		if($this->version() > '4.1')
-		{
-			$charset = isset($this->config['charset']) ? $this->config['charset'] : '';
-			$serverset = $charset ? "character_set_connection='$charset',character_set_results='$charset',character_set_client=binary" : '';
-			$serverset .= $this->version() > '5.0.1' ? ((empty($serverset) ? '' : ',')." sql_mode='' ") : '';
-			$serverset && mysql_query("SET $serverset", $this->link);		
-		}
-
-		if($this->config['database'] && !@mysql_select_db($this->config['database'], $this->link))
+		if($this->config['database'] && !mssql_select_db($this->config['database'], $this->link))
 		{
 			$this->halt('Cannot use database '.$this->config['database']);
 			return false;
@@ -90,7 +73,7 @@ final class dbMysql
 		{
 			$this->connect();
 		}
-		$this->lastqueryid = mysql_query($sql, $this->link) or $this->halt(mysql_error(), $sql);
+		$this->lastqueryid = mssql_query($sql, $this->link) or $this->halt('MsSQL Query Error', $sql);
 		$this->querycount++;
 		return $this->lastqueryid;
 	}
@@ -116,7 +99,7 @@ final class dbMysql
 		array_walk($field, array($this, 'add_special_char'));
 		$data = implode(',', $field);
 
-		$sql = 'SELECT '.$data.' FROM `'.$this->config['database'].'`.`'.$table.'`'.$where.$group.$order.$limit;
+		$sql = 'SELECT '.$data.' FROM '.$table.$where.$group.$order.$limit;
 		$this->execute($sql);
 		if(!is_resource($this->lastqueryid)) {
 			return $this->lastqueryid;
@@ -163,12 +146,12 @@ final class dbMysql
 	/**
 	 * 遍历查询结果集
 	 * @param $type		返回结果集类型	
-	 * 					MYSQL_ASSOC，MYSQL_NUM 和 MYSQL_BOTH
+	 * 					MSSQL_ASSOC，MSSQL_NUM 和 MSSQL_BOTH
 	 * @return array
 	 */
-	public function fetch_next($type=MYSQL_ASSOC)
+	public function fetch_next($type=MSSQL_ASSOC)
 	{
-		$res = mysql_fetch_array($this->lastqueryid, $type);
+		$res = mssql_fetch_array($this->lastqueryid, $type);
 		if(!$res) {
 			$this->free_result();
 		}
@@ -182,7 +165,7 @@ final class dbMysql
 	public function free_result()
 	{
 		if(is_resource($this->lastqueryid)) {
-			mysql_free_result($this->lastqueryid);
+			mssql_free_result($this->lastqueryid);
 			$this->lastqueryid = null;
 		}
 	}
@@ -212,14 +195,13 @@ final class dbMysql
 		
 		$fielddata = array_keys($data);
 		$valuedata = array_values($data);
-		array_walk($fielddata, array($this, 'add_special_char'));
 		array_walk($valuedata, array($this, 'escape_string'));
 		
 		$field = implode (',', $fielddata);
 		$value = implode (',', $valuedata);
 
-		$cmd = $replace ? 'REPLACE INTO' : 'INSERT INTO';
-		$sql = $cmd.' `'.$this->config['database'].'`.`'.$table.'`('.$field.') VALUES ('.$value.')';
+		$cmd = $replace ? 'REPLACE INTO ' : 'INSERT INTO ';
+		$sql = $cmd.$table.' ('.$field.') VALUES ('.$value.')';
 		$return = $this->execute($sql);
 		return $return_insert_id ? $this->insert_id() : $return;
 	}
@@ -230,7 +212,8 @@ final class dbMysql
 	 */
 	public function insert_id()
 	{
-		return mysql_insert_id($this->link);
+		$insid = $this->fetch_row($this->lastqueryid);
+		return $insid[0];
 	}
 	
 	/**
@@ -298,7 +281,7 @@ final class dbMysql
 			return false;
 		}
 
-		$sql = 'UPDATE `'.$this->config['database'].'`.`'.$table.'` SET '.$field.$where;
+		$sql = 'UPDATE '.$table.' SET '.$field.$where;
 		return $this->execute($sql);
 	}
 	
@@ -316,7 +299,7 @@ final class dbMysql
 			return false;
 		}
 		$where = ' WHERE '.$where;
-		$sql = 'DELETE FROM `'.$this->config['database'].'`.`'.$table.'`'.$where;
+		$sql = 'DELETE FROM '.$table.$where;
 		return $this->execute($sql);
 	}
 	
@@ -326,7 +309,7 @@ final class dbMysql
 	 */
 	public function affected_rows()
 	{
-		return mysql_affected_rows($this->link);
+		return mssql_rows_affected($this->link);
 	}
 	
 	/**
@@ -415,45 +398,36 @@ final class dbMysql
 	public function num_rows($sql)
 	{
 		$this->lastqueryid = $this->execute($sql);
-		return mysql_num_rows($this->lastqueryid);
+		return mssql_num_rows($this->lastqueryid);
 	}
 
 	public function num_fields($sql)
 	{
 		$this->lastqueryid = $this->execute($sql);
-		return mysql_num_fields($this->lastqueryid);
+		return mssql_num_fields($this->lastqueryid);
 	}
 
 	public function result($sql, $row)
 	{
 		$this->lastqueryid = $this->execute($sql);
-		return @mysql_result($this->lastqueryid, $row);
+		return mssql_result($this->lastqueryid, $row);
 	}
 
 	public function error()
 	{
-		return @mysql_error($this->link);
+		return mssql_result($this->link);
 	}
 
 	public function errno()
 	{
-		return intval(@mysql_errno($this->link)) ;
-	}
-
-	public function version()
-	{
-		if(!is_resource($this->link))
-		{
-			$this->connect();
-		}
-		return mysql_get_server_info($this->link);
+		return intval($this->link) ;
 	}
 
 	public function close()
 	{
 		if (is_resource($this->link))
 		{
-			@mysql_close($this->link);
+			mssql_close($this->link);
 		}
 	}
 	
@@ -461,7 +435,7 @@ final class dbMysql
 	{
 		if($this->config['debug'])
 		{
-			$this->errormsg = "<b>MySQL Query : </b> $sql <br /><b> MySQL Error : </b>".$this->error()." <br /> <b>MySQL Errno : </b>".$this->errno()." <br /><b> Message : </b> $message ";
+			$this->errormsg = "<b>MsSQL Query : </b> $sql <br /><b> MsSQL Error : </b>".$this->error()." <br /> <b>MsSQL Errno : </b>".$this->errno()." <br /><b> Message : </b> $message ";
 			$msg = $this->errormsg;
 			echo '<div style="font-size:12px;text-align:left; border:1px solid #9cc9e0; padding:1px 4px;color:#000000;font-family:Arial, Helvetica,sans-serif;"><span>'.$msg.'</span></div>';
 			exit;

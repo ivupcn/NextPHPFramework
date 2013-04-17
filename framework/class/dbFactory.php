@@ -77,6 +77,10 @@ final class dbFactory
 				Next::loadClass('dbMysql');
 				$object = new dbMysql();
 				break;
+			case 'mssql' :
+				Next::loadClass('dbMssql');
+				$object = new dbMssql();
+				break;
 			default :
 				Next::loadClass('dbMysql');
 				$object = new dbMysql();
