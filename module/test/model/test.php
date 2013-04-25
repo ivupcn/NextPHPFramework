@@ -3,8 +3,8 @@ defined('IN_Next') or exit('No permission resources.');
 class test_model_test extends model {
 	public function __construct() {
 		$this->db_config = Next::config('database');
-		$this->db_setting = 'default';
-		$this->table_name = 'test';
+		$this->db_setting = 'mssql';
+		$this->table_name = 'playlist_info';
 		$this->validations = array();
 		parent::__construct();
 	}

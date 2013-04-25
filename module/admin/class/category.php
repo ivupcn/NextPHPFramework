@@ -1,7 +1,7 @@
 <?php
 class admin_class_category
 {
-	public $categorys,$sethtml;
+	public $categorys;
 
 	public function repair($module)
 	{
@@ -34,25 +34,20 @@ class admin_class_category
 				$letter = strtolower(implode('', $letters));
 				$listorder = $cat['listorder'] ? $cat['listorder'] : $id;
 				
-				$this->sethtml = isset($setting['create_to_html_root']) ? 1 : 0;
-				//检查是否生成到根目录
-				$this->get_sethtml($id);
-				$sethtml = $this->sethtml ? 1 : 0;
-				
 				if(isset($setting['ishtml']))
 				{
 				//生成静态时
 					$url = $this->update_url($module,$id);
 					if(!preg_match('/^(http|https):\/\//i', $url))
 					{
-						$url = $sethtml ? '/'.$url : 'html/'.$url;
+						$url = 'html/'.$url;
 					}
 					if($cat['url']!=$url) admin_model_tag::model()->update(array('url'=>$url), array('id'=>$id));
 				}
 
-				if($categorys[$id]['parentdir']!=$parentdir || $categorys[$id]['sethtml']!=$sethtml || $categorys[$id]['letter']!=$letter || $categorys[$id]['listorder']!=$listorder)
+				if($categorys[$id]['parentdir']!=$parentdir || $categorys[$id]['letter']!=$letter || $categorys[$id]['listorder']!=$listorder)
 				{
-					admin_model_tag::model()->update(array('parentdir'=>$parentdir,'sethtml'=>$sethtml,'letter'=>$letter,'listorder'=>$listorder), array('id'=>$id));
+					admin_model_tag::model()->update(array('parentdir'=>$parentdir,'letter'=>$letter,'listorder'=>$listorder), array('id'=>$id));
 				}
 					
 			}
@@ -213,28 +208,6 @@ class admin_class_category
 				}
 				krsort($arrcatdir);
 				return implode('/', $arrcatdir).'/';
-			}
-		}
-	}
-
-	/**
-	 * 获取父栏目是否生成到根目录
-	 */
-	private function get_sethtml($id)
-	{
-		foreach($this->categorys as $catid => $cat)
-		{
-			if($id==$catid)
-			{
-				$parentid = $cat['parentid'];
-				if(isset($this->categorys[$parentid]['sethtml']))
-				{
-					$this->sethtml = 1;
-				}
-				if($parentid)
-				{
-					$this->get_sethtml($parentid);
-				}
 			}
 		}
 	}

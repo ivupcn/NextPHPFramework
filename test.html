@@ -30,7 +30,7 @@ var demand = {
 	},
 	createHtml:function(){
 		$.each(demand.jsonData,function(i,n){
-			$('#sliderContent').append('<li class="sliderImage"><img src="siteroot/zjw/uploadfile/2013/0408/1.jpg" alt="1" width="'+demand.wrapWidth+'" height="'+demand.wrapHeight+'" /><span class="top"><strong>'+n.title+'</strong><br />'+n.content+'</span></li>');
+			$('#sliderUl').append('<li class="sliderLi"><div class="backlayout"></div><div class="content top"><strong>'+n.title+'</strong><br />'+n.content+'</div></li>');
 		});
 		$('#slider').s3Slider({timeOut: 3000});
 	},
@@ -47,9 +47,9 @@ demand.init();
 尺寸A为:467*600
 尺寸B为:600*150
  -->
-<div id="slider">
-    <ul id="sliderContent"></ul>
-    <div class="clear sliderImage"></div>
+<div id="slider" style="background-image: url(siteroot/zjw/uploadfile/2013/0408/1.jpg); background-repeat: no-repeat no-repeat;">
+    <ul id="sliderUl"></ul>
+    <div class="clear sliderLi"></div>
 </div>
 </body>
 </html>
