@@ -521,7 +521,7 @@ body { overflow:hidden;}
 .pageFormContent label span.left {float: left; line-height: 21px;}
 .pageFormContent label.radioButton { float:left; width:auto; padding:0 10px 0 0; line-height:21px;}
 .pageFormContent .textInput { float:left;}
-.pageFormContent select { float:left;}
+.pageFormContent select { float:left; margin:0;}
 .pageFormContent .inputInfo { padding:0 5px; line-height:21px;}
 .pageFormContent span.unit, .pageFormContent a.unit { padding:0 5px; line-height:21px;}
 .pageFormContent span.info{color:#7F7F7F;display:block;line-height:21px;float:left;}

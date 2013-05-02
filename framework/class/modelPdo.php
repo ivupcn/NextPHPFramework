@@ -1,5 +1,5 @@
 <?php 
-class model {
+class modelPdo {
 	
 	//数据库配置
 	protected $db_config = '';
@@ -23,7 +23,7 @@ class model {
 		}
 		$this->table_name = $this->db_config[$this->db_setting]['tablepre'].$this->table_name;
 		$this->db_tablepre = $this->db_config[$this->db_setting]['tablepre'];
-		$this->db = dbFactory::get_instance($this->db_config)->get_database($this->db_setting);
+		$this->db = dbFactoryPdo::get_instance($this->db_config)->get_database($this->db_setting);
 	}
 		
 	/**
