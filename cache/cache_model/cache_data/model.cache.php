@@ -1,8 +1,8 @@
 <?php
 return array (
-  19 => 
+  20 => 
   array (
-    'modelid' => '19',
+    'modelid' => '20',
     'siteid' => '1',
     'name' => '文章',
     'description' => '',

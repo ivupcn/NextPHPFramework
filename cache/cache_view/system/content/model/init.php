@@ -1,7 +1,7 @@
 <?php defined('IN_Next') or exit('No permission resources.'); ?><div class="pageContent">
   <div class="panelBar">
     <ul class="toolBar">
-      <li><a class="add" href="<?php echo $this->_context->url('model::add@content'); ?>" target="dialog" mask="true" maxable="false" rel="content_model_add" width="800" height="400"><span>添加模型</span></a></li>
+      <li><a class="add" href="<?php echo $this->_context->url('model::add@content'); ?>" target="dialog" mask="true" maxable="false" rel="content_model_add" width="800" height="260"><span>添加模型</span></a></li>
     </ul>
   </div>
   <table class="table" width="100%" layoutH="82">
@@ -20,9 +20,9 @@
         <td><?php echo $r['modelid'];?></td>
         <td><?php echo $r['name'];?></td>
         <td><?php echo $r['tablename'];?></td>
-        <td align="center"><?php echo $r['disabled'] ? '<font color="blue">√</font>' : '<font color="red">×</font>'?></td>
+        <td align="center"><?php echo $r['disabled'] ? '<font color="red">×</font>' : '<font color="blue">√</font>'?></td>
         <td align="center">
-          管理字段 | 修改 | 删除
+          <a href="<?php echo $this->_context->url('field::init@content','modelid/'.$r['modelid']); ?>" target="navTab" rel="content_field_init" title="<?php echo $r['name'];?>字段管理">字段管理</a> | <a href="<?php echo $this->_context->url('model::edit@content','modelid/'.$r['modelid']); ?>" target="dialog" mask="true" maxable="false" rel="content_model_add" width="800" height="260">修改</a> | <a href="<?php echo $this->_context->url('model::delete@content','modelid/'.$r['modelid']); ?>" target="ajaxTodo" title="确定要删除吗?">删除</a>
         </td>
       </tr>
       <?php } ?>

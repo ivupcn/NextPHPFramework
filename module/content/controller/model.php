@@ -17,15 +17,22 @@ class content_controller_model extends admin_class_controller
 			$info = $_POST['info'];
 			$info['siteid'] = SITEID;
 			$modelid = content_model_model::model()->insert($info,true);
-			$model_sql = file_get_contents(Next::config('system','module_path',APP_PATH.'module'.DIRECTORY_SEPARATOR).'content'.DIRECTORY_SEPARATOR.'field'.DIRECTORY_SEPARATOR.'model.sql');
 			$tablepre = content_model_model::model()->db_tablepre;
+			$model_sql = file_get_contents(Next::config('system','module_path',APP_PATH.'module'.DIRECTORY_SEPARATOR).'content'.DIRECTORY_SEPARATOR.'field'.DIRECTORY_SEPARATOR.'model.sql');
 			$tablename = $info['tablename'];
-			$model_sql = str_replace('$basic_table', $tablepre.$tablename, $model_sql);
-			$model_sql = str_replace('$table_data',$tablepre.$tablename.'_data', $model_sql);
+			$basetablename = 'post_'.SITEID;
+			if(!content_model_model::model()->table_exists($basetablename))
+			{
+				$base_sql = file_get_contents(Next::config('system','module_path',APP_PATH.'module'.DIRECTORY_SEPARATOR).'content'.DIRECTORY_SEPARATOR.'field'.DIRECTORY_SEPARATOR.'base.sql');
+				$base_sql = str_replace('$basic_table', $tablepre.$basetablename, $base_sql);
+				$base_sql = str_replace('$base_model_field',$tablepre.'model_field', $base_sql);
+				$base_sql = str_replace('$siteid',SITEID,$base_sql);	
+				content_model_model::model()->sql_execute($base_sql);
+			}
+			$model_sql = str_replace('$table_data',$tablepre.$basetablename.'_'.$tablename, $model_sql);
 			$model_sql = str_replace('$table_model_field',$tablepre.'model_field', $model_sql);
 			$model_sql = str_replace('$modelid',$modelid,$model_sql);
-			$model_sql = str_replace('$siteid',SITEID,$model_sql);
-
+			$model_sql = str_replace('$siteid',SITEID,$model_sql);	
 			content_model_model::model()->sql_execute($model_sql);
 			$this->_cache_field($modelid);
 
