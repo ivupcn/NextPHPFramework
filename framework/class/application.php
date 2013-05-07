@@ -26,15 +26,7 @@ class application
 
         Next::loadClass('session'.Next::config('system','session_storage','File'),'1');
         NLOG::log('    SESSION_ID：' . session_id());
-
-		// 自动转义数据
-		if(!get_magic_quotes_gpc())
-		{
-			$_POST = new_addslashes($_POST);
-			$_GET = new_addslashes($_GET);
-			$_REQUEST = new_addslashes($_REQUEST);
-			$_COOKIE = new_addslashes($_COOKIE);
-		}
+        
         define('ROUTE_M',context::instance()->module_name);
         define('ROUTE_C',context::instance()->controller_name);
         define('ROUTE_A',context::instance()->action_name);
@@ -204,11 +196,11 @@ class application
     * @param string $url_forward 跳转地址
     * @param string $callbackType 回调函数
     */
-    public function showmessage($statusCode, $message, $url_forward='', $callbackType = 'forward', $navTabId ='', $rel = '') 
+    public function showmessage($statusCode, $message, $url_forward='', $callbackType = 'forward', $navTabId ='', $rel = '', $relUrl = '') 
     {
         if(defined('IN_ADMIN'))
         {
-            $showmessage = array('statusCode'=>$statusCode,'message'=>$message,'callbackType'=>$callbackType,'forwardUrl'=>$url_forward,'navTabId'=>$navTabId,'rel'=>$rel);
+            $showmessage = array('statusCode'=>$statusCode,'message'=>$message,'callbackType'=>$callbackType,'forwardUrl'=>$url_forward,'navTabId'=>$navTabId,'rel'=>$rel, 'relUrl'=>$relUrl);
             header('Content-Type: application/json');
             exit(json_encode($showmessage));
         }
