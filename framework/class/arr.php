@@ -18,7 +18,7 @@
  * @version $Id: array.php 2630 2009-07-17 16:43:52Z jerry $
  * @package helper
  */
-abstract class arr
+class arr
 {
     /**
      * 从数组中删除空白的元素（包括只有空白字符的元素）
