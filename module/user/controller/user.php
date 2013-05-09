@@ -4,7 +4,7 @@ class user_controller_user extends admin_class_controller
 	function action_init()
 	{
 		$page = isset($_POST['pageNum']) ? intval($_POST['pageNum']) : '1';
-		$infos = user_model_user::model()->listinfo(array('siteid'=>SITEID), 'userid ASC', $page, 20,'','','',1);
+		$infos = user_model_user::model()->WHERE(array('siteid'=>SITEID))->ORDER('userid ASC')->PAGE(array('page'=>$page))->select();
 		$pages = user_model_user::model()->pages;
 		$roles = getcache('role_'.SITEID,'user');
 		$groups = getcache('grouplist_'.SITEID,'user');
@@ -35,7 +35,7 @@ class user_controller_user extends admin_class_controller
 					unset($info[$k]);
 				}
 			}
-			$insert_id = user_model_user::model()->insert($info,true);
+			$insert_id = user_model_user::model()->FIELDVALUE($info)->insert();
 			if($insert_id)
 			{
 				$this->_app->showmessage('200','操作成功',$this->_context->url('user::init@user'),'closeCurrent','user_user_init');
@@ -70,12 +70,12 @@ class user_controller_user extends admin_class_controller
 					unset($info[$k]);
 				}
 			}
-			user_model_user::model()->update($info,array('userid'=>$userid));
+			user_model_user::model()->SET($info)->WHERE(array('userid'=>$userid))->update();
 			$this->_app->showmessage('200','操作成功',$this->_context->url('user::init@user'),'closeCurrent','user_user_init');
 		}
 		else
 		{					
-			$info = user_model_user::model()->get_one(array('userid'=>$_GET['userid']));
+			$info = user_model_user::model()->WHERE(array('userid'=>$_GET['userid']))->select(1);
 			extract($info);	
 			$roles = getcache('role_'.SITEID,'user');
 			$groups = getcache('grouplist_'.SITEID,'user');	
@@ -89,7 +89,7 @@ class user_controller_user extends admin_class_controller
 	function action_delete() {
 		$userid = intval($_GET['userid']);
 		if($userid == '1') $this->_app->showmessage('300','该对象不能删除');
-		user_model_user::model()->delete(array('userid'=>$userid));
+		user_model_user::model()->WHERE(array('userid'=>$userid))->delete();
 		$this->_app->showmessage('200','会员删除成功');
 	}
 
@@ -102,7 +102,7 @@ class user_controller_user extends admin_class_controller
 		$roles = getcache('role_'.SITEID,'user');
 		$groups = getcache('grouplist_'.SITEID,'user');
 		$page = isset($_GET['page']) && intval($_GET['page']) ? intval($_GET['page']) : '1';
-		$infos = user_model_user::model()->query("select * from x_user where find_in_set('?',roleid)",array('roleid'=>$roleid))->queryall();
+		$infos = user_model_user::model()->WHERE(array('roleid'=>array('FINDINSET',$roleid)))->select();
 		include $this->view('user','user','roleuser');
 	}
 
@@ -125,12 +125,12 @@ class user_controller_user extends admin_class_controller
 					unset($info[$k]);
 				}
 			}
-			user_model_user::model()->update($info,array('userid'=>$userid));
+			user_model_user::model()->SET($info)->WHERE(array('userid'=>$userid))->update();
 			$this->_app->showmessage('200','操作成功',$this->_context->referer());			
 		}
 		else
 		{
-			$info = user_model_user::model()->get_one(array('userid'=>$userid));
+			$info = user_model_user::model()->WHERE(array('userid'=>$userid))->select(1);
 			extract($info);
 			include $this->view('user','user','editinfo');			
 		}
@@ -144,7 +144,7 @@ class user_controller_user extends admin_class_controller
 		$userid = $_SESSION['userid'];
 		if($this->_context->isPOST())
 		{
-			$r = user_model_user::model()->get_one(array('userid'=>$userid),'password,encrypt');
+			$r = user_model_user::model()->FIELD('password,encrypt')->WHERE(array('userid'=>$userid))->select(1);
 			if (password($_POST['old_password'],$r['encrypt']) !== $r['password'] ) $this->_app->showmessage('300','旧密码输入错误',$this->_context->referer());
 			if(isset($_POST['new_password']) && !empty($_POST['new_password']))
 			{
@@ -155,7 +155,7 @@ class user_controller_user extends admin_class_controller
 		}
 		else 
 		{
-			$info = user_model_user::model()->get_one(array('userid'=>$userid));
+			$info = user_model_user::model()->WHERE(array('userid'=>$userid))->select(1);
 			extract($info);
 			include $this->view('user','user','editpwd');	
 		}

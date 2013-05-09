@@ -4,7 +4,7 @@ class content_controller_model extends admin_class_controller
 	public function action_init()
 	{
 		$page = isset($_POST['pageNum']) ? intval($_POST['pageNum']) : '1';
-		$data = content_model_model::model()->listinfo(array('siteid'=>SITEID,'type'=>0),'',$page,30);
+		$data = content_model_model::model()->WHERE(array('siteid'=>SITEID,'type'=>0))->PAGE(array('page'=>$page))->select();
 		$pages = content_model_model::model()->pages;
 		$this->_cache();
 		include $this->view('content','model','init');
@@ -16,7 +16,7 @@ class content_controller_model extends admin_class_controller
 		{
 			$info = $_POST['info'];
 			$info['siteid'] = SITEID;
-			$modelid = content_model_model::model()->insert($info,true);
+			$modelid = content_model_model::model()->FIELDVALUE($info)->insert();
 			$tablepre = content_model_model::model()->db_tablepre;
 			$model_sql = file_get_contents(Next::config('system','module_path',APP_PATH.'module'.DIRECTORY_SEPARATOR).'content'.DIRECTORY_SEPARATOR.'field'.DIRECTORY_SEPARATOR.'model.sql');
 			$tablename = $info['tablename'];
@@ -68,10 +68,10 @@ class content_controller_model extends admin_class_controller
 		$modelid = isset($_GET['modelid']) && intval($_GET['modelid']) ? intval($_GET['modelid']) : $this->_app->showmessage('300','操作失败！');
 		$model_cache = getcache('model','model');
 		$model_table = $model_cache[$modelid]['tablename'];
-		content_model_field::model()->delete(array('modelid'=>$modelid,'siteid'=>SITEID));
+		content_model_field::model()->WHERE(array('modelid'=>$modelid,'siteid'=>SITEID))->delete();
 		content_model_model::model()->drop_table($model_table);
 		content_model_model::model()->drop_table($model_table.'_data');
-		content_model_model::model()->delete(array('modelid'=>$modelid,'siteid'=>SITEID));
+		content_model_model::model()->WHERE(array('modelid'=>$modelid,'siteid'=>SITEID))->delete();
 
 		$this->_app->showmessage('200','操作成功！',$this->_context->url('model::init@content'),'','content_model_init');
 	}
@@ -96,8 +96,9 @@ class content_controller_model extends admin_class_controller
 		}
 		//更新模型数据缓存
 		$model_array = array();
-		$datas = content_model_model::model()->select(array('type'=>0));
-		foreach ($datas as $r) {
+		$datas = content_model_model::model()->WHERE(array('type'=>0))->select();
+		foreach ($datas as $r)
+		{
 			if(!$r['disabled']) $model_array[$r['modelid']] = $r;
 		}
 		setcache('model', $model_array, 'model');
@@ -107,7 +108,7 @@ class content_controller_model extends admin_class_controller
 	private function _cache_field($modelid = 0)
 	{
 		$field_array = array();
-		$fields = content_model_field::model()->select(array('modelid'=>$modelid,'disabled'=>0),'*',100,'listorder ASC');
+		$fields = content_model_field::model()->WHERE(array('modelid'=>$modelid,'disabled'=>0))->ORDER('listorder ASC')->select();
 		foreach($fields as $_value)
 		{
 			$setting = string2array($_value['setting']);

@@ -1,7 +1,7 @@
 <?php defined('IN_Next') or exit('No permission resources.'); ?><div class="pageContent">
 	<div class="panelBar">
     <ul class="toolBar">
-      <li><a class="add" href="?m=user&c=group&a=add" target="dialog" mask="true" maxable="false" rel="user_group_add" width="800" height="400"><span>添加用户组</span></a></li>
+      <li><a class="add" href="<?php echo $this->_context->url('group::add@user'); ?>" target="dialog" mask="true" maxable="false" rel="user_group_add" width="800" height="400"><span>添加用户组</span></a></li>
     </ul>
  	</div>
 <form action="?m=user&c=group&a=sort" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, navTabAjaxDone);">
@@ -48,7 +48,7 @@
 		<td align="center"><?php echo $v['allowupgrade'] ? '<font color="red">√</font>' : '<font color="blue">×</font>'?></td>
 		<td align="center"><?php echo $v['allowsendmessage'] ? '<font color="red">√</font>' : '<font color="blue">×</font>'?></td>
 		<td align="center"><?php echo $v['spamcertification'] ? '<font color="red">√</font>' : '<font color="blue">×</font>'?></td>
-		<td align="center"><a href="?m=user&c=group&a=edit&groupid=<?php echo $v['groupid'];?>" target="dialog" mask="true" maxable="false" rel="user_group_edit" width="800" height="400">修改</a> | <a href="?m=user&c=group&a=delete&groupid=<?php echo $v['groupid'];?>" target="ajaxTodo" title="确定要删除吗?">删除</a></td>
+		<td align="center"><a href="<?php echo $this->_context->url('group::edit@user','groupid/'.$v['groupid']); ?>" target="dialog" mask="true" maxable="false" rel="user_group_edit" width="800" height="400">修改</a> | <a href="<?php echo $this->_context->url('group::delete@user','groupid/'.$v['groupid']); ?>" target="ajaxTodo" title="确定要删除吗?">删除</a></td>
     </tr>
 <?php
 	}

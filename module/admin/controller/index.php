@@ -32,7 +32,7 @@ class admin_controller_index extends admin_class_controller
 	{
 		if($this->_context->isPOST() && user_model_user::model()->validate($_POST))
 		{
-			$rtime = admin_model_times::model()->get_one(array('email'=>$_POST['email'],'isadmin'=>1));
+			$rtime = admin_model_times::model()->WHERE(array('email'=>$_POST['email'],'isadmin'=>1))->select(1);
 			$maxloginfailedtimes = Next::config('system','maxloginfailedtimes','8');
 			if($rtime['times'] > $maxloginfailedtimes)
 			{
@@ -40,7 +40,7 @@ class admin_controller_index extends admin_class_controller
                 $this->_app->showmessage('300','密码重试次数太多，请过'.$minute.'分钟后重新登录！');
             }
             //查询帐号
-            $r = user_model_user::model()->get_one(array('email'=>$_POST['email']));
+            $r = user_model_user::model()->WHERE(array('email'=>$_POST['email']))->select(1);
             if(!$r)
             {
             	$this->_app->showmessage('300','账户不存在',$this->_context->url('index::login@admin'));
@@ -54,24 +54,24 @@ class admin_controller_index extends admin_class_controller
 	                if($rtime && $rtime['times'] < $maxloginfailedtimes)
 	                {
 	                    $times = $maxloginfailedtimes-intval($rtime['times']);
-	                    admin_model_times::model()->update(array('ip'=>$ip,'isadmin'=>1,'times'=>'+=1'),array('email'=>$_POST['email']));
+	                    admin_model_times::model()->SET(array('ip'=>$ip,'isadmin'=>1,'times'=>'+=1'))->WHERE(array('email'=>$_POST['email']))->update();
 	                }
 	                else
 	                {
 	                	if($rtime)
 	                	{
-	                		admin_model_times::model()->delete(array('email'=>$_POST['email'],'isadmin'=>1));
+	                		admin_model_times::model()->WHERE(array('email'=>$_POST['email'],'isadmin'=>1))->delete();
 	                	}
-	                    admin_model_times::model()->insert(array('email'=>$_POST['email'],'ip'=>$ip,'isadmin'=>1,'logintime'=>SYS_TIME,'times'=>1));
+	                    admin_model_times::model()->FIELDVALUE(array('email'=>$_POST['email'],'ip'=>$ip,'isadmin'=>1,'logintime'=>SYS_TIME,'times'=>1))->insert();
 	                    $times = $maxloginfailedtimes;
 	                }
 	                $this->_app->showmessage('300','密码错误，您还有'.$times.'次尝试机会！', $this->_context->url('index::login@admin'));
             	}
             	if($rtime)
             	{
-            		admin_model_times::model()->delete(array('email'=>$_POST['email']));
+            		admin_model_times::model()->WHERE(array('email'=>$_POST['email']))->delete();
             	}
-            	user_model_user::model()->update(array('lastloginip'=>ip(),'lastlogintime'=>SYS_TIME),array('userid'=>$r['userid']));
+            	user_model_user::model()->SET(array('lastloginip'=>ip(),'lastlogintime'=>SYS_TIME))->WHERE(array('userid'=>$r['userid']))->update();
             	$_SESSION['userid'] = $r['userid'];
             	$_SESSION['email'] = $r['email'];
 	            $_SESSION['roleid'] = implode(',', normalize($r['roleid']));

@@ -3,18 +3,12 @@ class admin_controller_site extends admin_class_controller
 {
 	function action_init()
 	{
-		$total = admin_model_site::model()->count();
-		$page = isset($_GET['page']) && intval($_GET['page']) ? intval($_GET['page']) : 1;
-		$pagesize = 20;
-		$offset = ($page - 1) * $pagesize;
-		$list = admin_model_site::model()->select('', '*', $offset.','.$pagesize);
-		$pages = pages($total, $page, $pagesize);
+		$list = admin_model_site::model()->select();
 		include $this->view('admin','site','init');
 	}
 
 	function action_add()
 	{
-		header("Cache-control: private"); 
 		if($this->_context->isPOST() && admin_model_site::model()->validate($_POST['info']))
 		{
 			$infos = array();
@@ -33,10 +27,10 @@ class admin_controller_site extends admin_class_controller
 					$infos[$k] = trim($v);
 				}
 			}
-			if (admin_model_site::model()->get_one(array('name'=>$infos['name']), 'siteid')) {
+			if(admin_model_site::model()->FIELD('siteid')->WHERE(array('name'=>$infos['name']))->select(1)) {
 				showmessage('300','该站点已经存在');
 			}
-			if(admin_model_site::model()->insert($infos))
+			if(admin_model_site::model()->FIELDVALUE($infos)->insert())
 			{
 				$class_site = new admin_class_sites();
 				$class_site->set_cache();
@@ -55,68 +49,63 @@ class admin_controller_site extends admin_class_controller
 
 	function action_edit()
 	{
-		$siteid = isset($_GET['siteid']) && intval($_GET['siteid']) ? intval($_GET['siteid']) : $this->_app->showmessage('300','非法参数！');
-		if($data = admin_model_site::model()->get_one(array('siteid'=>$siteid)))
+		if($this->_context->isPOST() && admin_model_site::model()->validate($_POST['info']))
 		{
-			if($this->_context->isPOST() &&  admin_model_site::model()->validate($_POST['info']))
+			$siteid = isset($_POST['siteid']) && intval($_POST['siteid']) ? intval($_POST['siteid']) : $this->_app->showmessage('300','非法参数！');
+			$info = array();
+			foreach($_POST['info'] as $k => $v)
 			{
-				$info = array();
-				foreach($_POST['info'] as $k => $v)
+				if($k == 'setting')
 				{
-					if($k == 'setting')
-					{
-						$info['setting'] = trim(array2string($_POST['info'][$k]));
-					}
-					elseif($k == 'route')
-					{
-						$info['route'] = trim(array2string($_POST['info'][$k]));
-					}
-					else
-					{
-						$info[$k] = trim($v);
-					}
+					$info['setting'] = trim(array2string($_POST['info'][$k]));
 				}
-				if ($data['name'] != $info['name'] && admin_model_site::model()->get_one(array('name'=>$info['name']), 'siteid'))
+				elseif($k == 'route')
 				{
-					$this->_app->showmessage('300','站点名称已经存在');
-				}
-				if ($siteid != 1)
-				{
-					if($data['dirname'] != $info['dirname'] && admin_model_site::model()->get_one(array('dirname'=>$info['dirname']), 'siteid'))
-					{
-						$this->_app->showmessage('300','站点目录已经存在');
-					}
-				}
-				if ($siteid == 1) unset($info['dirname']);
-				if (admin_model_site::model()->update($info, array('siteid'=>$siteid)))
-				{
-					$class_site = new admin_class_sites();
-					$class_site->set_cache();
-					$this->_app->showmessage('200','操作成功！',$this->_context->url('site::edit@admin',array('siteid'=>$siteid)),'','','jbsxBox');
+					$info['route'] = trim(array2string($_POST['info'][$k]));
 				}
 				else
 				{
-					$this->_app->showmessage('300','操作失败！');
+					$info[$k] = trim($v);
 				}
+			}
+			if($data['name'] != $info['name'] && admin_model_site::model()->FIELD('siteid')->WHERE(array('name'=>$info['name']))->select(1))
+			{
+				$this->_app->showmessage('300','站点名称已经存在');
+			}
+			if($siteid != 1)
+			{
+				if($data['dirname'] != $info['dirname'] && admin_model_site::model()->FIELD('siteid')->WHERE(array('dirname'=>$info['dirname']))->select(1))
+				{
+					$this->_app->showmessage('300','站点目录已经存在');
+				}
+			}
+			if($siteid == 1) unset($info['dirname']);
+			if(admin_model_site::model()->SET($info)->WHERE(array('siteid'=>$siteid)))
+			{
+				$class_site = new admin_class_sites();
+				$class_site->set_cache();
+				$this->_app->showmessage('200','操作成功！',$this->_context->url('site::edit@admin',array('siteid'=>$siteid)),'','','jbsxBox');
 			}
 			else
 			{
-				$view_list = $this->viewlist($siteid);
-				$setting = string2array($data['setting']);
-				$route = string2array($data['route']);
-				$swf_auth_key = md5(Next::config('system','auth_key','29HTvKg84Veg8VtDdKbs').SYS_TIME);
-				include $this->view('admin','site','edit');
+				$this->_app->showmessage('300','操作失败！');
 			}
 		}
 		else
 		{
-			$this->_app->showmessage('300','操作失败！');
+			$siteid = isset($_GET['siteid']) && intval($_GET['siteid']) ? intval($_GET['siteid']) : $this->_app->showmessage('300','非法参数！');
+			$data = admin_model_site::model()->WHERE(array('siteid'=>$siteid))->select(1);
+			$view_list = $this->viewlist($siteid);
+			$setting = string2array($data['setting']);
+			$route = string2array($data['route']);
+			$swf_auth_key = md5(Next::config('system','auth_key','29HTvKg84Veg8VtDdKbs').SYS_TIME);
+			include $this->view('admin','site','edit');
 		}
 	}
 
 	function action_config()
 	{
-		if($data = admin_model_site::model()->get_one(array('siteid'=>SITEID)))
+		if($data = admin_model_site::model()->WHERE(array('siteid'=>SITEID))->select(1))
 		{
 			if($this->_context->isPOST())
 			{
@@ -132,7 +121,7 @@ class admin_controller_site extends admin_class_controller
 						$info[$k] = trim($v);
 					}
 				}
-				if (admin_model_site::model()->update($info, array('siteid'=>$data['siteid'])))
+				if(admin_model_site::model()->SET($info)->WHERE(array('siteid'=>$data['siteid']))->update())
 				{
 					$class_site = new admin_class_sites();
 					$class_site->set_cache();
@@ -159,9 +148,9 @@ class admin_controller_site extends admin_class_controller
 	function action_delete()
 	{
 		$siteid = isset($_GET['s']) && intval($_GET['s']) ? intval($_GET['s']) : $this->_app->showmessage('300','非法参数！');
-		if (admin_model_site::model()->get_one(array('siteid'=>$siteid)))
+		if (admin_model_site::model()->WHERE(array('siteid'=>$siteid))->select(1))
 		{
-			if (admin_model_site::model()->delete(array('siteid'=>$siteid)))
+			if(admin_model_site::model()->WHERE(array('siteid'=>$siteid))->delete())
 			{
 				$class_site = new admin_class_sites();
 				$class_site->set_cache();

@@ -4,7 +4,7 @@ class extend_controller_urlrule extends admin_class_controller
 	public function action_init()
 	{
 		$page = isset($_POST['pageNum']) ? intval($_POST['pageNum']) : '1';
-		$data = extend_model_urlrule::model()->listinfo(array('siteid'=>SITEID), '', $page, 20,'','','',1);
+		$data = extend_model_urlrule::model()->WHERE(array('siteid'=>SITEID))->PAGE(array('page'=>$page))->select();
 		$pages = extend_model_urlrule::model()->pages;
 		$this->_cache();
 		include $this->view('extend','urlrule','init');
@@ -14,7 +14,7 @@ class extend_controller_urlrule extends admin_class_controller
 	{
 		if($this->_context->isPOST() && extend_model_urlrule::model()->validate($_POST['info']))
 		{
-			$insert_id = extend_model_urlrule::model()->insert($_POST['info'],true);
+			$insert_id = extend_model_urlrule::model()->FIELDVALUE($_POST['info'])->insert();
 			if($insert_id)
 			{
 				$this->_app->showmessage('200','操作成功！',$this->_context->url('urlrule::init@extend'),'closeCurrent','extend_urlrule_init');
@@ -26,7 +26,7 @@ class extend_controller_urlrule extends admin_class_controller
 		}
 		else
 		{
-			$modules_arr = admin_model_module::model()->select('', 'module,name');
+			$modules_arr = admin_model_module::model()->FIELD('module,name')->select();
 			$modules = array();
 			foreach ($modules_arr as $r)
 			{
@@ -41,15 +41,15 @@ class extend_controller_urlrule extends admin_class_controller
 		if($this->_context->isPOST() && extend_model_urlrule::model()->validate($_POST['info']))
 		{
 			$urlruleid = isset($_POST['urlruleid']) && intval($_POST['urlruleid']) ? intval($_POST['urlruleid']) : $this->_app->showmessage('300','操作失败！');
-			 extend_model_urlrule::model()->update($_POST['info'],array('urlruleid'=>$urlruleid));
+			 extend_model_urlrule::model()->SET($_POST['info'])->WHERE(array('urlruleid'=>$urlruleid))->update();
 			 $this->_app->showmessage('200','操作成功！',$this->_context->url('urlrule::init@extend'),'closeCurrent','extend_urlrule_init');
 		}
 		else
 		{
 			$urlruleid = isset($_GET['urlruleid']) && intval($_GET['urlruleid']) ? intval($_GET['urlruleid']) : $this->_app->showmessage('300','操作失败！');
-			$r = extend_model_urlrule::model()->get_one(array('urlruleid'=>$urlruleid));
+			$r = extend_model_urlrule::model()->WHERE(array('urlruleid'=>$urlruleid))->select(1);
 			extract($r);
-			$modules_arr = admin_model_module::model()->select('', 'module,name');
+			$modules_arr = admin_model_module::model()->FIELD('module,name')->select();
 			$modules = array();
 			foreach ($modules_arr as $r)
 			{
@@ -61,7 +61,7 @@ class extend_controller_urlrule extends admin_class_controller
 
 	public function action_delete() {
 		$urlruleid = isset($_GET['urlruleid']) && intval($_GET['urlruleid']) ? intval($_GET['urlruleid']) : $this->_app->showmessage('300','操作失败！');
-		extend_model_urlrule::model()->delete(array('urlruleid'=>$urlruleid));
+		extend_model_urlrule::model()->WHERE(array('urlruleid'=>$urlruleid))->delete();
 		$this->_app->showmessage('200','操作成功！',$this->_context->url('urlrule::init@extend'),'','extend_urlrule_init');
 	}
 
@@ -69,7 +69,8 @@ class extend_controller_urlrule extends admin_class_controller
 	 * 更新URL规则
 	 */
 	public function _cache() {
-		$datas = extend_model_urlrule::model()->select('','*','','','','urlruleid');
+		$infos = extend_model_urlrule::model()->select();
+		$datas = arr::sortbykey($infos, 'urlruleid');
 		$basic_data = array();
 		foreach($datas as $roleid=>$r)
 		{

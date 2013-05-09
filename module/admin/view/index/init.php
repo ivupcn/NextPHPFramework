@@ -23,7 +23,6 @@
 <script src="statics/js/admin/xheditor/xheditor_lang/zh-cn.js" type="text/javascript"></script>
 <script src="statics/js/admin/xheditor/xheditor_plugins/ubb.js" type="text/javascript"></script>
 <script src="statics/js/admin/uploadify/jquery.uploadify-3.1.js" type="text/javascript"></script>
-<script src="statics/js/admin/timeline_js/timeline-api.js?bundle=true" type="text/javascript"></script>
 <script src="statics/js/admin/jquery.treetable.js"></script>
 <script src="statics/js/admin/dwz.core.js" type="text/javascript"></script>
 <script src="statics/js/admin/dwz.regional.zh.js" type="text/javascript"></script>

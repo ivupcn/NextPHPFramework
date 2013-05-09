@@ -390,5 +390,38 @@ class arr
         eval('array_multisort(' . $sortRule . '$rowset);');
         return $rowset;
     }
+
+    /**
+     * 返回数组按键名排序
+     * 用法：
+     * @code php
+     * $arr = array(
+     *     array('id' => 1, 'value' => '1-1', 'parent' => 'a'),
+     *     array('id' => 4, 'value' => '4-1', 'parent' => 'b'),
+     *     array('id' => 6, 'value' => '6-1', 'parent' => 'c'),
+     * );
+     * $rows = arr::sortbykey($arr, 'parent');
+     * dump($rows);
+     * 输出结果为：
+     * array(
+     *     'a' => array('id' => 1, 'value' => '1-1', 'parent' => 'a'),
+     *     'b' => array('id' => 4, 'value' => '4-1', 'parent' => 'b'),
+     *     'c' => array('id' => 6, 'value' => '6-1', 'parent' => 'c'),
+     * )
+     * @endcode
+     * @param array $arr 要排序的数组
+     * @param array $key 排序的键
+     *
+     * @return array 排序后的数组
+     */
+    static function sortbykey($arr, $key)
+    {
+        $datalist = array();
+        foreach($arr as $rs)
+        {
+            $datalist[$rs[$key]] = $rs;
+        }
+        return $datalist;
+    }
 }
 ?>

@@ -20,17 +20,7 @@ class api
      *
      * 构造应用程序对象
      */
-	protected function __construct()
-	{
-		// 自动转义数据
-		if(!get_magic_quotes_gpc())
-		{
-			$_POST = new_addslashes($_POST);
-			$_GET = new_addslashes($_GET);
-			$_REQUEST = new_addslashes($_REQUEST);
-			$_COOKIE = new_addslashes($_COOKIE);
-		}
-	}
+	protected function __construct(){}
 	
 	/**
      * 返回应用接口类的唯一实例

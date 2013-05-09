@@ -6,8 +6,8 @@ class admin_class_category
 	public function repair($module)
 	{
 		if(!$module) return false;
-		$this->categorys = $categorys = array();
-		$this->categorys = $categorys = admin_model_tag::model()->select(array('siteid'=>SITEID,'module'=>$module), '*', '', 'listorder ASC,id ASC', '', 'id');
+		$data = admin_model_tag::model()->WHERE(array('siteid'=>SITEID,'module'=>$module))->ORDER('listorder ASC,id ASC')->SELECT();
+		$this->categorys = $categorys = arr::sortbykey($data, 'id');
 		if(is_array($this->categorys))
 		{
 			foreach($this->categorys as $id => $cat)
@@ -16,7 +16,7 @@ class admin_class_category
 				if($cat['parentid'] != 0 && !isset($this->categorys[$cat['parentid']]))
 				{
 					//删除在非正常显示的栏目
-					admin_model_tag::model()->delete(array('id'=>$id));
+					admin_model_tag::model()->WHERE(array('id'=>$id))->delete();
 					continue;
 				}
 				$arrparentid = $this->get_arrparentid($id);
@@ -25,7 +25,7 @@ class admin_class_category
 				$child = is_numeric($arrchildid) ? 0 : 1;
 				if($categorys[$id]['arrparentid']!=$arrparentid || $categorys[$id]['arrchildid']!=$arrchildid || $categorys[$id]['child']!=$child)
 				{
-					admin_model_tag::model()->update(array('arrparentid'=>$arrparentid,'arrchildid'=>$arrchildid,'child'=>$child),array('id'=>$id));
+					admin_model_tag::model()->SET(array('arrparentid'=>$arrparentid,'arrchildid'=>$arrchildid,'child'=>$child))->WHERE(array('id'=>$id))->update();
 				}
 
 				$parentdir = $this->get_parentdir($id);
@@ -42,12 +42,12 @@ class admin_class_category
 					{
 						$url = 'html/'.$url;
 					}
-					if($cat['url']!=$url) admin_model_tag::model()->update(array('url'=>$url), array('id'=>$id));
+					if($cat['url']!=$url) admin_model_tag::model()->SET(array('url'=>$url))->WHERE(array('id'=>$id))->update();
 				}
 
 				if($categorys[$id]['parentdir']!=$parentdir || $categorys[$id]['letter']!=$letter || $categorys[$id]['listorder']!=$listorder)
 				{
-					admin_model_tag::model()->update(array('parentdir'=>$parentdir,'letter'=>$letter,'listorder'=>$listorder), array('id'=>$id));
+					admin_model_tag::model()->SET(array('parentdir'=>$parentdir,'letter'=>$letter,'listorder'=>$listorder))->WHERE(array('id'=>$id))->update();
 				}
 					
 			}
@@ -65,7 +65,7 @@ class admin_class_category
 		$models = getcache('model_'.SITEID,'admin');
 		foreach ($models as $modelid=>$model)
 		{
-			$datas = admin_model_tag::model()->select(array('modelid'=>$modelid),'id,type,items',10000);
+			$datas = admin_model_tag::model()->FIELD('id,type,items')->WHERE(array('modelid'=>$modelid))->select();
 			$array = array();
 			foreach ($datas as $r) {
 				if($r['type']==0) $array[$r['id']] = $r['items'];
@@ -73,14 +73,14 @@ class admin_class_category
 			setcache('category_items_'.$modelid, $array,'commons');
 		}
 		$array = array();
-		$categorys = admin_model_tag::model()->select(array('module'=>$module),'id,siteid',20000,'listorder ASC');
+		$categorys = admin_model_tag::model()->FIELD('id,siteid')->WHERE(array('module'=>$module))->ORDER('listorder ASC')->select();
 		foreach ($categorys as $r)
 		{
 			$array[$r['id']] = $r['siteid'];
 		}
 		setcache('category_'.$module,$array,'admin');
 		$categorys = $this->categorys = array();
-		$this->categorys = admin_model_tag::model()->select(array('siteid'=>SITEID, 'module'=>$module),'*',10000,'listorder ASC');
+		$this->categorys = admin_model_tag::model()->WHERE(array('siteid'=>SITEID, 'module'=>$module))->ORDER('listorder ASC')->select();
 		foreach($this->categorys as $r)
 		{
 			unset($r['module']);
@@ -242,11 +242,11 @@ class admin_class_category
 	{
 		$id = intval($id);
 		if (empty($id)) return false;
-		$r = admin_model_tag::model()->get_one(array('parentid'=>$id));
+		$r = admin_model_tag::model()->WHERE(array('parentid'=>$id))->select(1);
 		if($r)
 		{
 			$this->delete_child($r['id']);
-			admin_model_tag::model()->delete(array('id'=>$r['id']));
+			admin_model_tag::model()->WHERE(array('id'=>$r['id']))->select(1);
 		}
 		return true;
 	}

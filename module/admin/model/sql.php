@@ -1,39 +1,59 @@
 <?php
 defined('IN_Next') or exit('No permission resources.');
-class admin_model_sql extends model {
-	public $db_config, $db_setting;
-	public function __construct($db_config = array(), $db_setting = '') {
-		if (!$db_config) {
-			$this->db_config = Next::config('database');
-		} else {
-			$this->db_config = $db_config;
-		}
-		if (!$db_setting) {
-			$this->db_setting = 'default';
-		} else {
-			$this->db_setting = $db_setting;
-		}
-		$this->validations = array();
-		parent::__construct();
-		if ($db_setting && $db_config[$db_setting]['db_tablepre']) {
-			$this->db_tablepre = $db_config[$db_setting]['db_tablepre'];
-		}
+class admin_model_sql
+{
+	static function __define()
+	{
+		return array(
+			// 数据库配置
+			'db_config' => Next::config('database','default'),
+			// 数据表
+			'table_name' => '',
+			// 指定在数据库中创建对象时，哪些属性的值不允许由外部提供，这里指定的属性会在创建记录时被过滤掉，从而让数据库自行填充值。
+			'insert_reject' => '',
+			// 指定在数据库中更新对象时，哪些属性的值不允许由外部提供，这里指定的属性会在创建记录时被过滤掉，从而让数据库自行填充值。
+			'update_reject' => '',
+			/* 指定在数据库中创建对象时，哪些属性的值由下面指定的内容进行覆盖
+			 * 如果填充值为 self::AUTOFILL_TIMESTAMP 或 self::AUTOFILL_DATETIME，则会根据属性的类型来自动填充当前时间（整数或字符串）。
+			 * 如果填充值为一个数组，则假定为 callback 方法。
+			 */
+			'insert_autofill' => array(),
+			/* 指定在数据库中更新对象时，哪些属性的值由下面指定的内容进行覆盖
+			 * 如果填充值为 self::AUTOFILL_TIMESTAMP 或 self::AUTOFILL_DATETIME，则会根据属性的类型来自动填充当前时间（整数或字符串）。
+			 * 如果填充值为一个数组，则假定为 callback 方法。
+			 */
+			'update_autofill' => array(),
+			/**
+             * 在保存对象时，会按照下面指定的验证规则进行验证。验证失败会抛出异常。
+             *
+             * 除了在保存时自动验证，还可以通过对象的 validator::validate() 方法对数组数据进行验证。
+             *
+             * 如果需要添加一个自定义验证，应该写成
+             *
+             * 'title' => array(
+             *        array(array(__CLASS__, 'checkTitle'), '标题不能为空'),
+             * )
+             *
+             * 然后在该类中添加 checkTitle() 方法。函数原型如下：
+             *
+             * static function checkTitle($title)
+             *
+             * 该方法返回 true 表示通过验证。
+             */
+			'validations' => array()
+		);
 	}
 
-	static function model()
+	/**
+     * 返回当前 model 类的元数据对象
+     *
+     * @static
+     *
+     * @return model
+     */
+    static function model()
     {
-        static $model;
-        if (is_null($model)) $model = new admin_model_sql();
-        return $model;
+        return db::getInstance(__CLASS__);
     }
-
-    public function sql_query($sql) {
-		if (!empty($this->db_tablepre)) $sql = str_replace('phpcms_', $this->db_tablepre, $sql);
-		return parent::query($sql);
-	}
-	
-	public function fetch_next() {
-		return $this->db->fetch_next();
-	}
 }
 ?>

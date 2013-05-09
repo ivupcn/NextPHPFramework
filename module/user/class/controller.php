@@ -40,7 +40,7 @@ class user_class_controller extends controller
                 $auth_key = md5(Next::config('system', 'auth_key','29HTvKg84Veg8VtDdKbs').$_SERVER['HTTP_USER_AGENT']);
                 list($userid, $password) = explode("\t", sys_auth($x_auth, 'DECODE', $auth_key));
                 //查询帐号
-                $r = user_model_user::model()->get_one(array('userid'=>$userid),'password,siteid,groupid');
+                $r = user_model_user::model()->FIELD('password,siteid,groupid')->WHERE(array('userid'=>$userid))->select(1);
                 if($r['password'] == $password)
                 {
                     /**
@@ -80,10 +80,10 @@ class user_class_controller extends controller
     final public function user_menu($parentid, $with_self = 0)
     {
         $parentid = intval($parentid);
-        $result =admin_model_menu::model()->select(array('parentid'=>$parentid,'display'=>1),'*',1000,'listorder ASC');
+        $result =admin_model_menu::model()->WHERE(array('parentid'=>$parentid,'display'=>1))->ORDER('listorder ASC')->select();
         if($with_self)
         {
-            $result2[] = admin_model_menu::model()->get_one(array('id'=>$parentid));
+            $result2[] = admin_model_menu::model()->WHERE(array('id'=>$parentid))->select(1);
             $result = array_merge($result2,$result);
         }
         //权限检查
@@ -99,7 +99,7 @@ class user_class_controller extends controller
             else
             {
                 if(preg_match('/^ajax([a-z]+)_/',$action,$_match)) $action = $_match[1];
-                $r = user_model_rolepriv::model()->get_one(array('m'=>$v['m'],'c'=>$v['c'],'a'=>$action,'siteid'=>SITEID));
+                $r = user_model_rolepriv::model()->WHERE(array('m'=>$v['m'],'c'=>$v['c'],'a'=>$action,'siteid'=>SITEID))->select(1);
                 if($r)
                 {
                     $roleid = explode(',', $_SESSION['roleid']);
@@ -132,7 +132,7 @@ class user_class_controller extends controller
     {
         if($userid)
         {
-            $user = user_model_user::model()->get_one(array('userid'=>$userid));
+            $user = user_model_user::model()->WHERE(array('userid'=>$userid))->select(1);
             if($field)
             {
                 return $user[$field];

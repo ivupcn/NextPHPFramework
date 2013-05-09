@@ -13,7 +13,7 @@ class user_class_roleop
 	{
 		$roleid = intval($roleid);
 		$search_field = '`roleid`,`rolename`';
-		$info = user_model_role::model()->get_one(array('roleid'=>$roleid),$search_field);
+		$info = user_model_role::model()->FIELD('roleid,rolename')->WHERE(array('roleid'=>$roleid))->select(1);
 		return $info;
 	}
 		
@@ -25,11 +25,11 @@ class user_class_roleop
 	{
 		if($op_status == 'add')
 		{
-			$info = user_model_role::model()->get_one(array('rolename'=>$name,'siteid'=>$siteid),'roleid');
+			$info = user_model_role::model()->FIELD('roleid')->WHERE(array('rolename'=>$name,'siteid'=>$siteid))->select(1);
 		}
 		elseif($op_status == 'edit')
 		{
-			$info = user_model_role::model()->get_one("`rolename` = '$name' AND `siteid` = '$siteid' AND `roleid` NOT IN('$roleid')",'roleid');
+			$info = user_model_role::model()->FIELD('roleid')->WHERE(array('rolename'=>$name, 'siteid'=>$siteid, 'roleid'=>array('NOTIN', $roleid)))->select(1);
 		}
 		if($info['roleid'])
 		{
@@ -100,8 +100,7 @@ class user_class_roleop
 	{
 		$siteid = intval($siteid);
 		$roleid = intval($roleid);
-		$sqls = "`siteid`='$siteid' AND `roleid` = '$roleid' AND `m` != ''";
-		$result = user_model_rolepriv::model()->get_one($sqls);
+		$result = user_model_rolepriv::model()->WHERE(array('siteid'=>$siteid, 'roleid'=>$roleid, 'm'=>array('NEQ', '')))->select(1);
 		return $result ? true : false;
 	}
 	/**

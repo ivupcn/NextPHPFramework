@@ -5,7 +5,7 @@
         <tr>
           <th width="100">上级菜单：</th>
           <td>
-            <select name="info[parentid]" class="combox">
+            <select name="info[parentid]">
             <option value="0">作为一级菜单</option>
             {$select_categorys}
             </select>

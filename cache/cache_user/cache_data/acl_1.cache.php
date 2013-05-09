@@ -2,6 +2,13 @@
 return array (
   'user' => 
   array (
+    'index' => 
+    array (
+      'login' => 
+      array (
+        'role' => 'ACL_EVERYONE',
+      ),
+    ),
     'acl' => 
     array (
       'setting' => 
@@ -31,13 +38,6 @@ return array (
         'role' => 'ACL_HAS_ROLE',
       ),
     ),
-    'index' => 
-    array (
-      'login' => 
-      array (
-        'role' => 'ACL_EVERYONE',
-      ),
-    ),
   ),
   'admin' => 
   array (
@@ -50,7 +50,7 @@ return array (
     ),
     'index' => 
     array (
-      'setSiteid' => 
+      'main' => 
       array (
         'role' => 'ACL_HAS_ROLE',
       ),
@@ -58,7 +58,7 @@ return array (
       array (
         'role' => 'ACL_HAS_ROLE',
       ),
-      'main' => 
+      'setSiteid' => 
       array (
         'role' => 'ACL_HAS_ROLE',
       ),
@@ -84,16 +84,6 @@ return array (
       'init' => 
       array (
         'role' => 'ACL_HAS_ROLE',
-      ),
-    ),
-  ),
-  'test' => 
-  array (
-    'index' => 
-    array (
-      'init' => 
-      array (
-        'role' => 'ACL_EVERYONE',
       ),
     ),
   ),

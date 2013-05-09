@@ -3,7 +3,7 @@ class extend_controller_workflow extends admin_class_controller
 {
 	public function action_init()
 	{
-		$data = extend_model_workflow::model()->select(array('siteid'=>SITEID));
+		$data = extend_model_workflow::model()->WHERE(array('siteid'=>SITEID))->select();
 		$this->_cache();
 		include $this->view('extend','workflow','init');
 	}
@@ -22,7 +22,7 @@ class extend_controller_workflow extends admin_class_controller
 			$setting['nocheck_users'] = isset($_POST['nocheck_users']) ? $_POST['nocheck_users'] : null;
 			$setting = array2string($setting);
 			$_POST['info']['setting'] = $setting;
-			$insert_id = extend_model_workflow::model()->insert($_POST['info'],true);
+			$insert_id = extend_model_workflow::model()->FIELDVALUE($_POST['info'])->insert();
 			if($insert_id)
 			{
 				$this->_app->showmessage('200','操作成功！',$this->_context->url('workflow::init@extend'),'closeCurrent','extend_workflow_init');
@@ -35,7 +35,7 @@ class extend_controller_workflow extends admin_class_controller
 		else
 		{
 			$admin_data = array();
-			$result = user_model_user::model()->select(array('siteid'=>SITEID));
+			$result = user_model_user::model()->WHERE(array('siteid'=>SITEID))->select();
 			foreach($result as $_value)
 			{
 				if($_value['roleid']==1) continue;
@@ -59,20 +59,20 @@ class extend_controller_workflow extends admin_class_controller
 			$setting['nocheck_users'] = isset($_POST['nocheck_users']) ? $_POST['nocheck_users'] : null;
 			$setting = array2string($setting);
 			$_POST['info']['setting'] = $setting;
-			extend_model_workflow::model()->update($_POST['info'],array('workflowid'=>$workflowid));
+			extend_model_workflow::model()->SET($_POST['info'])->WHERE(array('workflowid'=>$workflowid))->update();
 			$this->_app->showmessage('200','操作成功！',$this->_context->url('workflow::init@extend'),'closeCurrent','extend_workflow_init');
 		}
 		else
 		{
 			$workflowid = isset($_GET['workflowid']) && intval($_GET['workflowid']) ? intval($_GET['workflowid']) : $this->_app->showmessage('300','操作失败！');
 			$admin_data = array();
-			$result = user_model_user::model()->select(array('siteid'=>SITEID));
+			$result = user_model_user::model()->WHERE(array('siteid'=>SITEID))->select();
 			foreach($result as $_value)
 			{
 				if($_value['roleid']==1) continue;
 				$admin_data[$_value['userid']] = $_value['realname'] ? $_value['realname'] : $_value['nickname'];
 			}
-			$r = extend_model_workflow::model()->get_one(array('workflowid'=>$workflowid));
+			$r = extend_model_workflow::model()->WHERE(array('workflowid'=>$workflowid))->select(1);
 			extract($r);
 			$setting = string2array($setting);
 			$checkadmin1 = $this->_implode_ids($setting[1]);
@@ -95,7 +95,7 @@ class extend_controller_workflow extends admin_class_controller
 				if($_value['roleid']==1) continue;
 				$admin_data[$_value['realname']] = $_value['realname'] ? $_value['realname'] : $_value['nickname'];
 			}
-			$r = extend_model_workflow::model()->get_one(array('workflowid'=>$workflowid));
+			$r = extend_model_workflow::model()->WHERE(array('workflowid'=>$workflowid))->select(1);
 			extract($r);
 			$setting = string2array($setting);
 
@@ -110,14 +110,14 @@ class extend_controller_workflow extends admin_class_controller
 	public function action_delete()
 	{
 		$_GET['workflowid'] = intval($_GET['workflowid']);
-		extend_model_workflow::model()->delete(array('workflowid'=>$_GET['workflowid']));
+		extend_model_workflow::model()->WHERE(array('workflowid'=>$_GET['workflowid']))->delete();
 		$this->_app->showmessage('200','操作成功！',$this->_context->url('workflow::init@extend'),'','extend_workflow_init');
 	}
 
 	private function _cache()
 	{
 		$datas = array();
-		$workflow_datas =  extend_model_workflow::model()->select(array('siteid'=>SITEID),'*',1000);
+		$workflow_datas =  extend_model_workflow::model()->WHERE(array('siteid'=>SITEID))->select();
 		foreach($workflow_datas as $_k=>$_v)
 		{
 			$datas[$_v['workflowid']] = $_v;

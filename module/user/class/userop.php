@@ -13,14 +13,14 @@ class user_class_userop
 		if($userid < 1) return false;
 		user_model_user::model()->validate(array('password'=>$password),'email,code');
 		$passwordinfo = password($password);
-		return user_model_user::model()->update($passwordinfo,array('userid'=>$userid));
+		return user_model_user::model()->SET($passwordinfo)->WHERE(array('userid'=>$userid))->update();
 	}
 	/*
 	 * 检查email重名
 	 */	
 	public function checkemail($email) {
 		$email =  trim($email);
-		if (user_model_user::model()->get_one(array('email'=>$email),'userid')){
+		if (user_model_user::model()->FIELD('userid')->WHERE(array('email'=>$email))->select(1)){
 			return false;
 		}
 		return true;
@@ -36,7 +36,7 @@ class user_class_userop
     {
         if($userid)
         {
-            $user = user_model_user::model()->get_one(array('userid'=>$userid));
+            $user = user_model_user::model()->WHERE(array('userid'=>$userid))->select(1);
             if($field)
             {
                 return $user[$field];

@@ -24,15 +24,13 @@ class admin_class_sites
 		{
 			if($roleid == 1)
 			{
-				$sql = '';
+				return admin_model_site::model()->select();
 			}
 			else
 			{
 				$site_arr = $this->get_role_siteid($roleid);
-				$sql = "`siteid` in($site_arr)";
+				return admin_model_site::model()->WHERE(array('siteid'=>array('IN', $site_arr)))->select();
 			}
-			
-			return admin_model_site::model()->select($sql);
 		}
 	}
 

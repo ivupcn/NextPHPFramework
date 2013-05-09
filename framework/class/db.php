@@ -4,13 +4,11 @@ class db
 	//静态变量 保存全局实例
 	static private $_instance = NULL;
 	//数据库配置
-	protected $define = array();
+	static private $define = array();
 	//数据库连接
 	protected $db = '';
 	//DSN
     protected $dsn = null;
-    //数据表名
-    public $table_name = null;
     //数据库连接的属性
 	protected $db_options = array();
 	//数据库连接资源句柄
@@ -20,9 +18,9 @@ class db
 	//统计数据库查询次数
 	protected $querycount = 0;
 	// 数据库表达式
-	protected $comparison = array('eq'=>'=','neq'=>'<>','gt'=>'>','egt'=>'>=','lt'=>'<','elt'=>'<=','notlike'=>'NOT LIKE','like'=>'LIKE','in'=>'IN','notin'=>'NOT IN');
+	protected $comparison = array('eq'=>'=','neq'=>'<>','gt'=>'>','egt'=>'>=','lt'=>'<','elt'=>'<=','notlike'=>'NOT LIKE','like'=>'LIKE','in'=>'IN','notin'=>'NOT IN','findinset'=>'find_in_set');
 	//链操作方法列表
-	protected $sql_methods = array('field','where','table','join','union','order','limit','alias','having','group','lock','distinct','set','insert','page');
+	protected $sql_methods = array('field','where','table','join','union','order','limit','alias','having','group','lock','distinct','set','inserttype','page','fieldvalue');
     //SQL属性
 	protected $sql_options = array();
 	//分页
@@ -33,11 +31,6 @@ class db
 	 */
 	private function  __construct($class)
 	{
-		$this->define = (array)call_user_func(array($class, '__define'));
-		if(!isset($this->define['db_config']))
-		{
-			NLOG::error('    Database configuration information can not be empty');
-		}
 		$this->open();
 	}
 
@@ -52,6 +45,11 @@ class db
      */
 	static public function getInstance($class)
 	{
+		self::$define = (array)call_user_func(array($class, '__define'));
+		if(!isset(self::$define['db_config']))
+		{
+			NLOG::error('    Database configuration information can not be empty');
+		}
         if (is_null(self::$_instance) || !isset(self::$_instance))
         {
             self::$_instance = new self($class);
@@ -64,7 +62,10 @@ class db
 	 */
 	public function __destruct()
 	{
-
+		if(is_resource($this->link))
+        {
+            $this->link = null;
+        }
 	}
 
 	/**
@@ -83,23 +84,23 @@ class db
 	 */
 	private function connect()
 	{
-		if($this->define['db_config']['driver'] != 'sqlite')
+		if(self::$define['db_config']['driver'] != 'sqlite')
 		{
-			$this->dsn = $this->define['db_config']['driver'].':host='.$this->define['db_config']['hostname'].';port='.$this->define['db_config']['dbport'].';dbname='.$this->define['db_config']['database'];
+			$this->dsn = self::$define['db_config']['driver'].':host='.self::$define['db_config']['hostname'].';port='.self::$define['db_config']['dbport'].';dbname='.self::$define['db_config']['database'];
 		}
 		else
 		{
-			$this->dsn = $this->define['db_config']['driver'].':'.$this->define['db_config']['hostname'].'/'.$this->define['db_config']['database'].'.db';
+			$this->dsn = self::$define['db_config']['driver'].':'.self::$define['db_config']['hostname'].'/'.self::$define['db_config']['database'].'.db';
 		}
-		if($this->define['db_config']['pconnect'] == 1)
+		if(self::$define['db_config']['pconnect'] == 1)
 		{
-			$this_options = array(PDO::ATTR_PERSISTENT => true, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES "'.$this->define['db_config']['charset'].'"');
+			$this_options = array(PDO::ATTR_PERSISTENT => true, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES "'.self::$define['db_config']['charset'].'"');
 		}
 		else
 		{
-			$this_options = array(PDO::ATTR_PERSISTENT => false, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES "'.$this->define['db_config']['charset'].'"');
+			$this_options = array(PDO::ATTR_PERSISTENT => false, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES "'.self::$define['db_config']['charset'].'"');
 		}
-		if(!$this->link = new PDO($this->dsn, $this->define['db_config']['username'], $this->define['db_config']['password'], $this_options))
+		if(!$this->link = new PDO($this->dsn, self::$define['db_config']['username'], self::$define['db_config']['password'], $this_options))
 		{
 			NLOG::error('    Can not connect to database server');
 		}
@@ -122,15 +123,16 @@ class db
         elseif(in_array(strtolower($method),array('count','sum','min','max','avg'),true))
         {
             $field =  isset($args[0]) ? $args[0] : '*';
-            $table = $this->parseTable(!empty($options['table']) ? $options['table'] : $this->define['db_config']['tablepre'].$this->define['table_name']);
-            $sql = 'SELECT '.strtoupper($method).'('.$field.') AS NextPHP_'.$method.' FROM '.$table;
+            $table = $this->parseTable(!empty($this->sql_options['table']) ? $this->sql_options['table'] : self::$define['db_config']['tablepre'].self::$define['table_name']);
+            $where = $this->parseWhere(!empty($this->sql_options['where']) ? $this->sql_options['where'] : '');
+            $sql = 'SELECT '.strtoupper($method).'('.$field.') AS NextPHP_'.$method.' FROM '.$table.$where;
             $this->execute($sql);
             $data = $this->fetchData(1, PDO::FETCH_ASSOC);
             return $data['NextPHP_'.$method];
         }
         else
         {
-        	NLOG::error('    sql methond not exist');
+        	NLOG::error('    sql_options:'.$method.' methond not exist');
             return;
         }
 	}
@@ -277,7 +279,7 @@ class db
 				$sql = str_replace(
 	                array('%TABLE%','%DISTINCT%','%FIELD%','%JOIN%','%WHERE%','%GROUP%','%HAVING%','%ORDER%','%LIMIT%','%UNION%','%COMMENT%'),
 	                array(
-	                    $this->parseTable(!empty($options['table']) ? $options['table'] : $this->define['db_config']['tablepre'].$this->define['table_name']),
+	                    $this->parseTable(!empty($options['table']) ? $options['table'] : self::$define['db_config']['tablepre'].self::$define['table_name']),
 	                    $this->parseDistinct(!empty($options['distinct']) ? $options['distinct'] : false),
 	                    $this->parseField(!empty($options['field']) ? $options['field'] : '*'),
 	                    $this->parseJoin(!empty($options['join']) ? $options['join'] : ''),
@@ -296,7 +298,7 @@ class db
 	            $sql = str_replace(
 	                array('%TABLE%','%SET%','%WHERE%','%ORDER%','%LIMIT%','%LOCK%','%COMMENT%'),
 	                array(
-	                    $this->parseTable(!empty($options['table']) ? $options['table'] : $this->define['db_config']['tablepre'].$this->define['table_name']),
+	                    $this->parseTable(!empty($options['table']) ? $options['table'] : self::$define['db_config']['tablepre'].self::$define['table_name']),
 	                    $this->parseSet(!empty($options['set']) ? $options['set'] : ''),
 	                    $this->parseWhere(!empty($options['where']) ? $options['where'] : ''),
 	                    $this->parseOrder(!empty($options['order']) ? $options['order'] : ''),
@@ -311,7 +313,7 @@ class db
 	            $sql = str_replace(
 	                array('%TABLE%','%WHERE%'),
 	                array(
-	                    $this->parseTable(!empty($options['table']) ? $options['table'] : $this->define['db_config']['tablepre'].$this->define['table_name']),
+	                    $this->parseTable(!empty($options['table']) ? $options['table'] : self::$define['db_config']['tablepre'].self::$define['table_name']),
 	                    $this->parseWhere(!empty($options['where']) ? $options['where'] : '')
 	                ),
 	                'DELETE FROM %TABLE%%WHERE%'
@@ -319,12 +321,12 @@ class db
 	            break;
 	        case 'insert':
 	            $sql = str_replace(
-	                array('%INSERT%','%TABLE%','%FIELD','VALUE%'),
+	                array('%INSERT%','%TABLE%','%FIELD%','%VALUE%'),
 	                array(
-	                    $this->parseInsert(!empty($options['insert']) ? $options['insert'] : 'INSERT INTO '),
-	                    $this->parseTable(!empty($options['table']) ? $options['table'] : $this->define['db_config']['tablepre'].$this->define['table_name']),
+	                    !empty($options['inserttype']) ? $options['inserttype'] : 'INSERT INTO ',
+	                    $this->parseTable(!empty($options['table']) ? $options['table'] : self::$define['db_config']['tablepre'].self::$define['table_name']),
 	                    $this->parseFieldK(!empty($options['fieldvalue']) ? $options['fieldvalue'] : ''),
-	                    $this->parseFieldV(!empty($options['fieldvalue']) ? $options['fieldvalue'] : ''),
+	                    $this->parseFieldV(!empty($options['fieldvalue']) ? $options['fieldvalue'] : '')
 	                ),
 	                '%INSERT%%TABLE% (%FIELD%) VALUES (%VALUE%)'
 	            );
@@ -573,6 +575,10 @@ class db
                         { // 比较运算
                             $whereStr .= $key.' '.$this->comparison[strtolower($val[0])].' '.$this->parseValue($val[1]);
                         }
+                        elseif(preg_match('/^(FINDINSET)$/i',$val[0]))
+                        {
+                        	$whereStr .= $this->comparison[strtolower($val[0])].'('.$this->parseValue($val[1]).','.$key.')';
+                        }
                         elseif(preg_match('/^(NOTLIKE|LIKE)$/i',$val[0]))
                         {// 模糊查找
                             if(is_array($val[1]))
@@ -790,24 +796,6 @@ class db
     }
 
     /**
-     * Fieldproperties分析
-     * @param array $data
-     * @return string
-     */
-    protected function parseFieldproperties($data)
-    {
-        foreach($data as $key=>$val)
-        {
-            $value = $this->parseValue($val);
-            if(is_scalar($value))
-            {// 过滤非标量数据
-                $set[] = $key.' '.$value;
-            }
-        }
-        return ' SET '.implode(',',$set);
-    }
-
-    /**
      * FieldK分析
      * @param array $data
      * @return string
@@ -836,7 +824,7 @@ class db
      */
     public function parseValue($value)
     {
-        if(is_string($value))
+        if(is_string($value) || $value === 0)
         {
             $value =  '\''.$this->escapeString($value).'\'';
         }
@@ -877,18 +865,18 @@ class db
      * @param steing $reject 不需要验证的数据,多个字段属性用','分隔
      * @return array 所有没有通过验证的属性名称及验证规则
      */
-    protected function validate(array $data, $reject = null)
+    public function validate(array $data, $reject = null)
     {
     	if($reject != null)
         {
         	$reject_arr = normalize($reject,',');
         	foreach($reject_arr as $rk => $rv)
         	{
-        		unset($this->define['validations'][$rv]);
+        		unset(self::$define['validations'][$rv]);
         	}
         }
     	$error = '';
-    	foreach ($this->define['validations'] as $prop => $policy)
+    	foreach (self::$define['validations'] as $prop => $policy)
     	{
     		if (!isset($data[$prop]))
             {

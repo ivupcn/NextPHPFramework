@@ -9,7 +9,7 @@ class admin_controller_menu extends admin_class_controller
 		$userid = $_SESSION['userid'];
 		$admin_email = $this->_context->get_cookie('admin_email');
 	
-		$result = admin_model_menu::model()->select('','*','','listorder ASC,id DESC');
+		$result = admin_model_menu::model()->ORDER('listorder ASC,id DESC')->select();
 		$array = array();
 		foreach($result as $r)
 		{
@@ -38,7 +38,7 @@ class admin_controller_menu extends admin_class_controller
 	{
 		if($this->_context->isPOST() &&  admin_model_menu::model()->validate($_POST['info']))
 		{
-			admin_model_menu::model()->insert($_POST['info']);
+			admin_model_menu::model()->FIELDVALUE($_POST['info'])->insert();
 			$this->_app->showmessage('200','操作成功！',$this->_context->url('menu::init@admin'),'closeCurrent','admin_menu_init');
 		}
 		else
@@ -66,7 +66,7 @@ class admin_controller_menu extends admin_class_controller
 		if($this->_context->isPOST() &&  admin_model_menu::model()->validate($_POST['info']))
 		{
 			$id = intval($_POST['id']);
-			admin_model_menu::model()->update($_POST['info'],array('id'=>$id));
+			admin_model_menu::model()->SET($_POST['info'])->WHERE(array('id'=>$id))->update();
 			$this->_app->showmessage('200','操作成功！',$this->_context->url('menu::init@admin'),'closeCurrent','admin_menu_init');
 		}
 		else
@@ -75,7 +75,7 @@ class admin_controller_menu extends admin_class_controller
 			$array = $r = '';
 			$tree = new tree();
 			$id = intval($_GET['id']);
-			$r = admin_model_menu::model()->get_one(array('id'=>$id));
+			$r = admin_model_menu::model()->WHERE(array('id'=>$id))->select(1);
 			if($r) extract($r);
 			$result = admin_model_menu::model()->select();
 			foreach($result as $r)
@@ -93,7 +93,7 @@ class admin_controller_menu extends admin_class_controller
 	function action_delete()
 	{
 		$_GET['id'] = intval($_GET['id']);
-		admin_model_menu::model()->delete(array('id'=>$_GET['id']));
+		admin_model_menu::model()->WHERE(array('id'=>$_GET['id']))->delete();
 		$this->_app->showmessage('200','操作成功！',$this->_context->url('menu::init@admin'),'','admin_menu_init');
 	}
 
@@ -103,7 +103,7 @@ class admin_controller_menu extends admin_class_controller
 		{
 			foreach($_POST['listorders'] as $id => $listorder)
 			{
-				admin_model_menu::model()->update(array('listorder'=>$listorder),array('id'=>$id));
+				admin_model_menu::model()->SET(array('listorder'=>$listorder))->WHERE(array('id'=>$id));
 			}
 			$this->_app->showmessage('200','操作成功！',$this->_context->url('menu::init@admin'));
 		}

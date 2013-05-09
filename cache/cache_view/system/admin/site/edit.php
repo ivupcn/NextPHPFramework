@@ -3,7 +3,7 @@
 .radio-label td{ border-right:1px solid #e4e2e2; border-bottom:1px solid #e4e2e2;background:#f6f9fd}
 </style>
 <div class="pageContent">
-<form action="<?php echo $this->_context->url('site::edit@admin','siteid/'.$siteid); ?>" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, divAjaxDone);">
+<form action="<?php echo $this->_context->url('site::edit@admin'); ?>" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, divAjaxDone);">
   <div class="pageFormContent" layoutH="82">
 <fieldset>
 	<legend>基本配置</legend>
@@ -139,13 +139,14 @@
   </table>
 </fieldset>
 </div>
+<input type="hidden" name="id" value="<?php echo $siteid;?>" />
 <div class="formBar">
-      <ul>
-        <li><div class="buttonActive"><div class="buttonContent"><button type="submit">保存</button></div></div></li>
-        <?php if($siteid != 1) { ?>
-        <li><div class="buttonActive"><div class="buttonContent"><button><a href="?m=admin&c=site&a=delete&siteid=<?php echo $siteid?>" target="ajaxTodo" title="确定要删除吗?">删除</a></button></div></div></li>
-        <?php } ?>
-      </ul>
-    </div>
-    </form>
+    <ul>
+      <li><div class="buttonActive"><div class="buttonContent"><button type="submit">保存</button></div></div></li>
+      <?php if($siteid != 1) { ?>
+      <li><div class="buttonActive"><div class="buttonContent"><button><a href="<?php echo $this->_context->url('site::delete#'.$siteid.'@admin'); ?>" target="ajaxTodo" title="确定要删除吗?">删除</a></button></div></div></li>
+      <?php } ?>
+    </ul>
   </div>
+  </form>
+</div>
