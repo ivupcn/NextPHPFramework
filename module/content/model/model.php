@@ -67,33 +67,33 @@ class content_model_model
     }
 
 
-    public function sql_execute($sql)
+    static function sql_execute($sql)
     {
-		$sqls = $this->sql_split($sql);
+		$sqls = self::sql_split($sql);
 		if(is_array($sqls)) {
 			foreach($sqls as $sql)
 			{
 				if(trim($sql) != '')
 				{
-					db::getInstance(__CLASS__)->query($sql);
+					db::getInstance(__CLASS__)->exec($sql);
 				}
 			}
 		}
 		else
 		{
-			db::getInstance(__CLASS__)->query($sqls);
+			db::getInstance(__CLASS__)->exec($sqls);
 		}
 		return true;
 	}
 
-	public function sql_split($sql)
+	static function sql_split($sql)
 	{
-		global $db;
-		if($this->db->version() > '4.1' && $this->charset)
+		$config = Next::config('database','default');
+		if($config['charset'])
 		{
-			$sql = preg_replace("/TYPE=(InnoDB|MyISAM|MEMORY)( DEFAULT CHARSET=[^; ]+)?/", "ENGINE=\\1 DEFAULT CHARSET=".$this->charset,$sql);
+			$sql = preg_replace("/TYPE=(InnoDB|MyISAM|MEMORY)( DEFAULT CHARSET=[^; ]+)?/", "ENGINE=\\1 DEFAULT CHARSET=".$config['charset'],$sql);
 		}
-		if($this->db_tablepre != "x_") $sql = str_replace("x_", $this->db_tablepre, $sql);
+		if($config['tablepre'] != "x_") $sql = str_replace("x_", $config['tablepre'], $sql);
 		$sql = str_replace("\r", "\n", $sql);
 		$ret = array();
 		$num = 0;
@@ -118,13 +118,45 @@ class content_model_model
 	 * 删除表
 	 * 
 	 */
-	public function drop_table($tablename)
+	static function drop_table($tablename)
 	{
-		$tablename = $this->db_tablepre.$tablename;
-		$tablearr = $this->db->list_tables();
-		if(in_array($tablename, $tablearr)) {
-			return $this->db->query("DROP TABLE $tablename");
-		} else {
+		$config = Next::config('database','default');
+		$tablepre = $config['tablepre'];
+		$tablename = $tablepre.'post_'.SITEID.'_'.$tablename;
+		$tablelist = db::getInstance(__CLASS__)->SQL('SHOW TABLES')->query();
+		$tablearr = array();
+		foreach($tablelist as $tables)
+		{
+			$tablearr[] = $tables['Tables_in_'.$config['database']];
+		}
+		if(in_array($tablename, $tablearr))
+		{
+			return db::getInstance(__CLASS__)->SQL('DROP TABLE '.$tablename)->query();
+		}
+		else
+		{
+			return false;
+		}
+	}
+
+	/*
+	 * 检查表是否存在
+	 */
+	static function table_exists($table)
+	{
+		$config = Next::config('database','default');
+		$tablelist = db::getInstance(__CLASS__)->SQL('SHOW TABLES')->query();
+		$tablearr = array();
+		foreach($tablelist as $tables)
+		{
+			$tablearr[] = $tables['Tables_in_'.$config['database']];
+		}
+		if(in_array($config['tablepre'].$table, $tablearr))
+		{
+			return true;
+		}
+		else
+		{
 			return false;
 		}
 	}

@@ -135,6 +135,34 @@ class form {
 		$string .= '</select>';
 		return $string;
 	}
-}
 
+	public static function editor()
+	{
+
+	}
+
+	public static function radio()
+	{
+		
+	}
+
+	/**
+	 * 日期时间控件
+	 * 
+	 * @param $name 控件name，id
+	 * @param $value 选中值
+	 * @param $isdatetime 是否显示时间
+	 */
+	public static function date($name, $value = '', $isdatetime = 0) {
+		if($value == '0000-00-00 00:00:00') $value = '';
+		if($isdatetime) {
+			$format = 'yyyy-MM-dd HH:mm:ss';			
+		} else {
+			$format = 'yyyy-MM-dd';
+		}
+		$str = '';
+		$str .= '<input type="text" name="'.$name.'" value="'.$value.'" class="date" dateFmt="'.$format.'" readonly="true" size="26" />';
+		return $str;
+	}
+}
 ?>

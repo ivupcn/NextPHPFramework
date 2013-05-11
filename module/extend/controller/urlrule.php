@@ -26,12 +26,6 @@ class extend_controller_urlrule extends admin_class_controller
 		}
 		else
 		{
-			$modules_arr = admin_model_module::model()->FIELD('module,name')->select();
-			$modules = array();
-			foreach ($modules_arr as $r)
-			{
-				$modules[$r['module']] = $r['name'];
-			}
 			include $this->view('extend','urlrule','add');
 		}
 	}
@@ -49,12 +43,6 @@ class extend_controller_urlrule extends admin_class_controller
 			$urlruleid = isset($_GET['urlruleid']) && intval($_GET['urlruleid']) ? intval($_GET['urlruleid']) : $this->_app->showmessage('300','操作失败！');
 			$r = extend_model_urlrule::model()->WHERE(array('urlruleid'=>$urlruleid))->select(1);
 			extract($r);
-			$modules_arr = admin_model_module::model()->FIELD('module,name')->select();
-			$modules = array();
-			foreach ($modules_arr as $r)
-			{
-				$modules[$r['module']] = $r['name'];
-			}
 			include $this->view('extend','urlrule','edit');
 		}
 	}

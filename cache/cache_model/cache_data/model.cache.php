@@ -1,12 +1,12 @@
 <?php
 return array (
-  20 => 
+  47 => 
   array (
-    'modelid' => '20',
+    'modelid' => '47',
     'siteid' => '1',
-    'name' => '文章',
+    'name' => '测试',
     'description' => '',
-    'tablename' => 'article',
+    'tablename' => 'test',
     'setting' => '',
     'addtime' => '0',
     'items' => '0',

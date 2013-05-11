@@ -487,4 +487,18 @@ function upload_key($args) {
 function fileext($filename) {
     return strtolower(trim(substr(strrchr($filename, '.'), 1, 10)));
 }
+
+/**
+ * 检查id是否存在于数组中
+ *
+ * @param $id
+ * @param $ids
+ * @param $s
+ */
+function check_in($id, $ids = '', $s = ',')
+{
+    if(!$ids) return false;
+    $ids = explode($s, $ids);
+    return is_array($id) ? array_intersect($id, $ids) : in_array($id, $ids);
+}
 ?>

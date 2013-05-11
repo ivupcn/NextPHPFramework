@@ -20,7 +20,7 @@ class db
 	// 数据库表达式
 	protected $comparison = array('eq'=>'=','neq'=>'<>','gt'=>'>','egt'=>'>=','lt'=>'<','elt'=>'<=','notlike'=>'NOT LIKE','like'=>'LIKE','in'=>'IN','notin'=>'NOT IN','findinset'=>'find_in_set');
 	//链操作方法列表
-	protected $sql_methods = array('field','where','table','join','union','order','limit','alias','having','group','lock','distinct','set','inserttype','page','fieldvalue');
+	protected $sql_methods = array('field','where','table','join','union','order','limit','alias','having','group','lock','distinct','set','inserttype','page','fieldvalue','sql');
     //SQL属性
 	protected $sql_options = array();
 	//分页
@@ -183,13 +183,14 @@ class db
 		return $insert_id;
 	}
 
-	public function query()
+	public function query($fetchType = 0, $mode = PDO::FETCH_ASSOC)
 	{
 		$sql = $this->buildSql($this->sql_options);
-		$r = $this->exec($sql);
+		$this->lastqueryid = $this->link->query($sql);
+		$datalist = $this->fetchData($fetchType, $mode);
 		$this->sql_options = array();
 		$this->free_result();
-		return $r;
+		return $datalist;
 	}
 
 	/**
@@ -252,6 +253,7 @@ class db
             $this->lastqueryid = null;
         }
     }
+
 
     /**
      * 关闭数据库连接

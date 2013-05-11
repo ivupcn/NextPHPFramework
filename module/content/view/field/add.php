@@ -9,14 +9,6 @@
           </td>
         </tr>
         <tr>
-          <th>作为主表字段：</th>
-          <td>
-            <input type="hidden" name="issystem" id="issystem" value="0" />
-            <label><input type="radio" name="info[issystem]" id="field_basic_table1" value="1" onclick="$('#issystem').val('1');">是</label>
-            <label><input type="radio" id="field_basic_table0" name="info[issystem]" value="0" onclick="$('#issystem').val('0');" checked>否</label>
-          </td>
-        </tr>
-        <tr>
           <th>字段名：</th>
           <td><input type="text" name="info[field]" id="field" size="20" class="required lettersonly input-text" /></td>
         </tr>
@@ -30,7 +22,7 @@
         </tr>
         <tr>
           <th>相关参数：</th>
-          <td></td>
+          <td><div id="setting"></div></td>
         </tr>
         <tr id="formattribute">
           <th>表单附加属性：</th>
@@ -72,10 +64,6 @@
           <td><label><input type="radio" name="info[isunique]" value="1" id="field_allow_isunique1" />是</label><label><input type="radio" name="info[isunique]" value="0" id="field_allow_isunique0" checked />否</label></td>
         </tr>
         <tr>
-          <th>作为基本信息：</th>
-          <td><label><input type="radio" name="info[isbase]" value="1"  checked />是</label><label><input type="radio" name="info[isbase]" value="0" />否</label></td>
-        </tr>
-        <tr>
           <th>作为搜索条件：</th>
           <td><label><input type="radio" name="info[issearch]" value="1" id="field_allow_search1" />是</label><label><input type="radio" name="info[issearch]" value="0" id="field_allow_search0" checked />否</label></td>
         </tr>
@@ -88,28 +76,24 @@
           <td><label><input type="radio" name="info[isfulltext]" value="1" id="field_allow_fulltext1" checked />是</label><label><input type="radio" name="info[isfulltext]" value="0" id="field_allow_fulltext0" />否</label></td>
         </tr>
         <tr>
-          <th>作为万能字段的附属字段：</th>
-          <td><label><input type="radio" name="info[isomnipotent]" value="1" />是</label><label><input type="radio" name="info[isomnipotent]" value="0" checked />否</label></td>
-        </tr>
-        <tr>
           <th>在推荐位标签中调用：</th>
           <td><label><input type="radio" name="info[isposition]" value="1" />是</label><label><input type="radio" name="info[isposition]" value="0" checked/>否</label></td>
         </tr>
       </table>
+      <input type="hidden" name="info[modelid]" value="{$modelid}">
     </div>
     <script type="text/javascript">
     <!--
-    function field_setting(fieldtype) {
+    function field_setting(fieldtype){
       $('#formattribute').css('display','none');
       $('#css').css('display','none');
-      $.each( ['<?php echo implode("','",$att_css_js);?>'], function(i, n){
+      $.each(['<?php echo implode("','",$att_css_js);?>'], function(i, n){
         if(fieldtype==n) {
           $('#formattribute').css('display','');
           $('#css').css('display','');
         }
       });  
-
-      $.getJSON("?m=content&c=field&a=setting&fieldtype="+fieldtype, function(data){
+      $.getJSON("<?php echo $this->_context->url('field::setting@content'); ?>&fieldtype="+fieldtype, function(data){
         if(data.field_basic_table=='1') {
           $('#field_basic_table0').attr("disabled",false);
           $('#field_basic_table1').attr("disabled",false);

@@ -7,14 +7,10 @@
 		      <td><input type="text" name="info[file]" id="file" class="required input-text" size="20" alt="请输入 URL 规则名称" /></td>
 		    </tr>
 		    <tr> 
-		      <th width="100">模块名称：</th>
-		      <td><?php echo form::select($modules,'content',"name='info[module]' id='module'");?></td>
-		    </tr>
-		    <tr> 
 		      <th width="100">是否生成静态？：</th>
 		      <td>
-		      	<label></label><input type="radio" value="1" name="info[ishtml]" />是</label>
-        		<label></label><input type="radio" value="0" name="info[ishtml]" checked="checked" />否</label>
+		      	<label><input type="radio" value="1" name="info[ishtml]" />是</label>
+        		<label><input type="radio" value="0" name="info[ishtml]" checked="checked" />否</label>
 		      </td>
 		    </tr>
 		    <tr> 

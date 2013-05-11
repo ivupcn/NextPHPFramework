@@ -8,7 +8,7 @@
         </tr>
         <tr>
           <th>模型表键名：</th>
-          <td><input type="text" name="info[tablename]" value="tablename" class="required input-text" alt="请输入模型表键名" /></td>
+          <td>{$tablename}</td>
         </tr>
         <tr>
           <th>描述：</th>

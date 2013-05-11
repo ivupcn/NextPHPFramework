@@ -1,0 +1,1030 @@
+--- STARTUP TIME --- 1368167477.8576
+    SESSION_ID：l9m58tjlja7rio46v4e8k4dmc6
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1368167478.1603 (0.30266404151917)sec
+--- STARTUP TIME --- 1368167490.1763
+    SESSION_ID：l9m58tjlja7rio46v4e8k4dmc6
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM x_times WHERE email = 'ivup@ivup.cn' AND isadmin = 1 
+    REQUEST SQL：SELECT * FROM x_user WHERE email = 'ivup@ivup.cn' 
+    REQUEST SQL：UPDATE x_user SET lastloginip='127.0.0.1',lastlogintime=1368167490 WHERE userid = '1'
+--- SHUTDOWN TIME --- 1368167490.3065 (0.13027000427246)sec
+--- STARTUP TIME --- 1368167490.3301
+    SESSION_ID：l9m58tjlja7rio46v4e8k4dmc6
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368167490.53 (0.19986987113953)sec
+--- STARTUP TIME --- 1368167492.8591
+    SESSION_ID：l9m58tjlja7rio46v4e8k4dmc6
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368167492.9074 (0.048327922821045)sec
+--- STARTUP TIME --- 1368167497.0826
+    SESSION_ID：l9m58tjlja7rio46v4e8k4dmc6
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368167497.1141 (0.031511068344116)sec
+--- STARTUP TIME --- 1368167498.8044
+    SESSION_ID：l9m58tjlja7rio46v4e8k4dmc6
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368167499.0278 (0.22338390350342)sec
+--- STARTUP TIME --- 1368167517.3299
+    SESSION_ID：l9m58tjlja7rio46v4e8k4dmc6
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368167517.3786 (0.048728942871094)sec
+--- STARTUP TIME --- 1368167519.35
+    SESSION_ID：l9m58tjlja7rio46v4e8k4dmc6
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368167519.3817 (0.031686067581177)sec
+--- STARTUP TIME --- 1368167520.1887
+    SESSION_ID：l9m58tjlja7rio46v4e8k4dmc6
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368167520.2526 (0.06389307975769)sec
+--- STARTUP TIME --- 1368169334.7996
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1368169335.0271 (0.22749590873718)sec
+--- STARTUP TIME --- 1368169348.3464
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM x_times WHERE email = 'ivup@ivup.cn' AND isadmin = 1 
+    REQUEST SQL：SELECT * FROM x_user WHERE email = 'ivup@ivup.cn' 
+    REQUEST SQL：UPDATE x_user SET lastloginip='127.0.0.1',lastlogintime=1368169348 WHERE userid = '1'
+--- SHUTDOWN TIME --- 1368169348.447 (0.10065293312073)sec
+--- STARTUP TIME --- 1368169348.7718
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368169348.9204 (0.1485800743103)sec
+--- STARTUP TIME --- 1368169351.98
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368169352.0312 (0.051201105117798)sec
+--- STARTUP TIME --- 1368169356.1946
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368169356.2259 (0.031277894973755)sec
+--- STARTUP TIME --- 1368169356.8546
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368169357.084 (0.22938513755798)sec
+--- STARTUP TIME --- 1368170155.9605
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368170156.0362 (0.075644016265869)sec
+--- STARTUP TIME --- 1368170158.5342
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：category::init@content
+    [D:\ESSamp\wwwroot\NextPHPFramework\module\content\controller\category.php][content_controller_category]Class or Interface Not Defined
+    [D:\ESSamp\wwwroot\NextPHPFramework\module\content\controller\category.php][content_controller_category]Class or Interface Not Defined
+--- STARTUP TIME --- 1368170159.7667
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368170159.842 (0.075248003005981)sec
+--- STARTUP TIME --- 1368170160.6294
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368170160.6779 (0.048525810241699)sec
+--- STARTUP TIME --- 1368170163.6693
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368170163.7015 (0.032171964645386)sec
+--- STARTUP TIME --- 1368170164.3883
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368170164.42 (0.031738996505737)sec
+--- STARTUP TIME --- 1368170165.4505
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：user::editinfo@user
+    REQUEST SQL：SELECT * FROM x_user WHERE userid = '1' 
+--- SHUTDOWN TIME --- 1368170165.508 (0.057517051696777)sec
+--- STARTUP TIME --- 1368170166.291
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：user::editpwd@user
+    REQUEST SQL：SELECT * FROM x_user WHERE userid = '1' 
+--- SHUTDOWN TIME --- 1368170166.3808 (0.089790105819702)sec
+--- STARTUP TIME --- 1368170168.3415
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368170168.3882 (0.046744823455811)sec
+--- STARTUP TIME --- 1368170169.5339
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM x_menu ORDER BY listorder ASC,id DESC 
+--- SHUTDOWN TIME --- 1368170169.6006 (0.066741228103638)sec
+--- STARTUP TIME --- 1368170171.4745
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：site::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+--- SHUTDOWN TIME --- 1368170171.5179 (0.043396949768066)sec
+--- STARTUP TIME --- 1368170173.2505
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：site::config@admin
+    REQUEST SQL：SELECT * FROM x_site WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368170173.3125 (0.061996936798096)sec
+--- STARTUP TIME --- 1368170174.5345
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1368170174.6268 (0.092288017272949)sec
+--- STARTUP TIME --- 1368170175.43
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：view::init@admin
+--- SHUTDOWN TIME --- 1368170175.4575 (0.027466058731079)sec
+--- STARTUP TIME --- 1368170176.006
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：role::init@user
+    REQUEST SQL：SELECT * FROM x_user_role WHERE siteid = '1' ORDER BY roleid DESC 
+    REQUEST SQL：SELECT siteid,roleid,rolename FROM x_user_role WHERE disabled = '0' ORDER BY roleid ASC,siteid ASC 
+--- SHUTDOWN TIME --- 1368170177.0096 (1.003634929657)sec
+--- STARTUP TIME --- 1368170179.0465
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：role::init@user
+    REQUEST SQL：SELECT * FROM x_user_role WHERE siteid = '1' ORDER BY roleid DESC 
+    REQUEST SQL：SELECT siteid,roleid,rolename FROM x_user_role WHERE disabled = '0' ORDER BY roleid ASC,siteid ASC 
+--- SHUTDOWN TIME --- 1368170179.0831 (0.036521196365356)sec
+--- STARTUP TIME --- 1368170179.7846
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：group::init@user
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_user_group WHERE siteid = '1'
+    REQUEST SQL：SELECT * FROM x_user_group WHERE siteid = '1' ORDER BY sort ASC LIMIT 0, 20  
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_user WHERE groupid = '1'
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_user WHERE groupid = '2'
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_user WHERE groupid = '3'
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_user WHERE groupid = '4'
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_user WHERE groupid = '5'
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_user WHERE groupid = '6'
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_user WHERE groupid = '19'
+    REQUEST SQL：SELECT * FROM x_user_group WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368170179.958 (0.17341804504395)sec
+--- STARTUP TIME --- 1368170181.4076
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：user::init@user
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_user WHERE siteid = '1'
+    REQUEST SQL：SELECT * FROM x_user WHERE siteid = '1' ORDER BY userid ASC LIMIT 0, 20  
+--- SHUTDOWN TIME --- 1368170181.4704 (0.062753915786743)sec
+--- STARTUP TIME --- 1368170182.7473
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM x_menu WHERE sys = '0' ORDER BY listorder ASC,id ASC 
+    REQUEST SQL：SELECT * FROM x_user_role_priv WHERE siteid = '1' 
+    REQUEST SQL：SELECT * FROM x_user_role_priv WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368170182.8521 (0.10476303100586)sec
+--- STARTUP TIME --- 1368170184.1869
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：config::init@user
+--- SHUTDOWN TIME --- 1368170184.2932 (0.10634994506836)sec
+--- STARTUP TIME --- 1368170184.9274
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：urlrule::init@extend
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_urlrule WHERE siteid = '1'
+    REQUEST SQL：SELECT * FROM x_urlrule WHERE siteid = '1' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_urlrule 
+--- SHUTDOWN TIME --- 1368170185.1305 (0.20315098762512)sec
+--- STARTUP TIME --- 1368170185.8712
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：workflow::init@extend
+    REQUEST SQL：SELECT * FROM x_workflow WHERE siteid = '1' 
+    REQUEST SQL：SELECT * FROM x_workflow WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368170185.9532 (0.082022190093994)sec
+--- STARTUP TIME --- 1368170187.1171
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368170187.1522 (0.035112857818604)sec
+--- STARTUP TIME --- 1368170188.0667
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：category::init@content
+    [D:\ESSamp\wwwroot\NextPHPFramework\module\content\controller\category.php][content_controller_category]Class or Interface Not Defined
+    [D:\ESSamp\wwwroot\NextPHPFramework\module\content\controller\category.php][content_controller_category]Class or Interface Not Defined
+--- STARTUP TIME --- 1368170220.8422
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368170220.889 (0.0468430519104)sec
+--- STARTUP TIME --- 1368170222.1877
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：site::config@admin
+    REQUEST SQL：SELECT * FROM x_site WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368170222.2229 (0.03526496887207)sec
+--- STARTUP TIME --- 1368170222.9375
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1368170222.9594 (0.021975040435791)sec
+--- STARTUP TIME --- 1368170224.1332
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：urlrule::init@extend
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_urlrule WHERE siteid = '1'
+    REQUEST SQL：SELECT * FROM x_urlrule WHERE siteid = '1' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_urlrule 
+--- SHUTDOWN TIME --- 1368170224.1813 (0.048030853271484)sec
+--- STARTUP TIME --- 1368170224.886
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：workflow::init@extend
+    REQUEST SQL：SELECT * FROM x_workflow WHERE siteid = '1' 
+    REQUEST SQL：SELECT * FROM x_workflow WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368170224.9276 (0.041628122329712)sec
+--- STARTUP TIME --- 1368170226.8128
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：workflow::add@extend
+    REQUEST SQL：SELECT * FROM x_user WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368170226.8773 (0.064549922943115)sec
+--- STARTUP TIME --- 1368170232.668
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：urlrule::init@extend
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_urlrule WHERE siteid = '1'
+    REQUEST SQL：SELECT * FROM x_urlrule WHERE siteid = '1' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_urlrule 
+--- SHUTDOWN TIME --- 1368170232.7178 (0.04975700378418)sec
+--- STARTUP TIME --- 1368170233.8397
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：urlrule::add@extend
+    [D:\ESSamp\wwwroot\NextPHPFramework\module\admin\model\module.php]ClassFile does not exist
+--- STARTUP TIME --- 1368170273.0357
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：urlrule::init@extend
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_urlrule WHERE siteid = '1'
+    REQUEST SQL：SELECT * FROM x_urlrule WHERE siteid = '1' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_urlrule 
+--- SHUTDOWN TIME --- 1368170273.078 (0.042325019836426)sec
+--- STARTUP TIME --- 1368170273.9603
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：urlrule::add@extend
+    8 | Undefined variable: modules    | D:\ESSamp\wwwroot\NextPHPFramework\cache\cache_view\system\extend\urlrule\add.php | 11
+--- SHUTDOWN TIME --- 1368170274.0033 (0.04304313659668)sec
+--- STARTUP TIME --- 1368170316.0076
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：urlrule::init@extend
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_urlrule WHERE siteid = '1'
+    REQUEST SQL：SELECT * FROM x_urlrule WHERE siteid = '1' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_urlrule 
+--- SHUTDOWN TIME --- 1368170316.0509 (0.043394088745117)sec
+--- STARTUP TIME --- 1368170316.5282
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：urlrule::add@extend
+--- SHUTDOWN TIME --- 1368170316.5567 (0.028520107269287)sec
+--- STARTUP TIME --- 1368170357.0866
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：urlrule::add@extend
+--- SHUTDOWN TIME --- 1368170357.1106 (0.023957014083862)sec
+--- STARTUP TIME --- 1368170381.7131
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::setsiteid@admin
+--- SHUTDOWN TIME --- 1368170381.7293 (0.016255140304565)sec
+--- STARTUP TIME --- 1368170381.7441
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368170381.7948 (0.050718069076538)sec
+--- STARTUP TIME --- 1368170381.8021
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368170381.8561 (0.05401086807251)sec
+--- STARTUP TIME --- 1368170382.5373
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：urlrule::init@extend
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_urlrule WHERE siteid = '21'
+    REQUEST SQL：SELECT * FROM x_urlrule WHERE siteid = '21' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_urlrule 
+--- SHUTDOWN TIME --- 1368170382.5858 (0.048481941223145)sec
+--- STARTUP TIME --- 1368170455.1173
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：workflow::init@extend
+    REQUEST SQL：SELECT * FROM x_workflow WHERE siteid = '21' 
+    REQUEST SQL：SELECT * FROM x_workflow WHERE siteid = '21' 
+--- SHUTDOWN TIME --- 1368170455.1637 (0.046454906463623)sec
+--- STARTUP TIME --- 1368170456.7848
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：config::init@user
+--- SHUTDOWN TIME --- 1368170456.8559 (0.071120023727417)sec
+--- STARTUP TIME --- 1368170465.6746
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：acl::setting@user
+    REQUEST SQL：SELECT * FROM x_menu WHERE sys = '0' ORDER BY listorder ASC,id ASC 
+    REQUEST SQL：SELECT * FROM x_user_role_priv WHERE siteid = '21' 
+    REQUEST SQL：SELECT * FROM x_user_role_priv WHERE siteid = '21' 
+--- SHUTDOWN TIME --- 1368170465.7397 (0.065101861953735)sec
+--- STARTUP TIME --- 1368170475.1508
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM x_menu ORDER BY listorder ASC,id DESC 
+--- SHUTDOWN TIME --- 1368170475.2021 (0.051254987716675)sec
+--- STARTUP TIME --- 1368170488.8018
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368170488.8399 (0.038090944290161)sec
+--- STARTUP TIME --- 1368170489.7468
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '21' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '21' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368170489.8233 (0.076478958129883)sec
+--- STARTUP TIME --- 1368170490.9735
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：category::init@content
+    [D:\ESSamp\wwwroot\NextPHPFramework\module\content\controller\category.php][content_controller_category]Class or Interface Not Defined
+    [D:\ESSamp\wwwroot\NextPHPFramework\module\content\controller\category.php][content_controller_category]Class or Interface Not Defined
+--- STARTUP TIME --- 1368170492.5384
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '21' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '21' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368170492.6046 (0.066200971603394)sec
+--- STARTUP TIME --- 1368171695.0839
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+--- SHUTDOWN TIME --- 1368171695.1199 (0.036058187484741)sec
+--- STARTUP TIME --- 1368172426.7275
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '21' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '21' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368172426.7994 (0.071915149688721)sec
+--- STARTUP TIME --- 1368172431.3273
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::setsiteid@admin
+--- SHUTDOWN TIME --- 1368172431.347 (0.019669771194458)sec
+--- STARTUP TIME --- 1368172431.3604
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+--- STARTUP TIME --- 1368172431.3654
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368172431.3978 (0.037476062774658)sec
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368172431.4453 (0.079923868179321)sec
+--- STARTUP TIME --- 1368172433.6847
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368172433.7609 (0.076189041137695)sec
+--- STARTUP TIME --- 1368172436.4501
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    [model]Class does not exist
+--- STARTUP TIME --- 1368172698.2118
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    [model]Class does not exist
+--- STARTUP TIME --- 1368172719.0484
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+--- STARTUP TIME --- 1368172872.5404
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    sql_options:SQL methond not exist
+--- STARTUP TIME --- 1368173415.9404
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    REQUEST SQL：SHOW TABLES
+    2 | in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument | D:\ESSamp\wwwroot\NextPHPFramework\module\content\model\model.php | 125
+--- SHUTDOWN TIME --- 1368173415.9842 (0.043756008148193)sec
+--- STARTUP TIME --- 1368173460.1073
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368173460.1666 (0.059266090393066)sec
+--- STARTUP TIME --- 1368173461.4269
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368173461.469 (0.042114019393921)sec
+--- STARTUP TIME --- 1368173462.1874
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368173462.2612 (0.073866844177246)sec
+--- STARTUP TIME --- 1368173464.9347
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    REQUEST SQL：SHOW TABLES
+    2 | in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument | D:\ESSamp\wwwroot\NextPHPFramework\module\content\model\model.php | 126
+--- SHUTDOWN TIME --- 1368173464.9765 (0.041831970214844)sec
+--- STARTUP TIME --- 1368173684.2046
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    2 | in_array() [<a href='function.in-array'>function.in-array</a>]: Wrong datatype for second argument | D:\ESSamp\wwwroot\NextPHPFramework\module\content\model\model.php | 126
+--- SHUTDOWN TIME --- 1368173684.2474 (0.042833089828491)sec
+--- STARTUP TIME --- 1368173765.8464
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    REQUEST SQL：DELETE FROM x_model WHERE modelid = 20 AND siteid = '1'
+--- SHUTDOWN TIME --- 1368173765.8909 (0.044494867324829)sec
+--- STARTUP TIME --- 1368173807.9266
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    REQUEST SQL：DELETE FROM x_model WHERE modelid = 20 AND siteid = '1'
+--- SHUTDOWN TIME --- 1368173807.9702 (0.043536901473999)sec
+--- STARTUP TIME --- 1368173905.1498
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    REQUEST SQL：DELETE FROM x_model WHERE modelid = 20 AND siteid = '1'
+--- SHUTDOWN TIME --- 1368173905.1981 (0.048318147659302)sec
+--- STARTUP TIME --- 1368174106.0545
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    REQUEST SQL：DELETE FROM x_model WHERE modelid = 20 AND siteid = '1'
+--- SHUTDOWN TIME --- 1368174106.0969 (0.042456865310669)sec
+--- STARTUP TIME --- 1368174136.0975
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    REQUEST SQL：DELETE FROM x_model WHERE modelid = 20 AND siteid = '1'
+--- SHUTDOWN TIME --- 1368174136.1387 (0.041159152984619)sec
+--- STARTUP TIME --- 1368174148.4702
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    REQUEST SQL：DELETE FROM x_model WHERE modelid = 20 AND siteid = '1'
+--- SHUTDOWN TIME --- 1368174148.5095 (0.039363861083984)sec
+--- STARTUP TIME --- 1368175002.9808
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    8 | Undefined variable: tablearr   | D:\ESSamp\wwwroot\NextPHPFramework\module\content\model\model.php | 126
+--- SHUTDOWN TIME --- 1368175003.017 (0.036139965057373)sec
+--- STARTUP TIME --- 1368175005.2787
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    8 | Undefined variable: tablearr   | D:\ESSamp\wwwroot\NextPHPFramework\module\content\model\model.php | 126
+--- SHUTDOWN TIME --- 1368175005.3192 (0.040518045425415)sec
+--- STARTUP TIME --- 1368175063.1236
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    REQUEST SQL：DELETE FROM x_model WHERE modelid = 20 AND siteid = '1'
+--- SHUTDOWN TIME --- 1368175063.1609 (0.037332773208618)sec
+--- STARTUP TIME --- 1368175085.4536
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    8 | Undefined variable: tablearr   | D:\ESSamp\wwwroot\NextPHPFramework\module\content\model\model.php | 129
+--- SHUTDOWN TIME --- 1368175085.4894 (0.035811901092529)sec
+--- STARTUP TIME --- 1368175087.3729
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    8 | Undefined variable: tablearr   | D:\ESSamp\wwwroot\NextPHPFramework\module\content\model\model.php | 129
+--- SHUTDOWN TIME --- 1368175087.4041 (0.031243085861206)sec
+--- STARTUP TIME --- 1368175087.8776
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    8 | Undefined variable: tablearr   | D:\ESSamp\wwwroot\NextPHPFramework\module\content\model\model.php | 129
+--- SHUTDOWN TIME --- 1368175087.9078 (0.030227899551392)sec
+--- STARTUP TIME --- 1368175088.0894
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    8 | Undefined variable: tablearr   | D:\ESSamp\wwwroot\NextPHPFramework\module\content\model\model.php | 129
+--- SHUTDOWN TIME --- 1368175088.1194 (0.030014991760254)sec
+--- STARTUP TIME --- 1368175088.281
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    8 | Undefined variable: tablearr   | D:\ESSamp\wwwroot\NextPHPFramework\module\content\model\model.php | 129
+--- SHUTDOWN TIME --- 1368175088.3122 (0.031149864196777)sec
+--- STARTUP TIME --- 1368175113.2009
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    REQUEST SQL：DELETE FROM x_model WHERE modelid = 20 AND siteid = '1'
+--- SHUTDOWN TIME --- 1368175113.2377 (0.036777973175049)sec
+--- STARTUP TIME --- 1368175301.4101
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 20 AND siteid = '1'
+    REQUEST SQL：DELETE FROM x_model WHERE modelid = 20 AND siteid = '1'
+--- SHUTDOWN TIME --- 1368175301.4723 (0.062196016311646)sec
+--- STARTUP TIME --- 1368175322.9759
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368175323.0472 (0.071341037750244)sec
+--- STARTUP TIME --- 1368175468.4436
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368175468.5132 (0.06966495513916)sec
+--- STARTUP TIME --- 1368175701.7134
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+--- SHUTDOWN TIME --- 1368175701.7352 (0.021791934967041)sec
+--- STARTUP TIME --- 1368175708.4462
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+    REQUEST SQL：INSERT INTO x_model (name,tablename,description,show_view,siteid) VALUES ('test','test','','','1')
+    8 | Undefined variable: config     | D:\ESSamp\wwwroot\NextPHPFramework\module\content\model\model.php | 151
+--- SHUTDOWN TIME --- 1368175708.5182 (0.071999073028564)sec
+--- STARTUP TIME --- 1368175742.7605
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368175742.8077 (0.047258853912354)sec
+--- STARTUP TIME --- 1368175743.7729
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368175743.8062 (0.033271789550781)sec
+--- STARTUP TIME --- 1368175744.5509
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：category::init@content
+    [D:\ESSamp\wwwroot\NextPHPFramework\module\content\controller\category.php][content_controller_category]Class or Interface Not Defined
+    [D:\ESSamp\wwwroot\NextPHPFramework\module\content\controller\category.php][content_controller_category]Class or Interface Not Defined
+--- STARTUP TIME --- 1368175745.0738
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368175745.1537 (0.079891204833984)sec
+--- STARTUP TIME --- 1368175758.3934
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368175758.4703 (0.076916933059692)sec
+--- STARTUP TIME --- 1368175759.3988
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+--- SHUTDOWN TIME --- 1368175759.4221 (0.023313045501709)sec
+--- STARTUP TIME --- 1368175765.3489
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+    REQUEST SQL：INSERT INTO x_model (name,tablename,description,show_view,siteid) VALUES ('test','test','','','1')
+    8 | Undefined variable: tablename  | D:\ESSamp\wwwroot\NextPHPFramework\module\content\model\model.php | 154
+--- SHUTDOWN TIME --- 1368175765.3803 (0.031328916549683)sec
+--- STARTUP TIME --- 1368175786.79
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368175786.8379 (0.047972917556763)sec
+--- STARTUP TIME --- 1368175801.4603
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368175801.4972 (0.036893129348755)sec
+--- STARTUP TIME --- 1368175802.2227
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368175802.2928 (0.070095062255859)sec
+--- STARTUP TIME --- 1368175803.0747
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+--- SHUTDOWN TIME --- 1368175803.0971 (0.022461891174316)sec
+--- STARTUP TIME --- 1368175809.0296
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+    REQUEST SQL：INSERT INTO x_model (name,tablename,description,show_view,siteid) VALUES ('test','test','','','1')
+    sql_options:sql_execute methond not exist
+    sql_options:sql_execute methond not exist
+    REQUEST SQL：SELECT * FROM x_model_field WHERE modelid = '23' AND disabled = '0' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368175809.0864 (0.056804180145264)sec
+--- STARTUP TIME --- 1368175809.0998
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368175809.1765 (0.076709032058716)sec
+--- STARTUP TIME --- 1368175880.3865
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368175880.4569 (0.070425033569336)sec
+--- STARTUP TIME --- 1368175881.4873
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+--- SHUTDOWN TIME --- 1368175881.5089 (0.021574020385742)sec
+--- STARTUP TIME --- 1368175887.1224
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+    REQUEST SQL：INSERT INTO x_model (name,tablename,description,show_view,siteid) VALUES ('test','test','','','1')
+--- STARTUP TIME --- 1368175926.6896
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+    REQUEST SQL：INSERT INTO x_model (name,tablename,description,show_view,siteid) VALUES ('test','test','','','1')
+--- STARTUP TIME --- 1368176023.1224
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+    REQUEST SQL：INSERT INTO x_model (name,tablename,description,show_view,siteid) VALUES ('test','test','','','1')
+    REQUEST SQL：CREATE TABLE `x_post_1` (  `id` mediumint(8) unsigned NOT NULL auto_increment,  `tagid` smallint(5) unsigned NOT NULL default '0',  `title` char(80) NOT NULL default '',  `thumb` char(100) NOT NULL default '',  `url` char(100) NOT NULL,  `listorder` tinyint(3) unsigned NOT NULL default '0',  `status` tinyint(2) unsigned NOT NULL default '1',  `username` char(20) NOT NULL,  `inputtime` int(10) unsigned NOT NULL default '0',  `updatetime` int(10) unsigned NOT NULL default '0',  PRIMARY KEY  (`id`),  KEY `status` (`status`,`listorder`,`id`),  KEY `listorder` (`tagid`,`status`,`listorder`,`id`),  KEY `tagid` (`tagid`,`status`,`id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(0, 1, 'tagid', '栏目', '', '', 1, 6, '/^[0-9]{1,6}$/', '请选择栏目', 'tagid', 'array (\n  ''defaultvalue'' => '''',\n)', '', '-99', '-99', 0, 1, 0, 1, 1, 1, 0, 0, 1, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(0, 1, 'title', '标题', '', 'inputtitle', 1, 80, '', '请输入标题', 'title', '', '', '', '', 0, 1, 0, 1, 1, 1, 1, 1, 4, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(0, 1, 'updatetime', '更新时间', '', '', 0, 0, '', '', 'datetime', 'array (\r\n  ''dateformat'' => ''int'',\r\n  ''format'' => ''Y-m-d H:i:s'',\r\n  ''defaulttype'' => ''1'',\r\n  ''defaultvalue'' => '''',\r\n)', '', '', '', 1, 1, 0, 1, 0, 0, 0, 0, 12, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(0, 1, 'thumb', '缩略图', '', '', 0, 100, '', '', 'image', 'array (\n  ''size'' => ''50'',\n  ''defaultvalue'' => '''',\n  ''show_type'' => ''1'',\n  ''upload_maxsize'' => ''1024'',\n  ''upload_allowext'' => ''jpg|jpeg|gif|png|bmp'',\n  ''watermark'' => ''0'',\n  ''isselectimage'' => ''1'',\n  ''images_width'' => '''',\n  ''images_height'' => '''',\n)', '', '', '', 0, 1, 0, 0, 0, 1, 0, 1, 14, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(0, 1, 'inputtime', '发布时间', '', '', 0, 0, '', '', 'datetime', 'array (\n  ''fieldtype'' => ''int'',\n  ''format'' => ''Y-m-d H:i:s'',\n  ''defaulttype'' => ''0'',\n)', '', '', '', 0, 1, 0, 0, 0, 0, 0, 1, 17, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(0, 1, 'url', 'URL', '', '', 0, 100, '', '', 'text', '', '', '', '', 1, 1, 0, 1, 0, 0, 0, 0, 50, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(0, 1, 'listorder', '排序', '', '', 0, 6, '', '', 'number', '', '', '', '', 1, 1, 0, 1, 0, 0, 0, 0, 51, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(0, 1, 'status', '状态', '', '', 0, 2, '', '', 'box', '', '', '', '', 1, 1, 0, 1, 0, 0, 0, 0, 55, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(0, 1, 'username', '用户名', '', '', 0, 20, '', '', 'text', '', '', '', '', 1, 1, 0, 1, 0, 0, 0, 0, 98, 0, 0);
+    REQUEST SQL：CREATE TABLE `x_post_1_test` (  `id` mediumint(8) unsigned default '0',  `content` text NOT NULL,  `view` varchar(30) NOT NULL,  `allow_comment` tinyint(1) unsigned NOT NULL default '1',  `relation` varchar(255) NOT NULL default '',  KEY `id` (`id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(26, 1, 'content', '内容', '<div class="content_attr"><label><input name="add_introduce" type="checkbox"  value="1" checked>是否截取内容</label><input type="text" name="introcude_length" value="200" size="3">字符至内容摘要\r\n<label><input type=''checkbox'' name=''auto_thumb'' value="1" checked>是否获取内容第</label><input type="text" name="auto_thumb_no" value="1" size="2" class="">张图片作为标题图片\r\n</div>', '', 1, 999999, '', '内容不能为空', 'editor', 'array (\n  ''toolbar'' => ''full'',\n  ''defaultvalue'' => '''',\n  ''enablekeylink'' => ''1'',\n  ''replacenum'' => ''2'',\n  ''link_mode'' => ''0'',\n  ''enablesaveimage'' => ''1'',\n)', '', '', '', 0, 0, 0, 1, 0, 1, 1, 0, 13, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(26, 1, 'relation', '相关文章', '', '', 0, 0, '', '', 'omnipotent', 'array (\n  ''formtext'' => ''<input type=\\''hidden\\'' name=\\''info[relation]\\'' id=\\''relation\\'' value=\\''{FIELD_VALUE}\\'' style=\\''50\\'' >\r\n<ul class="list-dot" id="relation_text"></ul>\r\n<div>\r\n<input type=\\''button\\'' value="添加相关" onclick="omnipotent(\\''selectid\\'',\\''?m=content&c=content&a=public_relationlist&modelid={MODELID}\\'',\\''添加相关文章\\'',1)" class="button" style="width:66px;">\r\n<span class="edit_content">\r\n<input type=\\''button\\'' value="显示已有" onclick="show_relation({MODELID},{ID})" class="button" style="width:66px;">\r\n</span>\r\n</div>'',\n  ''fieldtype'' => ''varchar'',\n  ''minnumber'' => ''1'',\n)', '', '2,6,4,5,1,17,18,7', '', 0, 0, 0, 0, 0, 0, 1, 0, 15, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(26, 1, 'view', '内容页模板', '', '', 0, 30, '', '', 'view', 'array (\n  ''size'' => '''',\n  ''defaultvalue'' => '''',\n)', '', '-99', '-99', 0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(26, 1, 'allow_comment', '允许评论', '', '', 0, 0, '', '', 'box', 'array (\n  ''options'' => ''允许评论|1\r\n不允许评论|0'',\n  ''boxtype'' => ''radio'',\n  ''fieldtype'' => ''tinyint'',\n  ''minnumber'' => ''1'',\n  ''width'' => ''88'',\n  ''size'' => ''1'',\n  ''defaultvalue'' => ''1'',\n  ''outputtype'' => ''0'',\n)', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 54, 0, 0);
+    REQUEST SQL：SELECT * FROM x_model_field WHERE modelid = '26' AND disabled = '0' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368176023.297 (0.17462992668152)sec
+--- STARTUP TIME --- 1368176023.3139
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368176023.395 (0.081146955490112)sec
+--- STARTUP TIME --- 1368176070.9571
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368176071.0316 (0.0744788646698)sec
+--- STARTUP TIME --- 1368176160.1343
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+--- SHUTDOWN TIME --- 1368176160.1557 (0.021394968032837)sec
+--- STARTUP TIME --- 1368176165.1853
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+    REQUEST SQL：INSERT INTO x_model (name,tablename,description,show_view,siteid) VALUES ('test','test','','','1')
+    REQUEST SQL：CREATE TABLE `x_post_1_test` (  `id` mediumint(8) unsigned default '0',  `content` text NOT NULL,  `view` varchar(30) NOT NULL,  `allow_comment` tinyint(1) unsigned NOT NULL default '1',  `relation` varchar(255) NOT NULL default '',  KEY `id` (`id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(27, 1, 'content', '内容', '<div class="content_attr"><label><input name="add_introduce" type="checkbox"  value="1" checked>是否截取内容</label><input type="text" name="introcude_length" value="200" size="3">字符至内容摘要\r\n<label><input type=''checkbox'' name=''auto_thumb'' value="1" checked>是否获取内容第</label><input type="text" name="auto_thumb_no" value="1" size="2" class="">张图片作为标题图片\r\n</div>', '', 1, 999999, '', '内容不能为空', 'editor', 'array (\n  ''toolbar'' => ''full'',\n  ''defaultvalue'' => '''',\n  ''enablekeylink'' => ''1'',\n  ''replacenum'' => ''2'',\n  ''link_mode'' => ''0'',\n  ''enablesaveimage'' => ''1'',\n)', '', '', '', 0, 0, 0, 1, 0, 1, 1, 0, 13, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(27, 1, 'relation', '相关文章', '', '', 0, 0, '', '', 'omnipotent', 'array (\n  ''formtext'' => ''<input type=\\''hidden\\'' name=\\''info[relation]\\'' id=\\''relation\\'' value=\\''{FIELD_VALUE}\\'' style=\\''50\\'' >\r\n<ul class="list-dot" id="relation_text"></ul>\r\n<div>\r\n<input type=\\''button\\'' value="添加相关" onclick="omnipotent(\\''selectid\\'',\\''?m=content&c=content&a=public_relationlist&modelid={MODELID}\\'',\\''添加相关文章\\'',1)" class="button" style="width:66px;">\r\n<span class="edit_content">\r\n<input type=\\''button\\'' value="显示已有" onclick="show_relation({MODELID},{ID})" class="button" style="width:66px;">\r\n</span>\r\n</div>'',\n  ''fieldtype'' => ''varchar'',\n  ''minnumber'' => ''1'',\n)', '', '2,6,4,5,1,17,18,7', '', 0, 0, 0, 0, 0, 0, 1, 0, 15, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(27, 1, 'view', '内容页模板', '', '', 0, 30, '', '', 'view', 'array (\n  ''size'' => '''',\n  ''defaultvalue'' => '''',\n)', '', '-99', '-99', 0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(27, 1, 'allow_comment', '允许评论', '', '', 0, 0, '', '', 'box', 'array (\n  ''options'' => ''允许评论|1\r\n不允许评论|0'',\n  ''boxtype'' => ''radio'',\n  ''fieldtype'' => ''tinyint'',\n  ''minnumber'' => ''1'',\n  ''width'' => ''88'',\n  ''size'' => ''1'',\n  ''defaultvalue'' => ''1'',\n  ''outputtype'' => ''0'',\n)', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 54, 0, 0);
+    REQUEST SQL：SELECT * FROM x_model_field WHERE modelid = '27' AND disabled = '0' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368176165.2846 (0.099277973175049)sec
+--- STARTUP TIME --- 1368176165.2984
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368176165.3752 (0.076834917068481)sec
+--- STARTUP TIME --- 1368176182.5276
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::edit@content
+    sql_options:get_one methond not exist
+    2 | extract() [<a href='function.extract'>function.extract</a>]: First argument should be an array | D:\ESSamp\wwwroot\NextPHPFramework\module\content\controller\model.php | 62
+--- SHUTDOWN TIME --- 1368176182.5563 (0.028674125671387)sec
+--- STARTUP TIME --- 1368176215.6418
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::edit@content
+    REQUEST SQL：SELECT * FROM x_model WHERE modelid = 27 
+--- SHUTDOWN TIME --- 1368176215.7015 (0.059689998626709)sec
+--- STARTUP TIME --- 1368176224.7885
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::edit@content
+    REQUEST SQL：SELECT * FROM x_model WHERE modelid = 27 
+--- SHUTDOWN TIME --- 1368176224.8301 (0.041549921035767)sec
+--- STARTUP TIME --- 1368176264.6912
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::edit@content
+    REQUEST SQL：SELECT * FROM x_model WHERE modelid = 27 
+--- SHUTDOWN TIME --- 1368176264.7314 (0.040207862854004)sec
+--- STARTUP TIME --- 1368176332.7211
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::edit@content
+    REQUEST SQL：SELECT * FROM x_model WHERE modelid = 27 
+--- SHUTDOWN TIME --- 1368176332.7614 (0.04025411605835)sec
+--- STARTUP TIME --- 1368176336.8007
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::edit@content
+--- SHUTDOWN TIME --- 1368176336.8271 (0.026463031768799)sec
+--- STARTUP TIME --- 1368176362.0227
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::edit@content
+    REQUEST SQL：SELECT * FROM x_model WHERE modelid = 27 
+--- SHUTDOWN TIME --- 1368176362.0534 (0.030735969543457)sec
+--- STARTUP TIME --- 1368176363.9608
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::edit@content
+    2 | Invalid argument supplied for foreach() | D:\ESSamp\wwwroot\NextPHPFramework\framework\class\db.php | 789
+--- SHUTDOWN TIME --- 1368176363.9881 (0.027309894561768)sec
+--- STARTUP TIME --- 1368176456.2486
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368176456.2991 (0.050484895706177)sec
+--- STARTUP TIME --- 1368176457.2937
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368176457.3282 (0.034511089324951)sec
+--- STARTUP TIME --- 1368176458.1651
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368176458.2387 (0.073601007461548)sec
+--- STARTUP TIME --- 1368176459.7424
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::edit@content
+    REQUEST SQL：SELECT * FROM x_model WHERE modelid = 27 
+--- SHUTDOWN TIME --- 1368176459.7744 (0.032004833221436)sec
+--- STARTUP TIME --- 1368176462.8977
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::edit@content
+    REQUEST SQL：UPDATE x_model SET name='test222',description='',show_view='' WHERE modelid = 27
+    REQUEST SQL：SELECT * FROM x_model_field WHERE modelid = 27 AND disabled = '0' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368176462.937 (0.039303064346313)sec
+--- STARTUP TIME --- 1368176462.9527
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368176463.0428 (0.090097904205322)sec
+--- STARTUP TIME --- 1368176465.499
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::edit@content
+    REQUEST SQL：SELECT * FROM x_model WHERE modelid = 27 
+--- SHUTDOWN TIME --- 1368176465.5297 (0.030658960342407)sec
+--- STARTUP TIME --- 1368176472.4589
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::edit@content
+    REQUEST SQL：UPDATE x_model SET name='测试',description='',show_view='' WHERE modelid = 27
+    REQUEST SQL：SELECT * FROM x_model_field WHERE modelid = 27 AND disabled = '0' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368176472.4962 (0.037300109863281)sec
+--- STARTUP TIME --- 1368176472.5099
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368176472.5834 (0.073447942733765)sec
+--- STARTUP TIME --- 1368176484.3828
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::delete@content
+    REQUEST SQL：DELETE FROM x_model_field WHERE modelid = 27 AND siteid = '1'
+    REQUEST SQL：DELETE FROM x_model WHERE modelid = 27 AND siteid = '1'
+--- SHUTDOWN TIME --- 1368176484.4212 (0.038432836532593)sec
+--- STARTUP TIME --- 1368176484.4368
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368176484.5075 (0.070655107498169)sec
+--- STARTUP TIME --- 1368177648.987
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368177649.0576 (0.070531129837036)sec
+--- STARTUP TIME --- 1368177649.9611
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+--- SHUTDOWN TIME --- 1368177649.9847 (0.023687839508057)sec
+--- STARTUP TIME --- 1368177658.5659
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+    REQUEST SQL：INSERT INTO x_model (name,tablename,description,show_view,siteid) VALUES ('测试表','test','','','1')
+    REQUEST SQL：CREATE TABLE `x_post_1_test` (  `id` mediumint(8) unsigned default '0',  `content` text NOT NULL,  `view` varchar(30) NOT NULL,  `allow_comment` tinyint(1) unsigned NOT NULL default '1',  `relation` varchar(255) NOT NULL default '',  KEY `id` (`id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(28, 1, 'content', '内容', '<div class="content_attr"><label><input name="add_introduce" type="checkbox"  value="1" checked>是否截取内容</label><input type="text" name="introcude_length" value="200" size="3">字符至内容摘要\r\n<label><input type=''checkbox'' name=''auto_thumb'' value="1" checked>是否获取内容第</label><input type="text" name="auto_thumb_no" value="1" size="2" class="">张图片作为标题图片\r\n</div>', '', 1, 999999, '', '内容不能为空', 'editor', 'array (\n  ''toolbar'' => ''full'',\n  ''defaultvalue'' => '''',\n  ''enablekeylink'' => ''1'',\n  ''replacenum'' => ''2'',\n  ''link_mode'' => ''0'',\n  ''enablesaveimage'' => ''1'',\n)', '', '', '', 0, 0, 0, 1, 0, 1, 1, 0, 13, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(28, 1, 'relation', '相关文章', '', '', 0, 0, '', '', 'omnipotent', 'array (\n  ''formtext'' => ''<input type=\\''hidden\\'' name=\\''info[relation]\\'' id=\\''relation\\'' value=\\''{FIELD_VALUE}\\'' style=\\''50\\'' >\r\n<ul class="list-dot" id="relation_text"></ul>\r\n<div>\r\n<input type=\\''button\\'' value="添加相关" onclick="omnipotent(\\''selectid\\'',\\''?m=content&c=content&a=public_relationlist&modelid={MODELID}\\'',\\''添加相关文章\\'',1)" class="button" style="width:66px;">\r\n<span class="edit_content">\r\n<input type=\\''button\\'' value="显示已有" onclick="show_relation({MODELID},{ID})" class="button" style="width:66px;">\r\n</span>\r\n</div>'',\n  ''fieldtype'' => ''varchar'',\n  ''minnumber'' => ''1'',\n)', '', '2,6,4,5,1,17,18,7', '', 0, 0, 0, 0, 0, 0, 1, 0, 15, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(28, 1, 'view', '内容页模板', '', '', 0, 30, '', '', 'view', 'array (\n  ''size'' => '''',\n  ''defaultvalue'' => '''',\n)', '', '-99', '-99', 0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(28, 1, 'allow_comment', '允许评论', '', '', 0, 0, '', '', 'box', 'array (\n  ''options'' => ''允许评论|1\r\n不允许评论|0'',\n  ''boxtype'' => ''radio'',\n  ''fieldtype'' => ''tinyint'',\n  ''minnumber'' => ''1'',\n  ''width'' => ''88'',\n  ''size'' => ''1'',\n  ''defaultvalue'' => ''1'',\n  ''outputtype'' => ''0'',\n)', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 54, 0, 0);
+--- SHUTDOWN TIME --- 1368177658.6756 (0.10967707633972)sec
+--- STARTUP TIME --- 1368177696.5704
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368177696.6435 (0.07309103012085)sec
+--- STARTUP TIME --- 1368177711.3873
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+--- SHUTDOWN TIME --- 1368177711.4098 (0.022485971450806)sec
+--- STARTUP TIME --- 1368177714.7328
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+    REQUEST SQL：INSERT INTO x_model (name,tablename,description,show_view,siteid) VALUES ('dsfgh','dfgh','','','1')
+    REQUEST SQL：CREATE TABLE `x_post_1_dfgh` (  `id` mediumint(8) unsigned default '0',  `content` text NOT NULL,  `view` varchar(30) NOT NULL,  `allow_comment` tinyint(1) unsigned NOT NULL default '1',  `relation` varchar(255) NOT NULL default '',  KEY `id` (`id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(29, 1, 'content', '内容', '<div class="content_attr"><label><input name="add_introduce" type="checkbox"  value="1" checked>是否截取内容</label><input type="text" name="introcude_length" value="200" size="3">字符至内容摘要\r\n<label><input type=''checkbox'' name=''auto_thumb'' value="1" checked>是否获取内容第</label><input type="text" name="auto_thumb_no" value="1" size="2" class="">张图片作为标题图片\r\n</div>', '', 1, 999999, '', '内容不能为空', 'editor', 'array (\n  ''toolbar'' => ''full'',\n  ''defaultvalue'' => '''',\n  ''enablekeylink'' => ''1'',\n  ''replacenum'' => ''2'',\n  ''link_mode'' => ''0'',\n  ''enablesaveimage'' => ''1'',\n)', '', '', '', 0, 0, 0, 1, 0, 1, 1, 0, 13, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(29, 1, 'relation', '相关文章', '', '', 0, 0, '', '', 'omnipotent', 'array (\n  ''formtext'' => ''<input type=\\''hidden\\'' name=\\''info[relation]\\'' id=\\''relation\\'' value=\\''{FIELD_VALUE}\\'' style=\\''50\\'' >\r\n<ul class="list-dot" id="relation_text"></ul>\r\n<div>\r\n<input type=\\''button\\'' value="添加相关" onclick="omnipotent(\\''selectid\\'',\\''?m=content&c=content&a=public_relationlist&modelid={MODELID}\\'',\\''添加相关文章\\'',1)" class="button" style="width:66px;">\r\n<span class="edit_content">\r\n<input type=\\''button\\'' value="显示已有" onclick="show_relation({MODELID},{ID})" class="button" style="width:66px;">\r\n</span>\r\n</div>'',\n  ''fieldtype'' => ''varchar'',\n  ''minnumber'' => ''1'',\n)', '', '2,6,4,5,1,17,18,7', '', 0, 0, 0, 0, 0, 0, 1, 0, 15, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(29, 1, 'view', '内容页模板', '', '', 0, 30, '', '', 'view', 'array (\n  ''size'' => '''',\n  ''defaultvalue'' => '''',\n)', '', '-99', '-99', 0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(29, 1, 'allow_comment', '允许评论', '', '', 0, 0, '', '', 'box', 'array (\n  ''options'' => ''允许评论|1\r\n不允许评论|0'',\n  ''boxtype'' => ''radio'',\n  ''fieldtype'' => ''tinyint'',\n  ''minnumber'' => ''1'',\n  ''width'' => ''88'',\n  ''size'' => ''1'',\n  ''defaultvalue'' => ''1'',\n  ''outputtype'' => ''0'',\n)', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 54, 0, 0);
+--- SHUTDOWN TIME --- 1368177714.855 (0.12211894989014)sec
+--- STARTUP TIME --- 1368177736.9282
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+    REQUEST SQL：INSERT INTO x_model (name,tablename,description,show_view,siteid) VALUES ('dsfghdd','dfghsdd','','','1')
+    REQUEST SQL：CREATE TABLE `x_post_1_dfghsdd` (  `id` mediumint(8) unsigned default '0',  `content` text NOT NULL,  `view` varchar(30) NOT NULL,  `allow_comment` tinyint(1) unsigned NOT NULL default '1',  `relation` varchar(255) NOT NULL default '',  KEY `id` (`id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(30, 1, 'content', '内容', '<div class="content_attr"><label><input name="add_introduce" type="checkbox"  value="1" checked>是否截取内容</label><input type="text" name="introcude_length" value="200" size="3">字符至内容摘要\r\n<label><input type=''checkbox'' name=''auto_thumb'' value="1" checked>是否获取内容第</label><input type="text" name="auto_thumb_no" value="1" size="2" class="">张图片作为标题图片\r\n</div>', '', 1, 999999, '', '内容不能为空', 'editor', 'array (\n  ''toolbar'' => ''full'',\n  ''defaultvalue'' => '''',\n  ''enablekeylink'' => ''1'',\n  ''replacenum'' => ''2'',\n  ''link_mode'' => ''0'',\n  ''enablesaveimage'' => ''1'',\n)', '', '', '', 0, 0, 0, 1, 0, 1, 1, 0, 13, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(30, 1, 'relation', '相关文章', '', '', 0, 0, '', '', 'omnipotent', 'array (\n  ''formtext'' => ''<input type=\\''hidden\\'' name=\\''info[relation]\\'' id=\\''relation\\'' value=\\''{FIELD_VALUE}\\'' style=\\''50\\'' >\r\n<ul class="list-dot" id="relation_text"></ul>\r\n<div>\r\n<input type=\\''button\\'' value="添加相关" onclick="omnipotent(\\''selectid\\'',\\''?m=content&c=content&a=public_relationlist&modelid={MODELID}\\'',\\''添加相关文章\\'',1)" class="button" style="width:66px;">\r\n<span class="edit_content">\r\n<input type=\\''button\\'' value="显示已有" onclick="show_relation({MODELID},{ID})" class="button" style="width:66px;">\r\n</span>\r\n</div>'',\n  ''fieldtype'' => ''varchar'',\n  ''minnumber'' => ''1'',\n)', '', '2,6,4,5,1,17,18,7', '', 0, 0, 0, 0, 0, 0, 1, 0, 15, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(30, 1, 'view', '内容页模板', '', '', 0, 30, '', '', 'view', 'array (\n  ''size'' => '''',\n  ''defaultvalue'' => '''',\n)', '', '-99', '-99', 0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(30, 1, 'allow_comment', '允许评论', '', '', 0, 0, '', '', 'box', 'array (\n  ''options'' => ''允许评论|1\r\n不允许评论|0'',\n  ''boxtype'' => ''radio'',\n  ''fieldtype'' => ''tinyint'',\n  ''minnumber'' => ''1'',\n  ''width'' => ''88'',\n  ''size'' => ''1'',\n  ''defaultvalue'' => ''1'',\n  ''outputtype'' => ''0'',\n)', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 54, 0, 0);
+    REQUEST SQL：SELECT * FROM x_model_field WHERE modelid = '30' AND disabled = '0' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368177737.0406 (0.11242985725403)sec
+--- STARTUP TIME --- 1368177737.0535
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368177737.1437 (0.090196847915649)sec
+--- STARTUP TIME --- 1368177786.8767
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368177786.9439 (0.067246913909912)sec
+--- STARTUP TIME --- 1368177787.6954
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+--- SHUTDOWN TIME --- 1368177787.7136 (0.018187999725342)sec
+--- STARTUP TIME --- 1368177795.349
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::add@content
+    REQUEST SQL：INSERT INTO x_model (name,tablename,description,show_view,siteid) VALUES ('测试表','test','','','1')
+    REQUEST SQL：CREATE TABLE `x_post_1_test` (  `id` mediumint(8) unsigned default '0',  `content` text NOT NULL,  `view` varchar(30) NOT NULL,  `allow_comment` tinyint(1) unsigned NOT NULL default '1',  `relation` varchar(255) NOT NULL default '',  KEY `id` (`id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(31, 1, 'content', '内容', '<div class="content_attr"><label><input name="add_introduce" type="checkbox"  value="1" checked>是否截取内容</label><input type="text" name="introcude_length" value="200" size="3">字符至内容摘要\r\n<label><input type=''checkbox'' name=''auto_thumb'' value="1" checked>是否获取内容第</label><input type="text" name="auto_thumb_no" value="1" size="2" class="">张图片作为标题图片\r\n</div>', '', 1, 999999, '', '内容不能为空', 'editor', 'array (\n  ''toolbar'' => ''full'',\n  ''defaultvalue'' => '''',\n  ''enablekeylink'' => ''1'',\n  ''replacenum'' => ''2'',\n  ''link_mode'' => ''0'',\n  ''enablesaveimage'' => ''1'',\n)', '', '', '', 0, 0, 0, 1, 0, 1, 1, 0, 13, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(31, 1, 'relation', '相关文章', '', '', 0, 0, '', '', 'omnipotent', 'array (\n  ''formtext'' => ''<input type=\\''hidden\\'' name=\\''info[relation]\\'' id=\\''relation\\'' value=\\''{FIELD_VALUE}\\'' style=\\''50\\'' >\r\n<ul class="list-dot" id="relation_text"></ul>\r\n<div>\r\n<input type=\\''button\\'' value="添加相关" onclick="omnipotent(\\''selectid\\'',\\''?m=content&c=content&a=public_relationlist&modelid={MODELID}\\'',\\''添加相关文章\\'',1)" class="button" style="width:66px;">\r\n<span class="edit_content">\r\n<input type=\\''button\\'' value="显示已有" onclick="show_relation({MODELID},{ID})" class="button" style="width:66px;">\r\n</span>\r\n</div>'',\n  ''fieldtype'' => ''varchar'',\n  ''minnumber'' => ''1'',\n)', '', '2,6,4,5,1,17,18,7', '', 0, 0, 0, 0, 0, 0, 1, 0, 15, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(31, 1, 'view', '内容页模板', '', '', 0, 30, '', '', 'view', 'array (\n  ''size'' => '''',\n  ''defaultvalue'' => '''',\n)', '', '-99', '-99', 0, 0, 0, 0, 0, 0, 0, 0, 53, 0, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `issystem`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`, `isomnipotent`) VALUES(31, 1, 'allow_comment', '允许评论', '', '', 0, 0, '', '', 'box', 'array (\n  ''options'' => ''允许评论|1\r\n不允许评论|0'',\n  ''boxtype'' => ''radio'',\n  ''fieldtype'' => ''tinyint'',\n  ''minnumber'' => ''1'',\n  ''width'' => ''88'',\n  ''size'' => ''1'',\n  ''defaultvalue'' => ''1'',\n  ''outputtype'' => ''0'',\n)', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 54, 0, 0);
+    REQUEST SQL：SELECT * FROM x_model_field WHERE modelid = '31' AND disabled = '0' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368177795.4662 (0.11718606948853)sec
+--- STARTUP TIME --- 1368177795.4782
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368177795.5516 (0.073396921157837)sec
+--- STARTUP TIME --- 1368178011.363
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：field::init@content
+    REQUEST SQL：SELECT * FROM x_model_field 
+    2 | PDOStatement::fetch() expects parameter 1 to be long, string given | D:\ESSamp\wwwroot\NextPHPFramework\framework\class\db.php | 233
+--- SHUTDOWN TIME --- 1368178011.3961 (0.033033847808838)sec
+--- STARTUP TIME --- 1368178013.8099
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368178013.8816 (0.071784973144531)sec
+--- STARTUP TIME --- 1368178034.2767
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368178034.3476 (0.070949077606201)sec
+--- STARTUP TIME --- 1368178035.2103
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368178035.2795 (0.069220781326294)sec
+--- STARTUP TIME --- 1368178036.9792
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：field::init@content
+    REQUEST SQL：SELECT * FROM x_model_field 
+    2 | PDOStatement::fetch() expects parameter 1 to be long, string given | D:\ESSamp\wwwroot\NextPHPFramework\framework\class\db.php | 233
+--- SHUTDOWN TIME --- 1368178037.0152 (0.035904884338379)sec
+--- STARTUP TIME --- 1368178157.2977
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368178157.368 (0.070269107818604)sec
+--- STARTUP TIME --- 1368178159.5456
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：field::init@content
+    REQUEST SQL：SELECT * FROM x_model_field WHERE modelid = '0' AND siteid = '1' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_model_field WHERE modelid = 31 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368178159.6396 (0.094014167785645)sec
+--- STARTUP TIME --- 1368178401.5915
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：field::add@content
+--- SHUTDOWN TIME --- 1368178401.6097 (0.01818585395813)sec
+--- STARTUP TIME --- 1368178418.4093
+    SESSION_ID：iei5e45pvbok1h96s9mcms8oh0
+    REQUEST MCA：field::add@content
+    REQUEST SQL：SELECT field,name FROM x_model_field WHERE modelid = 31 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368178418.4978 (0.088557004928589)sec
