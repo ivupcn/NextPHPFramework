@@ -1,37 +1,5 @@
 <?php
 return array (
-  'sdfghjaaaaaa' => 
-  array (
-    'fieldid' => '425',
-    'modelid' => '47',
-    'siteid' => '1',
-    'field' => 'sdfghjaaaaaa',
-    'name' => 'sdfghjk',
-    'tips' => '',
-    'css' => '',
-    'minlength' => '0',
-    'maxlength' => '0',
-    'pattern' => '',
-    'errortips' => '',
-    'formtype' => 'textarea',
-    'setting' => '{"width":"100","height":"46","defaultvalue":"","enablehtml":"0"}',
-    'formattribute' => '',
-    'unsetgroupids' => '',
-    'unsetroleids' => '',
-    'iscore' => '0',
-    'isunique' => '0',
-    'isbase' => '0',
-    'issearch' => '0',
-    'isadd' => '1',
-    'isfulltext' => '1',
-    'isposition' => '0',
-    'listorder' => '0',
-    'disabled' => '0',
-    'width' => '100',
-    'height' => '46',
-    'defaultvalue' => '',
-    'enablehtml' => '0',
-  ),
   'catid' => 
   array (
     'fieldid' => '409',
@@ -190,8 +158,8 @@ return array (
   ),
   'content' => 
   array (
-    'fieldid' => '422',
-    'modelid' => '47',
+    'fieldid' => '444',
+    'modelid' => '56',
     'siteid' => '1',
     'field' => 'content',
     'name' => '内容',
@@ -202,7 +170,7 @@ return array (
     'pattern' => '',
     'errortips' => '内容不能为空',
     'formtype' => 'editor',
-    'setting' => '[]',
+    'setting' => '{"toolbar":"basic","defaultvalue":"","enablesaveimage":"0","height":"200"}',
     'formattribute' => '',
     'unsetgroupids' => '',
     'unsetroleids' => '',
@@ -215,6 +183,10 @@ return array (
     'isposition' => '0',
     'listorder' => '13',
     'disabled' => '0',
+    'toolbar' => 'basic',
+    'defaultvalue' => '',
+    'enablesaveimage' => '0',
+    'height' => '200',
   ),
   'posids' => 
   array (
@@ -278,8 +250,8 @@ return array (
   ),
   'comment' => 
   array (
-    'fieldid' => '423',
-    'modelid' => '47',
+    'fieldid' => '445',
+    'modelid' => '56',
     'siteid' => '1',
     'field' => 'comment',
     'name' => '评论',

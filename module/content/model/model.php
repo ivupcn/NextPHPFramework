@@ -131,7 +131,7 @@ class content_model_model
 		}
 		if(in_array($tablename, $tablearr))
 		{
-			return db::getInstance(__CLASS__)->SQL('DROP TABLE '.$tablename)->query();
+			return db::getInstance(__CLASS__)->exec('DROP TABLE '.$tablename);
 		}
 		else
 		{

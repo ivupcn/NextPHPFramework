@@ -1,20 +1,20 @@
 <?php
 return array (
-  'sdfghjaaaaaa' => 
+  'ed' => 
   array (
-    'fieldid' => '425',
-    'modelid' => '47',
+    'fieldid' => '443',
+    'modelid' => '55',
     'siteid' => '1',
-    'field' => 'sdfghjaaaaaa',
-    'name' => 'sdfghjk',
+    'field' => 'ed',
+    'name' => 'ed',
     'tips' => '',
     'css' => '',
     'minlength' => '0',
     'maxlength' => '0',
     'pattern' => '',
     'errortips' => '',
-    'formtype' => 'textarea',
-    'setting' => '{"width":"100","height":"46","defaultvalue":"","enablehtml":"0"}',
+    'formtype' => 'editor',
+    'setting' => '{"toolbar":"basic","defaultvalue":"","enablesaveimage":"0","height":"200"}',
     'formattribute' => '',
     'unsetgroupids' => '',
     'unsetroleids' => '',
@@ -23,14 +23,14 @@ return array (
     'isbase' => '0',
     'issearch' => '0',
     'isadd' => '1',
-    'isfulltext' => '1',
+    'isfulltext' => '0',
     'isposition' => '0',
     'listorder' => '0',
     'disabled' => '0',
-    'width' => '100',
-    'height' => '46',
+    'toolbar' => 'basic',
     'defaultvalue' => '',
-    'enablehtml' => '0',
+    'enablesaveimage' => '0',
+    'height' => '200',
   ),
   'catid' => 
   array (
@@ -190,8 +190,8 @@ return array (
   ),
   'content' => 
   array (
-    'fieldid' => '422',
-    'modelid' => '47',
+    'fieldid' => '441',
+    'modelid' => '55',
     'siteid' => '1',
     'field' => 'content',
     'name' => '内容',
@@ -278,8 +278,8 @@ return array (
   ),
   'comment' => 
   array (
-    'fieldid' => '423',
-    'modelid' => '47',
+    'fieldid' => '442',
+    'modelid' => '55',
     'siteid' => '1',
     'field' => 'comment',
     'name' => '评论',

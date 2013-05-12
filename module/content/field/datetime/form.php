@@ -1,5 +1,5 @@
 	function datetime($field, $value, $fieldinfo) {
-		extract(string2array($fieldinfo['setting']));
+		extract(json_decode($fieldinfo['setting'],true));
 		$isdatetime = 0;
 		if($fieldtype=='int') {
 			if(!$value) $value = SYS_TIME;

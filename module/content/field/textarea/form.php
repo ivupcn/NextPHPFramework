@@ -1,6 +1,6 @@
 	function textarea($field, $value, $fieldinfo) {
 		extract($fieldinfo);
-		$setting = string2array($setting);
+		$setting = json_decode($setting,true);
 		extract($setting);
 		if(!$value) $value = $defaultvalue;
 		$allow_empty = 'empty:true,';

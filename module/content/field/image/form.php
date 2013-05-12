@@ -1,5 +1,5 @@
 	function image($field, $value, $fieldinfo) {
-		$setting = string2array($fieldinfo['setting']);
+		$setting = json_decode($fieldinfo['setting'],true);
 		extract($setting);
 		$html = '';
 		if (defined('IN_ADMIN')) {

@@ -3,7 +3,7 @@
 		$_groupid = $_SESSION['groupid'];
 		$grouplist = $grouplist[$_groupid];
 		extract($fieldinfo);
-		extract(string2array($setting));
+		extract(json_decode($setting,true));
 		$disabled_page = isset($disabled_page) ? $disabled_page : 0;
 		if(!isset($height)) $height = 300;
 		$allowupload = defined('IN_ADMIN') ? 1 : $grouplist['allowattachment'] ? 1: 0;

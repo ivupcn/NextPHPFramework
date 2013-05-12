@@ -239,3 +239,6 @@ padding: 2px 8px;
 background: url(../../images/admin/icons.png) -100px -3px no-repeat;
 cursor: pointer;
 }
+.input-text-c {
+text-align: center;;
+}

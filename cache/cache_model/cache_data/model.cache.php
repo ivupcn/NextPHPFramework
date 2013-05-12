@@ -1,8 +1,8 @@
 <?php
 return array (
-  47 => 
+  61 => 
   array (
-    'modelid' => '47',
+    'modelid' => '61',
     'siteid' => '1',
     'name' => '测试',
     'description' => '',

@@ -22,11 +22,10 @@ $fields = array('text'=>'单行文本',
 				'linkage'=>'联动菜单',
 				'downfile'=>'镜像下载',
 				'downfiles'=>'多文件上传',
-				'map'=>'地图字段',
-				'video'=>'视频库'
+				'map'=>'地图字段'
 				);
 //不允许删除的字段，这些字段将不会在字段添加处显示
-$not_allow_fields = array('catid','title','thumb','updatetime','inputtime','url','listorder','status','username','keywords','posids','description');
+$not_allow_fields = array('catid','title','thumb','updatetime','inputtime','url','listorder','status','username','keywords','posids','description','view');
 //允许添加但必须唯一的字段
 $unique_fields = array('pages','readpoint','author','copyfrom','islink');
 //禁止被禁用的字段列表

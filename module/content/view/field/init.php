@@ -22,7 +22,7 @@
     <tbody>
       {loop $field_arr $r}
       <tr>
-        <td><input name="listorders[<?php echo $r['fieldid'];?>]" type="text" value="{$r['listorder']}" class="input-text-c" style="width:30px"{if in_array($r['field'],$not_allow_fields)} readonly="true"{/if} /></td>
+        <td>{if in_array($r['field'],$not_allow_fields)}{$r['listorder']}{else}<input name="listorders[<?php echo $r['fieldid'];?>]" type="text" value="{$r['listorder']}" class="input-text-c" style="width:30px" />{/if}</td>
         <td>{$r['field']}</td>
         <td>{$r['name']}</td>
         <td>{$r['formtype']}</td>
@@ -31,17 +31,17 @@
         <td align="center">{php echo $r['isadd'] ? '<font color="red">√</font>' : '<font color="blue">×</font>'}</td>
         <td align="center">
           {if !in_array($r['field'],$forbid_edit)}
-          <a href="{url 'field::edit@content','fieldid/'.$r['fieldid']}" target="dialog" mask="true" maxable="false" rel="content_file_edit" width="800" height="500">修改</a> | 
+          <a href="{url 'field::edit@content','modelid/'.$r['modelid'].'/fieldid/'.$r['fieldid']}" target="dialog" mask="true" maxable="false" rel="content_file_edit" width="800" height="500">修改</a> | 
           {else}
           <font color="#BEBEBE">修改</font> | 
           {/if}
           {if !in_array($r['field'],$forbid_fields)}
-          <a href="{url 'field::disabled@content','fieldid/'.$r['fieldid'].'/disabled/'.$r['disabled']}" target="ajaxTodo">{php echo $r['disabled'] ? '启用' : '禁用'}</a> | 
+          <a href="{url 'field::disabled@content','modelid/'.$r['modelid'].'/fieldid/'.$r['fieldid'].'/disabled/'.$r['disabled']}" target="ajaxTodo">{php echo $r['disabled'] ? '<font color="#0000ff">启用</font>' : '<font color="#ff0000">禁用</font>'}</a> | 
           {else}
           <font color="#BEBEBE">禁用</font> | 
           {/if}
           {if !in_array($r['field'],$forbid_delete)}
-          <a href="{url 'field::delete@content','fieldid/'.$r['fieldid']}" target="ajaxTodo" title="确定要删除吗?">删除</a>
+          <a href="{url 'field::delete@content','modelid/'.$r['modelid'].'/fieldid/'.$r['fieldid']}" target="ajaxTodo" title="确定要删除吗?">删除</a>
           {else}
           <font color="#BEBEBE">删除</font>
           {/if}

@@ -62,9 +62,6 @@ class content_model_field
 	 */
 	static function drop_field($tablename,$field)
 	{
-		$config = Next::config('database','default');
-		$tablepre = $config['tablepre'];
-		$tablename = $tablepre.'post_'.SITEID.'_'.$tablename;
 		$fields = self::getfields($tablename);
 		if(in_array($field, array_keys($fields)))
 		{
@@ -82,7 +79,7 @@ class content_model_field
 	static function getfields($table)
 	{
 		$fields = array();
-		$fieldlist = db::getInstance(__CLASS__)->SQL('SHOW COLUMNS FROM'.$table)->query();
+		$fieldlist = db::getInstance(__CLASS__)->SQL('SHOW COLUMNS FROM '.$table)->query();
 		foreach($fieldlist as $r)
 		{
 			$fields[$r['Field']] = $r['Type'];

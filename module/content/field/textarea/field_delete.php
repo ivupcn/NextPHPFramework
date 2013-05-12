@@ -1,3 +1,3 @@
 <?php 
-$db->query("ALTER TABLE `$tablename` DROP `$field`");
+$db->exec("ALTER TABLE `$tablename` DROP `$field`");
 ?>

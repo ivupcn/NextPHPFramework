@@ -1,6 +1,6 @@
 	function box($field, $value, $fieldinfo) {
 
-		$setting = string2array($fieldinfo['setting']);
+		$setting = json_decode($fieldinfo['setting'],true);
 		if($value=='') $value = $this->fields[$field]['defaultvalue'];
 		$options = explode("\n",$this->fields[$field]['options']);
 		foreach($options as $_k) {

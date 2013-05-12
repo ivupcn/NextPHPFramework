@@ -3858,3 +3858,8 @@
     REQUEST SQL：SELECT * FROM x_model_field WHERE modelid = '0' AND siteid = '1' ORDER BY listorder ASC 
     REQUEST SQL：SELECT * FROM x_model_field WHERE modelid = 47 AND disabled = '0' ORDER BY listorder ASC 
 --- SHUTDOWN TIME --- 1368262417.3837 (0.037253856658936)sec
+--- STARTUP TIME --- 1368274592.6968
+    SESSION_ID：mrn0012segad4ep3caiqpc9062
+    REQUEST MCA：model::test@content
+    ACL-1-content-model item does not in configuration file
+--- SHUTDOWN TIME --- 1368274592.8657 (0.16884303092957)sec

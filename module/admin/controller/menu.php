@@ -103,7 +103,7 @@ class admin_controller_menu extends admin_class_controller
 		{
 			foreach($_POST['listorders'] as $id => $listorder)
 			{
-				admin_model_menu::model()->SET(array('listorder'=>$listorder))->WHERE(array('id'=>$id));
+				admin_model_menu::model()->SET(array('listorder'=>$listorder))->WHERE(array('id'=>$id))->update();
 			}
 			$this->_app->showmessage('200','操作成功！',$this->_context->url('menu::init@admin'));
 		}

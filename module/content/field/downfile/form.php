@@ -1,6 +1,6 @@
 	function downfile($field, $value, $fieldinfo) {
 		$list_str = $str = '';
-		extract(string2array($fieldinfo['setting']));
+		extract(json_decode($fieldinfo['setting'],true));
 		if($value){
 			$value_arr = explode('|',$value);
 			$value = $value_arr['0'];
