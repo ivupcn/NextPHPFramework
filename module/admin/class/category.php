@@ -7,7 +7,7 @@ class admin_class_category
 	{
 		if(!$module) return false;
 		$data = admin_model_tag::model()->WHERE(array('siteid'=>SITEID,'module'=>$module))->ORDER('listorder ASC,id ASC')->SELECT();
-		$this->categorys = $categorys = arr::sortbykey($data, 'id');
+		$this->categorys = $categorys = arr::groupby($data, 'id');
 		if(is_array($this->categorys))
 		{
 			foreach($this->categorys as $id => $cat)

@@ -9,10 +9,6 @@
       <td><input type="text" name="setting[defaultvalue]" value="<?php echo $setting['defaultvalue'];?>" size="40" class="input-text"></td>
     </tr>
 	<tr> 
-      <td>表单显示模式</td>
-      <td><input type="radio" name="setting[show_type]" value="1" <?php if($setting['show_type']) echo 'checked';?>/> 图片模式 <input type="radio" name="setting[show_type]" value="0" <?php if(!$setting['show_type']) echo 'checked';?>/> 文本框模式</td>
-    </tr>
-	<tr> 
       <td>允许上传的图片大小</td>
       <td><input type="text" name="setting[upload_maxsize]" value="<?php echo $setting['upload_maxsize'];?>" size="5" class="input-text">KB 提示：1KB=1024Byte，1MB=1024KB *</td>
     </tr>

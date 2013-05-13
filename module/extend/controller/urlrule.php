@@ -58,7 +58,7 @@ class extend_controller_urlrule extends admin_class_controller
 	 */
 	public function _cache() {
 		$infos = extend_model_urlrule::model()->select();
-		$datas = arr::sortbykey($infos, 'urlruleid');
+		$datas = arr::groupby($infos, 'urlruleid');
 		$basic_data = array();
 		foreach($datas as $roleid=>$r)
 		{

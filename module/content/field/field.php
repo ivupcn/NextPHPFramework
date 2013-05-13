@@ -25,15 +25,15 @@ $fields = array('text'=>'单行文本',
 				'map'=>'地图字段'
 				);
 //不允许删除的字段，这些字段将不会在字段添加处显示
-$not_allow_fields = array('catid','title','thumb','updatetime','inputtime','url','listorder','status','username','keywords','posids','description','view');
+$not_allow_fields = array('catid','title','thumb','updatetime','inputtime','url','listorder','status','username','keywords','posids','description','view','islink');
 //允许添加但必须唯一的字段
 $unique_fields = array('pages','readpoint','author','copyfrom','islink');
 //禁止被禁用的字段列表
-$forbid_fields = array('catid','title','updatetime','inputtime','url','listorder','status','view','username','thumb','keywords','posids','description');
+$forbid_fields = array('catid','title','updatetime','inputtime','url','listorder','status','view','username','thumb','keywords','posids','description','islink');
 //禁止被删除的字段列表
-$forbid_delete = array('catid','title','thumb','updatetime','inputtime','url','listorder','status','view','username','keywords','posids','description');
+$forbid_delete = array('catid','title','thumb','updatetime','inputtime','url','listorder','status','view','username','keywords','posids','description','islink');
 //禁止被修改的字段列表
-$forbid_edit = array('catid','title','thumb','updatetime','inputtime','url','listorder','status','view','username','keywords','posids','description');
+$forbid_edit = array('catid','title','thumb','updatetime','inputtime','url','listorder','status','view','username','keywords','posids','description','islink');
 //可以追加 JS和CSS 的字段
 $att_css_js = array('text','textarea','box','number','keyword','typeid');
 ?>

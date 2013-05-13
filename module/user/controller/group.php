@@ -114,7 +114,7 @@ class user_controller_group extends admin_class_controller
 
 	private function _updatecache() {
 		$data = user_model_group::model()->WHERE(array('siteid'=>SITEID))->select();
-		$grouplist = arr::sortbykey($data, 'groupid');
+		$grouplist = arr::groupby($data, 'groupid');
 		setcache('grouplist_'.SITEID, $grouplist,'user');
 	}
 }
