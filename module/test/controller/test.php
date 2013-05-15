@@ -3,17 +3,19 @@ class test_controller_test
 {
 	public function action_init()
 	{
-		// $update = test_model_test::model()->SET(array('title'=>'ivup'))->WHERE(array('id'=>1330))->update();
-		// var_dump($update);
-		// $delete = test_model_test::model()->WHERE(array('id'=>1330))->delete();
-		// var_dump($delete);
-		// $page = isset($_GET['page']) ? $_GET['page'] : 1;
-		$result = admin_model_menu::model()->WHERE(array('sys'=>0))->ORDER('listorder ASC,id ASC')->select();
-		var_dump($result);
-		// var_dump($data);
-		// echo test_model_test::model()->pages;
-		// $sum = test_model_test::model()->SUM('id');
-		// var_dump($sum);
+		$field_array = array();
+		$basefield = content_model_field::model()->WHERE(array('modelid'=>0,'siteid'=>SITEID))->ORDER('listorder ASC')->select();
+		$modelfield = content_model_field::model()->WHERE(array('modelid'=>66,'disabled'=>0))->ORDER('listorder ASC')->select();
+		$fields = array_merge($basefield, $modelfield);
+		$fields = arr::sortbycol($fields,'listorder');
+		foreach($fields as $_value)
+		{
+			$setting = unserialize($_value['setting']);
+			$_value = array_merge($_value,$setting);
+			$field_array[$_value['field']] = $_value;
+		}
+		var_dump($field_array);
+
 	}
 }
 ?>

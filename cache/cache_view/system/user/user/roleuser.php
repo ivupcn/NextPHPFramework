@@ -38,8 +38,8 @@
 <td><?php echo $info['lastloginip'];?></td>
 <td><?php echo $info['lastlogintime'] ? date('Y-m-d H:i:s',$info['lastlogintime']) : ''?></td>
 <td align="center">
-<a  href="?m=user&c=user&a=edit&userid=<?php echo $info['userid'];?>" target="dialog" mask="true" maxable="false" rel="user_user_edit" width="500" height="300">修改</a> | 
-<a href="?m=user&c=user&a=delete&userid=<?php echo $info['userid'];?>" target="ajaxTodo" title="确定要删除吗?">删除</a>
+<a  href="<?php echo $this->_context->url('user::edit@user','userid/'.$info['userid']); ?>" target="dialog" mask="true" maxable="false" rel="user_user_edit" width="500" height="300">修改</a> | 
+<a href="<?php echo $this->_context->url('user::delete@user','userid/'.$info['userid']); ?>" target="ajaxTodo" title="确定要删除吗?">删除</a>
 </td>
 </tr>
 <?php } ?>

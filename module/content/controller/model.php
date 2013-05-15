@@ -98,12 +98,12 @@ class content_controller_model extends admin_class_controller
 		}
 		//更新模型数据缓存
 		$model_array = array();
-		$datas = content_model_model::model()->WHERE(array('type'=>0))->select();
+		$datas = content_model_model::model()->WHERE(array('type'=>0,'siteid'=>SITEID))->select();
 		foreach ($datas as $r)
 		{
 			if(!$r['disabled']) $model_array[$r['modelid']] = $r;
 		}
-		setcache('model', $model_array, 'model');
+		setcache('model_'.SITEID, $model_array, 'model');
 		return true;
 	}
 
@@ -116,7 +116,7 @@ class content_controller_model extends admin_class_controller
 		$fields = arr::sortbycol($fields,'listorder');
 		foreach($fields as $_value)
 		{
-			$setting = json_decode($_value['setting'], true);
+			$setting = unserialize($_value['setting']);
 			$_value = array_merge($_value,$setting);
 			$field_array[$_value['field']] = $_value;
 		}

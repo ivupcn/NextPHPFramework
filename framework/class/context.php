@@ -2,9 +2,9 @@
 /**
  *  context.php context 封装了运行时上下文。
  *
- * @copyright			(C) 2005-2010 NextPHP
- * @license			http://ivup.cn/license/
- * @lastmodify			2013-03-01
+ * @copyright           (C) 2005-2010 NextPHP
+ * @license         http://ivup.cn/license/
+ * @lastmodify          2013-03-01
  * 
  * context 封装了运行时上下文：
  * - 主要封装了请求参数和请求状态等功能。
@@ -19,36 +19,36 @@
  */
 class context implements ArrayAccess
 {
-	/**
+    /**
      * 指示 UDI 中的部分
      */
-	// UDI 中的模块
-	const UDI_MODULE     = 'm';
+    // UDI 中的模块
+    const UDI_MODULE     = 'm';
     // UDI 中的控制器
     const UDI_CONTROLLER = 'c';
     // UDI 中的动作
     const UDI_ACTION     = 'a';
-	
-	/**
+    
+    /**
      * 指示 UDI 的默认值
      */
-	// 默认的模块
+    // 默认的模块
     const UDI_DEFAULT_MODULE     = 'index';
     // 默认控制器
     const UDI_DEFAULT_CONTROLLER = 'index';
     // 默认动作
     const UDI_DEFAULT_ACTION     = 'init';
-	
-	/**
+    
+    /**
      * UDI 的默认值
      */
     private static $_udi_defaults = array(
-        self::UDI_MODULE => self::UDI_DEFAULT_MODULE,
+        self::UDI_MODULE     => self::UDI_DEFAULT_MODULE,
         self::UDI_CONTROLLER => self::UDI_DEFAULT_CONTROLLER,
-        self::UDI_ACTION => self::UDI_DEFAULT_ACTION
+        self::UDI_ACTION     => self::UDI_DEFAULT_ACTION
     );
-	
-	/**
+    
+    /**
      * 请求包含的模块名
      *
      * 为了性能原因，$module_name 设置为了 public 成员变量。
@@ -57,8 +57,8 @@ class context implements ArrayAccess
      * @var string
      */
     public $module_name;
-	
-	/**
+    
+    /**
      * 请求包含的控制器名称
      *
      * @var string
@@ -72,14 +72,14 @@ class context implements ArrayAccess
      */
     public $action_name;
     
-	 /**
+     /**
      * 附加的参数
      *
      * @var array
      */
     private $_params = array();
-	
-	/**
+    
+    /**
      * 构造函数
      */
     private function __construct()
@@ -91,16 +91,16 @@ class context implements ArrayAccess
             $keys = array_combine($keys, $keys);
             $keys = array_change_key_case($keys);
         }
-		
-		$udi = array();
-		$udi[self::UDI_MODULE]     = (isset($keys[self::UDI_MODULE])) ? $_GET[$keys[self::UDI_MODULE]] : null;
+        
+        $udi = array();
+        $udi[self::UDI_MODULE]     = (isset($keys[self::UDI_MODULE])) ? $_GET[$keys[self::UDI_MODULE]] : null;
         $udi[self::UDI_CONTROLLER] = (isset($keys[self::UDI_CONTROLLER])) ? $_GET[$keys[self::UDI_CONTROLLER]] : null;
         $udi[self::UDI_ACTION]     = (isset($keys[self::UDI_ACTION])) ? $_GET[$keys[self::UDI_ACTION]] : null;
 
         $this->changeRequestUDI($udi);
     }
-	
-	/**
+    
+    /**
      * 返回 QContext 对象的唯一实例
      *
      * @code php
@@ -152,8 +152,8 @@ class context implements ArrayAccess
         $var = Next::config('system','cookie_pre','Next_').$var;
         return isset($_COOKIE[$var]) ? sys_auth($_COOKIE[$var], 'DECODE') : $default;
     }
-	
-	/**
+    
+    /**
      * 魔法方法，访问请求参数
      *
      * __get() 魔法方法让开发者可以用 $context->parameter 的形式访问请求参数。
@@ -223,8 +223,8 @@ class context implements ArrayAccess
     {
         unset($this->_params[$parameter]);
     }
-	
-	/**
+    
+    /**
      * 确定是否包含指定的参数，实现 ArrayAccess 接口
      *
      * @code php
@@ -244,8 +244,8 @@ class context implements ArrayAccess
         else
             return isset($this->_params[$parameter]);
     }
-	
-	/**
+    
+    /**
      * 设置附加参数，实现 ArrayAccess 接口
      *
      * 该方法功能同 __set() 魔法方法。
@@ -294,8 +294,8 @@ class context implements ArrayAccess
     {
         unset($this->_params[$parameter]);
     }
-	
-	/**
+    
+    /**
      * 魔法方法，访问请求参数
      *
      * context::query() 方法让开发者可以用 $context->parameter 的形式访问请求参数。
@@ -432,8 +432,8 @@ class context implements ArrayAccess
     {
         $this->_params[$parameter] = $value;
     }
-	
-	/**
+    
+    /**
      * 获得 context 对象的附加参数
      *
      * 如果参数不存在则返回 $default 指定的默认值。
@@ -452,16 +452,16 @@ class context implements ArrayAccess
     function param($parameter, $default = null)
     {
         if (is_null($parameter))
-		{
-			return $this->_params;
-		}
+        {
+            return $this->_params;
+        }
         else
-		{
-			return isset($this->_params[$parameter]) ? $this->_params[$parameter] : $default;
-		}
+        {
+            return isset($this->_params[$parameter]) ? $this->_params[$parameter] : $default;
+        }
     }
-	
-	/**
+    
+    /**
      * 返回所有上下文参数
      *
      *
@@ -471,8 +471,8 @@ class context implements ArrayAccess
     {
         return $this->_params;
     }
-	
-	/**
+    
+    /**
      * 返回请求使用的方法
      *
      * @return string
@@ -675,8 +675,8 @@ class context implements ArrayAccess
         }
         return $url;
     }
-	
-	/**
+    
+    /**
      * 返回规范化以后的 UDI 数组
      *
      * @code php
@@ -795,8 +795,8 @@ class context implements ArrayAccess
             return $udi;
         }
     }
-	
-	/**
+    
+    /**
      * 返回当前请求对应的 UDI
      *
      * 将当前请求中包含的模块、控制器和动作名提取出来，构造为一个 UDI。
@@ -813,8 +813,8 @@ class context implements ArrayAccess
     {
         return $this->normalizeUDI('::'.$this->action_name, $return_array);
     }
-	
-	/**
+    
+    /**
      * 将 context 对象保存的请求参数设置为 UDI 指定的值
      *
      * @code php
@@ -830,8 +830,8 @@ class context implements ArrayAccess
     function changeRequestUDI($udi)
     {
         $udi = $this->normalizeUDI($udi);
-		
-		$this->module_name     = $udi[self::UDI_MODULE];
+        
+        $this->module_name     = $udi[self::UDI_MODULE];
         $this->controller_name = $udi[self::UDI_CONTROLLER];
         $this->action_name     = $udi[self::UDI_ACTION];
         return $this;

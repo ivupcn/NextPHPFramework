@@ -1,5 +1,5 @@
 <?php defined('IN_Next') or exit('No permission resources.'); ?><div class="pageContent">
-<form action="?m=user&c=group&a=edit" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone);">
+<form action="<?php echo $this->_context->url('group::edit@user'); ?>" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, dialogAjaxDone);">
 <div class="pageFormContent" layoutH="52">
 <input type="hidden" name="info[groupid]"value="<?php echo $groupinfo['groupid']?>">
 <fieldset>

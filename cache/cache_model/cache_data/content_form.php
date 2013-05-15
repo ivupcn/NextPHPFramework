@@ -49,7 +49,7 @@ class content_form
 	}
 	function text($field, $value, $fieldinfo) {
 		extract($fieldinfo);
-		$setting = json_decode($setting,true);
+		$setting = unserialize($setting);
 		$size = $setting['size'];
 		if(!$value) $value = $defaultvalue;
 		$type = $ispassword ? 'password' : 'text';
@@ -59,7 +59,7 @@ class content_form
 	}
 	function textarea($field, $value, $fieldinfo) {
 		extract($fieldinfo);
-		$setting = json_decode($setting,true);
+		$setting = unserialize($setting);
 		extract($setting);
 		if(!$value) $value = $defaultvalue;
 		$allow_empty = 'empty:true,';
@@ -77,7 +77,7 @@ class content_form
 		$_groupid = $_SESSION['groupid'];
 		$grouplist = $grouplist[$_groupid];
 		extract($fieldinfo);
-		extract(json_decode($setting,true));
+		extract(unserialize($setting));
 		$disabled_page = isset($disabled_page) ? $disabled_page : 0;
 		if(!isset($height)) $height = 300;
 		$allowupload = defined('IN_ADMIN') ? 1 : $grouplist['allowattachment'] ? 1: 0;
@@ -155,7 +155,7 @@ class content_form
 		return $string;
 	}
 	function image($field, $value, $fieldinfo) {
-		$setting = json_decode($fieldinfo['setting'],true);
+		$setting = unserialize($fieldinfo['setting']);
 		extract($setting);
 		$html = '';
 		$authkey = upload_key("1,$upload_allowext,$isselectimage,$images_width,$images_height,$watermark");
@@ -199,7 +199,7 @@ class content_form
 		return "<input type='text' name='info[$field]' id='$field' value='$value' class='input-text' size='$size' {$formattribute} {$css}>";
 	}
 	function datetime($field, $value, $fieldinfo) {
-		extract(json_decode($fieldinfo['setting'],true));
+		extract(unserialize($fieldinfo['setting']));
 		$isdatetime = 0;
 		if($fieldtype=='int') {
 			if(!$value) $value = SYS_TIME;

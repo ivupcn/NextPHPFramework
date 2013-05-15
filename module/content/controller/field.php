@@ -31,7 +31,7 @@ class content_controller_field extends admin_class_controller
 				$field_type = $_POST['setting']['fieldtype'];
 			}
 			require Next::config('system','module_path',APP_PATH.'module'.DIRECTORY_SEPARATOR).'content'.DIRECTORY_SEPARATOR.'field'.DIRECTORY_SEPARATOR.'add.php';
-			$_POST['info']['setting'] = json_encode($_POST['setting']);
+			$_POST['info']['setting'] = serialize($_POST['setting']);
 			$_POST['info']['siteid'] = SITEID;
 			content_model_field::model()->FIELDVALUE($_POST['info'])->insert();
 			$this->_cache_field($modelid);
@@ -76,7 +76,7 @@ class content_controller_field extends admin_class_controller
 			}
 			$oldfield = $_POST['oldfield'];
 			require Next::config('system','module_path',APP_PATH.'module'.DIRECTORY_SEPARATOR).'content'.DIRECTORY_SEPARATOR.'field'.DIRECTORY_SEPARATOR.'edit.php';
-			$_POST['info']['setting'] = json_encode($_POST['setting']);
+			$_POST['info']['setting'] = serialize($_POST['setting']);
 			$fieldid = intval($_POST['fieldid']);
 			content_model_field::model()->SET($_POST['info'])->WHERE(array('fieldid'=>$fieldid,'siteid'=>SITEID))->update();
 			$this->_cache_field($modelid);
@@ -91,7 +91,7 @@ class content_controller_field extends admin_class_controller
 			$r = content_model_field::model()->WHERE(array('fieldid'=>$fieldid))->select(1);
 			extract($r);
 			require Next::config('system','module_path',APP_PATH.'module'.DIRECTORY_SEPARATOR).'content'.DIRECTORY_SEPARATOR.'field'.DIRECTORY_SEPARATOR.$formtype.DIRECTORY_SEPARATOR.'config.php';
-			$setting = json_decode($setting,true);
+			$setting = unserialize($setting);
 			ob_start();
 			include Next::config('system','module_path',APP_PATH.'module'.DIRECTORY_SEPARATOR).'content'.DIRECTORY_SEPARATOR.'field'.DIRECTORY_SEPARATOR.$formtype.DIRECTORY_SEPARATOR.'field_edit_form.php';
 			$form_data = ob_get_contents();
@@ -136,7 +136,7 @@ class content_controller_field extends admin_class_controller
 		$data_setting = ob_get_contents();
 		ob_end_clean();
 		$settings = array('field_basic_table'=>$field_basic_table,'field_minlength'=>$field_minlength,'field_maxlength'=>$field_maxlength,'field_allow_search'=>$field_allow_search,'field_allow_fulltext'=>$field_allow_fulltext,'field_allow_isunique'=>$field_allow_isunique,'setting'=>$data_setting);
-		echo json_encode($settings);
+		echo serialize($settings);
 		return true;
 	}
 
@@ -176,7 +176,7 @@ class content_controller_field extends admin_class_controller
 		$fields = arr::sortbycol($fields,'listorder');
 		foreach($fields as $_value)
 		{
-			$setting = json_decode($_value['setting'],true);
+			$setting = unserialize($_value['setting']);
 			$_value = array_merge($_value,$setting);
 			$field_array[$_value['field']] = $_value;
 		}

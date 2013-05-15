@@ -164,5 +164,29 @@ class form {
 		$str .= '<input type="text" name="'.$name.'" value="'.$value.'" class="date" dateFmt="'.$format.'" readonly="true" size="26" />';
 		return $str;
 	}
+
+	/**
+	 * 
+	 * @param string $name 表单名称
+	 * @param int $id 表单id
+	 * @param string $value 表单默认值
+	 * @param string $moudle 模块名称
+	 * @param int $catid 栏目id
+	 * @param int $size 表单大小
+	 * @param string $class 表单风格
+	 * @param string $ext 表单扩展属性 如果 js事件等
+	 * @param string $alowexts 允许图片格式
+	 * @param array $thumb_setting 
+	 * @param int $watermark_setting  0或1
+	 */
+	public static function images($name, $id = '', $value = '', $moudle='', $catid='', $size = 50, $class = '', $ext = '', $alowexts = '',$thumb_setting = array(),$watermark_setting = 0 ) {
+		if(!$id) $id = $name;
+		if(!$size) $size= 50;
+		if(!empty($thumb_setting) && count($thumb_setting)) $thumb_ext = $thumb_setting[0].','.$thumb_setting[1];
+		else $thumb_ext = ',';
+		if(!$alowexts) $alowexts = 'jpg|jpeg|gif|bmp|png';
+		$authkey = upload_key("1,$alowexts,1,$thumb_ext,$watermark_setting");
+		return "<input type=\"text\" name=\"$name\" id=\"$id\" value=\"$value\" size=\"$size\" class=\"$class\" $ext/><a class=\"button\" onclick=\"javascript:flashupload('{$id}_images', '上传附件','{$id}',submit_images,'1,{$alowexts},1,{$thumb_ext},{$watermark_setting}','{$moudle}','{$catid}','{$authkey}')\"><span>上传附件</span></a>";
+	}
 }
 ?>

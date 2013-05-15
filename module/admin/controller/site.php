@@ -16,11 +16,11 @@ class admin_controller_site extends admin_class_controller
 			{
 				if($k == 'setting')
 				{
-					$infos['setting'] = trim(array2string($_POST['info'][$k]));
+					$infos['setting'] = trim(serialize($_POST['info'][$k]));
 				}
 				elseif($k == 'route')
 				{
-					$infos['route'] = trim(array2string($_POST['info'][$k]));
+					$infos['route'] = trim(serialize($_POST['info'][$k]));
 				}
 				else
 				{
@@ -57,17 +57,18 @@ class admin_controller_site extends admin_class_controller
 			{
 				if($k == 'setting')
 				{
-					$info['setting'] = trim(array2string($_POST['info'][$k]));
+					$info['setting'] = trim(serialize($_POST['info'][$k]));
 				}
 				elseif($k == 'route')
 				{
-					$info['route'] = trim(array2string($_POST['info'][$k]));
+					$info['route'] = trim(serialize($_POST['info'][$k]));
 				}
 				else
 				{
 					$info[$k] = trim($v);
 				}
 			}
+			$data = admin_model_site::model()->WHERE(array('siteid'=>$siteid))->select(1);
 			if($data['name'] != $info['name'] && admin_model_site::model()->FIELD('siteid')->WHERE(array('name'=>$info['name']))->select(1))
 			{
 				$this->_app->showmessage('300','站点名称已经存在');
@@ -80,7 +81,7 @@ class admin_controller_site extends admin_class_controller
 				}
 			}
 			if($siteid == 1) unset($info['dirname']);
-			if(admin_model_site::model()->SET($info)->WHERE(array('siteid'=>$siteid)))
+			if(admin_model_site::model()->SET($info)->WHERE(array('siteid'=>$siteid))->update())
 			{
 				$class_site = new admin_class_sites();
 				$class_site->set_cache();
@@ -96,8 +97,8 @@ class admin_controller_site extends admin_class_controller
 			$siteid = isset($_GET['siteid']) && intval($_GET['siteid']) ? intval($_GET['siteid']) : $this->_app->showmessage('300','非法参数！');
 			$data = admin_model_site::model()->WHERE(array('siteid'=>$siteid))->select(1);
 			$view_list = $this->viewlist($siteid);
-			$setting = string2array($data['setting']);
-			$route = string2array($data['route']);
+			$setting = unserialize($data['setting']);
+			$route = unserialize($data['route']);
 			$swf_auth_key = md5(Next::config('system','auth_key','29HTvKg84Veg8VtDdKbs').SYS_TIME);
 			include $this->view('admin','site','edit');
 		}
@@ -114,7 +115,7 @@ class admin_controller_site extends admin_class_controller
 				{
 					if($k == 'setting')
 					{
-						$info['setting'] = trim(array2string($_POST['info'][$k]));
+						$info['setting'] = trim(serialize($_POST['info'][$k]));
 					}
 					else
 					{
@@ -135,7 +136,7 @@ class admin_controller_site extends admin_class_controller
 			else
 			{
 				$view_list = $this->viewlist(SITEID);
-				$setting = string2array($data['setting']);
+				$setting = unserialize($data['setting']);
 				include $this->view('admin','site','config');
 			}
 		}
@@ -190,8 +191,8 @@ class admin_controller_site extends admin_class_controller
         if($siteid == '') $this->_app->showmessage('300','参数错误');
         $site = new admin_class_sites();
         $siteinfo = $site->get_siteinfo($siteid);
-        $site_root = Next::config('system','site_root',APP_PATH.'siteroot');
-        $list = glob($site_root.DIRECTORY_SEPARATOR.$siteinfo['dirname'].DIRECTORY_SEPARATOR.'view'.DIRECTORY_SEPARATOR.'*', GLOB_ONLYDIR);
+        $site_root = Next::config('system','site_root',APP_PATH.'siteroot'.DIRECTORY_SEPARATOR);
+        $list = glob($site_root.$siteinfo['dirname'].DIRECTORY_SEPARATOR.'view'.DIRECTORY_SEPARATOR.'*', GLOB_ONLYDIR);
         $arr = $template = array();
         if($list)
         {

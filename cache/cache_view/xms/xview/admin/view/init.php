@@ -1,1 +1,0 @@
-<?php defined('IN_Next') or exit('No permission resources.'); ?>

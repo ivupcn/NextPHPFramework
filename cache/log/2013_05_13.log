@@ -548,3 +548,24 @@
     REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
     REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
 --- SHUTDOWN TIME --- 1368454220.2136 (0.13728499412537)sec
+--- STARTUP TIME --- 1368455023.1191
+    SESSION_ID：5hbpu7f64lru7vq56rfmsl1uv0
+    REQUEST MCA：category::init@content
+--- SHUTDOWN TIME --- 1368455023.1406 (0.021527051925659)sec
+--- STARTUP TIME --- 1368455023.6831
+    SESSION_ID：5hbpu7f64lru7vq56rfmsl1uv0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' 
+--- SHUTDOWN TIME --- 1368455023.7857 (0.10259699821472)sec
+--- STARTUP TIME --- 1368455025.0959
+    SESSION_ID：5hbpu7f64lru7vq56rfmsl1uv0
+    REQUEST MCA：field::init@content
+    REQUEST SQL：SELECT * FROM x_model_field WHERE modelid = '0' AND siteid = '1' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_model_field WHERE modelid = 64 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368455025.1636 (0.067754983901978)sec
+--- STARTUP TIME --- 1368455026.1479
+    SESSION_ID：5hbpu7f64lru7vq56rfmsl1uv0
+    REQUEST MCA：field::priview@content
+--- SHUTDOWN TIME --- 1368455026.1914 (0.043519973754883)sec

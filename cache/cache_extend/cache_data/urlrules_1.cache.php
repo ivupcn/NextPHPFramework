@@ -1,12 +1,1 @@
-<?php
-return array (
-  1 => '{$categorydir}{$catdir}/index.html|{$categorydir}{$catdir}/{$page}.html',
-  6 => 'index.php?m=content&c=index&a=lists&catid={$catid}|index.php?m=content&c=index&a=lists&catid={$catid}&page={$page}',
-  11 => '{$year}/{$catdir}_{$month}{$day}/{$id}.html|{$year}/{$catdir}_{$month}{$day}/{$id}_{$page}.html',
-  12 => '{$categorydir}{$catdir}/{$year}/{$month}{$day}/{$id}.html|{$categorydir}{$catdir}/{$year}/{$month}{$day}/{$id}_{$page}.html',
-  16 => 'index.php?m=content&c=index&a=show&catid={$catid}&id={$id}|index.php?m=content&c=index&a=show&catid={$catid}&id={$id}&page={$page}',
-  17 => 'show-{$catid}-{$id}-{$page}.html',
-  18 => 'content-{$catid}-{$id}-{$page}.html',
-  30 => 'list-{$catid}-{$page}.html',
-);
-?>
+a:8:{i:1;s:71:"{$categorydir}{$catdir}/index.html|{$categorydir}{$catdir}/{$page}.html";i:6;s:114:"index.php?m=content&c=index&a=lists&catid={$catid}|index.php?m=content&c=index&a=lists&catid={$catid}&page={$page}";i:11;s:95:"{$year}/{$catdir}_{$month}{$day}/{$id}.html|{$year}/{$catdir}_{$month}{$day}/{$id}_{$page}.html";i:12;s:123:"{$categorydir}{$catdir}/{$year}/{$month}{$day}/{$id}.html|{$categorydir}{$catdir}/{$year}/{$month}{$day}/{$id}_{$page}.html";i:16;s:130:"index.php?m=content&c=index&a=show&catid={$catid}&id={$id}|index.php?m=content&c=index&a=show&catid={$catid}&id={$id}&page={$page}";i:17;s:32:"show-{$catid}-{$id}-{$page}.html";i:18;s:35:"content-{$catid}-{$id}-{$page}.html";i:30;s:26:"list-{$catid}-{$page}.html";}

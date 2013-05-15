@@ -1,6 +1,6 @@
 	function text($field, $value, $fieldinfo) {
 		extract($fieldinfo);
-		$setting = json_decode($setting,true);
+		$setting = unserialize($setting);
 		$size = $setting['size'];
 		if(!$value) $value = $defaultvalue;
 		$type = $ispassword ? 'password' : 'text';

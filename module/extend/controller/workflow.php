@@ -20,7 +20,7 @@ class extend_controller_workflow extends admin_class_controller
 			$setting[4] = isset($_POST['checkadmin4']) ? $_POST['checkadmin4'] : null;
 			$setting[5] = isset($_POST['checkadmin5']) ? $_POST['checkadmin5'] : null;
 			$setting['nocheck_users'] = isset($_POST['nocheck_users']) ? $_POST['nocheck_users'] : null;
-			$setting = array2string($setting);
+			$setting = serialize($setting);
 			$_POST['info']['setting'] = $setting;
 			$insert_id = extend_model_workflow::model()->FIELDVALUE($_POST['info'])->insert();
 			if($insert_id)
@@ -57,7 +57,7 @@ class extend_controller_workflow extends admin_class_controller
 			$setting[4] = isset($_POST['checkadmin4']) ? $_POST['checkadmin4'] : null;
 			$setting[5] = isset($_POST['checkadmin5']) ? $_POST['checkadmin5'] : null;
 			$setting['nocheck_users'] = isset($_POST['nocheck_users']) ? $_POST['nocheck_users'] : null;
-			$setting = array2string($setting);
+			$setting = serialize($setting);
 			$_POST['info']['setting'] = $setting;
 			extend_model_workflow::model()->SET($_POST['info'])->WHERE(array('workflowid'=>$workflowid))->update();
 			$this->_app->showmessage('200','操作成功！',$this->_context->url('workflow::init@extend'),'closeCurrent','extend_workflow_init');
@@ -74,7 +74,7 @@ class extend_controller_workflow extends admin_class_controller
 			}
 			$r = extend_model_workflow::model()->WHERE(array('workflowid'=>$workflowid))->select(1);
 			extract($r);
-			$setting = string2array($setting);
+			$setting = unserialize($setting);
 			$checkadmin1 = $this->_implode_ids($setting[1]);
 			$checkadmin2 = $this->_implode_ids($setting[2]);
 			$checkadmin3 = $this->_implode_ids($setting[3]);
@@ -97,7 +97,7 @@ class extend_controller_workflow extends admin_class_controller
 			}
 			$r = extend_model_workflow::model()->WHERE(array('workflowid'=>$workflowid))->select(1);
 			extract($r);
-			$setting = string2array($setting);
+			$setting = unserialize($setting);
 
 			$checkadmin1 = $this->_implode_ids($setting[1],true,'、');
 			$checkadmin2 = $this->_implode_ids($setting[2],true,'、');

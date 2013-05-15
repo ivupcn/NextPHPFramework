@@ -139,7 +139,7 @@
   </table>
 </fieldset>
 </div>
-<input type="hidden" name="id" value="{$siteid}" />
+<input type="hidden" name="siteid" value="{$siteid}" />
 <div class="formBar">
     <ul>
       <li><div class="buttonActive"><div class="buttonContent"><button type="submit">保存</button></div></div></li>

@@ -1,5 +1,5 @@
 	function image($field, $value, $fieldinfo) {
-		$setting = json_decode($fieldinfo['setting'],true);
+		$setting = unserialize($fieldinfo['setting']);
 		extract($setting);
 		$html = '';
 		$authkey = upload_key("1,$upload_allowext,$isselectimage,$images_width,$images_height,$watermark");
