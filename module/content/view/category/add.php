@@ -7,6 +7,7 @@
 					<tr>
 						<th width="110">上级栏目：</th>
 						<td>
+							<input type="hidden" name="info[type]" value="{$type}" />
 							<?php echo form::select_category('category_content_'.SITEID,$parentid,'name="info[parentid]"','≡ 作为一级栏目 ≡',0,-1);?>
 						</td>
 					</tr>
@@ -30,9 +31,9 @@
 							<table>
 								{nloop $models $model}
 								<tr>
-									<td><input type="checkbox" name="info[model][{$n}][enable]" value="1" checked /></td>
-									<td><input type="hidden" name="info[model][{$n}][modelid]" value="{$model['modelid']}" /><input type="hidden" name="info[model][{$n}][name]" value="{$model['name']}" />{$model['name']}</td>
-									<td><input type="text" name="info[model][{$n}][view]" value="{$model['show_view']}" size="40" /></td>
+									<td><input type="checkbox" name="model[{$n}][enable]" value="1" checked /></td>
+									<td><input type="hidden" name="model[{$n}][modelid]" value="{$model['modelid']}" /><input type="hidden" name="model[{$n}][name]" value="{$model['name']}" />{$model['name']}</td>
+									<td><input type="text" name="model[{$n}][view]" value="{$model['show_view']}" size="40" /></td>
 								</tr>
 								{/nloop}
 							</table>

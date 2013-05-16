@@ -1,6 +1,6 @@
 	function typeid($field, $value, $fieldinfo) {
 		extract($fieldinfo);
-		$setting = json_decode($setting,true);
+		$setting = unserialize($setting);
 		if(!$value) $value = $setting['defaultvalue'];
 		if($errortips) {
 			$errortips = $this->fields[$field]['errortips'];

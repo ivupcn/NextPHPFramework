@@ -205,3 +205,1007 @@
     REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
     REQUEST SQL：SELECT * FROM x_model WHERE type = '0' AND siteid = '1' 
 --- SHUTDOWN TIME --- 1368634249.9113 (0.10886907577515)sec
+--- STARTUP TIME --- 1368634513.6149
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：category::init@content
+--- SHUTDOWN TIME --- 1368634513.639 (0.024038076400757)sec
+--- STARTUP TIME --- 1368634515.1392
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368634515.1668 (0.027606010437012)sec
+--- STARTUP TIME --- 1368634880.3579
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' AND siteid = '1' 
+--- SHUTDOWN TIME --- 1368634880.4611 (0.10320806503296)sec
+--- STARTUP TIME --- 1368634887.1647
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' AND siteid = '1' 
+--- SHUTDOWN TIME --- 1368634887.2702 (0.10557079315186)sec
+--- STARTUP TIME --- 1368634890.4884
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：field::init@content
+    REQUEST SQL：SELECT * FROM x_model_field WHERE modelid = '0' AND siteid = '1' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_model_field WHERE modelid = 68 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368634890.5394 (0.050993919372559)sec
+--- STARTUP TIME --- 1368634916.1845
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：field::priview@content
+--- STARTUP TIME --- 1368634947.2713
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' AND siteid = '1' 
+--- SHUTDOWN TIME --- 1368634947.3522 (0.080873012542725)sec
+--- STARTUP TIME --- 1368634949.3178
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：field::priview@content
+--- SHUTDOWN TIME --- 1368634949.3468 (0.028981924057007)sec
+--- STARTUP TIME --- 1368634987.5202
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：category::init@content
+--- SHUTDOWN TIME --- 1368634987.5465 (0.026276111602783)sec
+--- STARTUP TIME --- 1368634989.0167
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368634989.0433 (0.026675939559937)sec
+--- STARTUP TIME --- 1368634998.7975
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：category::init@content
+--- SHUTDOWN TIME --- 1368634998.8211 (0.023620843887329)sec
+--- STARTUP TIME --- 1368635000.7424
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368635000.77 (0.02752685546875)sec
+--- STARTUP TIME --- 1368635112.9088
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368635112.963 (0.054204940795898)sec
+--- STARTUP TIME --- 1368635118.1813
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368635118.2184 (0.037096977233887)sec
+--- STARTUP TIME --- 1368635120.2905
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：category::init@content
+--- SHUTDOWN TIME --- 1368635120.3132 (0.022704124450684)sec
+--- STARTUP TIME --- 1368635121.5535
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' AND siteid = '1' 
+--- SHUTDOWN TIME --- 1368635121.6601 (0.1065239906311)sec
+--- STARTUP TIME --- 1368635125.4654
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：field::init@content
+    REQUEST SQL：SELECT * FROM x_model_field WHERE modelid = '0' AND siteid = '1' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_model_field WHERE modelid = 68 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368635125.5105 (0.045135021209717)sec
+--- STARTUP TIME --- 1368635127.6043
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：field::priview@content
+--- SHUTDOWN TIME --- 1368635127.6345 (0.030234098434448)sec
+--- STARTUP TIME --- 1368635133.9349
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：category::init@content
+--- SHUTDOWN TIME --- 1368635133.9574 (0.022517919540405)sec
+--- STARTUP TIME --- 1368635135.0283
+    SESSION_ID：0bucersjn3sh6gp4h4hn3lm190
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' AND siteid = '1' 
+--- SHUTDOWN TIME --- 1368635135.1119 (0.083616018295288)sec
+--- STARTUP TIME --- 1368703115.2019
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1368703116.024 (0.82205295562744)sec
+--- STARTUP TIME --- 1368703129.5085
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM x_times WHERE email = 'ivup@ivup.cn' AND isadmin = 1 
+    REQUEST SQL：SELECT * FROM x_user WHERE email = 'ivup@ivup.cn' 
+    REQUEST SQL：UPDATE x_user SET lastloginip='127.0.0.1',lastlogintime=1368703129 WHERE userid = '1'
+--- SHUTDOWN TIME --- 1368703129.7886 (0.28013896942139)sec
+--- STARTUP TIME --- 1368703130.1112
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368703130.4278 (0.31658005714417)sec
+--- STARTUP TIME --- 1368703133.5455
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368703133.6021 (0.056674957275391)sec
+--- STARTUP TIME --- 1368703134.9678
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368703135.0011 (0.033315896987915)sec
+--- STARTUP TIME --- 1368703135.8824
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+--- SHUTDOWN TIME --- 1368703135.9882 (0.10572910308838)sec
+--- STARTUP TIME --- 1368703186.7053
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368703186.7567 (0.051388025283813)sec
+--- STARTUP TIME --- 1368703553.0523
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+--- SHUTDOWN TIME --- 1368703553.0759 (0.02359414100647)sec
+--- STARTUP TIME --- 1368703944.1375
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    8 | Undefined index:  parentid     | D:\ESSamp\wwwroot\NextPHPFramework\module\content\controller\category.php | 20
+--- SHUTDOWN TIME --- 1368703944.168 (0.030551195144653)sec
+--- STARTUP TIME --- 1368703961.6213
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+--- SHUTDOWN TIME --- 1368703961.6495 (0.028274059295654)sec
+--- STARTUP TIME --- 1368704024.0564
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+--- SHUTDOWN TIME --- 1368704024.0772 (0.020891189575195)sec
+--- STARTUP TIME --- 1368704025.9469
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+--- SHUTDOWN TIME --- 1368704025.9698 (0.022921085357666)sec
+--- STARTUP TIME --- 1368704044.6902
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+--- SHUTDOWN TIME --- 1368704044.7113 (0.021024942398071)sec
+--- STARTUP TIME --- 1368704079.8753
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+--- SHUTDOWN TIME --- 1368704079.9257 (0.050395011901855)sec
+--- STARTUP TIME --- 1368704103.9189
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' AND siteid = '1' 
+--- SHUTDOWN TIME --- 1368704104.0387 (0.11978006362915)sec
+--- STARTUP TIME --- 1368704104.5522
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+--- SHUTDOWN TIME --- 1368704104.5759 (0.023624181747437)sec
+--- STARTUP TIME --- 1368704286.2749
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+--- SHUTDOWN TIME --- 1368704286.3065 (0.031628847122192)sec
+--- STARTUP TIME --- 1368704441.1458
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category 
+    8 | Undefined index:  catid        | D:\ESSamp\wwwroot\NextPHPFramework\module\content\controller\category.php | 34
+--- SHUTDOWN TIME --- 1368704441.1809 (0.035114049911499)sec
+--- STARTUP TIME --- 1368704470.746
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category 
+--- STARTUP TIME --- 1368704583.713
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category 
+--- STARTUP TIME --- 1368704654.2638
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category 
+    8 | Undefined property: content_controller_category::$siteid | D:\ESSamp\wwwroot\NextPHPFramework\module\content\controller\category.php | 56
+--- SHUTDOWN TIME --- 1368704654.2983 (0.034548044204712)sec
+--- STARTUP TIME --- 1368704675.7788
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category 
+--- STARTUP TIME --- 1368704691.6666
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category 
+    8 | Undefined index:  sethtml      | D:\ESSamp\wwwroot\NextPHPFramework\module\content\controller\category.php | 48
+--- SHUTDOWN TIME --- 1368704691.7016 (0.034974098205566)sec
+--- STARTUP TIME --- 1368704756.0106
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category 
+    8 | Undefined property: content_controller_category::$siteid | D:\ESSamp\wwwroot\NextPHPFramework\module\content\controller\category.php | 49
+--- SHUTDOWN TIME --- 1368704756.0403 (0.029688119888306)sec
+--- STARTUP TIME --- 1368704767.3705
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category 
+    8 | Undefined index:  modelid      | D:\ESSamp\wwwroot\NextPHPFramework\module\content\controller\category.php | 42
+--- SHUTDOWN TIME --- 1368704767.4099 (0.039376974105835)sec
+--- STARTUP TIME --- 1368704810.3215
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category 
+--- STARTUP TIME --- 1368704833.4292
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category 
+--- SHUTDOWN TIME --- 1368704833.463 (0.033720016479492)sec
+--- STARTUP TIME --- 1368704938.6423
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category 
+--- SHUTDOWN TIME --- 1368704938.677 (0.034725904464722)sec
+--- STARTUP TIME --- 1368704965.7619
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category 
+--- SHUTDOWN TIME --- 1368704965.796 (0.034091949462891)sec
+--- STARTUP TIME --- 1368705017.9191
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category 
+--- SHUTDOWN TIME --- 1368705017.9478 (0.028718948364258)sec
+--- STARTUP TIME --- 1368705088.3435
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category 
+--- SHUTDOWN TIME --- 1368705088.3786 (0.035092115402222)sec
+--- STARTUP TIME --- 1368705377.5334
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category 
+--- SHUTDOWN TIME --- 1368705377.5689 (0.035501956939697)sec
+--- STARTUP TIME --- 1368705458.3513
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368705458.3854 (0.034138917922974)sec
+--- STARTUP TIME --- 1368705461.1112
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368705461.1437 (0.032560110092163)sec
+--- STARTUP TIME --- 1368705461.8313
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368705461.8647 (0.033420085906982)sec
+--- STARTUP TIME --- 1368705539.8529
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368705539.8889 (0.035980939865112)sec
+--- STARTUP TIME --- 1368705578.2488
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368705578.2794 (0.030596017837524)sec
+--- STARTUP TIME --- 1368705634.7863
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368705634.8167 (0.030426979064941)sec
+--- STARTUP TIME --- 1368705961.2885
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368705961.3246 (0.036139965057373)sec
+--- STARTUP TIME --- 1368706062.6594
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368706062.6955 (0.036102056503296)sec
+--- STARTUP TIME --- 1368706106.5547
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368706106.5893 (0.034645080566406)sec
+--- STARTUP TIME --- 1368706107.2544
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368706107.2875 (0.033106088638306)sec
+--- STARTUP TIME --- 1368706133.9166
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368706133.9489 (0.032317876815796)sec
+--- STARTUP TIME --- 1368706142.8941
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368706142.9295 (0.035392999649048)sec
+--- STARTUP TIME --- 1368706143.6826
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368706143.7155 (0.032887935638428)sec
+--- STARTUP TIME --- 1368706152.7719
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368706152.802 (0.030179023742676)sec
+--- STARTUP TIME --- 1368706165.2977
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368706165.332 (0.034314870834351)sec
+--- STARTUP TIME --- 1368706263.4191
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368706263.4551 (0.036005973815918)sec
+--- STARTUP TIME --- 1368706313.1738
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368706313.2144 (0.040546894073486)sec
+--- STARTUP TIME --- 1368706327.5374
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368706327.5795 (0.042089939117432)sec
+--- STARTUP TIME --- 1368706337.037
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368706337.0748 (0.037749052047729)sec
+--- STARTUP TIME --- 1368706409.3447
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368706409.3765 (0.031831026077271)sec
+--- STARTUP TIME --- 1368706412.1889
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368706412.2296 (0.040714025497437)sec
+--- STARTUP TIME --- 1368706465.4347
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368706465.4699 (0.035260915756226)sec
+--- STARTUP TIME --- 1368706476.2766
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368706476.3174 (0.040759086608887)sec
+--- STARTUP TIME --- 1368706575.3809
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::cache@content
+    [action_cache]Action does not exist.
+--- SHUTDOWN TIME --- 1368706575.3994 (0.018507957458496)sec
+--- STARTUP TIME --- 1368706577.3637
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368706577.4073 (0.043613910675049)sec
+--- STARTUP TIME --- 1368706578.8833
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368706578.917 (0.033627033233643)sec
+--- STARTUP TIME --- 1368706579.7212
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368706579.7682 (0.04703688621521)sec
+--- STARTUP TIME --- 1368713132.8352
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368713133.1863 (0.35105991363525)sec
+--- STARTUP TIME --- 1368713192.5898
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368713192.6416 (0.051867961883545)sec
+--- STARTUP TIME --- 1368713193.4721
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368713193.5092 (0.037130117416382)sec
+--- STARTUP TIME --- 1368713194.7688
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368713194.8053 (0.036484003067017)sec
+--- STARTUP TIME --- 1368713196.2761
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' AND siteid = '1' 
+--- SHUTDOWN TIME --- 1368713196.3823 (0.10620307922363)sec
+--- STARTUP TIME --- 1368713197.0126
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1368713197.0465 (0.033888101577759)sec
+--- STARTUP TIME --- 1368713222.7503
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368713222.7732 (0.022982835769653)sec
+--- STARTUP TIME --- 1368713332.7525
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368713332.7769 (0.024384021759033)sec
+--- STARTUP TIME --- 1368714039.3826
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368714039.4086 (0.025926113128662)sec
+--- STARTUP TIME --- 1368714287.1934
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368714287.236 (0.042671918869019)sec
+--- STARTUP TIME --- 1368714313.2411
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368714313.2809 (0.039774894714355)sec
+--- STARTUP TIME --- 1368714339.024
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368714339.0636 (0.039618968963623)sec
+--- STARTUP TIME --- 1368714602.9307
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- STARTUP TIME --- 1368714696.5988
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' 
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368714696.6491 (0.050307035446167)sec
+--- STARTUP TIME --- 1368714722.0455
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368714722.0901 (0.044580221176147)sec
+--- STARTUP TIME --- 1368714726.7294
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368714726.7801 (0.050638914108276)sec
+--- STARTUP TIME --- 1368714768.0407
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368714768.0628 (0.022086143493652)sec
+--- STARTUP TIME --- 1368714922.4895
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368714922.5346 (0.045078039169312)sec
+--- STARTUP TIME --- 1368714924.3139
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    8 | Undefined index:  id           | D:\ESSamp\wwwroot\NextPHPFramework\framework\class\form.php | 118
+--- SHUTDOWN TIME --- 1368714924.3447 (0.030725002288818)sec
+--- STARTUP TIME --- 1368715386.5051
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    8 | Undefined variable: categorys  | D:\ESSamp\wwwroot\NextPHPFramework\framework\class\form.php | 131
+--- SHUTDOWN TIME --- 1368715386.5328 (0.027660131454468)sec
+--- STARTUP TIME --- 1368715433.7679
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368715433.7963 (0.028357982635498)sec
+--- STARTUP TIME --- 1368715457.1781
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368715457.219 (0.040860891342163)sec
+--- STARTUP TIME --- 1368715488.5384
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368715488.5625 (0.024152040481567)sec
+--- STARTUP TIME --- 1368715508.4078
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368715508.4421 (0.034275054931641)sec
+--- STARTUP TIME --- 1368715515.2379
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368715515.2595 (0.021615982055664)sec
+--- STARTUP TIME --- 1368715546.589
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    8 | Undefined index:  type         | D:\ESSamp\wwwroot\NextPHPFramework\module\content\controller\category.php | 82
+--- SHUTDOWN TIME --- 1368715546.6128 (0.023813009262085)sec
+--- STARTUP TIME --- 1368715563.1925
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368715563.2418 (0.049275875091553)sec
+--- STARTUP TIME --- 1368715564.8111
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368715564.8444 (0.033255100250244)sec
+--- STARTUP TIME --- 1368715565.8572
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368715565.908 (0.050824880599976)sec
+--- STARTUP TIME --- 1368715699.3679
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368715699.4045 (0.036622047424316)sec
+--- STARTUP TIME --- 1368715701.181
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368715701.2092 (0.028151988983154)sec
+--- STARTUP TIME --- 1368715717.5644
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368715717.5979 (0.033493995666504)sec
+--- STARTUP TIME --- 1368715724.0814
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- STARTUP TIME --- 1368715767.2859
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    8 | Undefined index:  parentid     | D:\ESSamp\wwwroot\NextPHPFramework\module\content\controller\category.php | 193
+--- SHUTDOWN TIME --- 1368715767.3121 (0.026237010955811)sec
+--- STARTUP TIME --- 1368715928.7241
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368715928.7775 (0.053375005722046)sec
+--- STARTUP TIME --- 1368715931.752
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368715931.793 (0.040992975234985)sec
+--- STARTUP TIME --- 1368715932.4253
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368715932.4715 (0.046167135238647)sec
+--- STARTUP TIME --- 1368715933.4895
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368715933.5143 (0.024772167205811)sec
+--- STARTUP TIME --- 1368715936.5856
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    8 | Undefined index:  parentid     | D:\ESSamp\wwwroot\NextPHPFramework\module\content\controller\category.php | 195
+--- SHUTDOWN TIME --- 1368715936.6124 (0.026818990707397)sec
+--- STARTUP TIME --- 1368715961.4625
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368715961.5117 (0.049133062362671)sec
+--- STARTUP TIME --- 1368715963.9472
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368715963.9815 (0.034311056137085)sec
+--- STARTUP TIME --- 1368715964.7329
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' AND siteid = '1' 
+--- SHUTDOWN TIME --- 1368715964.8401 (0.10720419883728)sec
+--- STARTUP TIME --- 1368715971.5125
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368715971.5668 (0.054277896881104)sec
+--- STARTUP TIME --- 1368715977.2891
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368715977.3169 (0.027818918228149)sec
+--- STARTUP TIME --- 1368715979.1757
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368715979.2038 (0.028094053268433)sec
+--- STARTUP TIME --- 1368716230.2916
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368716230.3177 (0.026099920272827)sec
+--- STARTUP TIME --- 1368716234.8931
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- STARTUP TIME --- 1368716248.7746
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'sdfghj' AND parentid = '0' 
+    8 | Array to string conversion     | D:\ESSamp\wwwroot\NextPHPFramework\framework\class\db.php | 819
+--- SHUTDOWN TIME --- 1368716248.8112 (0.036602973937988)sec
+--- STARTUP TIME --- 1368716447.376
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368716447.4267 (0.05066990852356)sec
+--- STARTUP TIME --- 1368716448.8688
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368716448.9048 (0.036051034927368)sec
+--- STARTUP TIME --- 1368716451.1134
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368716451.1675 (0.054133176803589)sec
+--- STARTUP TIME --- 1368716452.4167
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368716452.4421 (0.025367021560669)sec
+--- STARTUP TIME --- 1368716455.1088
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'dsfg' AND parentid = '0' 
+    8 | Array to string conversion     | D:\ESSamp\wwwroot\NextPHPFramework\framework\class\db.php | 819
+--- SHUTDOWN TIME --- 1368716455.1419 (0.033150911331177)sec
+--- STARTUP TIME --- 1368716527.375
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'dsfg' AND parentid = '0' 
+    8 | Array to string conversion     | D:\ESSamp\wwwroot\NextPHPFramework\framework\class\db.php | 819
+--- SHUTDOWN TIME --- 1368716527.4062 (0.031230926513672)sec
+--- STARTUP TIME --- 1368716542.1412
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'dsfg' AND parentid = '0' 
+    8 | Array to string conversion     | D:\ESSamp\wwwroot\NextPHPFramework\framework\class\db.php | 819
+--- SHUTDOWN TIME --- 1368716542.1789 (0.037699937820435)sec
+--- STARTUP TIME --- 1368716619.392
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368716619.4393 (0.047296047210693)sec
+--- STARTUP TIME --- 1368716622.3913
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368716622.4277 (0.036375045776367)sec
+--- STARTUP TIME --- 1368716623.4164
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' AND siteid = '1' 
+--- SHUTDOWN TIME --- 1368716623.5218 (0.10533905029297)sec
+--- STARTUP TIME --- 1368716625.079
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' AND siteid = '1' 
+--- SHUTDOWN TIME --- 1368716625.1689 (0.089890003204346)sec
+--- STARTUP TIME --- 1368716625.434
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368716625.4838 (0.049797058105469)sec
+--- STARTUP TIME --- 1368716626.5631
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368716626.5906 (0.027508020401001)sec
+--- STARTUP TIME --- 1368716629.4477
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'sdfgh' AND parentid = '0' 
+    8 | Array to string conversion     | D:\ESSamp\wwwroot\NextPHPFramework\framework\class\db.php | 820
+--- SHUTDOWN TIME --- 1368716629.4818 (0.034134149551392)sec
+--- STARTUP TIME --- 1368716701.6484
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'sdfgh' AND parentid = '0' 
+    8 | Array to string conversion     | D:\ESSamp\wwwroot\NextPHPFramework\framework\class\db.php | 820
+--- SHUTDOWN TIME --- 1368716701.6793 (0.03087592124939)sec
+--- STARTUP TIME --- 1368716720.1111
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'sdfgh' AND parentid = '0' 
+    8 | Array to string conversion     | D:\ESSamp\wwwroot\NextPHPFramework\framework\class\db.php | 819
+--- SHUTDOWN TIME --- 1368716720.1484 (0.037293910980225)sec
+--- STARTUP TIME --- 1368716758.1459
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368716758.1921 (0.046186923980713)sec
+--- STARTUP TIME --- 1368716759.0903
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368716759.1273 (0.03708291053772)sec
+--- STARTUP TIME --- 1368716760.0452
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368716760.0906 (0.045455932617188)sec
+--- STARTUP TIME --- 1368716760.5198
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' AND siteid = '1' 
+--- SHUTDOWN TIME --- 1368716760.6286 (0.10879898071289)sec
+--- STARTUP TIME --- 1368716761.6235
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368716761.6694 (0.045912981033325)sec
+--- STARTUP TIME --- 1368716764.2271
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368716764.2525 (0.025336980819702)sec
+--- STARTUP TIME --- 1368716766.7878
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'sdfghj' AND parentid = '0' 
+    8 | Array to string conversion     | D:\ESSamp\wwwroot\NextPHPFramework\framework\class\db.php | 820
+--- SHUTDOWN TIME --- 1368716766.825 (0.037193059921265)sec
+--- STARTUP TIME --- 1368716953.6768
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368716953.7279 (0.051135063171387)sec
+--- STARTUP TIME --- 1368716955.5521
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368716955.5889 (0.036747932434082)sec
+--- STARTUP TIME --- 1368716956.3375
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' AND siteid = '1' 
+--- SHUTDOWN TIME --- 1368716956.4376 (0.10008120536804)sec
+--- STARTUP TIME --- 1368716958.0358
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368716958.0885 (0.052722930908203)sec
+--- STARTUP TIME --- 1368716958.9412
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368716958.9685 (0.027302026748657)sec
+--- STARTUP TIME --- 1368716961.8729
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'erty' AND parentid = '0' 
+    8 | Array to string conversion     | D:\ESSamp\wwwroot\NextPHPFramework\framework\class\db.php | 819
+--- SHUTDOWN TIME --- 1368716961.9093 (0.036386013031006)sec
+--- STARTUP TIME --- 1368717085.0532
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368717085.0721 (0.01885199546814)sec
+--- STARTUP TIME --- 1368717094.6706
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368717094.7067 (0.036133050918579)sec
+--- STARTUP TIME --- 1368717097.7934
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'retyu' AND parentid = '0' 
+    REQUEST SQL：INSERT INTO x_category (type,parentid,catname,catdir,image,ismenu,description,siteid,module,model,setting) VALUES ('0','0','edrftghyj','retyu','','1','','1','content','a:1:{i:1;a:4:{s:6:\"enable\";s:1:\"1\";s:7:\"modelid\";s:2:\"68\";s:4:\"name\";s:6:\"测试\";s:4:\"view\";s:0:\"\";}}','a:8:{s:10:\"workflowid\";s:0:\"\";s:6:\"ishtml\";s:1:\"0\";s:14:\"content_ishtml\";s:1:\"0\";s:13:\"category_view\";s:0:\"\";s:9:\"list_view\";s:0:\"\";s:10:\"meta_title\";s:0:\"\";s:13:\"meta_keywords\";s:0:\"\";s:16:\"meta_description\";s:0:\"\";}')
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368717097.859 (0.065590143203735)sec
+--- STARTUP TIME --- 1368717363.1998
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'retyu' AND parentid = '0' 
+    REQUEST SQL：INSERT INTO x_category (type,parentid,catname,catdir,image,ismenu,description,siteid,module,model,setting) VALUES ('0','0','edrftghyj','retyu','','1','','1','content','a:1:{i:1;a:4:{s:6:\"enable\";s:1:\"1\";s:7:\"modelid\";s:2:\"68\";s:4:\"name\";s:6:\"测试\";s:4:\"view\";s:0:\"\";}}','a:8:{s:10:\"workflowid\";s:0:\"\";s:6:\"ishtml\";s:1:\"0\";s:14:\"content_ishtml\";s:1:\"0\";s:13:\"category_view\";s:0:\"\";s:9:\"list_view\";s:0:\"\";s:10:\"meta_title\";s:0:\"\";s:13:\"meta_keywords\";s:0:\"\";s:16:\"meta_description\";s:0:\"\";}')
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368717363.2492 (0.049474000930786)sec
+--- STARTUP TIME --- 1368717792.0484
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'retyu' AND parentid = '0' 
+    REQUEST SQL：INSERT INTO x_category (type,parentid,catname,catdir,image,ismenu,description,siteid,module,model,setting) VALUES ('0','0','edrftghyj','retyu','','1','','1','content','a:1:{i:1;a:4:{s:6:\"enable\";s:1:\"1\";s:7:\"modelid\";s:2:\"68\";s:4:\"name\";s:6:\"测试\";s:4:\"view\";s:0:\"\";}}','a:8:{s:10:\"workflowid\";s:0:\"\";s:6:\"ishtml\";s:1:\"0\";s:14:\"content_ishtml\";s:1:\"0\";s:13:\"category_view\";s:0:\"\";s:9:\"list_view\";s:0:\"\";s:10:\"meta_title\";s:0:\"\";s:13:\"meta_keywords\";s:0:\"\";s:16:\"meta_description\";s:0:\"\";}')
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368717792.0967 (0.048244953155518)sec
+--- STARTUP TIME --- 1368717870.8759
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'retyu' AND parentid = '0' 
+    REQUEST SQL：INSERT INTO x_category (type,parentid,catname,catdir,image,ismenu,description,siteid,module,model,setting) VALUES ('0','0','edrftghyj','retyu','','1','','1','content','a:1:{i:1;a:4:{s:6:\"enable\";s:1:\"1\";s:7:\"modelid\";s:2:\"68\";s:4:\"name\";s:6:\"测试\";s:4:\"view\";s:0:\"\";}}','a:8:{s:10:\"workflowid\";s:0:\"\";s:6:\"ishtml\";s:1:\"0\";s:14:\"content_ishtml\";s:1:\"0\";s:13:\"category_view\";s:0:\"\";s:9:\"list_view\";s:0:\"\";s:10:\"meta_title\";s:0:\"\";s:13:\"meta_keywords\";s:0:\"\";s:16:\"meta_description\";s:0:\"\";}')
+    ：
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368717870.9275 (0.051548004150391)sec
+--- STARTUP TIME --- 1368717939.6581
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368717939.7101 (0.051975965499878)sec
+--- STARTUP TIME --- 1368717940.4331
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM x_menu ORDER BY listorder ASC,id DESC 
+--- SHUTDOWN TIME --- 1368717940.5103 (0.07722806930542)sec
+--- STARTUP TIME --- 1368717955.218
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：menu::add@admin
+    REQUEST SQL：SELECT * FROM x_menu 
+--- SHUTDOWN TIME --- 1368717955.2512 (0.033129215240479)sec
+--- STARTUP TIME --- 1368717979.9254
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：menu::add@admin
+    REQUEST SQL：INSERT INTO x_menu (parentid,name,m,c,a,data,display,sys,acl_type) VALUES ('94','移动','content','category','remove','','1','0','0')
+    ：1
+--- SHUTDOWN TIME --- 1368717979.9691 (0.043628931045532)sec
+--- STARTUP TIME --- 1368717979.9866
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：menu::init@admin
+    REQUEST SQL：SELECT * FROM x_menu ORDER BY listorder ASC,id DESC 
+--- SHUTDOWN TIME --- 1368717980.0366 (0.049959897994995)sec
+--- STARTUP TIME --- 1368718134.16
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368718134.1955 (0.035435914993286)sec
+--- STARTUP TIME --- 1368718135.1553
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368718135.2086 (0.053355932235718)sec
+--- STARTUP TIME --- 1368718135.8825
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368718135.9074 (0.024916887283325)sec
+--- STARTUP TIME --- 1368718138.3183
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'werty' AND parentid = '0' 
+    REQUEST SQL：INSERT INTO x_category (type,parentid,catname,catdir,image,ismenu,description,siteid,module,setting) VALUES ('0','0','werftghj','werty','','1','','1','content','a:8:{s:10:\"workflowid\";s:0:\"\";s:6:\"ishtml\";s:1:\"0\";s:14:\"content_ishtml\";s:1:\"0\";s:13:\"category_view\";s:0:\"\";s:9:\"list_view\";s:0:\"\";s:10:\"meta_title\";s:0:\"\";s:13:\"meta_keywords\";s:0:\"\";s:16:\"meta_description\";s:0:\"\";}')
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368718138.3716 (0.053241014480591)sec
+--- STARTUP TIME --- 1368718138.3834
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368718138.4285 (0.045076847076416)sec
+--- STARTUP TIME --- 1368718187.0208
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368718187.0428 (0.02199912071228)sec
+--- STARTUP TIME --- 1368718189.5894
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'dfghjkl' AND parentid = '0' 
+    REQUEST SQL：INSERT INTO x_category (type,parentid,catname,catdir,image,ismenu,description,siteid,module,setting) VALUES ('0','0','sdfghj','dfghjkl','','1','','1','content','a:8:{s:10:\"workflowid\";s:0:\"\";s:6:\"ishtml\";s:1:\"0\";s:14:\"content_ishtml\";s:1:\"0\";s:13:\"category_view\";s:0:\"\";s:9:\"list_view\";s:0:\"\";s:10:\"meta_title\";s:0:\"\";s:13:\"meta_keywords\";s:0:\"\";s:16:\"meta_description\";s:0:\"\";}')
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368718189.6419 (0.052580118179321)sec
+--- STARTUP TIME --- 1368718189.6544
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368718189.7012 (0.046762943267822)sec
+--- STARTUP TIME --- 1368718208.0245
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368718208.0504 (0.025866031646729)sec
+--- STARTUP TIME --- 1368718315.8648
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'ertyuikl' AND parentid = '0' 
+    REQUEST SQL：INSERT INTO x_category (type,parentid,catname,catdir,image,ismenu,description,siteid,module,setting) VALUES ('0','0','swedrfgthj','ertyuikl','','1','','1','content','a:9:{s:10:\"workflowid\";s:0:\"\";s:6:\"ishtml\";s:1:\"0\";s:14:\"content_ishtml\";s:1:\"0\";s:13:\"category_view\";s:0:\"\";s:9:\"list_view\";s:0:\"\";s:10:\"meta_title\";s:0:\"\";s:13:\"meta_keywords\";s:0:\"\";s:16:\"meta_description\";s:0:\"\";s:5:\"model\";a:1:{i:1;a:4:{s:6:\"enable\";s:1:\"1\";s:7:\"modelid\";s:2:\"68\";s:4:\"name\";s:6:\"测试\";s:4:\"view\";s:0:\"\";}}}')
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368718315.9167 (0.051899909973145)sec
+--- STARTUP TIME --- 1368718315.9299
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368718315.9763 (0.046448945999146)sec
+--- STARTUP TIME --- 1368718339.8478
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368718339.8737 (0.025879859924316)sec
+--- STARTUP TIME --- 1368718346.5428
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'stfghjkl' AND parentid = '73' 
+    REQUEST SQL：INSERT INTO x_category (type,parentid,catname,catdir,image,ismenu,description,siteid,module,setting) VALUES ('0','73','dsfghjk','stfghjkl','','1','','1','content','a:9:{s:10:\"workflowid\";s:0:\"\";s:6:\"ishtml\";s:1:\"0\";s:14:\"content_ishtml\";s:1:\"0\";s:13:\"category_view\";s:0:\"\";s:9:\"list_view\";s:0:\"\";s:10:\"meta_title\";s:0:\"\";s:13:\"meta_keywords\";s:0:\"\";s:16:\"meta_description\";s:0:\"\";s:5:\"model\";a:1:{i:1;a:4:{s:6:\"enable\";s:1:\"1\";s:7:\"modelid\";s:2:\"68\";s:4:\"name\";s:6:\"测试\";s:4:\"view\";s:0:\"\";}}}')
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368718346.594 (0.05119800567627)sec
+--- STARTUP TIME --- 1368718346.6059
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368718346.6513 (0.0453941822052)sec
+--- STARTUP TIME --- 1368718429.2026
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368718429.23 (0.027427911758423)sec
+--- STARTUP TIME --- 1368718431.7134
+    SESSION_ID：vi2drntvjlk4e54ka39j2varo5
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368718431.7594 (0.045994997024536)sec

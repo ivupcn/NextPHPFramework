@@ -1,6 +1,6 @@
 	function map($field, $value, $fieldinfo) {
 		extract($fieldinfo);
-		$setting = json_decode($setting,true);
+		$setting = unserialize($setting);
 		$size = $setting['size'];
 		$errortips = $this->fields[$field]['errortips'];
 		$modelid = $this->fields[$field]['modelid'];

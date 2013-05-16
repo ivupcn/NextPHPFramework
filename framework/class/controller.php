@@ -32,7 +32,7 @@ abstract class controller
 		$module = str_replace('/', DIRECTORY_SEPARATOR, $module);
         if($siteid)
         {
-            $site_root = Next::config('system','site_root','siteroot');
+            $site_root = Next::config('system','site_root',APP_PATH.'siteroot'.DIRECTORY_SEPARATOR);
             $sitelist = getcache('sitelist','admin');
             $site_dirname = $sitelist[$siteid]['dirname'];
             $style = $sitelist[$siteid]['view'];

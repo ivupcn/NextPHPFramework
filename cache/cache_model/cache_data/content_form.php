@@ -121,7 +121,7 @@ class content_form
 	}
 	function box($field, $value, $fieldinfo) {
 
-		$setting = json_decode($fieldinfo['setting'],true);
+		$setting = unserialize($fieldinfo['setting']);
 		if($value=='') $value = $this->fields[$field]['defaultvalue'];
 		$options = explode("\n",$this->fields[$field]['options']);
 		foreach($options as $_k) {
@@ -193,7 +193,7 @@ class content_form
 	}
 	function number($field, $value, $fieldinfo) {
 		extract($fieldinfo);
-		$setting = json_decode($setting,true);
+		$setting = unserialize($setting);
 		$size = $setting['size'];		
 		if(!$value) $value = $defaultvalue;
 		return "<input type='text' name='info[$field]' id='$field' value='$value' class='input-text' size='$size' {$formattribute} {$css}>";
@@ -216,7 +216,7 @@ class content_form
 		return form::date("info[$field]",$value,$isdatetime);
 	}
 	function posid($field, $value, $fieldinfo) {
-		$setting = json_decode($fieldinfo['setting'],true);
+		$setting = unserialize($fieldinfo['setting']);
 		$position = getcache('position','commons');
 		if(empty($position)) return '';
 		$array = array();
@@ -259,7 +259,7 @@ class content_form
 		return "<input type='text' name='info[$field]' value='$value' style='width: 400px;' class='input-text'>".form::select($copyfrom_datas,$value_data,"name='{$field}_data' ");
 	}
 	function groupid($field, $value, $fieldinfo) {
-		extract(json_decode($fieldinfo['setting'],true));
+		extract(unserialize($fieldinfo['setting']));
 		$grouplist = getcache('grouplist_'.SITEID,'user');
 		foreach($grouplist as $_key=>$_value) {
 			$data[$_key] = $_value['name'];
@@ -310,7 +310,7 @@ class content_form
 	}
 	function typeid($field, $value, $fieldinfo) {
 		extract($fieldinfo);
-		$setting = json_decode($setting,true);
+		$setting = unserialize($setting);
 		if(!$value) $value = $setting['defaultvalue'];
 		if($errortips) {
 			$errortips = $this->fields[$field]['errortips'];
@@ -346,13 +346,13 @@ class content_form
 		return '<input type="text" name="info['.$field.']" value="'.$value.'" size="5"><input type="radio" name="info[paytype]" value="0" '.$checked1.'> '.L('point').' <input type="radio" name="info[paytype]" value="1" '.$checked2.'>'.L('money');
 	}
 	function linkage($field, $value, $fieldinfo) {
-		$setting = json_decode($fieldinfo['setting'],true);
+		$setting = unserialize($fieldinfo['setting']);
 		$linkageid = $setting['linkageid'];
 		return menu_linkage($linkageid,$field,$value);
 	}
 	function downfile($field, $value, $fieldinfo) {
 		$list_str = $str = '';
-		extract(json_decode($fieldinfo['setting'],true));
+		extract(unserialize($fieldinfo['setting']));
 		if($value){
 			$value_arr = explode('|',$value);
 			$value = $value_arr['0'];
@@ -387,7 +387,7 @@ class content_form
 		return $string;
 	}
 	function downfiles($field, $value, $fieldinfo) {
-		extract(json_decode($fieldinfo['setting'],true));
+		extract(unserialize($fieldinfo['setting']));
 		$list_str = '';
 		if($value) {
 			$value = string2array(html_entity_decode($value,ENT_QUOTES));
@@ -416,7 +416,7 @@ class content_form
 	}
 	function map($field, $value, $fieldinfo) {
 		extract($fieldinfo);
-		$setting = json_decode($setting,true);
+		$setting = unserialize($setting);
 		$size = $setting['size'];
 		$errortips = $this->fields[$field]['errortips'];
 		$modelid = $this->fields[$field]['modelid'];

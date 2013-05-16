@@ -1,5 +1,5 @@
 	function posid($field, $value, $fieldinfo) {
-		$setting = json_decode($fieldinfo['setting'],true);
+		$setting = unserialize($fieldinfo['setting']);
 		$position = getcache('position','commons');
 		if(empty($position)) return '';
 		$array = array();

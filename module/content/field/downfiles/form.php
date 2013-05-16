@@ -1,5 +1,5 @@
 	function downfiles($field, $value, $fieldinfo) {
-		extract(json_decode($fieldinfo['setting'],true));
+		extract(unserialize($fieldinfo['setting']));
 		$list_str = '';
 		if($value) {
 			$value = string2array(html_entity_decode($value,ENT_QUOTES));

@@ -68,7 +68,7 @@ class form {
 	/**
 	 * 栏目选择
 	 * @param string $file 栏目缓存文件名
-	 * @param intval/array $id 别选中的ID，多选是可以是数组
+	 * @param intval/array $catid 别选中的ID，多选是可以是数组
 	 * @param string $str 属性
 	 * @param string $default_option 默认选项
 	 * @param intval $modelid 按所属模型筛选
@@ -76,24 +76,23 @@ class form {
 	 * @param intval $onlysub 只可选择子栏目
 	 * @param intval $siteid 如果设置了siteid 那么则按照siteid取
 	 */
-	public static function select_category($file = '',$id = 0, $str = '', $default_option = '', $modelid = 0, $type = -1, $onlysub = 0,$siteid = 0,$is_push = 0)
+	public static function select_category($file = '',$catid = 0, $str = '', $default_option = '', $modelid = 0, $type = -1, $onlysub = 0,$siteid = 0,$is_push = 0)
 	{
 		$tree = new tree();
 		if(!$siteid) $siteid = context::instance()->get_cookie('siteid');
 		if (!$file)
 		{
-			$file = 'category_'.$siteid;
+			$file = 'category_content_'.$siteid;
 		}
-		$result = getcache($file,'admin');
+		$categorys = array();
+		$result = getcache($file,'content');
 		$string = '<select '.$str.'>';
 		if($default_option) $string .= "<option value='0'>$default_option</option>";
 		//加载权限表模型 ,获取会员组ID值,以备下面投入判断用
 		if($is_push=='1')
 		{
-			$priv = pc_base::load_model('category_priv_model');
 			$user_groupid = context::instance()->get_cookie('groupid') ? context::instance()->get_cookie('groupid') : null;
 		}
-		$categorys = array();
 		if (is_array($result))
 		{
 			foreach($result as $r)
@@ -101,8 +100,8 @@ class form {
  				//检查当前会员组，在该栏目处是否允许投稿？
 				if($is_push=='1' and $r['child']=='0')
 				{
-					$sql = array('id'=>$r['id'],'roleid'=>$user_groupid,'action'=>'add');
-					$array = admin_model_tagpriv::model()->get_one($sql);
+					$sql = array('catid'=>$r['catid'],'roleid'=>$user_groupid,'action'=>'add');
+					$array = admin_model_tagpriv::model()->WHERE($sql)->select(1);
 					if(!$array)
 					{
 						continue;	
@@ -110,25 +109,26 @@ class form {
 				}
 				if($siteid != $r['siteid'] || ($type >= 0 && $r['type'] != $type)) continue;
 				$r['selected'] = '';
-				if(is_array($id))
+				if(is_array($catid))
 				{
-					$r['selected'] = in_array($r['id'], $catid) ? 'selected' : '';
+					$r['selected'] = in_array($r['catid'], $catid) ? 'selected' : '';
 				}
-				elseif(is_numeric($id))
+				elseif(is_numeric($catid))
 				{
-					$r['selected'] = $id==$r['id'] ? 'selected' : '';
+					$r['selected'] = $catid==$r['catid'] ? 'selected' : '';
 				}
 				$r['html_disabled'] = "0";
 				if (!empty($onlysub) && $r['child'] != 0)
 				{
 					$r['html_disabled'] = "1";
 				}
-				$categorys[$r['id']] = $r;
-				if($modelid && $r['modelid']!= $modelid ) unset($categorys[$r['id']]);
+				$categorys[$r['catid']] = $r;
+				if($modelid && $r['modelid']!= $modelid ) unset($categorys[$r['catid']]);
 			}
 		}
-		$str  = "<option value='\$id' \$selected>\$spacer \$tagname</option>";
-		$str2 = "<optgroup label='\$spacer \$tagname'></optgroup>";
+		$str  = "<option value='\$catid' \$selected>\$spacer \$catname</option>;";
+		$str2 = "<optgroup label='\$spacer \$catname'></optgroup>";
+
 		$tree->init($categorys);
 		$string .= $tree->get_tree_category(0, $str, $str2);
 			

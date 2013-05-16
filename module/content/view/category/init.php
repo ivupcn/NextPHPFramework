@@ -12,14 +12,14 @@
         <th align="center" width="40">排序</th>
         <th width="60" align="center">catid</th>
         <th>栏目名称</th>
-        <th>访问</th>
-        <th>数据量</th>
-        <th align="center">状态</th>
+        <th align="center">栏目类型</th>
+        <th align="center">数据量</th>
+        <th align="center">访问</th>
         <th align="center">管理操作</th>
       </tr>
     </thead>
     <tbody>
-
+      {$categorys}
     </tbody>
   </table>
 </div>

@@ -7,6 +7,7 @@
 					<tr>
 						<th width="110">上级栏目：</th>
 						<td>
+							<input type="hidden" name="info[type]" value="<?php echo $type;?>" />
 							<?php echo form::select_category('category_content_'.SITEID,$parentid,'name="info[parentid]"','≡ 作为一级栏目 ≡',0,-1);?>
 						</td>
 					</tr>
@@ -30,9 +31,9 @@
 							<table>
 								<?php $n=1;if(is_array($models)) foreach($models AS $model) { ?>
 								<tr>
-									<td><input type="checkbox" name="info[model][<?php echo $n;?>][enable]" value="1" checked /></td>
-									<td><input type="hidden" name="info[model][<?php echo $n;?>][modelid]" value="<?php echo $model['modelid'];?>" /><input type="hidden" name="info[model][<?php echo $n;?>][name]" value="<?php echo $model['name'];?>" /><?php echo $model['name'];?></td>
-									<td><input type="text" name="info[model][<?php echo $n;?>][view]" value="<?php echo $model['show_view'];?>" size="40" /></td>
+									<td><input type="checkbox" name="model[<?php echo $n;?>][enable]" value="1" checked /></td>
+									<td><input type="hidden" name="model[<?php echo $n;?>][modelid]" value="<?php echo $model['modelid'];?>" /><input type="hidden" name="model[<?php echo $n;?>][name]" value="<?php echo $model['name'];?>" /><?php echo $model['name'];?></td>
+									<td><input type="text" name="model[<?php echo $n;?>][view]" value="<?php echo $model['show_view'];?>" size="40" /></td>
 								</tr>
 								<?php $n++;}unset($n); ?>
 							</table>
