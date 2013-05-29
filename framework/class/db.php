@@ -20,7 +20,7 @@ class db
 	// 数据库表达式
 	protected $comparison = array('eq'=>'=','neq'=>'<>','gt'=>'>','egt'=>'>=','lt'=>'<','elt'=>'<=','notlike'=>'NOT LIKE','like'=>'LIKE','in'=>'IN','notin'=>'NOT IN','findinset'=>'find_in_set');
 	//链操作方法列表
-	protected $sql_methods = array('field','where','table','join','union','order','limit','alias','having','group','lock','distinct','set','inserttype','page','fieldvalue','sql');
+	protected $sql_methods = array('field','where','table','join','union','order','limit','alias','having','group','lock','distinct','set','inserttype','page','fieldvalue','sql','top');
     //SQL属性
 	protected $sql_options = array();
 	//分页
@@ -84,26 +84,10 @@ class db
 	 */
 	private function connect()
 	{
-		if(self::$define['db_config']['driver'] != 'sqlite')
-		{
-			$this->dsn = self::$define['db_config']['driver'].':host='.self::$define['db_config']['hostname'].';port='.self::$define['db_config']['dbport'].';dbname='.self::$define['db_config']['database'];
-		}
-		else
-		{
-			$this->dsn = self::$define['db_config']['driver'].':'.self::$define['db_config']['hostname'].'/'.self::$define['db_config']['database'].'.db';
-		}
-		if(self::$define['db_config']['pconnect'] == 1)
-		{
-			$this_options = array(PDO::ATTR_PERSISTENT => true, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES "'.self::$define['db_config']['charset'].'"');
-		}
-		else
-		{
-			$this_options = array(PDO::ATTR_PERSISTENT => false, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES "'.self::$define['db_config']['charset'].'"');
-		}
-		if(!$this->link = new PDO($this->dsn, self::$define['db_config']['username'], self::$define['db_config']['password'], $this_options))
+		if(!$this->link = new PDO(self::$define['db_config']['dsn'], self::$define['db_config']['username'], self::$define['db_config']['password'], self::$define['db_config']['attribute']))
 		{
 			NLOG::error('    Can not connect to database server');
-		}
+		}		
 	}
 
 	/**
@@ -279,13 +263,15 @@ class db
 		{
 			case 'select':
 				$sql = str_replace(
-	                array('%TABLE%','%DISTINCT%','%FIELD%','%JOIN%','%WHERE%','%GROUP%','%HAVING%','%ORDER%','%LIMIT%','%UNION%','%COMMENT%'),
+	                array('%TABLE%','%DISTINCT%','%TOP%','%FIELD%','%JOIN%','%WHERE%','%OFFSET%','%GROUP%','%HAVING%','%ORDER%','%LIMIT%','%UNION%','%COMMENT%'),
 	                array(
 	                    $this->parseTable(!empty($options['table']) ? $options['table'] : self::$define['db_config']['tablepre'].self::$define['table_name']),
 	                    $this->parseDistinct(!empty($options['distinct']) ? $options['distinct'] : false),
+                        $this->parseTop(!empty($options['top']) ? $options['top'] : ''),
 	                    $this->parseField(!empty($options['field']) ? $options['field'] : '*'),
 	                    $this->parseJoin(!empty($options['join']) ? $options['join'] : ''),
 	                    $this->parseWhere(!empty($options['where']) ? $options['where'] : ''),
+                        $this->parseOffset(!empty($options['offset']) ? $options['offset'] : ''),
 	                    $this->parseGroup(!empty($options['group']) ? $options['group'] : ''),
 	                    $this->parseHaving(!empty($options['having']) ? $options['having'] : ''),
 	                    $this->parseOrder(!empty($options['order']) ? $options['order'] : ''),
@@ -293,7 +279,7 @@ class db
 	                    $this->parseUnion(!empty($options['union']) ? $options['union'] : ''),
 	                    $this->parseComment(!empty($options['comment']) ? $options['comment'] : '')
 	                ),
-	                'SELECT%DISTINCT% %FIELD% FROM %TABLE%%JOIN%%WHERE%%GROUP%%HAVING%%ORDER%%LIMIT% %UNION%%COMMENT%'
+	                'SELECT %DISTINCT%%TOP%%FIELD% FROM %TABLE%%JOIN%%WHERE%%OFFSET%%GROUP%%HAVING%%ORDER%%LIMIT% %UNION%%COMMENT%'
 	            );
 	            break;
 	        case 'update':
@@ -418,10 +404,25 @@ class db
     		$setpages = isset($pages['setpages']) && intval($pages['setpages']) ? $pages['setpages'] : 10;
     		$urlrule = isset($pages['urlrule']) && is_array($pages['urlrule']) && !empty($pages['urlrule']) ? $pages['urlrule'] : array('','page={$page}');
     		$array = isset($pages['array']) && is_array($pages['array']) && !empty($pages['array']) ? $pages['array'] : array();
+            $func = isset($pages['func']) ? trim($pages['func']) : 'ROW_NUMBER';
     		
     		$total = $this->COUNT();
 			$offset = $pagesize*($page-1);
-			$this->sql_options['limit'] = $offset.', '.$pagesize;
+
+            $dsn = parse_url(self::$define['db_config']['dsn']);
+            if($dsn['scheme'] == 'sqlsrv')
+            {
+                $this->sql_options['top'] = $pagesize;
+                if($page > 1)
+                {
+                    $this->sql_options['offset'] = array('page'=>$page, 'func'=>$func);
+                    $this->sql_options['table'] = '(SELECT '.$func.'() OVER ('.$this->parseOrder($this->sql_options['order']).') AS '.$func.', * FROM '.self::$define['db_config']['tablepre'].self::$define['table_name'].') tempTable';
+                }
+            }
+            else
+            {
+                $this->sql_options['limit'] = $offset.', '.$pagesize;
+            }
 			if(defined('IN_ADMIN'))
 			{
 				return '<div class="pages"><span>共'.$total.'条</span></div><div class="pagination" '.$target.' totalCount="'.$total.'" numPerPage="'. $pagesize.'" pageNumShown="10" currentPage="'.$page.'"></div>';
@@ -435,6 +436,28 @@ class db
     	{
     		return null;
     	}
+    }
+
+    /*
+     * 分析top
+     * @param $top mixed
+     * @return string 
+     */
+    protected function parseTop($top)
+    {
+        return !empty($top) ? 'TOP '.$top.' ' : '';
+    }
+
+    /*
+     * 分析offset
+     * @param $offset mixed
+     * @return string 
+     */
+    protected function parseOffset($offset)
+    {
+
+        $font = isset($this->sql_options['where']) ? ' AND ' : ' WHERE ';
+        return !empty($offset) ? $font.$offset['func'].' > '.$this->sql_options['top'].' * ('.$offset['page'].')' : '';
     }
 
 	/*
@@ -474,7 +497,7 @@ class db
      */
     protected function parseDistinct($distinct)
     {
-        return !empty($distinct) ? ' DISTINCT ' : '';
+        return !empty($distinct) ? 'DISTINCT ' : '';
     }
 
     /**
@@ -772,7 +795,8 @@ class db
     protected function parseLock($lock=false)
     {
         if(!$lock) return '';
-        if('oracle' == $this->config['driver'])
+        $dsn = parse_url(self::$define['db_config']['dsn']);
+        if('oracle' == $dsn['scheme'])
         {
             return ' FOR UPDATE NOWAIT ';
         }

@@ -2,14 +2,21 @@
 return array(
 	'database' => array(
 		'default' => array(
-			'driver' => 'mysql',
-			'hostname'    => 'localhost',
-			'dbport'      => '3306',
-			'database'    => 'x',
+			'dsn' => 'mysql:host=localhost;port=3306;dbname=x',
 			'username'    => 'root',
 			'password'    => '',
 			'tablepre'    => 'x_',
-			'charset'     => 'utf8',
+			'attribute' => array(PDO::ATTR_PERSISTENT => true, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES "utf8"'),
+			'debug'       => true,
+			'pconnect'    => 0,
+			'autoconnect' => 0
+		),
+		'sqlsrv' => array(
+			'dsn' => 'sqlsrv:server=localhost;Database=vod',
+			'username'    => 'sa',
+			'password'    => '42920617',
+			'tablepre'    => 'x_',
+			'attribute' => array(),
 			'debug'       => true,
 			'pconnect'    => 0,
 			'autoconnect' => 0

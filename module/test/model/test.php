@@ -6,9 +6,9 @@ class test_model_test
 	{
 		return array(
 			// 数据库配置
-			'db_config' => Next::config('database','pdo'),
+			'db_config' => Next::config('database','sqlsrv'),
 			// 数据表
-			'table_name' => 'test',
+			'table_name' => 'menu',
 			// 指定在数据库中创建对象时，哪些属性的值不允许由外部提供，这里指定的属性会在创建记录时被过滤掉，从而让数据库自行填充值。
 			'insert_reject' => 'id',
 			// 指定在数据库中更新对象时，哪些属性的值不允许由外部提供，这里指定的属性会在创建记录时被过滤掉，从而让数据库自行填充值。

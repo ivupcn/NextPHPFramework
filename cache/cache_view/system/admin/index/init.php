@@ -32,7 +32,7 @@ $(function(){
 		loginUrl:"<?php echo $this->_context->url('index::logout@admin'); ?>",	// 跳到登录页面
 		statusCode:{ok:200, error:300, timeout:301}, //【可选】
 		pageInfo:{pageNum:"pageNum", numPerPage:"numPerPage", orderField:"orderField", orderDirection:"orderDirection"}, //【可选】
-		debug:true,	// 调试模式 【true|false】
+		debug:false,	// 调试模式 【true|false】
 		callback:function(){
 			initEnv();
 		}

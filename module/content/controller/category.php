@@ -32,8 +32,7 @@ class content_controller_category extends admin_class_controller
 					$r['str_manage'] .= '<a href="'.$this->_context->url('category::init@content','catid/'.$r['catid'].'/type/'.$r['type']).'">管理子栏目</a> | ';
 				}
 				$r['str_manage'] .= '<a href="'.$this->_context->url('category::add@content','catid/'.$r['catid'].'/type/'.$r['type']).'">添加子栏目</a> | ';
-				
-				$r['str_manage'] .= '<a href="'.$this->_context->url('category::edit@content','catid/'.$r['catid'].'/type/'.$r['type']).'">修改</a> | <a href="'.$this->_context->url('category::delete@content','catid/'.$r['catid']).'">删除</a> | <a href="'.$this->_context->url('category::remove@content','catid/'.$r['catid']).'">移动</a>';
+				$r['str_manage'] .= '<a href="'.$this->_context->url('category::edit@content','catid/'.$r['catid']).'" target="dialog" mask="true" maxable="false" rel="content_category_edit" width="800" height="560">修改</a> | <a href="'.$this->_context->url('category::delete@content','catid/'.$r['catid']).'">删除</a> | <a href="'.$this->_context->url('category::remove@content','catid/'.$r['catid']).'">移动</a>';
 				$r['typename'] = $types[$r['type']];
 				$r['display_icon'] = $r['ismenu'] ? '' : '（不在导航显示）';
 				if($r['type'] || $r['child'])
@@ -91,7 +90,6 @@ class content_controller_category extends admin_class_controller
 			$setting['model'] = $_POST['model'];
 			$info['setting'] = serialize($setting);
 			$insert_id = content_model_category::model()->FIELDVALUE($info)->insert();
-			$this->_cache();
 			if($insert_id)
 			{
 				$this->_app->showmessage('200','操作成功！',$this->_context->url('category::init@content'),'closeCurrent','content_category_init');
@@ -136,7 +134,43 @@ class content_controller_category extends admin_class_controller
 
 	public function action_edit()
 	{
-		include $this->view('content','category','edit');
+		if($this->_context->isPOST() &&  content_model_category::model()->validate($_POST['info']))
+		{
+			$catid = isset($_POST['catid']) && intval($_POST['catid']) ? intval($_POST['catid']) : $this->_app->showmessage('300','操作失败！');
+			$info = $_POST['info'];
+			if($info['type']!=2)
+			{
+				if($info['catdir']=='') $this->_app->showmessage('300','请输入目录名称！');
+				if(!$this->_checkcatdir($info['catdir'],$info['parentid'],$_POST['oldcatdir'],$catid)) $this->_app->showmessage('300','目录名称已存在！');
+			}
+			$setting = $_POST['setting'];
+			$setting['model'] = $_POST['model'];
+			$info['setting'] = serialize($setting);
+			content_model_category::model()->SET($info)->WHERE(array('catid'=>$catid))->update();
+			$this->_app->showmessage('200','操作成功！',$this->_context->url('category::init@content'),'closeCurrent','content_category_init');
+		}
+		else
+		{
+			$catid = isset($_GET['catid']) && intval($_GET['catid']) ? intval($_GET['catid']) : $this->_app->showmessage('300','操作失败！');
+			$info = content_model_category::model()->WHERE(array('catid'=>$catid))->select(1);
+			$setting = unserialize($info['setting']);
+			$models = getcache('model_'.SITEID,'model');
+			$workflows = getcache('workflow_'.SITEID,'extend');
+			if($workflows)
+			{
+				$workflows_datas = array();
+				foreach($workflows as $_k=>$_v)
+				{
+					$workflows_datas[$_v['workflowid']] = $_v['workname'];
+				}
+				$workflow =  form::select($workflows_datas,$setting['workflowid'],'name="setting[workflowid]"','不需要审核');
+			}
+			else
+			{
+				$workflow = '<input type="hidden" name="setting[workflowid]" value="" />';
+			}
+			include $this->view('content','category','edit');
+		}
 	}
 
 	public function action_delete()
@@ -167,15 +201,10 @@ class content_controller_category extends admin_class_controller
 			$r['ishtml'] = $setting['ishtml'];
 			$r['content_ishtml'] = $setting['content_ishtml'];
 			$r['workflowid'] = $setting['workflowid'];
-			$r['isdomain'] = '0';
 			if(!preg_match('/^(http|https):\/\//', $r['url']))
 			{
 				$sitelist = getcache('sitelist','admin');
 				$r['url'] = substr($sitelist[$r['siteid']]['domain'],0,-1).$r['url'];
-			}
-			elseif ($r['ishtml'])
-			{
-				$r['isdomain'] = '1';
 			}
 			$categorys[$r['catid']] = $r;
 		}
@@ -183,10 +212,10 @@ class content_controller_category extends admin_class_controller
 		return true;
 	}
 
-	private function _checkcatdir($catdir = '', $parentid = 0)
+	private function _checkcatdir($catdir = '', $parentid = 0, $oldcatdir = '', $catid = 0)
 	{
 		$r = content_model_category::model()->WHERE(array('siteid'=>SITEID,'module'=>'content','catdir'=>$catdir,'parentid'=>$parentid))->select(1);
-		if($r)
+		if($r && $r['catid'] == $catid)
 		{
 			return false;
 		}

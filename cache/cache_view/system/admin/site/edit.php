@@ -36,7 +36,9 @@
   <tr>
     <th>站点LOGO：</th>
     <td>
-      <input id="FileInput" type="file" name="info[logo]" value="<?php echo $data['logo']?>" uploaderOption="{formData:{swf_auth_key:'<?php echo $swf_auth_key;?>',SWFUPLOADSESSID:'<?php echo SYS_TIME;?>',module:'admin',tagid:1,ajax:1},buttonText:'请选择文件',fileSizeLimit:'10240KB',fileTypeDesc:'*.jpg;*.jpeg;*.gif;*.png;',fileTypeExts:'*.jpg;*.jpeg;*.gif;*.png;',auto:true,multi:true,onUploadSuccess:uploadifySuccessThumb,onQueueComplete:uploadifyQueueComplete}" />
+      <input type="text" name="info[logo]" value="<?php echo $data['logo'];?>" id="logo_input" />
+      <a class="button" href="javascript:flashupload('<?php echo $swf_auth_key;?>','<?php echo SYS_TIME;?>','请选择图片','10240KB','*.jpg;*.jpeg;*.gif;*.png;','uploadifySuccessThumb','uploadifyQueueComplete');"><span>上传图片</span></a>
+      <a class="button" href="javascript:$('#logo_input').val('');return false;"><span>取消图片</span></a>
     </td>
   </tr>
 </table>

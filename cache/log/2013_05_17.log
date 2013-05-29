@@ -1,0 +1,331 @@
+--- STARTUP TIME --- 1368753767.8657
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1368753768.0518 (0.18604588508606)sec
+--- STARTUP TIME --- 1368753779.5091
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM x_times WHERE email = 'ivup@ivup.cn' AND isadmin = 1 
+    REQUEST SQL：SELECT * FROM x_user WHERE email = 'ivup@ivup.cn' 
+    REQUEST SQL：UPDATE x_user SET lastloginip='127.0.0.1',lastlogintime=1368753779 WHERE userid = '1'
+--- SHUTDOWN TIME --- 1368753779.6397 (0.13057589530945)sec
+--- STARTUP TIME --- 1368753779.6746
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368753779.8334 (0.15879797935486)sec
+--- STARTUP TIME --- 1368753781.5587
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368753781.598 (0.039248943328857)sec
+--- STARTUP TIME --- 1368753782.4083
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368753782.5178 (0.10944890975952)sec
+--- STARTUP TIME --- 1368754642.4073
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 73 
+    8 | Undefined variable: type       | D:\ESSamp\wwwroot\NextPHPFramework\cache\cache_view\system\content\category\edit.php | 10
+--- SHUTDOWN TIME --- 1368754642.4608 (0.053418874740601)sec
+--- STARTUP TIME --- 1368754643.7851
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368754643.8281 (0.043061971664429)sec
+--- STARTUP TIME --- 1368754645.876
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368754645.9095 (0.033582925796509)sec
+--- STARTUP TIME --- 1368754646.5657
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368754646.6348 (0.069090127944946)sec
+--- STARTUP TIME --- 1368754710.0324
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368754710.0802 (0.047799110412598)sec
+--- STARTUP TIME --- 1368754710.7785
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 73 
+    8 | Undefined variable: type       | D:\ESSamp\wwwroot\NextPHPFramework\cache\cache_view\system\content\category\edit.php | 10
+--- SHUTDOWN TIME --- 1368754710.8194 (0.040901899337769)sec
+--- STARTUP TIME --- 1368754737.441
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 73 
+    8 | Undefined variable: type       | D:\ESSamp\wwwroot\NextPHPFramework\cache\cache_view\system\content\category\edit.php | 10
+--- SHUTDOWN TIME --- 1368754737.4889 (0.047821044921875)sec
+--- STARTUP TIME --- 1368754769.0371
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368754769.0802 (0.043046951293945)sec
+--- STARTUP TIME --- 1368754771.9818
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 73 
+--- SHUTDOWN TIME --- 1368754772.0287 (0.046864986419678)sec
+--- STARTUP TIME --- 1368754777.7382
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 2 
+--- SHUTDOWN TIME --- 1368754777.7758 (0.037526845932007)sec
+--- STARTUP TIME --- 1368754813.2895
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 73 
+--- SHUTDOWN TIME --- 1368754813.3263 (0.03681492805481)sec
+--- STARTUP TIME --- 1368754835.0808
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 73 
+--- SHUTDOWN TIME --- 1368754835.1229 (0.04213809967041)sec
+--- STARTUP TIME --- 1368754873.4739
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 73 
+--- SHUTDOWN TIME --- 1368754873.5164 (0.042500019073486)sec
+--- STARTUP TIME --- 1368754916.8046
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 73 
+    8 | Undefined offset:  1           | D:\ESSamp\wwwroot\NextPHPFramework\cache\cache_view\system\content\category\edit.php | 32
+--- SHUTDOWN TIME --- 1368754916.8486 (0.043967008590698)sec
+--- STARTUP TIME --- 1368754956.5887
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 73 
+--- SHUTDOWN TIME --- 1368754956.6272 (0.038477897644043)sec
+--- STARTUP TIME --- 1368754999.5862
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 73 
+    8 | Undefined index:  show_view    | D:\ESSamp\wwwroot\NextPHPFramework\cache\cache_view\system\content\category\edit.php | 33
+--- SHUTDOWN TIME --- 1368754999.632 (0.045792102813721)sec
+--- STARTUP TIME --- 1368755021.3184
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 73 
+--- SHUTDOWN TIME --- 1368755021.3627 (0.044373989105225)sec
+--- STARTUP TIME --- 1368755280.7195
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 73 
+--- SHUTDOWN TIME --- 1368755280.7648 (0.045371055603027)sec
+--- STARTUP TIME --- 1368755303.5913
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 7 
+--- SHUTDOWN TIME --- 1368755303.628 (0.036695003509521)sec
+--- STARTUP TIME --- 1368755310.1572
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' AND siteid = '1' 
+--- SHUTDOWN TIME --- 1368755310.4816 (0.32446789741516)sec
+--- STARTUP TIME --- 1368755311.5413
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：model::add@content
+--- SHUTDOWN TIME --- 1368755311.5772 (0.035937070846558)sec
+--- STARTUP TIME --- 1368755319.1644
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：model::add@content
+    REQUEST SQL：INSERT INTO x_model (name,tablename,description,show_view,siteid) VALUES ('图库','pic','','','1')
+    REQUEST SQL：CREATE TABLE `x_post_1_pic` (  `id` mediumint(8) unsigned default '0',  `content` text NOT NULL,  `comment` tinyint(1) unsigned NOT NULL default '1',  `relation` varchar(255) NOT NULL default '',  KEY `id` (`id`)) ENGINE=MyISAM DEFAULT CHARSET=utf8
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`) VALUES(69, 1, 'content', '内容', '', '', 1, 999999, '', '内容不能为空', 'editor', 'a:4:{s:7:"toolbar";s:5:"basic";s:12:"defaultvalue";s:0:"";s:15:"enablesaveimage";s:1:"0";s:6:"height";s:3:"200";}', '', '', '', 0, 0, 1, 0, 1, 1, 0, 51, 0)
+    REQUEST SQL：INSERT INTO `x_model_field` (`modelid`, `siteid`, `field`, `name`, `tips`, `css`, `minlength`, `maxlength`, `pattern`, `errortips`, `formtype`, `setting`, `formattribute`, `unsetgroupids`, `unsetroleids`, `iscore`, `isunique`, `isbase`, `issearch`, `isadd`, `isfulltext`, `isposition`, `listorder`, `disabled`) VALUES(69, 1, 'comment', '评论', '', '', 0, 0, '', '', 'box', 'a:8:{s:7:"options";s:31:"允许评论|1不允许评论|0";s:7:"boxtype";s:5:"radio";s:9:"fieldtype";s:7:"tinyint";s:9:"minnumber";s:1:"1";s:5:"width";s:2:"88";s:4:"size";s:1:"1";s:12:"defaultvalue";s:1:"1";s:10:"outputtype";s:1:"0";}', '', '', '', 0, 0, 0, 0, 0, 0, 0, 81, 0);
+    REQUEST SQL：SELECT * FROM x_model_field WHERE modelid = '0' AND siteid = '1' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_model_field WHERE modelid = '69' AND disabled = '0' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368755319.3591 (0.19472789764404)sec
+--- STARTUP TIME --- 1368755319.3733
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' AND siteid = '1' 
+--- SHUTDOWN TIME --- 1368755319.4695 (0.096161127090454)sec
+--- STARTUP TIME --- 1368755326.837
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368755326.8881 (0.051124811172485)sec
+--- STARTUP TIME --- 1368755328.3067
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 73 
+    8 | Undefined offset:  2           | D:\ESSamp\wwwroot\NextPHPFramework\cache\cache_view\system\content\category\edit.php | 31
+--- SHUTDOWN TIME --- 1368755328.3464 (0.03962516784668)sec
+--- STARTUP TIME --- 1368755423.7704
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368755423.8148 (0.044416904449463)sec
+--- STARTUP TIME --- 1368755425.1352
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 73 
+--- SHUTDOWN TIME --- 1368755425.2092 (0.073918104171753)sec
+--- STARTUP TIME --- 1368755436.3795
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1368755436.4124 (0.032896041870117)sec
+--- STARTUP TIME --- 1368755442.5274
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 73 
+--- SHUTDOWN TIME --- 1368755442.5604 (0.032995939254761)sec
+--- STARTUP TIME --- 1368755472.9462
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 73 
+--- SHUTDOWN TIME --- 1368755472.9897 (0.043512105941772)sec
+--- STARTUP TIME --- 1368756144.7799
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+--- SHUTDOWN TIME --- 1368756144.8003 (0.02037787437439)sec
+--- STARTUP TIME --- 1368756170.0138
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 73 
+--- SHUTDOWN TIME --- 1368756170.0609 (0.047138929367065)sec
+--- STARTUP TIME --- 1368756172.7078
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'ertyuikl' AND parentid = '0' 
+    8 | Undefined variable: old_dir    | D:\ESSamp\wwwroot\NextPHPFramework\module\content\controller\category.php | 218
+--- SHUTDOWN TIME --- 1368756172.744 (0.036133050918579)sec
+--- STARTUP TIME --- 1368756192.6133
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368756192.6674 (0.054128170013428)sec
+--- STARTUP TIME --- 1368756194.5378
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368756194.5782 (0.040397882461548)sec
+--- STARTUP TIME --- 1368756195.1475
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368756195.2019 (0.054478883743286)sec
+--- STARTUP TIME --- 1368756196.7887
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 73 
+--- SHUTDOWN TIME --- 1368756196.8273 (0.038513898849487)sec
+--- STARTUP TIME --- 1368756199.6228
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'ertyuikl' AND parentid = '0' 
+--- SHUTDOWN TIME --- 1368756199.6537 (0.030956029891968)sec
+--- STARTUP TIME --- 1368756312.8777
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'ertyuikl' AND parentid = '0' 
+--- SHUTDOWN TIME --- 1368756312.9067 (0.028981924057007)sec
+--- STARTUP TIME --- 1368756336.8153
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'ertyuikl' AND parentid = '0' 
+--- SHUTDOWN TIME --- 1368756336.8446 (0.029296875)sec
+--- STARTUP TIME --- 1368756431.9554
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'ertyuikl' AND parentid = '0' 
+--- SHUTDOWN TIME --- 1368756431.9835 (0.028075933456421)sec
+--- STARTUP TIME --- 1368756462.0981
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'ertyuikl' AND parentid = '0' 
+--- SHUTDOWN TIME --- 1368756462.129 (0.030880928039551)sec
+--- STARTUP TIME --- 1368756474.4819
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'ertyuikl2222' AND parentid = '0' 
+    REQUEST SQL：INSERT INTO x_category (type,parentid,catname,catdir,oldcatdir,image,ismenu,description,siteid,module,setting) VALUES ('0','0','swedrfg3thj222','ertyuikl2222','ertyuikl','','1','','1','content','a:9:{s:10:\"workflowid\";s:0:\"\";s:6:\"ishtml\";s:1:\"0\";s:14:\"content_ishtml\";s:1:\"0\";s:13:\"category_view\";s:0:\"\";s:9:\"list_view\";s:0:\"\";s:10:\"meta_title\";s:0:\"\";s:13:\"meta_keywords\";s:0:\"\";s:16:\"meta_description\";s:0:\"\";s:5:\"model\";a:2:{i:1;a:4:{s:6:\"enable\";s:1:\"1\";s:7:\"modelid\";s:2:\"68\";s:4:\"name\";s:6:\"测试\";s:4:\"view\";s:0:\"\";}i:2;a:3:{s:7:\"modelid\";s:2:\"69\";s:4:\"name\";s:6:\"图库\";s:4:\"view\";s:0:\"\";}}}')
+--- SHUTDOWN TIME --- 1368756474.522 (0.040160894393921)sec
+--- STARTUP TIME --- 1368756487.2482
+    SESSION_ID：bergiut5frvhbb9hsm3ho37jm0
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'ertyuikl2222' AND parentid = '0' 
+    REQUEST SQL：INSERT INTO x_category (type,parentid,catname,catdir,oldcatdir,image,ismenu,description,siteid,module,setting) VALUES ('0','0','swedrfg3thj222','ertyuikl2222','ertyuikl','','1','','1','content','a:9:{s:10:\"workflowid\";s:0:\"\";s:6:\"ishtml\";s:1:\"0\";s:14:\"content_ishtml\";s:1:\"0\";s:13:\"category_view\";s:0:\"\";s:9:\"list_view\";s:0:\"\";s:10:\"meta_title\";s:0:\"\";s:13:\"meta_keywords\";s:0:\"\";s:16:\"meta_description\";s:0:\"\";s:5:\"model\";a:2:{i:1;a:4:{s:6:\"enable\";s:1:\"1\";s:7:\"modelid\";s:2:\"68\";s:4:\"name\";s:6:\"测试\";s:4:\"view\";s:0:\"\";}i:2;a:3:{s:7:\"modelid\";s:2:\"69\";s:4:\"name\";s:6:\"图库\";s:4:\"view\";s:0:\"\";}}}')
+--- SHUTDOWN TIME --- 1368756487.2812 (0.032921075820923)sec
+--- STARTUP TIME --- 1368786539.3015
+    SESSION_ID：t51q4e2r0poeuvlckob0etdu57
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1368786539.5063 (0.20477199554443)sec
+--- STARTUP TIME --- 1368786559.4141
+    SESSION_ID：t51q4e2r0poeuvlckob0etdu57
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM x_times WHERE email = 'ivup@ivup.cn' AND isadmin = 1 
+    REQUEST SQL：SELECT * FROM x_user WHERE email = 'ivup@ivup.cn' 
+    REQUEST SQL：UPDATE x_user SET lastloginip='127.0.0.1',lastlogintime=1368786559 WHERE userid = '1'
+--- SHUTDOWN TIME --- 1368786559.6034 (0.18925213813782)sec
+--- STARTUP TIME --- 1368786559.6467
+    SESSION_ID：t51q4e2r0poeuvlckob0etdu57
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368786559.7826 (0.13595294952393)sec
+--- STARTUP TIME --- 1368786566.7674
+    SESSION_ID：t51q4e2r0poeuvlckob0etdu57
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368786566.8283 (0.060837984085083)sec
+--- STARTUP TIME --- 1368786567.8166
+    SESSION_ID：t51q4e2r0poeuvlckob0etdu57
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368786567.8523 (0.035674095153809)sec
+--- STARTUP TIME --- 1368786568.8751
+    SESSION_ID：t51q4e2r0poeuvlckob0etdu57
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1368786568.9801 (0.10506105422974)sec
+--- STARTUP TIME --- 1368786571.6718
+    SESSION_ID：t51q4e2r0poeuvlckob0etdu57
+    REQUEST MCA：category::edit@content
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 73 
+--- SHUTDOWN TIME --- 1368786571.7278 (0.056027173995972)sec
+--- STARTUP TIME --- 1368786573.5144
+    SESSION_ID：t51q4e2r0poeuvlckob0etdu57
+    REQUEST MCA：category::add@content
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' AND catdir = 'ertyuikl' AND parentid = '0' 
+    REQUEST SQL：INSERT INTO x_category (type,parentid,catname,catdir,oldcatdir,image,ismenu,description,siteid,module,setting) VALUES ('0','0','swedrfgthj','ertyuikl','ertyuikl','','1','','1','content','a:9:{s:10:\"workflowid\";s:0:\"\";s:6:\"ishtml\";s:1:\"0\";s:14:\"content_ishtml\";s:1:\"0\";s:13:\"category_view\";s:0:\"\";s:9:\"list_view\";s:0:\"\";s:10:\"meta_title\";s:0:\"\";s:13:\"meta_keywords\";s:0:\"\";s:16:\"meta_description\";s:0:\"\";s:5:\"model\";a:2:{i:1;a:4:{s:6:\"enable\";s:1:\"1\";s:7:\"modelid\";s:2:\"68\";s:4:\"name\";s:6:\"测试\";s:4:\"view\";s:0:\"\";}i:2;a:3:{s:7:\"modelid\";s:2:\"69\";s:4:\"name\";s:6:\"图库\";s:4:\"view\";s:0:\"\";}}}')
+--- SHUTDOWN TIME --- 1368786573.5499 (0.035534143447876)sec
