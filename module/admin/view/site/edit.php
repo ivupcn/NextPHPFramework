@@ -36,9 +36,9 @@
   <tr>
     <th>站点LOGO：</th>
     <td>
-      <input type="text" name="info[logo]" value="{$data['logo']}" id="logo_input" />
-      <a class="button" href="javascript:flashupload('<?php echo $swf_auth_key;?>','<?php echo SYS_TIME;?>','请选择图片','10240KB','*.jpg;*.jpeg;*.gif;*.png;','uploadifySuccessThumb','uploadifyQueueComplete');"><span>上传图片</span></a>
-      <a class="button" href="javascript:$('#logo_input').val('');return false;"><span>取消图片</span></a>
+      <input type="text" name="info[logo]" value="{$data['logo']}" id="logo_input" style="width:200px" />
+      <a class="button" href="?m=attachment&c=attachment&a=init&swf_auth_key=<?php echo $swf_auth_key;?>&SWFUPLOADSESSID=<?php echo SYS_TIME;?>&module=admin&catid=1&queueSizeLimit=10&fileSizeLimit=10240&fileTypeExts=jpg|jpeg|gif|png|doc|docx|xls|xlsx|txt|psd|pdf|mp4|swf|flv" target="dialog" rel="admin_attachment_init" mask="true" width="600" height="400"><span>LOGO上传</span></a>
+      <a class="button" href="javascript:$('#logo_input').val('');return false;"><span>取消LOGO</span></a>
     </td>
   </tr>
 </table>

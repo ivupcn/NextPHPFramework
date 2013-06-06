@@ -111,7 +111,7 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 					fileSizeLimit   : 0,                  // The maximum size of an uploadable file in KB (Accepts units B KB MB GB if string, 0 for no limit)
 					fileTypeDesc    : 'All Files',        // The description for file types in the browse dialog
 					fileTypeExts    : '*.*',              // Allowed extensions in the browse dialog (server-side validation should also be used)
-					height          : 20,                 // The height of the browse button
+					height          : 30,                 // The height of the browse button
 					method          : 'post',             // The method to use when sending files to the server-side upload script
 					multi           : true,               // Allow multiple file selection in the browse dialog
 					formData        : {},                 // An object with additional data to send to the server-side upload script with every file upload
@@ -120,7 +120,7 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 					queueID         : false,              // The ID of the DOM object to use as a file queue (without the #)
 					queueSizeLimit  : 999,                // The maximum number of files that can be in the queue at one time
 					removeCompleted : true,               // Remove queue items from the queue when they are done uploading
-					removeTimeout   : 3,                  // The delay in seconds before removing a queue item if removeCompleted is set to true
+					removeTimeout   : 30,                  // The delay in seconds before removing a queue item if removeCompleted is set to true
 					requeueErrors   : false,              // Keep errored files in the queue and keep trying to upload them
 					successTimeout  : 30,                 // The number of seconds to wait for Flash to detect the server's response after the file has finished uploading
 					uploadLimit     : 0,                  // The maximum number of files you can upload
@@ -644,7 +644,7 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 			if ($.inArray('onSelect', settings.overrideEvents) < 0) {
 				
 				// Add the file item to the queue
-				$('#' + settings.queueID).append('<div id="' + file.id + '" class="uploadify-queue-item">\
+				$('#' + settings.queueID).append('<div id="' + file.id + '" class="uploadify-queue-item"><div id="' + file.id + '-thumb" class="uploadify-queue-item-thumb"></div><div id="' + file.id + '-info" class="uploadify-queue-item-info">\
 					<div class="cancel">\
 						<a href="javascript:$(\'#' + settings.id + '\').uploadify(\'cancel\', \'' + file.id + '\')">X</a>\
 					</div>\
@@ -652,7 +652,7 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 					<div class="uploadify-progress">\
 						<div class="uploadify-progress-bar"><!--Progress Bar--></div>\
 					</div>\
-				</div>');
+				</div></div>');
 				
 			}
 
@@ -741,9 +741,9 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 									swfuploadify.queueData.queueSize   -= file.size;
 									swfuploadify.queueData.queueLength -= 1;
 									delete swfuploadify.queueData.files[file.id]
-									$('#' + file.id).fadeOut(500, function() {
-										$(this).remove();
-									});
+									// $('#' + file.id).fadeOut(500, function() {
+									// 	$(this).remove();
+									// });
 								}
 							}, settings.removeTimeout * 1000);
 							break;
@@ -754,9 +754,9 @@ Released under the MIT License <http://www.opensource.org/licenses/mit-license.p
 										swfuploadify.queueData.queueSize   -= file.size;
 										swfuploadify.queueData.queueLength -= 1;
 										delete swfuploadify.queueData.files[file.id];
-										$('#' + file.id).fadeOut(500, function() {
-											$(this).remove();
-										});
+										// $('#' + file.id).fadeOut(500, function() {
+										// 	$(this).remove();
+										// });
 									}
 								}, settings.removeTimeout * 1000);
 							}

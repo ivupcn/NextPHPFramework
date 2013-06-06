@@ -1,8 +1,8 @@
 <?php defined('IN_Next') or exit('No permission resources.'); ?><div class="pageContent">
   <div class="panelBar">
     <ul class="toolBar">
-      <li><a class="add" href="<?php echo $this->_context->url('field::add@content','modelid/'.$modelid); ?>" target="dialog" mask="true" maxable="false" rel="content_file_add" width="800" height="500"><span>添加字段</span></a></li>
-      <li><a class="icon" href="<?php echo $this->_context->url('field::priview@content','modelid/'.$modelid); ?>" target="dialog" mask="true" maxable="false" rel="content_file_priview" width="1000" height="600"><span>预览模型</span></a></li>
+      <li><a class="add" href="<?php echo $this->_context->url('field::add@content','modelid/'.$modelid); ?>" target="dialog" mask="true" maxable="false" rel="content_field_add" width="800" height="500"><span>添加字段</span></a></li>
+      <li><a class="icon" href="<?php echo $this->_context->url('field::priview@content','modelid/'.$modelid); ?>" target="dialog" mask="true" maxable="false" rel="content_field_priview" width="1000" height="600"><span>预览模型</span></a></li>
     </ul>
   </div>
   <form action="<?php echo $this->_context->url('field::listorder@content','modelid/'.$modelid); ?>" method="post" class="pageForm required-validate" onsubmit="return validateCallback(this, navTabAjaxDone);">

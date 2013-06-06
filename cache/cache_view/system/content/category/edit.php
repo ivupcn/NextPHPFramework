@@ -17,7 +17,7 @@
 					</tr>
 					<tr>
 						<th>英文目录：</th>
-						<td><input type="text" name="info[catdir]" class="input-text required" value="<?php echo $info['catdir'];?>" /><input type="hidden" name="info[oldcatdir]" value="<?php echo $info['catdir'];?>" /></td>
+						<td><input type="text" name="info[catdir]" class="input-text required" value="<?php echo $info['catdir'];?>" /><input type="hidden" name="oldcatdir" value="<?php echo $info['catdir'];?>" /></td>
 					</tr>
 					<tr>
 						<th>栏目图片：</th>

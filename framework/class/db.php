@@ -20,7 +20,7 @@ class db
 	// 数据库表达式
 	protected $comparison = array('eq'=>'=','neq'=>'<>','gt'=>'>','egt'=>'>=','lt'=>'<','elt'=>'<=','notlike'=>'NOT LIKE','like'=>'LIKE','in'=>'IN','notin'=>'NOT IN','findinset'=>'find_in_set');
 	//链操作方法列表
-	protected $sql_methods = array('field','where','table','join','union','order','limit','alias','having','group','lock','distinct','set','inserttype','page','fieldvalue','sql','top');
+	protected $sql_methods = array('field','where','table','join','union','order','limit','alias','having','group','lock','distinct','set','inserttype','page','fieldvalue','sql');
     //SQL属性
 	protected $sql_options = array();
 	//分页
@@ -263,11 +263,10 @@ class db
 		{
 			case 'select':
 				$sql = str_replace(
-	                array('%TABLE%','%DISTINCT%','%TOP%','%FIELD%','%JOIN%','%WHERE%','%OFFSET%','%GROUP%','%HAVING%','%ORDER%','%LIMIT%','%UNION%','%COMMENT%'),
+	                array('%TABLE%','%DISTINCT%','%FIELD%','%JOIN%','%WHERE%','%OFFSET%','%GROUP%','%HAVING%','%ORDER%','%LIMIT%','%UNION%','%COMMENT%'),
 	                array(
 	                    $this->parseTable(!empty($options['table']) ? $options['table'] : self::$define['db_config']['tablepre'].self::$define['table_name']),
 	                    $this->parseDistinct(!empty($options['distinct']) ? $options['distinct'] : false),
-                        $this->parseTop(!empty($options['top']) ? $options['top'] : ''),
 	                    $this->parseField(!empty($options['field']) ? $options['field'] : '*'),
 	                    $this->parseJoin(!empty($options['join']) ? $options['join'] : ''),
 	                    $this->parseWhere(!empty($options['where']) ? $options['where'] : ''),
@@ -279,7 +278,7 @@ class db
 	                    $this->parseUnion(!empty($options['union']) ? $options['union'] : ''),
 	                    $this->parseComment(!empty($options['comment']) ? $options['comment'] : '')
 	                ),
-	                'SELECT %DISTINCT%%TOP%%FIELD% FROM %TABLE%%JOIN%%WHERE%%OFFSET%%GROUP%%HAVING%%ORDER%%LIMIT% %UNION%%COMMENT%'
+	                'SELECT %DISTINCT%%FIELD% FROM %TABLE%%JOIN%%WHERE%%OFFSET%%GROUP%%HAVING%%ORDER%%LIMIT% %UNION%%COMMENT%'
 	            );
 	            break;
 	        case 'update':
@@ -409,20 +408,7 @@ class db
     		$total = $this->COUNT();
 			$offset = $pagesize*($page-1);
 
-            $dsn = parse_url(self::$define['db_config']['dsn']);
-            if($dsn['scheme'] == 'sqlsrv')
-            {
-                $this->sql_options['top'] = $pagesize;
-                if($page > 1)
-                {
-                    $this->sql_options['offset'] = array('page'=>$page, 'func'=>$func);
-                    $this->sql_options['table'] = '(SELECT '.$func.'() OVER ('.$this->parseOrder($this->sql_options['order']).') AS '.$func.', * FROM '.self::$define['db_config']['tablepre'].self::$define['table_name'].') tempTable';
-                }
-            }
-            else
-            {
-                $this->sql_options['limit'] = $offset.', '.$pagesize;
-            }
+            $this->sql_options['limit'] = $offset.', '.$pagesize;
 			if(defined('IN_ADMIN'))
 			{
 				return '<div class="pages"><span>共'.$total.'条</span></div><div class="pagination" '.$target.' totalCount="'.$total.'" numPerPage="'. $pagesize.'" pageNumShown="10" currentPage="'.$page.'"></div>';
@@ -436,28 +422,6 @@ class db
     	{
     		return null;
     	}
-    }
-
-    /*
-     * 分析top
-     * @param $top mixed
-     * @return string 
-     */
-    protected function parseTop($top)
-    {
-        return !empty($top) ? 'TOP '.$top.' ' : '';
-    }
-
-    /*
-     * 分析offset
-     * @param $offset mixed
-     * @return string 
-     */
-    protected function parseOffset($offset)
-    {
-
-        $font = isset($this->sql_options['where']) ? ' AND ' : ' WHERE ';
-        return !empty($offset) ? $font.$offset['func'].' > '.$this->sql_options['top'].' * ('.$offset['page'].')' : '';
     }
 
 	/*

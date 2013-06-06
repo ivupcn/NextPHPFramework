@@ -22,7 +22,7 @@
         <td><?php echo $r['tablename'];?></td>
         <td align="center"><?php echo $r['disabled'] ? '<font color="red">×</font>' : '<font color="blue">√</font>'?></td>
         <td align="center">
-          <a href="<?php echo $this->_context->url('field::init@content','modelid/'.$r['modelid']); ?>" target="navTab" rel="content_field_init" title="<?php echo $r['name'];?>字段管理">字段管理</a> | <a href="<?php echo $this->_context->url('model::edit@content','modelid/'.$r['modelid']); ?>" target="dialog" mask="true" maxable="false" rel="content_model_add" width="800" height="260">修改</a> | <a href="<?php echo $this->_context->url('model::delete@content','modelid/'.$r['modelid']); ?>" target="ajaxTodo" title="确定要删除吗?">删除</a>
+          <a href="<?php echo $this->_context->url('field::priview@content','modelid/'.$r['modelid']); ?>" target="dialog" mask="true" maxable="false" rel="content_field_priview" width="1000" height="600">预览模型</a> | <a href="<?php echo $this->_context->url('field::init@content','modelid/'.$r['modelid']); ?>" target="navTab" rel="content_field_init" title="<?php echo $r['name'];?>字段管理">字段管理</a> | <a href="<?php echo $this->_context->url('model::edit@content','modelid/'.$r['modelid']); ?>" target="dialog" mask="true" maxable="false" rel="content_model_add" width="800" height="260">修改</a> | <a href="<?php echo $this->_context->url('model::delete@content','modelid/'.$r['modelid']); ?>" target="ajaxTodo" title="确定要删除吗?">删除</a>
         </td>
       </tr>
       <?php } ?>

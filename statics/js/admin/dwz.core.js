@@ -1735,6 +1735,18 @@ jDContent.find("[layoutH]").layoutH(jDContent);
 $(".pageContent",dialog).width($(dialog).width()-14);
 $("button.close").click(function(){
 $.pdialog.close(dialog);
+return false;});
+$("button.bringBackUploadifySrc").click(function(){
+var relTarget = $(this).attr("rel");
+$("#"+relTarget).val($(".uploadifyImg").eq(0).attr("src"));
+$.pdialog.close(dialog);
+return false;});
+$("button.bringBackUploadifyInput").click(function(){
+var relTarget = $(this).attr("rel");
+$(".uploadifyImg").each(function(i){
+var relInput = $('<input />',{'type':'text','name':'info['+relTarget+'][]','class':'textInput','value':$(".uploadifyImg").eq(i).attr("src")});
+$("#"+relTarget).append(relInput);});
+$.pdialog.close(dialog);
 return false;});});}
 if(op.mask){
 $(dialog).css("zIndex",1000);
@@ -2549,11 +2561,9 @@ alertMsg.error(msg);}else{
 alertMsg.correct(msg);}}
 function uploadifySuccess(file,data,response){
 alert(data)}
-function uploadifySuccessThumb(file,data,response){
-$('#'+file.id).after("<li>"+data+"</li>")}
-function uploadifySuccessInput(file,data,response){
+function uploadifySuccessBringBack(file,data,response){
 var attdata = data.split(',');
-$('#'+file.id).after('<li><input type="text" name="info[attachment][]" value="'+attdata[1]+'" class="input-text" size="70" /></li>')}
+$('#'+file.id+'-thumb').html('<img src="'+attdata[1]+'" class="uploadifyImg" />')}
 function uploadifyError(file,errorCode,errorMsg){
 alertMsg.error(errorCode+": "+errorMsg);}
 function uploadifyError(event,queueId,fileObj,errorObj){

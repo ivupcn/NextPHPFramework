@@ -57,7 +57,7 @@ class attachment_class_controller extends controller
      */
     final public static function get_site_setting($siteid = SITEID) {
         $siteinfo = getcache('sitelist', 'admin');
-        return string2array($siteinfo[$siteid]['setting']);
+        return unserialize($siteinfo[$siteid]['setting']);
     }
 }
 ?>

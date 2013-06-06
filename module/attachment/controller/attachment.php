@@ -3,7 +3,21 @@ class attachment_controller_attachment extends attachment_class_controller
 {
 	function action_init()
 	{
-		die('非法参数！');
+		$swf_auth_key = isset($_GET['swf_auth_key']) ? trim($_GET['swf_auth_key']) : $this->_app->showmessage('300','参数错误！');
+		$SWFUPLOADSESSID = isset($_GET['SWFUPLOADSESSID']) ? intval($_GET['SWFUPLOADSESSID']) : $this->_app->showmessage('300','参数错误！');
+		$module = isset($_GET['module']) ? trim($_GET['module']) : $this->_app->showmessage('300','参数错误！');
+		$catid = isset($_GET['catid']) ? intval($_GET['catid']) : $this->_app->showmessage('300','参数错误！');
+		$queueSizeLimit = isset($_GET['queueSizeLimit']) ? intval($_GET['queueSizeLimit']) : $this->_app->showmessage('300','参数错误！');
+		$fileSizeLimit = isset($_GET['fileSizeLimit']) ? intval($_GET['fileSizeLimit']) : $this->_app->showmessage('300','参数错误！');
+		$exts = isset($_GET['fileTypeExts']) ? trim($_GET['fileTypeExts']) : $this->_app->showmessage('300','参数错误！');
+		$extsArr = explode('|', $exts);
+		$arr = array();
+		foreach($extsArr as $ext)
+		{
+			$arr[] = '*.'.$ext;
+		}
+		$fileTypeExts = implode(';', $arr);
+		include $this->view('attachment','attachment','init');
 	}
 
 	function action_swfUpload()
@@ -25,6 +39,7 @@ class attachment_controller_attachment extends attachment_class_controller
 			$maxsize = $site_setting['upload_maxsize'] * 1024;
 			$attachment = new attachment();
 			$aids = $attachment->upload('Filedata',$alowexts,$maxsize,$this->upload_path,0);
+			NLOG::log($aids);
 			if($aids[0])
 			{
 				$filename= $attachment->uploadedfiles[0]['filename'];
@@ -55,7 +70,7 @@ class attachment_controller_attachment extends attachment_class_controller
 		}
 		else
 		{
-			$this->_app->showmessage('上传失败！');
+			$this->_app->showmessage('300','上传失败！');
 		}
 	}
 }
