@@ -1,0 +1,793 @@
+--- STARTUP TIME --- 1370851546.819
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1370851546.8331 (0.014043092727661)sec
+--- STARTUP TIME --- 1370851558.8756
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1370851558.8849 (0.0093209743499756)sec
+--- STARTUP TIME --- 1370851567.6932
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1370851567.7031 (0.0098640918731689)sec
+--- STARTUP TIME --- 1370851578.2936
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1370851578.3035 (0.0098838806152344)sec
+--- STARTUP TIME --- 1370852278.4356
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1370852278.4459 (0.010313987731934)sec
+--- STARTUP TIME --- 1370852286.3523
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::login@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_times WHERE email = 'ivup@ivup.cn' AND isadmin = 1 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_user WHERE email = 'ivup@ivup.cn' 
+    REQUEST SQL：UPDATE x_user SET lastloginip='182.240.100.82',lastlogintime=1370852286 WHERE userid = '1'
+--- SHUTDOWN TIME --- 1370852286.412 (0.059752941131592)sec
+--- STARTUP TIME --- 1370852286.4862
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::init@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_site 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370852286.502 (0.015837907791138)sec
+--- STARTUP TIME --- 1370852289.7978
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370852289.8131 (0.015218019485474)sec
+--- STARTUP TIME --- 1370852290.6936
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370852290.7109 (0.017243146896362)sec
+--- STARTUP TIME --- 1370852291.4176
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370852291.4607 (0.043039083480835)sec
+--- STARTUP TIME --- 1370852292.6336
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370852292.6439 (0.010377883911133)sec
+--- STARTUP TIME --- 1370852293.097
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370852293.1116 (0.014589786529541)sec
+--- STARTUP TIME --- 1370852298.0555
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370852298.0668 (0.011250972747803)sec
+--- STARTUP TIME --- 1370852298.6775
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370852298.6897 (0.012194156646729)sec
+--- STARTUP TIME --- 1370852299.6877
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：site::init@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_site 
+--- SHUTDOWN TIME --- 1370852299.7 (0.012317895889282)sec
+--- STARTUP TIME --- 1370852301.0061
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：site::edit@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_site WHERE siteid = 1 
+--- SHUTDOWN TIME --- 1370852301.0187 (0.012660026550293)sec
+--- STARTUP TIME --- 1370852302.2269
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：attachment::init@attachment
+--- SHUTDOWN TIME --- 1370852302.2369 (0.010021209716797)sec
+--- STARTUP TIME --- 1370852315.1085
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：attachment::swfupload@attachment
+Array
+    [attachment]14003947_1348219033594_6_1024x1024it.jpg,http://xms.iyn.cc/uploadfile/2013/0610/20130610041835193.jpg,129146,jpg,jpg
+--- SHUTDOWN TIME --- 1370852315.118 (0.0094790458679199)sec
+--- STARTUP TIME --- 1370852715.7397
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：site::config@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_site WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1370852715.7519 (0.012165069580078)sec
+--- STARTUP TIME --- 1370852716.3257
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：manage::init@attachment
+--- SHUTDOWN TIME --- 1370852716.3334 (0.007673978805542)sec
+--- STARTUP TIME --- 1370852716.7573
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：view::init@admin
+--- SHUTDOWN TIME --- 1370852716.7643 (0.0069091320037842)sec
+--- STARTUP TIME --- 1370852717.2711
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：role::init@user
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_user_role WHERE siteid = '1' ORDER BY roleid DESC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT siteid,roleid,rolename FROM x_user_role WHERE disabled = '0' ORDER BY roleid ASC,siteid ASC 
+--- SHUTDOWN TIME --- 1370852717.2863 (0.015229940414429)sec
+--- STARTUP TIME --- 1370852717.7454
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：group::init@user
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_user_group WHERE siteid = '1'
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_user_group WHERE siteid = '1' ORDER BY sort ASC LIMIT 0, 20  
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_user WHERE groupid = '1'
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_user WHERE groupid = '2'
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_user WHERE groupid = '3'
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_user WHERE groupid = '4'
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_user WHERE groupid = '5'
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_user WHERE groupid = '6'
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_user WHERE groupid = '19'
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_user_group WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1370852717.7629 (0.017482995986938)sec
+--- STARTUP TIME --- 1370852718.2902
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：user::init@user
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_user WHERE siteid = '1'
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_user WHERE siteid = '1' ORDER BY userid ASC LIMIT 0, 20  
+--- SHUTDOWN TIME --- 1370852718.3235 (0.033314943313599)sec
+--- STARTUP TIME --- 1370852719.0734
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：acl::setting@user
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE sys = '0' ORDER BY listorder ASC,id ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_user_role_priv WHERE siteid = '1' 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_user_role_priv WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1370852719.1 (0.026643991470337)sec
+--- STARTUP TIME --- 1370852719.5545
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：config::init@user
+--- SHUTDOWN TIME --- 1370852719.5626 (0.0080680847167969)sec
+--- STARTUP TIME --- 1370852720.2015
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：urlrule::init@extend
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_urlrule WHERE siteid = '1'
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_urlrule WHERE siteid = '1' LIMIT 0, 20  
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_urlrule 
+--- SHUTDOWN TIME --- 1370852720.2156 (0.014040946960449)sec
+--- STARTUP TIME --- 1370852720.7178
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：workflow::init@extend
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_workflow WHERE siteid = '1' 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_workflow WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1370852720.731 (0.013229846954346)sec
+--- STARTUP TIME --- 1370852721.7722
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370852721.7826 (0.010422945022583)sec
+--- STARTUP TIME --- 1370852723.5038
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：category::init@content
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370852723.5244 (0.020567893981934)sec
+--- STARTUP TIME --- 1370852724.4161
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370852724.4304 (0.014258861541748)sec
+--- STARTUP TIME --- 1370852725.0488
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370852725.0602 (0.011398077011108)sec
+--- STARTUP TIME --- 1370852725.6891
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：category::init@content
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370852725.7072 (0.018177032470703)sec
+--- STARTUP TIME --- 1370852727.2456
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' AND siteid = '1' 
+--- SHUTDOWN TIME --- 1370852727.2642 (0.018568992614746)sec
+--- STARTUP TIME --- 1370852728.1817
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：category::init@content
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370852728.199 (0.017359018325806)sec
+--- STARTUP TIME --- 1370852836.3929
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：category::edit@content
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_category WHERE catid = 1 
+--- SHUTDOWN TIME --- 1370852836.4078 (0.014884948730469)sec
+--- STARTUP TIME --- 1370852901.3112
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1370852901.3223 (0.011018991470337)sec
+--- STARTUP TIME --- 1370852940.0927
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370852940.1061 (0.013386964797974)sec
+--- STARTUP TIME --- 1370852941.0334
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：urlrule::init@extend
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_urlrule WHERE siteid = '1'
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_urlrule WHERE siteid = '1' LIMIT 0, 20  
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_urlrule 
+--- SHUTDOWN TIME --- 1370852941.0458 (0.012427806854248)sec
+--- STARTUP TIME --- 1370852942.1832
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370852942.194 (0.010787963867188)sec
+--- STARTUP TIME --- 1370852942.9046
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：category::init@content
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370852942.9236 (0.019043922424316)sec
+--- STARTUP TIME --- 1370852944.0198
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1370852944.0303 (0.010510921478271)sec
+--- STARTUP TIME --- 1370853051.1975
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1370853051.2087 (0.011143922805786)sec
+--- STARTUP TIME --- 1370853152.0956
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' AND siteid = '1' 
+--- SHUTDOWN TIME --- 1370853152.1138 (0.018193006515503)sec
+--- STARTUP TIME --- 1370853152.7928
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：category::init@content
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853152.8106 (0.017773151397705)sec
+--- STARTUP TIME --- 1370853161.7306
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853161.7467 (0.016073942184448)sec
+--- STARTUP TIME --- 1370853162.7682
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853162.7811 (0.012886047363281)sec
+--- STARTUP TIME --- 1370853221.8154
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::init@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_site 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853221.8306 (0.015191078186035)sec
+--- STARTUP TIME --- 1370853224.4509
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::logout@admin
+--- SHUTDOWN TIME --- 1370853224.4582 (0.0073809623718262)sec
+--- STARTUP TIME --- 1370853224.5191
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1370853224.5285 (0.0093808174133301)sec
+--- STARTUP TIME --- 1370853237.4222
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::login@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_times WHERE email = 'ivup@ivup.cn' AND isadmin = 1 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_user WHERE email = 'ivup@ivup.cn' 
+    REQUEST SQL：UPDATE x_user SET lastloginip='182.240.100.82',lastlogintime=1370853237 WHERE userid = '1'
+--- SHUTDOWN TIME --- 1370853237.4364 (0.014224052429199)sec
+--- STARTUP TIME --- 1370853237.5166
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::init@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_site 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853237.5302 (0.013525009155273)sec
+--- STARTUP TIME --- 1370853279.0708
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853279.0837 (0.012908935546875)sec
+--- STARTUP TIME --- 1370853280.213
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853280.2233 (0.010221004486084)sec
+--- STARTUP TIME --- 1370853313.1064
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853313.1187 (0.01230001449585)sec
+--- STARTUP TIME --- 1370853313.7003
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853313.7143 (0.014075040817261)sec
+--- STARTUP TIME --- 1370853315.5761
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853315.5862 (0.010116100311279)sec
+--- STARTUP TIME --- 1370853317.3711
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' AND siteid = '1' 
+--- SHUTDOWN TIME --- 1370853317.3923 (0.021193981170654)sec
+--- STARTUP TIME --- 1370853320.0259
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853320.0455 (0.019599914550781)sec
+--- STARTUP TIME --- 1370853321.2818
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：model::init@content
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_model WHERE siteid = '1' AND type = '0'
+    REQUEST SQL：SELECT * FROM x_model WHERE siteid = '1' AND type = '0' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_model WHERE type = '0' AND siteid = '1' 
+--- SHUTDOWN TIME --- 1370853321.2974 (0.015592813491821)sec
+--- STARTUP TIME --- 1370853321.8744
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853321.8922 (0.017810106277466)sec
+--- STARTUP TIME --- 1370853482.2751
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853482.2875 (0.012379169464111)sec
+--- STARTUP TIME --- 1370853499.3415
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：urlrule::init@extend
+    REQUEST SQL：SELECT COUNT(*) AS NextPHP_COUNT FROM x_urlrule WHERE siteid = '1'
+    REQUEST SQL：SELECT * FROM x_urlrule WHERE siteid = '1' LIMIT 0, 20  
+    REQUEST SQL：SELECT * FROM x_urlrule 
+--- SHUTDOWN TIME --- 1370853499.3548 (0.013329029083252)sec
+--- STARTUP TIME --- 1370853500.0973
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：workflow::init@extend
+    REQUEST SQL：SELECT * FROM x_workflow WHERE siteid = '1' 
+    REQUEST SQL：SELECT * FROM x_workflow WHERE siteid = '1' 
+--- SHUTDOWN TIME --- 1370853500.11 (0.012726068496704)sec
+--- STARTUP TIME --- 1370853502.1704
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：workflow::view@extend
+    REQUEST SQL：SELECT * FROM x_user 
+    REQUEST SQL：SELECT * FROM x_workflow WHERE workflowid = 16 
+    REQUEST SQL：SELECT * FROM x_user WHERE userid = '10' 
+--- SHUTDOWN TIME --- 1370853502.1821 (0.011620998382568)sec
+--- STARTUP TIME --- 1370853719.8675
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853719.881 (0.013445138931274)sec
+--- STARTUP TIME --- 1370853722.4852
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853722.4983 (0.013134956359863)sec
+--- STARTUP TIME --- 1370853723.9709
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853723.9867 (0.015815019607544)sec
+--- STARTUP TIME --- 1370853725.1692
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853725.1884 (0.019129991531372)sec
+--- STARTUP TIME --- 1370853726.4013
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853726.4141 (0.012809991836548)sec
+--- STARTUP TIME --- 1370853910.5661
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853910.5789 (0.012782096862793)sec
+--- STARTUP TIME --- 1370853911.1238
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853911.1343 (0.010432958602905)sec
+--- STARTUP TIME --- 1370853911.7667
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370853911.7842 (0.017528057098389)sec
+--- STARTUP TIME --- 1370853913.8511
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1370853913.8656 (0.014505863189697)sec
+--- STARTUP TIME --- 1370853915.882
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1370853915.9046 (0.022618055343628)sec
+--- STARTUP TIME --- 1370853919.2164
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1370853919.2291 (0.012608766555786)sec
+--- STARTUP TIME --- 1370853937.3022
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：category::add@content
+--- SHUTDOWN TIME --- 1370853937.3131 (0.010889053344727)sec
+--- STARTUP TIME --- 1370855951.7005
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1370855951.7095 (0.0090651512145996)sec
+--- STARTUP TIME --- 1370855956.8216
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1370855956.8357 (0.014059782028198)sec
+--- STARTUP TIME --- 1370855958.0814
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1370855958.0925 (0.011087894439697)sec
+--- STARTUP TIME --- 1370855958.7081
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1370855958.7187 (0.010624170303345)sec
+--- STARTUP TIME --- 1370855967.0065
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM x_times WHERE email = 'ivup@ivup.cn' AND isadmin = 1 
+    REQUEST SQL：SELECT * FROM x_user WHERE email = 'ivup@ivup.cn' 
+    REQUEST SQL：UPDATE x_user SET lastloginip='182.240.100.82',lastlogintime=1370855967 WHERE userid = '1'
+--- SHUTDOWN TIME --- 1370855967.0228 (0.016273975372314)sec
+--- STARTUP TIME --- 1370855967.0996
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370855967.1143 (0.014765024185181)sec
+--- STARTUP TIME --- 1370856085.7492
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370856085.7628 (0.0135338306427)sec
+--- STARTUP TIME --- 1370856265.6238
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370856265.642 (0.018266916275024)sec
+--- STARTUP TIME --- 1370857329.0014
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1370857329.011 (0.0096540451049805)sec
+--- STARTUP TIME --- 1370857342.1228
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM x_times WHERE email = 'ivup@ivup.cn' AND isadmin = 1 
+    REQUEST SQL：SELECT * FROM x_user WHERE email = 'ivup@ivup.cn' 
+    REQUEST SQL：UPDATE x_user SET lastloginip='182.240.100.82',lastlogintime=1370857342 WHERE userid = '1'
+--- SHUTDOWN TIME --- 1370857342.1374 (0.014672994613647)sec
+--- STARTUP TIME --- 1370857342.2133
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370857342.226 (0.012628078460693)sec
+--- STARTUP TIME --- 1370857344.6289
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370857344.6407 (0.011843919754028)sec
+--- STARTUP TIME --- 1370857345.2842
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370857345.2943 (0.010133028030396)sec
+--- STARTUP TIME --- 1370857503.5686
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370857503.5855 (0.016851186752319)sec
+--- STARTUP TIME --- 1370857504.3724
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370857504.3834 (0.011033058166504)sec
+--- STARTUP TIME --- 1370857506.9233
+    SESSION_ID：2sep2hsl8svlkup4uvgcpfp1t6
+    REQUEST MCA：category::init@content
+    REQUEST SQL：SELECT catid,siteid FROM x_category WHERE module = 'content' ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_category WHERE siteid = '1' AND module = 'content' ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370857506.9403 (0.017063140869141)sec
+--- STARTUP TIME --- 1370869223.1814
+    SESSION_ID：q04521ft4r8o6k51nc4kln2i40
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1370869223.191 (0.0096399784088135)sec
+--- STARTUP TIME --- 1370869231.867
+    SESSION_ID：q04521ft4r8o6k51nc4kln2i40
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM x_times WHERE email = 'ivup@ivup.cn' AND isadmin = 1 
+    REQUEST SQL：SELECT * FROM x_user WHERE email = 'ivup@ivup.cn' 
+    REQUEST SQL：UPDATE x_user SET lastloginip='182.240.100.82',lastlogintime=1370869231 WHERE userid = '1'
+--- SHUTDOWN TIME --- 1370869231.8824 (0.0153968334198)sec
+--- STARTUP TIME --- 1370869232.1161
+    SESSION_ID：q04521ft4r8o6k51nc4kln2i40
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370869232.1303 (0.01418399810791)sec
+--- STARTUP TIME --- 1370869962.3137
+    SESSION_ID：q04521ft4r8o6k51nc4kln2i40
+    REQUEST MCA：index::logout@admin
+--- SHUTDOWN TIME --- 1370869962.3207 (0.0070021152496338)sec
+--- STARTUP TIME --- 1370869962.3782
+    SESSION_ID：q04521ft4r8o6k51nc4kln2i40
+    REQUEST MCA：index::login@admin
+    2 | array_change_key_case() [<a href='function.array-change-key-case'>function.array-change-key-case</a>]: The argument should be an array | /alidata/www/ivup.cn/framework/class/application.php | 171
+--- SHUTDOWN TIME --- 1370869962.3845 (0.0063748359680176)sec
+--- STARTUP TIME --- 1370870012.6515
+    SESSION_ID：q04521ft4r8o6k51nc4kln2i40
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1370870012.663 (0.011558055877686)sec
+--- STARTUP TIME --- 1370870024.1307
+    SESSION_ID：q04521ft4r8o6k51nc4kln2i40
+    REQUEST MCA：index::login@admin
+    REQUEST SQL：SELECT * FROM x_times WHERE email = 'ivup@ivup.cn' AND isadmin = 1 
+    REQUEST SQL：SELECT * FROM x_user WHERE email = 'ivup@ivup.cn' 
+    REQUEST SQL：UPDATE x_user SET lastloginip='182.240.100.82',lastlogintime=1370870024 WHERE userid = '1'
+--- SHUTDOWN TIME --- 1370870024.1447 (0.013965845108032)sec
+--- STARTUP TIME --- 1370870024.2802
+    SESSION_ID：q04521ft4r8o6k51nc4kln2i40
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    8 | Uninitialized string offset: 0 | /alidata/www/ivup.cn/cache/cache_view/system/admin/index/init.php | 47
+--- SHUTDOWN TIME --- 1370870024.2934 (0.013170957565308)sec
+--- STARTUP TIME --- 1370870076.5915
+    SESSION_ID：q04521ft4r8o6k51nc4kln2i40
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    8 | Uninitialized string offset: 0 | /alidata/www/ivup.cn/cache/cache_view/system/admin/index/init.php | 47
+--- SHUTDOWN TIME --- 1370870076.6058 (0.014305114746094)sec
+--- STARTUP TIME --- 1370870106.3769
+    SESSION_ID：q04521ft4r8o6k51nc4kln2i40
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    8 | Uninitialized string offset: 0 | /alidata/www/ivup.cn/cache/cache_view/system/admin/index/init.php | 47
+--- SHUTDOWN TIME --- 1370870106.3903 (0.013395071029663)sec
+--- STARTUP TIME --- 1370870138.863
+    SESSION_ID：q04521ft4r8o6k51nc4kln2i40
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    8 | Uninitialized string offset: 0 | /alidata/www/ivup.cn/cache/cache_view/system/admin/index/init.php | 47
+--- SHUTDOWN TIME --- 1370870138.8772 (0.014171838760376)sec
+--- STARTUP TIME --- 1370870173.8087
+    SESSION_ID：q04521ft4r8o6k51nc4kln2i40
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    8 | Uninitialized string offset: 0 | /alidata/www/ivup.cn/cache/cache_view/system/admin/index/init.php | 47
+--- SHUTDOWN TIME --- 1370870173.823 (0.014374017715454)sec
+--- STARTUP TIME --- 1370870216.5272
+    SESSION_ID：q04521ft4r8o6k51nc4kln2i40
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370870216.5405 (0.013289213180542)sec
+--- STARTUP TIME --- 1370870494.8993
+    SESSION_ID：q04521ft4r8o6k51nc4kln2i40
+    REQUEST MCA：index::init@admin
+    REQUEST SQL：SELECT * FROM x_site 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370870494.9133 (0.014045000076294)sec
+--- STARTUP TIME --- 1370870496.1264
+    SESSION_ID：q04521ft4r8o6k51nc4kln2i40
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370870496.141 (0.014620065689087)sec
+--- STARTUP TIME --- 1370870497.3839
+    SESSION_ID：q04521ft4r8o6k51nc4kln2i40
+    REQUEST MCA：index::menuleft@admin
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 92 AND display = 1 ORDER BY listorder ASC 
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 93 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370870497.3939 (0.0099310874938965)sec

@@ -1,4 +1,4 @@
-a:7:{s:13:"allowregister";s:1:"1";s:14:"rmb_point_rate";s:3:"100";s:12:"defualtpoint";s:2:"10";s:14:"defaultgroupid";s:1:"3";s:11:"regprotocol";s:6981:"[align=center][b]欢迎您注册成为｛X｝Management Platform用户[/b][/align]请仔细阅读下面的协议，只有接受协议才能继续进行注册。 
+<?php return array('data' => 'a:7:{s:13:"allowregister";s:1:"1";s:14:"rmb_point_rate";s:3:"100";s:12:"defualtpoint";s:2:"10";s:14:"defaultgroupid";s:1:"3";s:11:"regprotocol";s:6981:"[align=center][b]欢迎您注册成为｛X｝Management Platform用户[/b][/align]请仔细阅读下面的协议，只有接受协议才能继续进行注册。 
 1．服务条款的确认和接纳
 　　｛X｝Management Platform用户服务的所有权和运作权归｛X｝Management Platform拥有。｛X｝Management Platform所提供的服务将按照有关章程、服务条款和操作规则严格执行。用户通过注册程序点击“我同意” 按钮，即表示用户与｛X｝Management Platform达成协议并接受所有的服务条款。
 2． ｛X｝Management Platform服务简介
@@ -56,4 +56,4 @@ a:7:{s:13:"allowregister";s:1:"1";s:14:"rmb_point_rate";s:3:"100";s:12:"defualtp
 13．解释权
 　　本注册协议的解释权归｛X｝Management Platform所有。如果其中有任何条款与国家的有关法律相抵触，则以国家法律的明文规定为准。";s:21:"registerverifymessage";s:172:"欢迎您注册成为｛X｝Management Platform用户，您的账号需要邮箱认证，点击下面链接进行认证：{click}
 或者将网址复制到浏览器：{url}";s:14:"forgetpassword";s:142:"｛X｝Management Platform密码找回，请在一小时内点击下面链接进行操作：{click}
-或者将网址复制到浏览器：{url}";}
+或者将网址复制到浏览器：{url}";}');?>

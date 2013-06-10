@@ -1,0 +1,146 @@
+--- STARTUP TIME --- 1370522812.107
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：menu::init@admin
+    ACL-1-admin-menu item does not in configuration file
+--- SHUTDOWN TIME --- 1370522812.1454 (0.038418054580688)sec
+--- STARTUP TIME --- 1370522814.8
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：site::init@admin
+    ACL：拒绝访问site::init@admin
+--- SHUTDOWN TIME --- 1370522814.8225 (0.022510051727295)sec
+--- STARTUP TIME --- 1370522815.3771
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：manage::init@attachment
+    ACL-1-attachment-manage item does not in configuration file
+--- SHUTDOWN TIME --- 1370522815.4032 (0.026103973388672)sec
+--- STARTUP TIME --- 1370522816.1312
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：user::init@user
+    ACL：拒绝访问user::init@user
+--- SHUTDOWN TIME --- 1370522816.1539 (0.022747993469238)sec
+--- STARTUP TIME --- 1370522816.4487
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：acl::setting@user
+    ACL：拒绝访问acl::setting@user
+--- SHUTDOWN TIME --- 1370522816.4711 (0.022484064102173)sec
+--- STARTUP TIME --- 1370522817.3286
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：urlrule::init@extend
+    ACL-1-extend-urlrule item does not in configuration file
+--- SHUTDOWN TIME --- 1370522817.351 (0.022422075271606)sec
+--- STARTUP TIME --- 1370522817.861
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：workflow::init@extend
+    ACL-1-extend-workflow item does not in configuration file
+--- SHUTDOWN TIME --- 1370522817.8986 (0.037561893463135)sec
+--- STARTUP TIME --- 1370522818.4527
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：urlrule::init@extend
+    ACL-1-extend-urlrule item does not in configuration file
+--- SHUTDOWN TIME --- 1370522818.4745 (0.021858930587769)sec
+--- STARTUP TIME --- 1370522819.5086
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：index::menuleft@admin
+    ACL：拒绝访问index::menuleft@admin
+--- SHUTDOWN TIME --- 1370522819.5288 (0.020187139511108)sec
+--- STARTUP TIME --- 1370522833.0615
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：index::menuleft@admin
+    ACL：拒绝访问index::menuleft@admin
+--- SHUTDOWN TIME --- 1370522833.0803 (0.01870584487915)sec
+--- STARTUP TIME --- 1370522834.4159
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：index::logout@admin
+    ACL：拒绝访问index::logout@admin
+--- SHUTDOWN TIME --- 1370522834.4341 (0.018187046051025)sec
+--- STARTUP TIME --- 1370522838.1618
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：index::logout@admin
+    ACL：拒绝访问index::logout@admin
+--- SHUTDOWN TIME --- 1370522838.1798 (0.017971038818359)sec
+--- STARTUP TIME --- 1370522843.7192
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：index::logon@admin
+    ACL：拒绝访问index::logon@admin
+--- SHUTDOWN TIME --- 1370522843.741 (0.021764039993286)sec
+--- STARTUP TIME --- 1370522848.7076
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：index::login@admin
+--- SHUTDOWN TIME --- 1370522848.7274 (0.019824028015137)sec
+--- STARTUP TIME --- 1370522926.8017
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：index::login@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_times WHERE email = 'ivup@ivup.cn' AND isadmin = 1 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_user WHERE email = 'ivup@ivup.cn' 
+    REQUEST SQL：UPDATE x_user SET lastloginip='127.0.0.1',lastlogintime=1370522926 WHERE userid = '1'
+--- SHUTDOWN TIME --- 1370522926.8445 (0.042874813079834)sec
+--- STARTUP TIME --- 1370522926.8647
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：index::init@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_site 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 1 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 4 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 20 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370522926.9192 (0.054476976394653)sec
+--- STARTUP TIME --- 1370522928.4768
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：index::menuleft@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 5 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 6 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 13 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 12 AND display = 1 ORDER BY listorder ASC 
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_menu WHERE parentid = 103 AND display = 1 ORDER BY listorder ASC 
+--- SHUTDOWN TIME --- 1370522928.5347 (0.057827949523926)sec
+--- STARTUP TIME --- 1370522929.4407
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：site::init@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_site 
+--- SHUTDOWN TIME --- 1370522929.4769 (0.036204099655151)sec
+--- STARTUP TIME --- 1370522930.464
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：site::edit@admin
+    sql_options:parseOffset methond not exist
+    REQUEST SQL：SELECT * FROM x_site WHERE siteid = 1 
+--- SHUTDOWN TIME --- 1370522930.4973 (0.03333306312561)sec
+--- STARTUP TIME --- 1370522932.9398
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：attachment::init@attachment
+--- SHUTDOWN TIME --- 1370522932.9674 (0.02760910987854)sec
+--- STARTUP TIME --- 1370522936.6365
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：attachment::swfupload@attachment
+Array
+    [attachment]zi3.png,/uploadfile/2013/0606/20130606084856162.png,17755,png,png
+--- SHUTDOWN TIME --- 1370522936.6694 (0.032860994338989)sec
+--- STARTUP TIME --- 1370522975.7007
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：attachment::init@attachment
+--- SHUTDOWN TIME --- 1370522975.723 (0.02226996421814)sec
+--- STARTUP TIME --- 1370522977.8999
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：attachment::swfupload@attachment
+Array
+    [attachment]beijing2.png,xms.iyn.cc/uploadfile/2013/0606/20130606084937219.png,111190,png,png
+--- SHUTDOWN TIME --- 1370522977.9288 (0.028931856155396)sec
+--- STARTUP TIME --- 1370522994.2153
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：attachment::init@attachment
+--- SHUTDOWN TIME --- 1370522994.2433 (0.028007984161377)sec
+--- STARTUP TIME --- 1370522996.1993
+    SESSION_ID：g2rcn3r36i9i78n5ei34e4qvc3
+    REQUEST MCA：attachment::swfupload@attachment
+Array
+    [attachment]backgroud2.png,http://xms.iyn.cc/uploadfile/2013/0606/20130606084956839.png,97153,png,png
+--- SHUTDOWN TIME --- 1370522996.2281 (0.028772830963135)sec

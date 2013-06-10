@@ -44,7 +44,7 @@ class cacheFile {
 	    if($this->_setting['type'] == 'array') {
 	    	$data = "<?php\nreturn ".var_export($data, true).";\n?>";
 	    } elseif($this->_setting['type'] == 'serialize') {
-	    	$data = serialize($data);
+	    	$data = "<?php return array('data' => '".new_addslashes(serialize($data))."');?>";
 	    }
 	    if ($module == 'common' || ($module == 'common' && substr($name, 0, 16) != 'category_content')) {
 		    $db = X::load_model('cache_model', 'admin');
@@ -86,7 +86,8 @@ class cacheFile {
 		    if($this->_setting['type'] == 'array') {
 		    	$data = @require($filepath.$filename);
 		    } elseif($this->_setting['type'] == 'serialize') {
-		    	$data = unserialize(file_get_contents($filepath.$filename));
+		    	$arr = require($filepath.$filename);
+		    	$data = unserialize(new_stripslashes($arr['data']));
 		    }
 		    return $data;
 		}

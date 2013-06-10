@@ -25,7 +25,7 @@ class attachment_class_controller extends controller
         $this->_app = $app;
     	$this->siteid = SITEID;
     	$this->siteinfo = self::get_siteinfo();
-    	$this->upload_url = '/uploadfile/';
+    	$this->upload_url = 'http://'.$this->siteinfo['domain'].'/uploadfile/';
     	$this->upload_path = Next::config('system','site_root',APP_PATH.'siteroot'.DIRECTORY_SEPARATOR).$this->siteinfo['dirname'].DIRECTORY_SEPARATOR.'uploadfile'.DIRECTORY_SEPARATOR;
     	$this->userid = isset($_SESSION['userid']) ? $_SESSION['userid'] : exit();
     }

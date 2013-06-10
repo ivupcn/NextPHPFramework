@@ -1,1 +1,1 @@
-a:1:{i:16;a:7:{s:10:"workflowid";s:2:"16";s:6:"siteid";s:1:"1";s:5:"steps";s:1:"1";s:8:"workname";s:12:"一级审核";s:11:"description";s:0:"";s:7:"setting";s:76:"a:6:{i:1;a:1:{i:0;s:2:"10";}i:2;N;i:3;N;i:4;N;i:5;N;s:13:"nocheck_users";N;}";s:4:"flag";s:1:"0";}}
+<?php return array('data' => 'a:1:{i:16;a:7:{s:10:"workflowid";s:2:"16";s:6:"siteid";s:1:"1";s:5:"steps";s:1:"1";s:8:"workname";s:12:"一级审核";s:11:"description";s:0:"";s:7:"setting";s:76:"a:6:{i:1;a:1:{i:0;s:2:"10";}i:2;N;i:3;N;i:4;N;i:5;N;s:13:"nocheck_users";N;}";s:4:"flag";s:1:"0";}}');?>

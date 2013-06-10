@@ -270,7 +270,6 @@ class db
 	                    $this->parseField(!empty($options['field']) ? $options['field'] : '*'),
 	                    $this->parseJoin(!empty($options['join']) ? $options['join'] : ''),
 	                    $this->parseWhere(!empty($options['where']) ? $options['where'] : ''),
-                        $this->parseOffset(!empty($options['offset']) ? $options['offset'] : ''),
 	                    $this->parseGroup(!empty($options['group']) ? $options['group'] : ''),
 	                    $this->parseHaving(!empty($options['having']) ? $options['having'] : ''),
 	                    $this->parseOrder(!empty($options['order']) ? $options['order'] : ''),
